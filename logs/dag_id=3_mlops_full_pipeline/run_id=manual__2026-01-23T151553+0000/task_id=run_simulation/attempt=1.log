@@ -1,0 +1,39 @@
+[2026-01-23T15:16:48.255+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: 3_mlops_full_pipeline.run_simulation manual__2026-01-23T15:15:53+00:00 [queued]>
+[2026-01-23T15:16:48.263+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: 3_mlops_full_pipeline.run_simulation manual__2026-01-23T15:15:53+00:00 [queued]>
+[2026-01-23T15:16:48.264+0000] {taskinstance.py:1359} INFO - Starting attempt 1 of 1
+[2026-01-23T15:16:48.276+0000] {taskinstance.py:1380} INFO - Executing <Task(BashOperator): run_simulation> on 2026-01-23 15:15:53+00:00
+[2026-01-23T15:16:48.281+0000] {standard_task_runner.py:57} INFO - Started process 298 to run task
+[2026-01-23T15:16:48.285+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', '3_mlops_full_pipeline', 'run_simulation', 'manual__2026-01-23T15:15:53+00:00', '--job-id', '3', '--raw', '--subdir', 'DAGS_FOLDER/mlops_pipeline.py', '--cfg-path', '/tmp/tmpvabvmh1y']
+[2026-01-23T15:16:48.287+0000] {standard_task_runner.py:85} INFO - Job 3: Subtask run_simulation
+[2026-01-23T15:16:48.335+0000] {task_command.py:415} INFO - Running <TaskInstance: 3_mlops_full_pipeline.run_simulation manual__2026-01-23T15:15:53+00:00 [running]> on host a8d715f94a49
+[2026-01-23T15:16:48.400+0000] {taskinstance.py:1660} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='3_mlops_full_pipeline' AIRFLOW_CTX_TASK_ID='run_simulation' AIRFLOW_CTX_EXECUTION_DATE='2026-01-23T15:15:53+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-01-23T15:15:53+00:00'
+[2026-01-23T15:16:48.401+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2026-01-23T15:16:48.402+0000] {subprocess.py:75} INFO - Running command: ['/bin/bash', '-c', 'python /opt/***/dags/simulate_process.py']
+[2026-01-23T15:16:48.413+0000] {subprocess.py:86} INFO - Output:
+[2026-01-23T15:16:51.941+0000] {subprocess.py:93} INFO - >>> Tabela orders gotowa.
+[2026-01-23T15:16:51.941+0000] {subprocess.py:93} INFO - >>> Rozpoczynam generowanie paczki danych (20 rekordów)...
+[2026-01-23T15:16:51.942+0000] {subprocess.py:93} INFO - Dodano: Monitor | Klient: Sherry Taylor
+[2026-01-23T15:16:51.942+0000] {subprocess.py:93} INFO - Dodano: Headphones | Klient: Mr. Danny Thompson Jr.
+[2026-01-23T15:16:51.942+0000] {subprocess.py:93} INFO - Dodano: Laptop | Klient: Diane Adams
+[2026-01-23T15:16:51.942+0000] {subprocess.py:93} INFO - Dodano: Monitor | Klient: Ralph Reeves
+[2026-01-23T15:16:51.942+0000] {subprocess.py:93} INFO - Dodano: Monitor | Klient: Alan Schultz
+[2026-01-23T15:16:51.942+0000] {subprocess.py:93} INFO - Dodano: Monitor | Klient: Christopher Young
+[2026-01-23T15:16:51.942+0000] {subprocess.py:93} INFO - Dodano: Mouse | Klient: Timothy Cruz
+[2026-01-23T15:16:51.942+0000] {subprocess.py:93} INFO - Dodano: Monitor | Klient: Isaiah Mann
+[2026-01-23T15:16:51.942+0000] {subprocess.py:93} INFO - Dodano: Laptop | Klient: Elizabeth Jacobs
+[2026-01-23T15:16:51.942+0000] {subprocess.py:93} INFO - Dodano: Headphones | Klient: Jessica Baxter
+[2026-01-23T15:16:51.943+0000] {subprocess.py:93} INFO - Dodano: Keyboard | Klient: Thomas Newman
+[2026-01-23T15:16:51.943+0000] {subprocess.py:93} INFO - Dodano: Laptop | Klient: Matthew Monroe
+[2026-01-23T15:16:51.943+0000] {subprocess.py:93} INFO - Dodano: Monitor | Klient: Kimberly Wiley
+[2026-01-23T15:16:51.943+0000] {subprocess.py:93} INFO - Dodano: Headphones | Klient: Carol Cunningham
+[2026-01-23T15:16:51.943+0000] {subprocess.py:93} INFO - Dodano: Headphones | Klient: Brandon Nelson
+[2026-01-23T15:16:51.943+0000] {subprocess.py:93} INFO - Dodano: Headphones | Klient: Robert Smith
+[2026-01-23T15:16:51.943+0000] {subprocess.py:93} INFO - Dodano: Monitor | Klient: Thomas White
+[2026-01-23T15:16:51.943+0000] {subprocess.py:93} INFO - Dodano: Mouse | Klient: Matthew Johnson
+[2026-01-23T15:16:51.943+0000] {subprocess.py:93} INFO - Dodano: Laptop | Klient: Daniel White
+[2026-01-23T15:16:51.943+0000] {subprocess.py:93} INFO - Dodano: Headphones | Klient: Stephanie Curtis
+[2026-01-23T15:16:51.943+0000] {subprocess.py:93} INFO - >>> Zakończono generowanie danych.
+[2026-01-23T15:16:51.964+0000] {subprocess.py:97} INFO - Command exited with return code 0
+[2026-01-23T15:16:51.991+0000] {taskinstance.py:1398} INFO - Marking task as SUCCESS. dag_id=3_mlops_full_pipeline, task_id=run_simulation, execution_date=20260123T151553, start_date=20260123T151648, end_date=20260123T151651
+[2026-01-23T15:16:52.027+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 0
+[2026-01-23T15:16:52.049+0000] {taskinstance.py:2776} INFO - 1 downstream tasks scheduled from follow-on schedule check

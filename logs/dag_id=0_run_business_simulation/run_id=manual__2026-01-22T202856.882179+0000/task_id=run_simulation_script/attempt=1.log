@@ -1,0 +1,16 @@
+[2026-01-22T20:29:07.923+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: 0_run_business_simulation.run_simulation_script manual__2026-01-22T20:28:56.882179+00:00 [queued]>
+[2026-01-22T20:29:07.932+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: 0_run_business_simulation.run_simulation_script manual__2026-01-22T20:28:56.882179+00:00 [queued]>
+[2026-01-22T20:29:07.933+0000] {taskinstance.py:1359} INFO - Starting attempt 1 of 2
+[2026-01-22T20:29:07.946+0000] {taskinstance.py:1380} INFO - Executing <Task(BashOperator): run_simulation_script> on 2026-01-22 20:28:56.882179+00:00
+[2026-01-22T20:29:07.952+0000] {standard_task_runner.py:57} INFO - Started process 2878 to run task
+[2026-01-22T20:29:07.955+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', '0_run_business_simulation', 'run_simulation_script', 'manual__2026-01-22T20:28:56.882179+00:00', '--job-id', '51', '--raw', '--subdir', 'DAGS_FOLDER/simulation_dags.py', '--cfg-path', '/tmp/tmpxjchrtej']
+[2026-01-22T20:29:07.957+0000] {standard_task_runner.py:85} INFO - Job 51: Subtask run_simulation_script
+[2026-01-22T20:29:08.003+0000] {task_command.py:415} INFO - Running <TaskInstance: 0_run_business_simulation.run_simulation_script manual__2026-01-22T20:28:56.882179+00:00 [running]> on host 4fbdf2312f2b
+[2026-01-22T20:29:08.086+0000] {taskinstance.py:1660} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='0_run_business_simulation' AIRFLOW_CTX_TASK_ID='run_simulation_script' AIRFLOW_CTX_EXECUTION_DATE='2026-01-22T20:28:56.882179+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-01-22T20:28:56.882179+00:00'
+[2026-01-22T20:29:08.088+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2026-01-22T20:29:08.089+0000] {subprocess.py:75} INFO - Running command: ['/bin/bash', '-c', 'timeout 60s python /opt/***/dags/simulate_process.py || true']
+[2026-01-22T20:29:08.101+0000] {subprocess.py:86} INFO - Output:
+[2026-01-22T20:30:08.079+0000] {subprocess.py:97} INFO - Command exited with return code 0
+[2026-01-22T20:30:08.112+0000] {taskinstance.py:1398} INFO - Marking task as SUCCESS. dag_id=0_run_business_simulation, task_id=run_simulation_script, execution_date=20260122T202856, start_date=20260122T202907, end_date=20260122T203008
+[2026-01-22T20:30:08.159+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 0
+[2026-01-22T20:30:08.179+0000] {taskinstance.py:2776} INFO - 0 downstream tasks scheduled from follow-on schedule check

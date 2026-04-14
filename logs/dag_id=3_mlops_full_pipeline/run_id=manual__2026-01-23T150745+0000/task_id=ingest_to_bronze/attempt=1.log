@@ -1,0 +1,21 @@
+[2026-01-23T15:08:54.586+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: 3_mlops_full_pipeline.ingest_to_bronze manual__2026-01-23T15:07:45+00:00 [queued]>
+[2026-01-23T15:08:54.599+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: 3_mlops_full_pipeline.ingest_to_bronze manual__2026-01-23T15:07:45+00:00 [queued]>
+[2026-01-23T15:08:54.600+0000] {taskinstance.py:1359} INFO - Starting attempt 1 of 1
+[2026-01-23T15:08:54.613+0000] {taskinstance.py:1380} INFO - Executing <Task(BashOperator): ingest_to_bronze> on 2026-01-23 15:07:45+00:00
+[2026-01-23T15:08:54.619+0000] {standard_task_runner.py:57} INFO - Started process 317 to run task
+[2026-01-23T15:08:54.623+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', '3_mlops_full_pipeline', 'ingest_to_bronze', 'manual__2026-01-23T15:07:45+00:00', '--job-id', '4', '--raw', '--subdir', 'DAGS_FOLDER/mlops_pipeline.py', '--cfg-path', '/tmp/tmptt9s8t0j']
+[2026-01-23T15:08:54.625+0000] {standard_task_runner.py:85} INFO - Job 4: Subtask ingest_to_bronze
+[2026-01-23T15:08:54.669+0000] {task_command.py:415} INFO - Running <TaskInstance: 3_mlops_full_pipeline.ingest_to_bronze manual__2026-01-23T15:07:45+00:00 [running]> on host 3ec92f731894
+[2026-01-23T15:08:54.732+0000] {taskinstance.py:1660} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='3_mlops_full_pipeline' AIRFLOW_CTX_TASK_ID='ingest_to_bronze' AIRFLOW_CTX_EXECUTION_DATE='2026-01-23T15:07:45+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-01-23T15:07:45+00:00'
+[2026-01-23T15:08:54.733+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2026-01-23T15:08:54.734+0000] {subprocess.py:75} INFO - Running command: ['/bin/bash', '-c', 'python /opt/***/dags/ingest_postgres_to_bronze.py']
+[2026-01-23T15:08:54.743+0000] {subprocess.py:86} INFO - Output:
+[2026-01-23T15:08:56.512+0000] {subprocess.py:93} INFO - /opt/***/dags/ingest_postgres_to_bronze.py:20: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+[2026-01-23T15:08:56.512+0000] {subprocess.py:93} INFO -   df = pd.read_sql(query, conn)
+[2026-01-23T15:08:56.513+0000] {subprocess.py:93} INFO - >>> [Ingest] Łączenie z Postgres...
+[2026-01-23T15:08:56.513+0000] {subprocess.py:93} INFO - >>> [Ingest] Zapisywanie 20 wierszy do: s3://bronze/data/orders/orders_20260123150855.parquet
+[2026-01-23T15:08:56.513+0000] {subprocess.py:93} INFO - >>> Sukces!
+[2026-01-23T15:08:56.694+0000] {subprocess.py:97} INFO - Command exited with return code 0
+[2026-01-23T15:08:56.718+0000] {taskinstance.py:1398} INFO - Marking task as SUCCESS. dag_id=3_mlops_full_pipeline, task_id=ingest_to_bronze, execution_date=20260123T150745, start_date=20260123T150854, end_date=20260123T150856
+[2026-01-23T15:08:56.760+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 0
+[2026-01-23T15:08:56.781+0000] {taskinstance.py:2776} INFO - 1 downstream tasks scheduled from follow-on schedule check

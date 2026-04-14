@@ -1,0 +1,287 @@
+[2026-01-22T19:19:11.754+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: 3_mlops_full_pipeline.install_requirements manual__2026-01-22T19:19:10.329093+00:00 [queued]>
+[2026-01-22T19:19:11.764+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: 3_mlops_full_pipeline.install_requirements manual__2026-01-22T19:19:10.329093+00:00 [queued]>
+[2026-01-22T19:19:11.765+0000] {taskinstance.py:1359} INFO - Starting attempt 1 of 1
+[2026-01-22T19:19:11.780+0000] {taskinstance.py:1380} INFO - Executing <Task(BashOperator): install_requirements> on 2026-01-22 19:19:10.329093+00:00
+[2026-01-22T19:19:11.785+0000] {standard_task_runner.py:57} INFO - Started process 232 to run task
+[2026-01-22T19:19:11.790+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', '3_mlops_full_pipeline', 'install_requirements', 'manual__2026-01-22T19:19:10.329093+00:00', '--job-id', '23', '--raw', '--subdir', 'DAGS_FOLDER/mlops_pipeline.py', '--cfg-path', '/tmp/tmpa6ksaq0o']
+[2026-01-22T19:19:11.793+0000] {standard_task_runner.py:85} INFO - Job 23: Subtask install_requirements
+[2026-01-22T19:19:11.858+0000] {task_command.py:415} INFO - Running <TaskInstance: 3_mlops_full_pipeline.install_requirements manual__2026-01-22T19:19:10.329093+00:00 [running]> on host 4fbdf2312f2b
+[2026-01-22T19:19:11.943+0000] {taskinstance.py:1660} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='3_mlops_full_pipeline' AIRFLOW_CTX_TASK_ID='install_requirements' AIRFLOW_CTX_EXECUTION_DATE='2026-01-22T19:19:10.329093+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-01-22T19:19:10.329093+00:00'
+[2026-01-22T19:19:11.944+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2026-01-22T19:19:11.945+0000] {subprocess.py:75} INFO - Running command: ['/bin/bash', '-c', 'pip install pandas s3fs pyarrow great_expectations mlflow scikit-learn boto3']
+[2026-01-22T19:19:11.956+0000] {subprocess.py:86} INFO - Output:
+[2026-01-22T19:19:13.280+0000] {subprocess.py:93} INFO - Defaulting to user installation because normal site-packages is not writeable
+[2026-01-22T19:19:13.520+0000] {subprocess.py:93} INFO - Requirement already satisfied: pandas in /home/***/.local/lib/python3.8/site-packages (2.0.3)
+[2026-01-22T19:19:13.824+0000] {subprocess.py:93} INFO - Collecting s3fs
+[2026-01-22T19:19:13.981+0000] {subprocess.py:93} INFO -   Downloading s3fs-2024.10.0-py3-none-any.whl (29 kB)
+[2026-01-22T19:19:14.002+0000] {subprocess.py:93} INFO - Requirement already satisfied: pyarrow in /home/***/.local/lib/python3.8/site-packages (11.0.0)
+[2026-01-22T19:19:14.281+0000] {subprocess.py:93} INFO - Collecting great_expectations
+[2026-01-22T19:19:14.399+0000] {subprocess.py:93} INFO -   Downloading great_expectations-1.1.0-py3-none-any.whl (5.0 MB)
+[2026-01-22T19:19:17.428+0000] {subprocess.py:93} INFO -      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 5.0/5.0 MB 6.2 MB/s eta 0:00:00
+[2026-01-22T19:19:17.583+0000] {subprocess.py:93} INFO - Collecting mlflow
+[2026-01-22T19:19:17.625+0000] {subprocess.py:93} INFO -   Downloading mlflow-2.17.2-py3-none-any.whl (26.7 MB)
+[2026-01-22T19:19:19.083+0000] {subprocess.py:93} INFO -      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 26.7/26.7 MB 12.7 MB/s eta 0:00:00
+[2026-01-22T19:19:19.638+0000] {subprocess.py:93} INFO - Collecting scikit-learn
+[2026-01-22T19:19:19.683+0000] {subprocess.py:93} INFO -   Downloading scikit_learn-1.3.2-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (11.1 MB)
+[2026-01-22T19:19:20.554+0000] {subprocess.py:93} INFO -      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 11.1/11.1 MB 13.0 MB/s eta 0:00:00
+[2026-01-22T19:19:20.574+0000] {subprocess.py:93} INFO - Requirement already satisfied: boto3 in /home/***/.local/lib/python3.8/site-packages (1.28.17)
+[2026-01-22T19:19:20.655+0000] {subprocess.py:93} INFO - Requirement already satisfied: python-dateutil>=2.8.2 in /home/***/.local/lib/python3.8/site-packages (from pandas) (2.8.2)
+[2026-01-22T19:19:20.657+0000] {subprocess.py:93} INFO - Requirement already satisfied: numpy>=1.20.3 in /home/***/.local/lib/python3.8/site-packages (from pandas) (1.24.4)
+[2026-01-22T19:19:20.658+0000] {subprocess.py:93} INFO - Requirement already satisfied: tzdata>=2022.1 in /home/***/.local/lib/python3.8/site-packages (from pandas) (2023.3)
+[2026-01-22T19:19:20.660+0000] {subprocess.py:93} INFO - Requirement already satisfied: pytz>=2020.1 in /home/***/.local/lib/python3.8/site-packages (from pandas) (2023.3)
+[2026-01-22T19:19:20.796+0000] {subprocess.py:93} INFO - Collecting fsspec==2024.10.0.*
+[2026-01-22T19:19:20.838+0000] {subprocess.py:93} INFO -   Downloading fsspec-2024.10.0-py3-none-any.whl (179 kB)
+[2026-01-22T19:19:20.855+0000] {subprocess.py:93} INFO -      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 179.6/179.6 kB 14.4 MB/s eta 0:00:00
+[2026-01-22T19:19:20.860+0000] {subprocess.py:93} INFO - Requirement already satisfied: aiobotocore<3.0.0,>=2.5.4 in /home/***/.local/lib/python3.8/site-packages (from s3fs) (2.6.0)
+[2026-01-22T19:19:20.861+0000] {subprocess.py:93} INFO - Requirement already satisfied: aiohttp!=4.0.0a0,!=4.0.0a1 in /home/***/.local/lib/python3.8/site-packages (from s3fs) (3.8.5)
+[2026-01-22T19:19:21.329+0000] {subprocess.py:93} INFO - Collecting tqdm>=4.59.0
+[2026-01-22T19:19:21.371+0000] {subprocess.py:93} INFO -   Downloading tqdm-4.67.1-py3-none-any.whl (78 kB)
+[2026-01-22T19:19:21.385+0000] {subprocess.py:93} INFO -      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 78.5/78.5 kB 6.7 MB/s eta 0:00:00
+[2026-01-22T19:19:21.388+0000] {subprocess.py:93} INFO - Requirement already satisfied: typing-extensions>=4.1.0 in /home/***/.local/lib/python3.8/site-packages (from great_expectations) (4.7.1)
+[2026-01-22T19:19:21.501+0000] {subprocess.py:93} INFO - Collecting altair<5.0.0,>=4.2.1
+[2026-01-22T19:19:21.542+0000] {subprocess.py:93} INFO -   Downloading altair-4.2.2-py3-none-any.whl (813 kB)
+[2026-01-22T19:19:21.592+0000] {subprocess.py:93} INFO -      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 813.6/813.6 kB 17.2 MB/s eta 0:00:00
+[2026-01-22T19:19:21.715+0000] {subprocess.py:93} INFO - Collecting tzlocal>=1.2
+[2026-01-22T19:19:21.758+0000] {subprocess.py:93} INFO -   Downloading tzlocal-5.2-py3-none-any.whl (17 kB)
+[2026-01-22T19:19:21.931+0000] {subprocess.py:93} INFO - Collecting ipywidgets>=7.5.1
+[2026-01-22T19:19:21.976+0000] {subprocess.py:93} INFO -   Downloading ipywidgets-8.1.8-py3-none-any.whl (139 kB)
+[2026-01-22T19:19:21.993+0000] {subprocess.py:93} INFO -      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 139.8/139.8 kB 9.6 MB/s eta 0:00:00
+[2026-01-22T19:19:21.998+0000] {subprocess.py:93} INFO - Requirement already satisfied: marshmallow<4.0.0,>=3.7.1 in /home/***/.local/lib/python3.8/site-packages (from great_expectations) (3.20.1)
+[2026-01-22T19:19:22.108+0000] {subprocess.py:93} INFO - Collecting makefun<2,>=1.7.0
+[2026-01-22T19:19:22.149+0000] {subprocess.py:93} INFO -   Downloading makefun-1.16.0-py2.py3-none-any.whl (22 kB)
+[2026-01-22T19:19:22.343+0000] {subprocess.py:93} INFO - Collecting Ipython>=7.16.3
+[2026-01-22T19:19:22.385+0000] {subprocess.py:93} INFO -   Downloading ipython-8.12.3-py3-none-any.whl (798 kB)
+[2026-01-22T19:19:22.427+0000] {subprocess.py:93} INFO -      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 798.3/798.3 kB 20.9 MB/s eta 0:00:00
+[2026-01-22T19:19:22.548+0000] {subprocess.py:93} INFO - Collecting mistune>=0.8.4
+[2026-01-22T19:19:22.589+0000] {subprocess.py:93} INFO -   Downloading mistune-3.2.0-py3-none-any.whl (53 kB)
+[2026-01-22T19:19:22.600+0000] {subprocess.py:93} INFO -      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 53.6/53.6 kB 5.5 MB/s eta 0:00:00
+[2026-01-22T19:19:22.604+0000] {subprocess.py:93} INFO - Requirement already satisfied: jsonschema>=2.5.1 in /home/***/.local/lib/python3.8/site-packages (from great_expectations) (4.19.0)
+[2026-01-22T19:19:22.605+0000] {subprocess.py:93} INFO - Requirement already satisfied: pydantic>=1.10.7 in /home/***/.local/lib/python3.8/site-packages (from great_expectations) (2.3.0)
+[2026-01-22T19:19:22.790+0000] {subprocess.py:93} INFO - Collecting posthog<3,>=2.1.0
+[2026-01-22T19:19:22.835+0000] {subprocess.py:93} INFO -   Downloading posthog-2.5.0-py2.py3-none-any.whl (36 kB)
+[2026-01-22T19:19:22.847+0000] {subprocess.py:93} INFO - Requirement already satisfied: urllib3>=1.26 in /home/***/.local/lib/python3.8/site-packages (from great_expectations) (1.26.16)
+[2026-01-22T19:19:22.848+0000] {subprocess.py:93} INFO - Requirement already satisfied: requests>=2.20 in /home/***/.local/lib/python3.8/site-packages (from great_expectations) (2.31.0)
+[2026-01-22T19:19:23.474+0000] {subprocess.py:93} INFO - Collecting scipy>=1.6.0
+[2026-01-22T19:19:23.516+0000] {subprocess.py:93} INFO -   Downloading scipy-1.10.1-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (34.5 MB)
+[2026-01-22T19:19:26.075+0000] {subprocess.py:93} INFO -      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 34.5/34.5 MB 6.5 MB/s eta 0:00:00
+[2026-01-22T19:19:26.140+0000] {subprocess.py:93} INFO - Requirement already satisfied: pyparsing>=2.4 in /home/***/.local/lib/python3.8/site-packages (from great_expectations) (3.1.1)
+[2026-01-22T19:19:26.142+0000] {subprocess.py:93} INFO - Requirement already satisfied: jinja2>=2.10 in /home/***/.local/lib/python3.8/site-packages (from great_expectations) (3.1.2)
+[2026-01-22T19:19:26.957+0000] {subprocess.py:93} INFO - Collecting ruamel.yaml>=0.16
+[2026-01-22T19:19:27.004+0000] {subprocess.py:93} INFO -   Downloading ruamel.yaml-0.18.16-py3-none-any.whl (119 kB)
+[2026-01-22T19:19:27.028+0000] {subprocess.py:93} INFO -      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 119.9/119.9 kB 5.8 MB/s eta 0:00:00
+[2026-01-22T19:19:27.031+0000] {subprocess.py:93} INFO - Requirement already satisfied: packaging in /home/***/.local/lib/python3.8/site-packages (from great_expectations) (23.1)
+[2026-01-22T19:19:27.034+0000] {subprocess.py:93} INFO - Requirement already satisfied: cryptography>=3.2 in /home/***/.local/lib/python3.8/site-packages (from great_expectations) (41.0.3)
+[2026-01-22T19:19:27.437+0000] {subprocess.py:93} INFO - Collecting mlflow-skinny==2.17.2
+[2026-01-22T19:19:27.481+0000] {subprocess.py:93} INFO -   Downloading mlflow_skinny-2.17.2-py3-none-any.whl (5.7 MB)
+[2026-01-22T19:19:27.776+0000] {subprocess.py:93} INFO -      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 5.7/5.7 MB 19.4 MB/s eta 0:00:00
+[2026-01-22T19:19:27.792+0000] {subprocess.py:93} INFO - Requirement already satisfied: markdown<4,>=3.3 in /home/***/.local/lib/python3.8/site-packages (from mlflow) (3.4.4)
+[2026-01-22T19:19:27.794+0000] {subprocess.py:93} INFO - Requirement already satisfied: Flask<4 in /home/***/.local/lib/python3.8/site-packages (from mlflow) (2.2.5)
+[2026-01-22T19:19:27.802+0000] {subprocess.py:93} INFO - Requirement already satisfied: docker<8,>=4.0.0 in /home/***/.local/lib/python3.8/site-packages (from mlflow) (6.1.3)
+[2026-01-22T19:19:27.804+0000] {subprocess.py:93} INFO - Requirement already satisfied: alembic!=1.10.0,<2 in /home/***/.local/lib/python3.8/site-packages (from mlflow) (1.12.0)
+[2026-01-22T19:19:29.028+0000] {subprocess.py:93} INFO - Collecting matplotlib<4
+[2026-01-22T19:19:29.072+0000] {subprocess.py:93} INFO -   Downloading matplotlib-3.7.5-cp38-cp38-manylinux_2_12_x86_64.manylinux2010_x86_64.whl (9.2 MB)
+[2026-01-22T19:19:29.779+0000] {subprocess.py:93} INFO -      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 9.2/9.2 MB 13.2 MB/s eta 0:00:00
+[2026-01-22T19:19:29.925+0000] {subprocess.py:93} INFO - Collecting graphene<4
+[2026-01-22T19:19:29.965+0000] {subprocess.py:93} INFO -   Downloading graphene-3.4.3-py2.py3-none-any.whl (114 kB)
+[2026-01-22T19:19:29.979+0000] {subprocess.py:93} INFO -      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 114.9/114.9 kB 10.4 MB/s eta 0:00:00
+[2026-01-22T19:19:29.982+0000] {subprocess.py:93} INFO - Requirement already satisfied: gunicorn<24 in /home/***/.local/lib/python3.8/site-packages (from mlflow) (21.2.0)
+[2026-01-22T19:19:29.983+0000] {subprocess.py:93} INFO - Requirement already satisfied: sqlalchemy<3,>=1.4.0 in /home/***/.local/lib/python3.8/site-packages (from mlflow) (1.4.49)
+[2026-01-22T19:19:30.032+0000] {subprocess.py:93} INFO - Requirement already satisfied: opentelemetry-sdk<3,>=1.9.0 in /home/***/.local/lib/python3.8/site-packages (from mlflow-skinny==2.17.2->mlflow) (1.20.0)
+[2026-01-22T19:19:30.033+0000] {subprocess.py:93} INFO - Requirement already satisfied: pyyaml<7,>=5.1 in /home/***/.local/lib/python3.8/site-packages (from mlflow-skinny==2.17.2->mlflow) (6.0.1)
+[2026-01-22T19:19:30.034+0000] {subprocess.py:93} INFO - Requirement already satisfied: importlib-metadata!=4.7.0,<9,>=3.7.0 in /home/***/.local/lib/python3.8/site-packages (from mlflow-skinny==2.17.2->mlflow) (6.8.0)
+[2026-01-22T19:19:30.035+0000] {subprocess.py:93} INFO - Requirement already satisfied: cloudpickle<4 in /home/***/.local/lib/python3.8/site-packages (from mlflow-skinny==2.17.2->mlflow) (2.2.1)
+[2026-01-22T19:19:30.193+0000] {subprocess.py:93} INFO - Collecting gitpython<4,>=3.1.9
+[2026-01-22T19:19:30.237+0000] {subprocess.py:93} INFO -   Downloading gitpython-3.1.46-py3-none-any.whl (208 kB)
+[2026-01-22T19:19:30.267+0000] {subprocess.py:93} INFO -      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 208.6/208.6 kB 9.0 MB/s eta 0:00:00
+[2026-01-22T19:19:30.270+0000] {subprocess.py:93} INFO - Requirement already satisfied: cachetools<6,>=5.0.0 in /home/***/.local/lib/python3.8/site-packages (from mlflow-skinny==2.17.2->mlflow) (5.3.1)
+[2026-01-22T19:19:30.271+0000] {subprocess.py:93} INFO - Requirement already satisfied: opentelemetry-api<3,>=1.9.0 in /home/***/.local/lib/python3.8/site-packages (from mlflow-skinny==2.17.2->mlflow) (1.20.0)
+[2026-01-22T19:19:30.271+0000] {subprocess.py:93} INFO - Requirement already satisfied: sqlparse<1,>=0.4.0 in /home/***/.local/lib/python3.8/site-packages (from mlflow-skinny==2.17.2->mlflow) (0.4.4)
+[2026-01-22T19:19:30.272+0000] {subprocess.py:93} INFO - Requirement already satisfied: click<9,>=7.0 in /home/***/.local/lib/python3.8/site-packages (from mlflow-skinny==2.17.2->mlflow) (8.1.7)
+[2026-01-22T19:19:30.273+0000] {subprocess.py:93} INFO - Requirement already satisfied: protobuf<6,>=3.12.0 in /home/***/.local/lib/python3.8/site-packages (from mlflow-skinny==2.17.2->mlflow) (4.21.12)
+[2026-01-22T19:19:30.524+0000] {subprocess.py:93} INFO - Collecting databricks-sdk<1,>=0.20.0
+[2026-01-22T19:19:30.577+0000] {subprocess.py:93} INFO -   Downloading databricks_sdk-0.79.0-py3-none-any.whl (787 kB)
+[2026-01-22T19:19:30.608+0000] {subprocess.py:93} INFO -      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 787.9/787.9 kB 27.6 MB/s eta 0:00:00
+[2026-01-22T19:19:30.894+0000] {subprocess.py:93} INFO - Collecting joblib>=1.1.1
+[2026-01-22T19:19:30.939+0000] {subprocess.py:93} INFO -   Downloading joblib-1.4.2-py3-none-any.whl (301 kB)
+[2026-01-22T19:19:30.957+0000] {subprocess.py:93} INFO -      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 301.8/301.8 kB 20.7 MB/s eta 0:00:00
+[2026-01-22T19:19:31.072+0000] {subprocess.py:93} INFO - Collecting threadpoolctl>=2.0.0
+[2026-01-22T19:19:31.111+0000] {subprocess.py:93} INFO -   Downloading threadpoolctl-3.5.0-py3-none-any.whl (18 kB)
+[2026-01-22T19:19:31.125+0000] {subprocess.py:93} INFO - Requirement already satisfied: jmespath<2.0.0,>=0.7.1 in /home/***/.local/lib/python3.8/site-packages (from boto3) (0.10.0)
+[2026-01-22T19:19:31.125+0000] {subprocess.py:93} INFO - Requirement already satisfied: botocore<1.32.0,>=1.31.17 in /home/***/.local/lib/python3.8/site-packages (from boto3) (1.31.17)
+[2026-01-22T19:19:31.126+0000] {subprocess.py:93} INFO - Requirement already satisfied: s3transfer<0.7.0,>=0.6.0 in /home/***/.local/lib/python3.8/site-packages (from boto3) (0.6.2)
+[2026-01-22T19:19:31.132+0000] {subprocess.py:93} INFO - Requirement already satisfied: aioitertools<1.0.0,>=0.5.1 in /home/***/.local/lib/python3.8/site-packages (from aiobotocore<3.0.0,>=2.5.4->s3fs) (0.11.0)
+[2026-01-22T19:19:31.133+0000] {subprocess.py:93} INFO - Requirement already satisfied: wrapt<2.0.0,>=1.10.10 in /home/***/.local/lib/python3.8/site-packages (from aiobotocore<3.0.0,>=2.5.4->s3fs) (1.15.0)
+[2026-01-22T19:19:31.143+0000] {subprocess.py:93} INFO - Requirement already satisfied: yarl<2.0,>=1.0 in /home/***/.local/lib/python3.8/site-packages (from aiohttp!=4.0.0a0,!=4.0.0a1->s3fs) (1.9.2)
+[2026-01-22T19:19:31.144+0000] {subprocess.py:93} INFO - Requirement already satisfied: aiosignal>=1.1.2 in /home/***/.local/lib/python3.8/site-packages (from aiohttp!=4.0.0a0,!=4.0.0a1->s3fs) (1.3.1)
+[2026-01-22T19:19:31.144+0000] {subprocess.py:93} INFO - Requirement already satisfied: attrs>=17.3.0 in /home/***/.local/lib/python3.8/site-packages (from aiohttp!=4.0.0a0,!=4.0.0a1->s3fs) (23.1.0)
+[2026-01-22T19:19:31.145+0000] {subprocess.py:93} INFO - Requirement already satisfied: async-timeout<5.0,>=4.0.0a3 in /home/***/.local/lib/python3.8/site-packages (from aiohttp!=4.0.0a0,!=4.0.0a1->s3fs) (4.0.3)
+[2026-01-22T19:19:31.145+0000] {subprocess.py:93} INFO - Requirement already satisfied: charset-normalizer<4.0,>=2.0 in /home/***/.local/lib/python3.8/site-packages (from aiohttp!=4.0.0a0,!=4.0.0a1->s3fs) (3.2.0)
+[2026-01-22T19:19:31.147+0000] {subprocess.py:93} INFO - Requirement already satisfied: frozenlist>=1.1.1 in /home/***/.local/lib/python3.8/site-packages (from aiohttp!=4.0.0a0,!=4.0.0a1->s3fs) (1.4.0)
+[2026-01-22T19:19:31.147+0000] {subprocess.py:93} INFO - Requirement already satisfied: multidict<7.0,>=4.5 in /home/***/.local/lib/python3.8/site-packages (from aiohttp!=4.0.0a0,!=4.0.0a1->s3fs) (6.0.4)
+[2026-01-22T19:19:31.154+0000] {subprocess.py:93} INFO - Requirement already satisfied: Mako in /home/***/.local/lib/python3.8/site-packages (from alembic!=1.10.0,<2->mlflow) (1.2.4)
+[2026-01-22T19:19:31.155+0000] {subprocess.py:93} INFO - Requirement already satisfied: importlib-resources in /home/***/.local/lib/python3.8/site-packages (from alembic!=1.10.0,<2->mlflow) (6.0.1)
+[2026-01-22T19:19:31.168+0000] {subprocess.py:93} INFO - Requirement already satisfied: toolz in /home/***/.local/lib/python3.8/site-packages (from altair<5.0.0,>=4.2.1->great_expectations) (0.12.0)
+[2026-01-22T19:19:31.414+0000] {subprocess.py:93} INFO - Collecting entrypoints
+[2026-01-22T19:19:31.457+0000] {subprocess.py:93} INFO -   Downloading entrypoints-0.4-py3-none-any.whl (5.3 kB)
+[2026-01-22T19:19:31.498+0000] {subprocess.py:93} INFO - Requirement already satisfied: cffi>=1.12 in /home/***/.local/lib/python3.8/site-packages (from cryptography>=3.2->great_expectations) (1.15.1)
+[2026-01-22T19:19:31.510+0000] {subprocess.py:93} INFO - Requirement already satisfied: websocket-client>=0.32.0 in /home/***/.local/lib/python3.8/site-packages (from docker<8,>=4.0.0->mlflow) (1.6.2)
+[2026-01-22T19:19:31.523+0000] {subprocess.py:93} INFO - Requirement already satisfied: itsdangerous>=2.0 in /home/***/.local/lib/python3.8/site-packages (from Flask<4->mlflow) (2.1.2)
+[2026-01-22T19:19:31.524+0000] {subprocess.py:93} INFO - Requirement already satisfied: Werkzeug>=2.2.2 in /home/***/.local/lib/python3.8/site-packages (from Flask<4->mlflow) (2.2.3)
+[2026-01-22T19:19:31.672+0000] {subprocess.py:93} INFO - Collecting graphql-relay<3.3,>=3.1
+[2026-01-22T19:19:31.717+0000] {subprocess.py:93} INFO -   Downloading graphql_relay-3.2.0-py3-none-any.whl (16 kB)
+[2026-01-22T19:19:31.986+0000] {subprocess.py:93} INFO - Collecting graphql-core<3.3,>=3.1
+[2026-01-22T19:19:32.032+0000] {subprocess.py:93} INFO -   Downloading graphql_core-3.2.7-py3-none-any.whl (207 kB)
+[2026-01-22T19:19:32.051+0000] {subprocess.py:93} INFO -      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 207.3/207.3 kB 12.5 MB/s eta 0:00:00
+[2026-01-22T19:19:32.108+0000] {subprocess.py:93} INFO - Requirement already satisfied: prompt-toolkit!=3.0.37,<3.1.0,>=3.0.30 in /home/***/.local/lib/python3.8/site-packages (from Ipython>=7.16.3->great_expectations) (3.0.39)
+[2026-01-22T19:19:32.222+0000] {subprocess.py:93} INFO - Collecting matplotlib-inline
+[2026-01-22T19:19:32.274+0000] {subprocess.py:93} INFO -   Downloading matplotlib_inline-0.1.7-py3-none-any.whl (9.9 kB)
+[2026-01-22T19:19:32.405+0000] {subprocess.py:93} INFO - Collecting pickleshare
+[2026-01-22T19:19:32.448+0000] {subprocess.py:93} INFO -   Downloading pickleshare-0.7.5-py2.py3-none-any.whl (6.9 kB)
+[2026-01-22T19:19:32.465+0000] {subprocess.py:93} INFO - Requirement already satisfied: pygments>=2.4.0 in /home/***/.local/lib/python3.8/site-packages (from Ipython>=7.16.3->great_expectations) (2.16.1)
+[2026-01-22T19:19:32.466+0000] {subprocess.py:93} INFO - Requirement already satisfied: decorator in /home/***/.local/lib/python3.8/site-packages (from Ipython>=7.16.3->great_expectations) (5.1.1)
+[2026-01-22T19:19:32.647+0000] {subprocess.py:93} INFO - Collecting jedi>=0.16
+[2026-01-22T19:19:32.690+0000] {subprocess.py:93} INFO -   Downloading jedi-0.19.2-py2.py3-none-any.whl (1.6 MB)
+[2026-01-22T19:19:32.773+0000] {subprocess.py:93} INFO -      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.6/1.6 MB 19.8 MB/s eta 0:00:00
+[2026-01-22T19:19:33.026+0000] {subprocess.py:93} INFO - Collecting stack-data
+[2026-01-22T19:19:33.076+0000] {subprocess.py:93} INFO -   Downloading stack_data-0.6.3-py3-none-any.whl (24 kB)
+[2026-01-22T19:19:33.179+0000] {subprocess.py:93} INFO - Collecting backcall
+[2026-01-22T19:19:33.219+0000] {subprocess.py:93} INFO -   Downloading backcall-0.2.0-py2.py3-none-any.whl (11 kB)
+[2026-01-22T19:19:33.366+0000] {subprocess.py:93} INFO - Collecting pexpect>4.3
+[2026-01-22T19:19:33.405+0000] {subprocess.py:93} INFO -   Downloading pexpect-4.9.0-py2.py3-none-any.whl (63 kB)
+[2026-01-22T19:19:33.417+0000] {subprocess.py:93} INFO -      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 63.8/63.8 kB 6.1 MB/s eta 0:00:00
+[2026-01-22T19:19:33.633+0000] {subprocess.py:93} INFO - Collecting traitlets>=5
+[2026-01-22T19:19:33.674+0000] {subprocess.py:93} INFO -   Downloading traitlets-5.14.3-py3-none-any.whl (85 kB)
+[2026-01-22T19:19:33.688+0000] {subprocess.py:93} INFO -      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 85.4/85.4 kB 6.6 MB/s eta 0:00:00
+[2026-01-22T19:19:33.935+0000] {subprocess.py:93} INFO - Collecting jupyterlab_widgets~=3.0.15
+[2026-01-22T19:19:33.973+0000] {subprocess.py:93} INFO -   Downloading jupyterlab_widgets-3.0.16-py3-none-any.whl (914 kB)
+[2026-01-22T19:19:34.031+0000] {subprocess.py:93} INFO -      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 914.9/914.9 kB 17.3 MB/s eta 0:00:00
+[2026-01-22T19:19:34.131+0000] {subprocess.py:93} INFO - Collecting comm>=0.1.3
+[2026-01-22T19:19:34.170+0000] {subprocess.py:93} INFO -   Downloading comm-0.2.3-py3-none-any.whl (7.3 kB)
+[2026-01-22T19:19:34.626+0000] {subprocess.py:93} INFO - Collecting widgetsnbextension~=4.0.14
+[2026-01-22T19:19:34.667+0000] {subprocess.py:93} INFO -   Downloading widgetsnbextension-4.0.15-py3-none-any.whl (2.2 MB)
+[2026-01-22T19:19:34.780+0000] {subprocess.py:93} INFO -      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.2/2.2 MB 20.0 MB/s eta 0:00:00
+[2026-01-22T19:19:34.788+0000] {subprocess.py:93} INFO - Requirement already satisfied: MarkupSafe>=2.0 in /home/***/.local/lib/python3.8/site-packages (from jinja2>=2.10->great_expectations) (2.1.3)
+[2026-01-22T19:19:34.869+0000] {subprocess.py:93} INFO - Requirement already satisfied: pkgutil-resolve-name>=1.3.10 in /home/***/.local/lib/python3.8/site-packages (from jsonschema>=2.5.1->great_expectations) (1.3.10)
+[2026-01-22T19:19:34.869+0000] {subprocess.py:93} INFO - Requirement already satisfied: rpds-py>=0.7.1 in /home/***/.local/lib/python3.8/site-packages (from jsonschema>=2.5.1->great_expectations) (0.10.2)
+[2026-01-22T19:19:34.870+0000] {subprocess.py:93} INFO - Requirement already satisfied: referencing>=0.28.4 in /home/***/.local/lib/python3.8/site-packages (from jsonschema>=2.5.1->great_expectations) (0.30.2)
+[2026-01-22T19:19:34.871+0000] {subprocess.py:93} INFO - Requirement already satisfied: jsonschema-specifications>=2023.03.6 in /home/***/.local/lib/python3.8/site-packages (from jsonschema>=2.5.1->great_expectations) (2023.7.1)
+[2026-01-22T19:19:36.687+0000] {subprocess.py:93} INFO - Collecting fonttools>=4.22.0
+[2026-01-22T19:19:36.727+0000] {subprocess.py:93} INFO -   Downloading fonttools-4.57.0-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (4.7 MB)
+[2026-01-22T19:19:36.971+0000] {subprocess.py:93} INFO -      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4.7/4.7 MB 19.4 MB/s eta 0:00:00
+[2026-01-22T19:19:39.473+0000] {subprocess.py:93} INFO - Collecting pillow>=6.2.0
+[2026-01-22T19:19:39.519+0000] {subprocess.py:93} INFO -   Downloading pillow-10.4.0-cp38-cp38-manylinux_2_28_x86_64.whl (4.5 MB)
+[2026-01-22T19:19:39.816+0000] {subprocess.py:93} INFO -      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4.5/4.5 MB 15.4 MB/s eta 0:00:00
+[2026-01-22T19:19:40.697+0000] {subprocess.py:93} INFO - Collecting contourpy>=1.0.1
+[2026-01-22T19:19:40.737+0000] {subprocess.py:93} INFO -   Downloading contourpy-1.1.1-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (301 kB)
+[2026-01-22T19:19:40.757+0000] {subprocess.py:93} INFO -      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 301.1/301.1 kB 18.5 MB/s eta 0:00:00
+[2026-01-22T19:19:40.852+0000] {subprocess.py:93} INFO - Collecting cycler>=0.10
+[2026-01-22T19:19:40.896+0000] {subprocess.py:93} INFO -   Downloading cycler-0.12.1-py3-none-any.whl (8.3 kB)
+[2026-01-22T19:19:42.026+0000] {subprocess.py:93} INFO - Collecting kiwisolver>=1.0.1
+[2026-01-22T19:19:42.067+0000] {subprocess.py:93} INFO -   Downloading kiwisolver-1.4.7-cp38-cp38-manylinux_2_5_x86_64.manylinux1_x86_64.whl (1.2 MB)
+[2026-01-22T19:19:42.145+0000] {subprocess.py:93} INFO -      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.2/1.2 MB 15.8 MB/s eta 0:00:00
+[2026-01-22T19:19:42.178+0000] {subprocess.py:93} INFO - Requirement already satisfied: six>=1.5 in /home/***/.local/lib/python3.8/site-packages (from posthog<3,>=2.1.0->great_expectations) (1.16.0)
+[2026-01-22T19:19:42.271+0000] {subprocess.py:93} INFO - Collecting monotonic>=1.5
+[2026-01-22T19:19:42.310+0000] {subprocess.py:93} INFO -   Downloading monotonic-1.6-py2.py3-none-any.whl (8.2 kB)
+[2026-01-22T19:19:42.322+0000] {subprocess.py:93} INFO - Requirement already satisfied: backoff>=1.10.0 in /home/***/.local/lib/python3.8/site-packages (from posthog<3,>=2.1.0->great_expectations) (1.10.0)
+[2026-01-22T19:19:42.330+0000] {subprocess.py:93} INFO - Requirement already satisfied: pydantic-core==2.6.3 in /home/***/.local/lib/python3.8/site-packages (from pydantic>=1.10.7->great_expectations) (2.6.3)
+[2026-01-22T19:19:42.331+0000] {subprocess.py:93} INFO - Requirement already satisfied: annotated-types>=0.4.0 in /home/***/.local/lib/python3.8/site-packages (from pydantic>=1.10.7->great_expectations) (0.5.0)
+[2026-01-22T19:19:42.357+0000] {subprocess.py:93} INFO - Requirement already satisfied: idna<4,>=2.5 in /home/***/.local/lib/python3.8/site-packages (from requests>=2.20->great_expectations) (3.4)
+[2026-01-22T19:19:42.358+0000] {subprocess.py:93} INFO - Requirement already satisfied: certifi>=2017.4.17 in /home/***/.local/lib/python3.8/site-packages (from requests>=2.20->great_expectations) (2023.7.22)
+[2026-01-22T19:19:43.011+0000] {subprocess.py:93} INFO - Collecting ruamel.yaml.clib>=0.2.7
+[2026-01-22T19:19:43.053+0000] {subprocess.py:93} INFO -   Downloading ruamel.yaml.clib-0.2.8-cp38-cp38-manylinux_2_5_x86_64.manylinux1_x86_64.whl (596 kB)
+[2026-01-22T19:19:43.105+0000] {subprocess.py:93} INFO -      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 596.0/596.0 kB 12.3 MB/s eta 0:00:00
+[2026-01-22T19:19:43.190+0000] {subprocess.py:93} INFO - Requirement already satisfied: greenlet!=0.4.17 in /home/***/.local/lib/python3.8/site-packages (from sqlalchemy<3,>=1.4.0->mlflow) (2.0.2)
+[2026-01-22T19:19:43.230+0000] {subprocess.py:93} INFO - Requirement already satisfied: backports.zoneinfo in /home/***/.local/lib/python3.8/site-packages (from tzlocal>=1.2->great_expectations) (0.2.1)
+[2026-01-22T19:19:43.325+0000] {subprocess.py:93} INFO - Requirement already satisfied: pycparser in /home/***/.local/lib/python3.8/site-packages (from cffi>=1.12->cryptography>=3.2->great_expectations) (2.21)
+[2026-01-22T19:19:45.443+0000] {subprocess.py:93} INFO - Collecting protobuf<6,>=3.12.0
+[2026-01-22T19:19:45.492+0000] {subprocess.py:93} INFO -   Downloading protobuf-5.29.5-cp38-abi3-manylinux2014_x86_64.whl (319 kB)
+[2026-01-22T19:19:45.509+0000] {subprocess.py:93} INFO -      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 319.9/319.9 kB 23.4 MB/s eta 0:00:00
+[2026-01-22T19:19:45.511+0000] {subprocess.py:93} INFO - Requirement already satisfied: google-auth~=2.0 in /home/***/.local/lib/python3.8/site-packages (from databricks-sdk<1,>=0.20.0->mlflow-skinny==2.17.2->mlflow) (2.22.0)
+[2026-01-22T19:19:45.677+0000] {subprocess.py:93} INFO - Collecting gitdb<5,>=4.0.1
+[2026-01-22T19:19:45.720+0000] {subprocess.py:93} INFO -   Downloading gitdb-4.0.12-py3-none-any.whl (62 kB)
+[2026-01-22T19:19:45.732+0000] {subprocess.py:93} INFO -      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 62.8/62.8 kB 5.7 MB/s eta 0:00:00
+[2026-01-22T19:19:45.788+0000] {subprocess.py:93} INFO - Requirement already satisfied: zipp>=0.5 in /home/***/.local/lib/python3.8/site-packages (from importlib-metadata!=4.7.0,<9,>=3.7.0->mlflow-skinny==2.17.2->mlflow) (3.16.2)
+[2026-01-22T19:19:45.934+0000] {subprocess.py:93} INFO - Collecting parso<0.9.0,>=0.8.4
+[2026-01-22T19:19:45.973+0000] {subprocess.py:93} INFO -   Downloading parso-0.8.5-py2.py3-none-any.whl (106 kB)
+[2026-01-22T19:19:45.986+0000] {subprocess.py:93} INFO -      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 106.7/106.7 kB 10.7 MB/s eta 0:00:00
+[2026-01-22T19:19:46.033+0000] {subprocess.py:93} INFO - Requirement already satisfied: deprecated>=1.2.6 in /home/***/.local/lib/python3.8/site-packages (from opentelemetry-api<3,>=1.9.0->mlflow-skinny==2.17.2->mlflow) (1.2.14)
+[2026-01-22T19:19:46.043+0000] {subprocess.py:93} INFO - Requirement already satisfied: opentelemetry-semantic-conventions==0.41b0 in /home/***/.local/lib/python3.8/site-packages (from opentelemetry-sdk<3,>=1.9.0->mlflow-skinny==2.17.2->mlflow) (0.41b0)
+[2026-01-22T19:19:46.151+0000] {subprocess.py:93} INFO - Collecting ptyprocess>=0.5
+[2026-01-22T19:19:46.192+0000] {subprocess.py:93} INFO -   Downloading ptyprocess-0.7.0-py2.py3-none-any.whl (13 kB)
+[2026-01-22T19:19:46.233+0000] {subprocess.py:93} INFO - Requirement already satisfied: wcwidth in /home/***/.local/lib/python3.8/site-packages (from prompt-toolkit!=3.0.37,<3.1.0,>=3.0.30->Ipython>=7.16.3->great_expectations) (0.2.6)
+[2026-01-22T19:19:46.549+0000] {subprocess.py:93} INFO - Collecting asttokens>=2.1.0
+[2026-01-22T19:19:46.597+0000] {subprocess.py:93} INFO -   Downloading asttokens-3.0.1-py3-none-any.whl (27 kB)
+[2026-01-22T19:19:48.971+0000] {subprocess.py:93} INFO - Collecting executing>=1.2.0
+[2026-01-22T19:19:49.012+0000] {subprocess.py:93} INFO -   Downloading executing-2.2.1-py2.py3-none-any.whl (28 kB)
+[2026-01-22T19:19:49.112+0000] {subprocess.py:93} INFO - Collecting pure-eval
+[2026-01-22T19:19:49.152+0000] {subprocess.py:93} INFO -   Downloading pure_eval-0.2.3-py3-none-any.whl (11 kB)
+[2026-01-22T19:19:49.312+0000] {subprocess.py:93} INFO - Collecting smmap<6,>=3.0.1
+[2026-01-22T19:19:49.356+0000] {subprocess.py:93} INFO -   Downloading smmap-5.0.2-py3-none-any.whl (24 kB)
+[2026-01-22T19:19:49.383+0000] {subprocess.py:93} INFO - Requirement already satisfied: pyasn1-modules>=0.2.1 in /home/***/.local/lib/python3.8/site-packages (from google-auth~=2.0->databricks-sdk<1,>=0.20.0->mlflow-skinny==2.17.2->mlflow) (0.2.8)
+[2026-01-22T19:19:49.384+0000] {subprocess.py:93} INFO - Requirement already satisfied: rsa<5,>=3.1.4 in /home/***/.local/lib/python3.8/site-packages (from google-auth~=2.0->databricks-sdk<1,>=0.20.0->mlflow-skinny==2.17.2->mlflow) (4.9)
+[2026-01-22T19:19:49.452+0000] {subprocess.py:93} INFO - Requirement already satisfied: pyasn1<0.5.0,>=0.4.6 in /home/***/.local/lib/python3.8/site-packages (from pyasn1-modules>=0.2.1->google-auth~=2.0->databricks-sdk<1,>=0.20.0->mlflow-skinny==2.17.2->mlflow) (0.4.8)
+[2026-01-22T19:19:54.035+0000] {subprocess.py:93} INFO - Installing collected packages: pure-eval, ptyprocess, pickleshare, monotonic, makefun, backcall, widgetsnbextension, tzlocal, traitlets, tqdm, threadpoolctl, smmap, scipy, ruamel.yaml.clib, protobuf, pillow, pexpect, parso, mistune, kiwisolver, jupyterlab_widgets, joblib, graphql-core, fsspec, fonttools, executing, entrypoints, cycler, contourpy, comm, asttokens, stack-data, scikit-learn, ruamel.yaml, posthog, matplotlib-inline, matplotlib, jedi, graphql-relay, gitdb, Ipython, graphene, gitpython, databricks-sdk, s3fs, mlflow-skinny, ipywidgets, altair, mlflow, great_expectations
+[2026-01-22T19:19:58.499+0000] {subprocess.py:93} INFO -   Attempting uninstall: protobuf
+[2026-01-22T19:19:58.501+0000] {subprocess.py:93} INFO -     Found existing installation: protobuf 4.21.12
+[2026-01-22T19:19:58.559+0000] {subprocess.py:93} INFO -     Uninstalling protobuf-4.21.12:
+[2026-01-22T19:19:58.627+0000] {subprocess.py:93} INFO -       Successfully uninstalled protobuf-4.21.12
+[2026-01-22T19:20:01.001+0000] {subprocess.py:93} INFO -   Attempting uninstall: fsspec
+[2026-01-22T19:20:01.003+0000] {subprocess.py:93} INFO -     Found existing installation: fsspec 2023.9.0
+[2026-01-22T19:20:01.022+0000] {subprocess.py:93} INFO -     Uninstalling fsspec-2023.9.0:
+[2026-01-22T19:20:01.053+0000] {subprocess.py:93} INFO -       Successfully uninstalled fsspec-2023.9.0
+[2026-01-22T19:20:17.467+0000] {subprocess.py:93} INFO - ERROR: pip's dependency resolver does not currently take into account all the packages that are installed. This behaviour is the source of the following dependency conflicts.
+[2026-01-22T19:20:17.468+0000] {subprocess.py:93} INFO - proto-plus 1.22.3 requires protobuf<5.0.0dev,>=3.19.0, but you have protobuf 5.29.5 which is incompatible.
+[2026-01-22T19:20:17.468+0000] {subprocess.py:93} INFO - opentelemetry-proto 1.20.0 requires protobuf<5.0,>=3.19, but you have protobuf 5.29.5 which is incompatible.
+[2026-01-22T19:20:17.468+0000] {subprocess.py:93} INFO - mysql-connector-python 8.1.0 requires protobuf<=4.21.12,>=4.21.1, but you have protobuf 5.29.5 which is incompatible.
+[2026-01-22T19:20:17.468+0000] {subprocess.py:93} INFO - grpc-google-iam-v1 0.12.6 requires protobuf!=3.20.0,!=3.20.1,!=4.21.1,!=4.21.2,!=4.21.3,!=4.21.4,!=4.21.5,<5.0.0dev,>=3.19.5, but you have protobuf 5.29.5 which is incompatible.
+[2026-01-22T19:20:17.468+0000] {subprocess.py:93} INFO - googleapis-common-protos 1.60.0 requires protobuf!=3.20.0,!=3.20.1,!=4.21.1,!=4.21.2,!=4.21.3,!=4.21.4,!=4.21.5,<5.0.0.dev0,>=3.19.5, but you have protobuf 5.29.5 which is incompatible.
+[2026-01-22T19:20:17.468+0000] {subprocess.py:93} INFO - google-cloud-workflows 1.11.0 requires protobuf!=3.20.0,!=3.20.1,!=4.21.0,!=4.21.1,!=4.21.2,!=4.21.3,!=4.21.4,!=4.21.5,<5.0.0dev,>=3.19.5, but you have protobuf 5.29.5 which is incompatible.
+[2026-01-22T19:20:17.468+0000] {subprocess.py:93} INFO - google-cloud-vision 3.4.4 requires protobuf!=3.20.0,!=3.20.1,!=4.21.0,!=4.21.1,!=4.21.2,!=4.21.3,!=4.21.4,!=4.21.5,<5.0.0dev,>=3.19.5, but you have protobuf 5.29.5 which is incompatible.
+[2026-01-22T19:20:17.468+0000] {subprocess.py:93} INFO - google-cloud-videointelligence 2.11.3 requires protobuf!=3.20.0,!=3.20.1,!=4.21.0,!=4.21.1,!=4.21.2,!=4.21.3,!=4.21.4,!=4.21.5,<5.0.0dev,>=3.19.5, but you have protobuf 5.29.5 which is incompatible.
+[2026-01-22T19:20:17.468+0000] {subprocess.py:93} INFO - google-cloud-translate 3.12.0 requires protobuf!=3.20.0,!=3.20.1,!=4.21.0,!=4.21.1,!=4.21.2,!=4.21.3,!=4.21.4,!=4.21.5,<5.0.0dev,>=3.19.5, but you have protobuf 5.29.5 which is incompatible.
+[2026-01-22T19:20:17.468+0000] {subprocess.py:93} INFO - google-cloud-texttospeech 2.14.1 requires protobuf!=3.20.0,!=3.20.1,!=4.21.0,!=4.21.1,!=4.21.2,!=4.21.3,!=4.21.4,!=4.21.5,<5.0.0dev,>=3.19.5, but you have protobuf 5.29.5 which is incompatible.
+[2026-01-22T19:20:17.468+0000] {subprocess.py:93} INFO - google-cloud-tasks 2.14.1 requires protobuf!=3.20.0,!=3.20.1,!=4.21.0,!=4.21.1,!=4.21.2,!=4.21.3,!=4.21.4,!=4.21.5,<5.0.0dev,>=3.19.5, but you have protobuf 5.29.5 which is incompatible.
+[2026-01-22T19:20:17.469+0000] {subprocess.py:93} INFO - google-cloud-storage-transfer 1.9.1 requires protobuf!=3.20.0,!=3.20.1,!=4.21.0,!=4.21.1,!=4.21.2,!=4.21.3,!=4.21.4,!=4.21.5,<5.0.0dev,>=3.19.5, but you have protobuf 5.29.5 which is incompatible.
+[2026-01-22T19:20:17.469+0000] {subprocess.py:93} INFO - google-cloud-speech 2.21.0 requires protobuf!=3.20.0,!=3.20.1,!=4.21.0,!=4.21.1,!=4.21.2,!=4.21.3,!=4.21.4,!=4.21.5,<5.0.0dev,>=3.19.5, but you have protobuf 5.29.5 which is incompatible.
+[2026-01-22T19:20:17.469+0000] {subprocess.py:93} INFO - google-cloud-spanner 3.40.1 requires protobuf!=3.20.0,!=3.20.1,!=4.21.0,!=4.21.1,!=4.21.2,!=4.21.3,!=4.21.4,!=4.21.5,<5.0.0dev,>=3.19.5, but you have protobuf 5.29.5 which is incompatible.
+[2026-01-22T19:20:17.469+0000] {subprocess.py:93} INFO - google-cloud-secret-manager 2.16.3 requires protobuf!=3.20.0,!=3.20.1,!=4.21.0,!=4.21.1,!=4.21.2,!=4.21.3,!=4.21.4,!=4.21.5,<5.0.0dev,>=3.19.5, but you have protobuf 5.29.5 which is incompatible.
+[2026-01-22T19:20:17.469+0000] {subprocess.py:93} INFO - google-cloud-run 0.9.1 requires protobuf!=3.20.0,!=3.20.1,!=4.21.0,!=4.21.1,!=4.21.2,!=4.21.3,!=4.21.4,!=4.21.5,<5.0.0dev,>=3.19.5, but you have protobuf 5.29.5 which is incompatible.
+[2026-01-22T19:20:17.469+0000] {subprocess.py:93} INFO - google-cloud-resource-manager 1.10.3 requires protobuf!=3.20.0,!=3.20.1,!=4.21.0,!=4.21.1,!=4.21.2,!=4.21.3,!=4.21.4,!=4.21.5,<5.0.0dev,>=3.19.5, but you have protobuf 5.29.5 which is incompatible.
+[2026-01-22T19:20:17.469+0000] {subprocess.py:93} INFO - google-cloud-redis 2.13.1 requires protobuf!=3.20.0,!=3.20.1,!=4.21.0,!=4.21.1,!=4.21.2,!=4.21.3,!=4.21.4,!=4.21.5,<5.0.0dev,>=3.19.5, but you have protobuf 5.29.5 which is incompatible.
+[2026-01-22T19:20:17.469+0000] {subprocess.py:93} INFO - google-cloud-pubsub 2.18.3 requires protobuf!=3.20.0,!=3.20.1,!=4.21.0,!=4.21.1,!=4.21.2,!=4.21.3,!=4.21.4,!=4.21.5,<5.0.0dev,>=3.19.5, but you have protobuf 5.29.5 which is incompatible.
+[2026-01-22T19:20:17.469+0000] {subprocess.py:93} INFO - google-cloud-os-login 2.10.0 requires protobuf!=3.20.0,!=3.20.1,!=4.21.0,!=4.21.1,!=4.21.2,!=4.21.3,!=4.21.4,!=4.21.5,<5.0.0dev,>=3.19.5, but you have protobuf 5.29.5 which is incompatible.
+[2026-01-22T19:20:17.469+0000] {subprocess.py:93} INFO - google-cloud-orchestration-*** 1.9.1 requires protobuf!=3.20.0,!=3.20.1,!=4.21.0,!=4.21.1,!=4.21.2,!=4.21.3,!=4.21.4,!=4.21.5,<5.0.0dev,>=3.19.5, but you have protobuf 5.29.5 which is incompatible.
+[2026-01-22T19:20:17.469+0000] {subprocess.py:93} INFO - google-cloud-monitoring 2.15.1 requires protobuf!=3.20.0,!=3.20.1,!=4.21.0,!=4.21.1,!=4.21.2,!=4.21.3,!=4.21.4,!=4.21.5,<5.0.0dev,>=3.19.5, but you have protobuf 5.29.5 which is incompatible.
+[2026-01-22T19:20:17.470+0000] {subprocess.py:93} INFO - google-cloud-memcache 1.7.2 requires protobuf!=3.20.0,!=3.20.1,!=4.21.0,!=4.21.1,!=4.21.2,!=4.21.3,!=4.21.4,!=4.21.5,<5.0.0dev,>=3.19.5, but you have protobuf 5.29.5 which is incompatible.
+[2026-01-22T19:20:17.470+0000] {subprocess.py:93} INFO - google-cloud-logging 3.6.0 requires protobuf!=3.20.0,!=3.20.1,!=4.21.0,!=4.21.1,!=4.21.2,!=4.21.3,!=4.21.4,!=4.21.5,<5.0.0dev,>=3.19.5, but you have protobuf 5.29.5 which is incompatible.
+[2026-01-22T19:20:17.470+0000] {subprocess.py:93} INFO - google-cloud-language 2.11.0 requires protobuf!=3.20.0,!=3.20.1,!=4.21.0,!=4.21.1,!=4.21.2,!=4.21.3,!=4.21.4,!=4.21.5,<5.0.0dev,>=3.19.5, but you have protobuf 5.29.5 which is incompatible.
+[2026-01-22T19:20:17.470+0000] {subprocess.py:93} INFO - google-cloud-kms 2.19.1 requires protobuf!=3.20.0,!=3.20.1,!=4.21.0,!=4.21.1,!=4.21.2,!=4.21.3,!=4.21.4,!=4.21.5,<5.0.0dev,>=3.19.5, but you have protobuf 5.29.5 which is incompatible.
+[2026-01-22T19:20:17.470+0000] {subprocess.py:93} INFO - google-cloud-dlp 3.12.2 requires protobuf!=3.20.0,!=3.20.1,!=4.21.0,!=4.21.1,!=4.21.2,!=4.21.3,!=4.21.4,!=4.21.5,<5.0.0dev,>=3.19.5, but you have protobuf 5.29.5 which is incompatible.
+[2026-01-22T19:20:17.470+0000] {subprocess.py:93} INFO - google-cloud-dataproc 5.4.3 requires protobuf!=3.20.0,!=3.20.1,!=4.21.0,!=4.21.1,!=4.21.2,!=4.21.3,!=4.21.4,!=4.21.5,<5.0.0dev,>=3.19.5, but you have protobuf 5.29.5 which is incompatible.
+[2026-01-22T19:20:17.470+0000] {subprocess.py:93} INFO - google-cloud-dataproc-metastore 1.12.0 requires protobuf!=3.20.0,!=3.20.1,!=4.21.0,!=4.21.1,!=4.21.2,!=4.21.3,!=4.21.4,!=4.21.5,<5.0.0dev,>=3.19.5, but you have protobuf 5.29.5 which is incompatible.
+[2026-01-22T19:20:17.470+0000] {subprocess.py:93} INFO - google-cloud-dataplex 1.6.2 requires protobuf!=3.20.0,!=3.20.1,!=4.21.0,!=4.21.1,!=4.21.2,!=4.21.3,!=4.21.4,!=4.21.5,<5.0.0dev,>=3.19.5, but you have protobuf 5.29.5 which is incompatible.
+[2026-01-22T19:20:17.470+0000] {subprocess.py:93} INFO - google-cloud-dataform 0.5.2 requires protobuf!=3.20.0,!=3.20.1,!=4.21.0,!=4.21.1,!=4.21.2,!=4.21.3,!=4.21.4,!=4.21.5,<5.0.0dev,>=3.19.5, but you have protobuf 5.29.5 which is incompatible.
+[2026-01-22T19:20:17.470+0000] {subprocess.py:93} INFO - google-cloud-dataflow-client 0.8.4 requires protobuf!=3.20.0,!=3.20.1,!=4.21.0,!=4.21.1,!=4.21.2,!=4.21.3,!=4.21.4,!=4.21.5,<5.0.0dev,>=3.19.5, but you have protobuf 5.29.5 which is incompatible.
+[2026-01-22T19:20:17.470+0000] {subprocess.py:93} INFO - google-cloud-datacatalog 3.15.0 requires protobuf!=3.20.0,!=3.20.1,!=4.21.0,!=4.21.1,!=4.21.2,!=4.21.3,!=4.21.4,!=4.21.5,<5.0.0dev,>=3.19.5, but you have protobuf 5.29.5 which is incompatible.
+[2026-01-22T19:20:17.470+0000] {subprocess.py:93} INFO - google-cloud-container 2.30.0 requires protobuf!=3.20.0,!=3.20.1,!=4.21.0,!=4.21.1,!=4.21.2,!=4.21.3,!=4.21.4,!=4.21.5,<5.0.0dev,>=3.19.5, but you have protobuf 5.29.5 which is incompatible.
+[2026-01-22T19:20:17.470+0000] {subprocess.py:93} INFO - google-cloud-compute 1.14.0 requires protobuf!=3.20.0,!=3.20.1,!=4.21.0,!=4.21.1,!=4.21.2,!=4.21.3,!=4.21.4,!=4.21.5,<5.0.0dev,>=3.19.5, but you have protobuf 5.29.5 which is incompatible.
+[2026-01-22T19:20:17.470+0000] {subprocess.py:93} INFO - google-cloud-build 3.20.0 requires protobuf!=3.20.0,!=3.20.1,!=4.21.0,!=4.21.1,!=4.21.2,!=4.21.3,!=4.21.4,!=4.21.5,<5.0.0dev,>=3.19.5, but you have protobuf 5.29.5 which is incompatible.
+[2026-01-22T19:20:17.470+0000] {subprocess.py:93} INFO - google-cloud-bigtable 2.21.0 requires protobuf!=3.20.0,!=3.20.1,!=4.21.0,!=4.21.1,!=4.21.2,!=4.21.3,!=4.21.4,!=4.21.5,<5.0.0dev,>=3.19.5, but you have protobuf 5.29.5 which is incompatible.
+[2026-01-22T19:20:17.471+0000] {subprocess.py:93} INFO - google-cloud-bigquery 3.11.4 requires protobuf!=3.20.0,!=3.20.1,!=4.21.0,!=4.21.1,!=4.21.2,!=4.21.3,!=4.21.4,!=4.21.5,<5.0.0dev,>=3.19.5, but you have protobuf 5.29.5 which is incompatible.
+[2026-01-22T19:20:17.471+0000] {subprocess.py:93} INFO - google-cloud-bigquery-storage 2.22.0 requires protobuf!=3.20.0,!=3.20.1,!=4.21.0,!=4.21.1,!=4.21.2,!=4.21.3,!=4.21.4,!=4.21.5,<5.0.0dev,>=3.19.5, but you have protobuf 5.29.5 which is incompatible.
+[2026-01-22T19:20:17.471+0000] {subprocess.py:93} INFO - google-cloud-bigquery-datatransfer 3.12.0 requires protobuf!=3.20.0,!=3.20.1,!=4.21.0,!=4.21.1,!=4.21.2,!=4.21.3,!=4.21.4,!=4.21.5,<5.0.0dev,>=3.19.5, but you have protobuf 5.29.5 which is incompatible.
+[2026-01-22T19:20:17.471+0000] {subprocess.py:93} INFO - google-cloud-batch 0.16.0 requires protobuf!=3.20.0,!=3.20.1,!=4.21.0,!=4.21.1,!=4.21.2,!=4.21.3,!=4.21.4,!=4.21.5,<5.0.0dev,>=3.19.5, but you have protobuf 5.29.5 which is incompatible.
+[2026-01-22T19:20:17.471+0000] {subprocess.py:93} INFO - google-cloud-automl 2.11.2 requires protobuf!=3.20.0,!=3.20.1,!=4.21.0,!=4.21.1,!=4.21.2,!=4.21.3,!=4.21.4,!=4.21.5,<5.0.0dev,>=3.19.5, but you have protobuf 5.29.5 which is incompatible.
+[2026-01-22T19:20:17.471+0000] {subprocess.py:93} INFO - google-cloud-audit-log 0.2.5 requires protobuf!=3.20.0,!=3.20.1,!=4.21.1,!=4.21.2,!=4.21.3,!=4.21.4,!=4.21.5,<5.0.0dev,>=3.19.5, but you have protobuf 5.29.5 which is incompatible.
+[2026-01-22T19:20:17.471+0000] {subprocess.py:93} INFO - google-cloud-appengine-logging 1.3.1 requires protobuf!=3.20.0,!=3.20.1,!=4.21.0,!=4.21.1,!=4.21.2,!=4.21.3,!=4.21.4,!=4.21.5,<5.0.0dev,>=3.19.5, but you have protobuf 5.29.5 which is incompatible.
+[2026-01-22T19:20:17.471+0000] {subprocess.py:93} INFO - google-cloud-aiplatform 1.31.1 requires protobuf!=3.20.0,!=3.20.1,!=4.21.0,!=4.21.1,!=4.21.2,!=4.21.3,!=4.21.4,!=4.21.5,<5.0.0dev,>=3.19.5, but you have protobuf 5.29.5 which is incompatible.
+[2026-01-22T19:20:17.471+0000] {subprocess.py:93} INFO - google-api-core 2.11.1 requires protobuf!=3.20.0,!=3.20.1,!=4.21.0,!=4.21.1,!=4.21.2,!=4.21.3,!=4.21.4,!=4.21.5,<5.0.0.dev0,>=3.19.5, but you have protobuf 5.29.5 which is incompatible.
+[2026-01-22T19:20:17.471+0000] {subprocess.py:93} INFO - google-ads 21.3.0 requires protobuf!=3.18.*,!=3.19.*,<5.0.0dev,>=3.12.0, but you have protobuf 5.29.5 which is incompatible.
+[2026-01-22T19:20:17.471+0000] {subprocess.py:93} INFO - Successfully installed Ipython-8.12.3 altair-4.2.2 asttokens-3.0.1 backcall-0.2.0 comm-0.2.3 contourpy-1.1.1 cycler-0.12.1 databricks-sdk-0.79.0 entrypoints-0.4 executing-2.2.1 fonttools-4.57.0 fsspec-2024.10.0 gitdb-4.0.12 gitpython-3.1.46 graphene-3.4.3 graphql-core-3.2.7 graphql-relay-3.2.0 great_expectations-1.1.0 ipywidgets-8.1.8 jedi-0.19.2 joblib-1.4.2 jupyterlab_widgets-3.0.16 kiwisolver-1.4.7 makefun-1.16.0 matplotlib-3.7.5 matplotlib-inline-0.1.7 mistune-3.2.0 mlflow-2.17.2 mlflow-skinny-2.17.2 monotonic-1.6 parso-0.8.5 pexpect-4.9.0 pickleshare-0.7.5 pillow-10.4.0 posthog-2.5.0 protobuf-5.29.5 ptyprocess-0.7.0 pure-eval-0.2.3 ruamel.yaml-0.18.16 ruamel.yaml.clib-0.2.8 s3fs-2024.10.0 scikit-learn-1.3.2 scipy-1.10.1 smmap-5.0.2 stack-data-0.6.3 threadpoolctl-3.5.0 tqdm-4.67.1 traitlets-5.14.3 tzlocal-5.2 widgetsnbextension-4.0.15
+[2026-01-22T19:20:17.480+0000] {subprocess.py:93} INFO - 
+[2026-01-22T19:20:17.481+0000] {subprocess.py:93} INFO - [notice] A new release of pip is available: 23.0.1 -> 25.0.1
+[2026-01-22T19:20:17.481+0000] {subprocess.py:93} INFO - [notice] To update, run: pip install --upgrade pip
+[2026-01-22T19:20:18.144+0000] {subprocess.py:97} INFO - Command exited with return code 0
+[2026-01-22T19:20:18.175+0000] {taskinstance.py:1398} INFO - Marking task as SUCCESS. dag_id=3_mlops_full_pipeline, task_id=install_requirements, execution_date=20260122T191910, start_date=20260122T191911, end_date=20260122T192018
+[2026-01-22T19:20:18.266+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 0
+[2026-01-22T19:20:18.286+0000] {taskinstance.py:2776} INFO - 1 downstream tasks scheduled from follow-on schedule check

@@ -1,0 +1,17 @@
+[2026-01-22T21:05:06.518+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: 3_mlops_full_pipeline.spark_silver_to_gold manual__2026-01-22T21:04:50.984862+00:00 [queued]>
+[2026-01-22T21:05:06.528+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: 3_mlops_full_pipeline.spark_silver_to_gold manual__2026-01-22T21:04:50.984862+00:00 [queued]>
+[2026-01-22T21:05:06.528+0000] {taskinstance.py:1359} INFO - Starting attempt 1 of 1
+[2026-01-22T21:05:06.543+0000] {taskinstance.py:1380} INFO - Executing <Task(BashOperator): spark_silver_to_gold> on 2026-01-22 21:04:50.984862+00:00
+[2026-01-22T21:05:06.549+0000] {standard_task_runner.py:57} INFO - Started process 4094 to run task
+[2026-01-22T21:05:06.552+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', '3_mlops_full_pipeline', 'spark_silver_to_gold', 'manual__2026-01-22T21:04:50.984862+00:00', '--job-id', '59', '--raw', '--subdir', 'DAGS_FOLDER/mlops_pipeline.py', '--cfg-path', '/tmp/tmpir9r79ip']
+[2026-01-22T21:05:06.554+0000] {standard_task_runner.py:85} INFO - Job 59: Subtask spark_silver_to_gold
+[2026-01-22T21:05:06.602+0000] {task_command.py:415} INFO - Running <TaskInstance: 3_mlops_full_pipeline.spark_silver_to_gold manual__2026-01-22T21:04:50.984862+00:00 [running]> on host 4fbdf2312f2b
+[2026-01-22T21:05:06.717+0000] {taskinstance.py:1660} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='3_mlops_full_pipeline' AIRFLOW_CTX_TASK_ID='spark_silver_to_gold' AIRFLOW_CTX_EXECUTION_DATE='2026-01-22T21:04:50.984862+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-01-22T21:04:50.984862+00:00'
+[2026-01-22T21:05:06.719+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2026-01-22T21:05:06.720+0000] {subprocess.py:75} INFO - Running command: ['/bin/bash', '-c', 'echo "PAMIĘTAJ: Uruchom Spark job ręcznie w terminalu, lub użyj SparkSubmitOperator w wersji PRO."']
+[2026-01-22T21:05:06.734+0000] {subprocess.py:86} INFO - Output:
+[2026-01-22T21:05:06.736+0000] {subprocess.py:93} INFO - PAMIĘTAJ: Uruchom Spark job ręcznie w terminalu, lub użyj SparkSubmitOperator w wersji PRO.
+[2026-01-22T21:05:06.737+0000] {subprocess.py:97} INFO - Command exited with return code 0
+[2026-01-22T21:05:06.770+0000] {taskinstance.py:1398} INFO - Marking task as SUCCESS. dag_id=3_mlops_full_pipeline, task_id=spark_silver_to_gold, execution_date=20260122T210450, start_date=20260122T210506, end_date=20260122T210506
+[2026-01-22T21:05:06.805+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 0
+[2026-01-22T21:05:06.830+0000] {taskinstance.py:2776} INFO - 0 downstream tasks scheduled from follow-on schedule check

@@ -1,0 +1,710 @@
+[2026-01-23T00:00:10.244+0000] {processor.py:157} INFO - Started process (PID=1928) to work on /opt/airflow/dags/gx_validate.py
+[2026-01-23T00:00:10.245+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/gx_validate.py for tasks to queue
+[2026-01-23T00:00:10.246+0000] {logging_mixin.py:151} INFO - [2026-01-23T00:00:10.246+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/gx_validate.py
+[2026-01-23T00:00:10.556+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/gx_validate.py
+[2026-01-23T00:00:10.578+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/gx_validate.py took 0.338 seconds
+[2026-01-23T00:00:40.639+0000] {processor.py:157} INFO - Started process (PID=2007) to work on /opt/airflow/dags/gx_validate.py
+[2026-01-23T00:00:40.641+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/gx_validate.py for tasks to queue
+[2026-01-23T00:00:40.642+0000] {logging_mixin.py:151} INFO - [2026-01-23T00:00:40.642+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/gx_validate.py
+[2026-01-23T00:00:40.896+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/gx_validate.py
+[2026-01-23T00:00:40.915+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/gx_validate.py took 0.278 seconds
+[2026-01-23T00:01:11.748+0000] {processor.py:157} INFO - Started process (PID=2028) to work on /opt/airflow/dags/gx_validate.py
+[2026-01-23T00:01:11.749+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/gx_validate.py for tasks to queue
+[2026-01-23T00:01:11.750+0000] {logging_mixin.py:151} INFO - [2026-01-23T00:01:11.750+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/gx_validate.py
+[2026-01-23T00:01:11.990+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/gx_validate.py
+[2026-01-23T00:01:12.004+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/gx_validate.py took 0.259 seconds
+[2026-01-23T00:01:42.039+0000] {processor.py:157} INFO - Started process (PID=2049) to work on /opt/airflow/dags/gx_validate.py
+[2026-01-23T00:01:42.040+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/gx_validate.py for tasks to queue
+[2026-01-23T00:01:42.041+0000] {logging_mixin.py:151} INFO - [2026-01-23T00:01:42.041+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/gx_validate.py
+[2026-01-23T00:01:42.258+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/gx_validate.py
+[2026-01-23T00:01:42.272+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/gx_validate.py took 0.236 seconds
+[2026-01-23T00:02:13.147+0000] {processor.py:157} INFO - Started process (PID=2070) to work on /opt/airflow/dags/gx_validate.py
+[2026-01-23T00:02:13.149+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/gx_validate.py for tasks to queue
+[2026-01-23T00:02:13.150+0000] {logging_mixin.py:151} INFO - [2026-01-23T00:02:13.149+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/gx_validate.py
+[2026-01-23T00:02:13.405+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/gx_validate.py
+[2026-01-23T00:02:13.423+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/gx_validate.py took 0.279 seconds
+[2026-01-23T00:02:44.349+0000] {processor.py:157} INFO - Started process (PID=2091) to work on /opt/airflow/dags/gx_validate.py
+[2026-01-23T00:02:44.351+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/gx_validate.py for tasks to queue
+[2026-01-23T00:02:44.352+0000] {logging_mixin.py:151} INFO - [2026-01-23T00:02:44.352+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/gx_validate.py
+[2026-01-23T00:02:44.620+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/gx_validate.py
+[2026-01-23T00:02:44.636+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/gx_validate.py took 0.290 seconds
+[2026-01-23T00:03:15.162+0000] {processor.py:157} INFO - Started process (PID=2112) to work on /opt/airflow/dags/gx_validate.py
+[2026-01-23T00:03:15.164+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/gx_validate.py for tasks to queue
+[2026-01-23T00:03:15.165+0000] {logging_mixin.py:151} INFO - [2026-01-23T00:03:15.165+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/gx_validate.py
+[2026-01-23T00:03:15.412+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/gx_validate.py
+[2026-01-23T00:03:15.427+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/gx_validate.py took 0.269 seconds
+[2026-01-23T00:03:46.377+0000] {processor.py:157} INFO - Started process (PID=2133) to work on /opt/airflow/dags/gx_validate.py
+[2026-01-23T00:03:46.379+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/gx_validate.py for tasks to queue
+[2026-01-23T00:03:46.380+0000] {logging_mixin.py:151} INFO - [2026-01-23T00:03:46.379+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/gx_validate.py
+[2026-01-23T00:03:46.651+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/gx_validate.py
+[2026-01-23T00:03:46.669+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/gx_validate.py took 0.295 seconds
+[2026-01-23T00:04:16.837+0000] {processor.py:157} INFO - Started process (PID=2154) to work on /opt/airflow/dags/gx_validate.py
+[2026-01-23T00:04:16.838+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/gx_validate.py for tasks to queue
+[2026-01-23T00:04:16.839+0000] {logging_mixin.py:151} INFO - [2026-01-23T00:04:16.838+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/gx_validate.py
+[2026-01-23T00:04:17.072+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/gx_validate.py
+[2026-01-23T00:04:17.087+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/gx_validate.py took 0.254 seconds
+[2026-01-23T00:04:47.218+0000] {processor.py:157} INFO - Started process (PID=2175) to work on /opt/airflow/dags/gx_validate.py
+[2026-01-23T00:04:47.219+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/gx_validate.py for tasks to queue
+[2026-01-23T00:04:47.221+0000] {logging_mixin.py:151} INFO - [2026-01-23T00:04:47.220+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/gx_validate.py
+[2026-01-23T00:04:47.488+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/gx_validate.py
+[2026-01-23T00:04:47.507+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/gx_validate.py took 0.293 seconds
+[2026-01-23T00:05:17.660+0000] {processor.py:157} INFO - Started process (PID=2196) to work on /opt/airflow/dags/gx_validate.py
+[2026-01-23T00:05:17.662+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/gx_validate.py for tasks to queue
+[2026-01-23T00:05:17.663+0000] {logging_mixin.py:151} INFO - [2026-01-23T00:05:17.662+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/gx_validate.py
+[2026-01-23T00:05:17.947+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/gx_validate.py
+[2026-01-23T00:05:17.966+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/gx_validate.py took 0.309 seconds
+[2026-01-23T00:05:48.470+0000] {processor.py:157} INFO - Started process (PID=2217) to work on /opt/airflow/dags/gx_validate.py
+[2026-01-23T00:05:48.472+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/gx_validate.py for tasks to queue
+[2026-01-23T00:05:48.473+0000] {logging_mixin.py:151} INFO - [2026-01-23T00:05:48.472+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/gx_validate.py
+[2026-01-23T00:05:48.768+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/gx_validate.py
+[2026-01-23T00:05:48.790+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/gx_validate.py took 0.324 seconds
+[2026-01-23T00:06:19.283+0000] {processor.py:157} INFO - Started process (PID=2238) to work on /opt/airflow/dags/gx_validate.py
+[2026-01-23T00:06:19.286+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/gx_validate.py for tasks to queue
+[2026-01-23T00:06:19.287+0000] {logging_mixin.py:151} INFO - [2026-01-23T00:06:19.287+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/gx_validate.py
+[2026-01-23T00:06:19.806+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/gx_validate.py
+[2026-01-23T00:06:19.831+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/gx_validate.py took 0.553 seconds
+[2026-01-23T00:06:50.488+0000] {processor.py:157} INFO - Started process (PID=2301) to work on /opt/airflow/dags/gx_validate.py
+[2026-01-23T00:06:50.490+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/gx_validate.py for tasks to queue
+[2026-01-23T00:06:50.492+0000] {logging_mixin.py:151} INFO - [2026-01-23T00:06:50.491+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/gx_validate.py
+[2026-01-23T00:06:50.855+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/gx_validate.py
+[2026-01-23T00:06:50.876+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/gx_validate.py took 0.395 seconds
+[2026-01-23T00:07:20.924+0000] {processor.py:157} INFO - Started process (PID=2359) to work on /opt/airflow/dags/gx_validate.py
+[2026-01-23T00:07:20.925+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/gx_validate.py for tasks to queue
+[2026-01-23T00:07:20.926+0000] {logging_mixin.py:151} INFO - [2026-01-23T00:07:20.926+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/gx_validate.py
+[2026-01-23T00:07:21.294+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/gx_validate.py
+[2026-01-23T00:07:21.314+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/gx_validate.py took 0.394 seconds
+[2026-01-23T00:07:52.074+0000] {processor.py:157} INFO - Started process (PID=2393) to work on /opt/airflow/dags/gx_validate.py
+[2026-01-23T00:07:52.086+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/gx_validate.py for tasks to queue
+[2026-01-23T00:07:52.087+0000] {logging_mixin.py:151} INFO - [2026-01-23T00:07:52.087+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/gx_validate.py
+[2026-01-23T00:07:52.589+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/gx_validate.py
+[2026-01-23T00:07:52.603+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/gx_validate.py took 0.533 seconds
+[2026-01-23T00:08:22.802+0000] {processor.py:157} INFO - Started process (PID=2524) to work on /opt/airflow/dags/gx_validate.py
+[2026-01-23T00:08:22.804+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/gx_validate.py for tasks to queue
+[2026-01-23T00:08:22.805+0000] {logging_mixin.py:151} INFO - [2026-01-23T00:08:22.804+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/gx_validate.py
+[2026-01-23T00:08:23.061+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/gx_validate.py
+[2026-01-23T00:08:23.076+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/gx_validate.py took 0.277 seconds
+[2026-01-23T00:08:53.595+0000] {processor.py:157} INFO - Started process (PID=2557) to work on /opt/airflow/dags/gx_validate.py
+[2026-01-23T00:08:53.596+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/gx_validate.py for tasks to queue
+[2026-01-23T00:08:53.597+0000] {logging_mixin.py:151} INFO - [2026-01-23T00:08:53.596+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/gx_validate.py
+[2026-01-23T00:08:53.842+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/gx_validate.py
+[2026-01-23T00:08:53.856+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/gx_validate.py took 0.264 seconds
+[2026-01-23T00:09:24.223+0000] {processor.py:157} INFO - Started process (PID=2578) to work on /opt/airflow/dags/gx_validate.py
+[2026-01-23T00:09:24.224+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/gx_validate.py for tasks to queue
+[2026-01-23T00:09:24.225+0000] {logging_mixin.py:151} INFO - [2026-01-23T00:09:24.225+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/gx_validate.py
+[2026-01-23T00:09:24.451+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/gx_validate.py
+[2026-01-23T00:09:24.466+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/gx_validate.py took 0.246 seconds
+[2026-01-23T00:09:55.034+0000] {processor.py:157} INFO - Started process (PID=2599) to work on /opt/airflow/dags/gx_validate.py
+[2026-01-23T00:09:55.035+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/gx_validate.py for tasks to queue
+[2026-01-23T00:09:55.035+0000] {logging_mixin.py:151} INFO - [2026-01-23T00:09:55.035+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/gx_validate.py
+[2026-01-23T00:09:55.295+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/gx_validate.py
+[2026-01-23T00:09:55.312+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/gx_validate.py took 0.282 seconds
+[2026-01-23T00:11:31.452+0000] {processor.py:157} INFO - Started process (PID=181) to work on /opt/airflow/dags/gx_validate.py
+[2026-01-23T00:11:31.453+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/gx_validate.py for tasks to queue
+[2026-01-23T00:11:31.455+0000] {logging_mixin.py:151} INFO - [2026-01-23T00:11:31.454+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/gx_validate.py
+[2026-01-23T00:11:32.792+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/gx_validate.py
+[2026-01-23T00:11:32.804+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/gx_validate.py took 1.358 seconds
+[2026-01-23T00:12:03.150+0000] {processor.py:157} INFO - Started process (PID=250) to work on /opt/airflow/dags/gx_validate.py
+[2026-01-23T00:12:03.153+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/gx_validate.py for tasks to queue
+[2026-01-23T00:12:03.155+0000] {logging_mixin.py:151} INFO - [2026-01-23T00:12:03.154+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/gx_validate.py
+[2026-01-23T00:12:06.807+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/gx_validate.py
+[2026-01-23T00:12:06.825+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/gx_validate.py took 3.681 seconds
+[2026-01-23T00:12:37.235+0000] {processor.py:157} INFO - Started process (PID=292) to work on /opt/airflow/dags/gx_validate.py
+[2026-01-23T00:12:37.236+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/gx_validate.py for tasks to queue
+[2026-01-23T00:12:37.237+0000] {logging_mixin.py:151} INFO - [2026-01-23T00:12:37.237+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/gx_validate.py
+[2026-01-23T00:12:37.717+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/gx_validate.py
+[2026-01-23T00:12:37.730+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/gx_validate.py took 0.499 seconds
+[2026-01-23T00:13:08.499+0000] {processor.py:157} INFO - Started process (PID=347) to work on /opt/airflow/dags/gx_validate.py
+[2026-01-23T00:13:08.509+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/gx_validate.py for tasks to queue
+[2026-01-23T00:13:08.510+0000] {logging_mixin.py:151} INFO - [2026-01-23T00:13:08.510+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/gx_validate.py
+[2026-01-23T00:13:10.828+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/gx_validate.py
+[2026-01-23T00:13:11.198+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/gx_validate.py took 2.706 seconds
+[2026-01-23T00:13:41.323+0000] {processor.py:157} INFO - Started process (PID=368) to work on /opt/airflow/dags/gx_validate.py
+[2026-01-23T00:13:41.325+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/gx_validate.py for tasks to queue
+[2026-01-23T00:13:41.326+0000] {logging_mixin.py:151} INFO - [2026-01-23T00:13:41.326+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/gx_validate.py
+[2026-01-23T00:13:42.082+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/gx_validate.py
+[2026-01-23T00:13:42.109+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/gx_validate.py took 0.791 seconds
+[2026-01-23T00:14:12.260+0000] {processor.py:157} INFO - Started process (PID=402) to work on /opt/airflow/dags/gx_validate.py
+[2026-01-23T00:14:12.261+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/gx_validate.py for tasks to queue
+[2026-01-23T00:14:12.263+0000] {logging_mixin.py:151} INFO - [2026-01-23T00:14:12.262+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/gx_validate.py
+[2026-01-23T00:14:12.774+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/gx_validate.py
+[2026-01-23T00:14:12.789+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/gx_validate.py took 0.535 seconds
+[2026-01-23T00:14:42.996+0000] {processor.py:157} INFO - Started process (PID=534) to work on /opt/airflow/dags/gx_validate.py
+[2026-01-23T00:14:42.998+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/gx_validate.py for tasks to queue
+[2026-01-23T00:14:42.999+0000] {logging_mixin.py:151} INFO - [2026-01-23T00:14:42.999+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/gx_validate.py
+[2026-01-23T00:14:43.521+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/gx_validate.py
+[2026-01-23T00:14:43.542+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/gx_validate.py took 0.550 seconds
+[2026-01-23T00:15:13.335+0000] {processor.py:157} INFO - Started process (PID=567) to work on /opt/airflow/dags/gx_validate.py
+[2026-01-23T00:15:13.340+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/gx_validate.py for tasks to queue
+[2026-01-23T00:15:13.342+0000] {logging_mixin.py:151} INFO - [2026-01-23T00:15:13.341+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/gx_validate.py
+[2026-01-23T00:15:13.698+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/gx_validate.py
+[2026-01-23T00:15:13.717+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/gx_validate.py took 0.386 seconds
+[2026-01-23T00:15:43.965+0000] {processor.py:157} INFO - Started process (PID=588) to work on /opt/airflow/dags/gx_validate.py
+[2026-01-23T00:15:43.967+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/gx_validate.py for tasks to queue
+[2026-01-23T00:15:43.968+0000] {logging_mixin.py:151} INFO - [2026-01-23T00:15:43.967+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/gx_validate.py
+[2026-01-23T00:15:44.250+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/gx_validate.py
+[2026-01-23T00:15:44.265+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/gx_validate.py took 0.305 seconds
+[2026-01-23T00:16:14.648+0000] {processor.py:157} INFO - Started process (PID=609) to work on /opt/airflow/dags/gx_validate.py
+[2026-01-23T00:16:14.649+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/gx_validate.py for tasks to queue
+[2026-01-23T00:16:14.651+0000] {logging_mixin.py:151} INFO - [2026-01-23T00:16:14.650+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/gx_validate.py
+[2026-01-23T00:16:14.990+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/gx_validate.py
+[2026-01-23T00:16:15.011+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/gx_validate.py took 0.367 seconds
+[2026-01-23T00:16:45.406+0000] {processor.py:157} INFO - Started process (PID=630) to work on /opt/airflow/dags/gx_validate.py
+[2026-01-23T00:16:45.407+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/gx_validate.py for tasks to queue
+[2026-01-23T00:16:45.408+0000] {logging_mixin.py:151} INFO - [2026-01-23T00:16:45.407+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/gx_validate.py
+[2026-01-23T00:16:45.672+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/gx_validate.py
+[2026-01-23T00:16:45.690+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/gx_validate.py took 0.287 seconds
+[2026-01-23T00:17:16.095+0000] {processor.py:157} INFO - Started process (PID=651) to work on /opt/airflow/dags/gx_validate.py
+[2026-01-23T00:17:16.096+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/gx_validate.py for tasks to queue
+[2026-01-23T00:17:16.097+0000] {logging_mixin.py:151} INFO - [2026-01-23T00:17:16.097+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/gx_validate.py
+[2026-01-23T00:17:16.362+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/gx_validate.py
+[2026-01-23T00:17:16.379+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/gx_validate.py took 0.288 seconds
+[2026-01-23T00:17:46.844+0000] {processor.py:157} INFO - Started process (PID=672) to work on /opt/airflow/dags/gx_validate.py
+[2026-01-23T00:17:46.846+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/gx_validate.py for tasks to queue
+[2026-01-23T00:17:46.847+0000] {logging_mixin.py:151} INFO - [2026-01-23T00:17:46.847+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/gx_validate.py
+[2026-01-23T00:17:47.108+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/gx_validate.py
+[2026-01-23T00:17:47.124+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/gx_validate.py took 0.284 seconds
+[2026-01-23T08:15:23.801+0000] {processor.py:157} INFO - Started process (PID=179) to work on /opt/airflow/dags/gx_validate.py
+[2026-01-23T08:15:23.845+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/gx_validate.py for tasks to queue
+[2026-01-23T08:15:23.845+0000] {logging_mixin.py:151} INFO - [2026-01-23T08:15:23.845+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/gx_validate.py
+[2026-01-23T08:15:26.021+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/gx_validate.py
+[2026-01-23T08:15:26.066+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/gx_validate.py took 2.268 seconds
+[2026-01-23T08:15:56.170+0000] {processor.py:157} INFO - Started process (PID=208) to work on /opt/airflow/dags/gx_validate.py
+[2026-01-23T08:15:56.173+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/gx_validate.py for tasks to queue
+[2026-01-23T08:15:56.176+0000] {logging_mixin.py:151} INFO - [2026-01-23T08:15:56.175+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/gx_validate.py
+[2026-01-23T08:15:56.815+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/gx_validate.py
+[2026-01-23T08:15:56.840+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/gx_validate.py took 0.674 seconds
+[2026-01-23T08:16:26.952+0000] {processor.py:157} INFO - Started process (PID=286) to work on /opt/airflow/dags/gx_validate.py
+[2026-01-23T08:16:26.957+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/gx_validate.py for tasks to queue
+[2026-01-23T08:16:26.958+0000] {logging_mixin.py:151} INFO - [2026-01-23T08:16:26.958+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/gx_validate.py
+[2026-01-23T08:16:28.210+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/gx_validate.py
+[2026-01-23T08:16:28.224+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/gx_validate.py took 1.279 seconds
+[2026-01-23T08:16:58.428+0000] {processor.py:157} INFO - Started process (PID=318) to work on /opt/airflow/dags/gx_validate.py
+[2026-01-23T08:16:58.429+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/gx_validate.py for tasks to queue
+[2026-01-23T08:16:58.430+0000] {logging_mixin.py:151} INFO - [2026-01-23T08:16:58.429+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/gx_validate.py
+[2026-01-23T08:16:58.827+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/gx_validate.py
+[2026-01-23T08:16:58.840+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/gx_validate.py took 0.416 seconds
+[2026-01-23T08:17:28.906+0000] {processor.py:157} INFO - Started process (PID=370) to work on /opt/airflow/dags/gx_validate.py
+[2026-01-23T08:17:28.908+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/gx_validate.py for tasks to queue
+[2026-01-23T08:17:28.909+0000] {logging_mixin.py:151} INFO - [2026-01-23T08:17:28.909+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/gx_validate.py
+[2026-01-23T08:17:29.439+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/gx_validate.py
+[2026-01-23T08:17:29.458+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/gx_validate.py took 0.559 seconds
+[2026-01-23T08:18:00.309+0000] {processor.py:157} INFO - Started process (PID=391) to work on /opt/airflow/dags/gx_validate.py
+[2026-01-23T08:18:00.311+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/gx_validate.py for tasks to queue
+[2026-01-23T08:18:00.311+0000] {logging_mixin.py:151} INFO - [2026-01-23T08:18:00.311+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/gx_validate.py
+[2026-01-23T08:18:00.563+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/gx_validate.py
+[2026-01-23T08:18:00.577+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/gx_validate.py took 0.271 seconds
+[2026-01-23T08:19:43.731+0000] {processor.py:157} INFO - Started process (PID=185) to work on /opt/airflow/dags/gx_validate.py
+[2026-01-23T08:19:43.732+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/gx_validate.py for tasks to queue
+[2026-01-23T08:19:43.733+0000] {logging_mixin.py:151} INFO - [2026-01-23T08:19:43.733+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/gx_validate.py
+[2026-01-23T08:19:44.761+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/gx_validate.py
+[2026-01-23T08:19:44.773+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/gx_validate.py took 1.046 seconds
+[2026-01-23T08:20:15.218+0000] {processor.py:157} INFO - Started process (PID=220) to work on /opt/airflow/dags/gx_validate.py
+[2026-01-23T08:20:15.220+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/gx_validate.py for tasks to queue
+[2026-01-23T08:20:15.221+0000] {logging_mixin.py:151} INFO - [2026-01-23T08:20:15.221+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/gx_validate.py
+[2026-01-23T08:20:15.830+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/gx_validate.py
+[2026-01-23T08:20:15.843+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/gx_validate.py took 0.630 seconds
+[2026-01-23T08:20:46.542+0000] {processor.py:157} INFO - Started process (PID=246) to work on /opt/airflow/dags/gx_validate.py
+[2026-01-23T08:20:46.543+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/gx_validate.py for tasks to queue
+[2026-01-23T08:20:46.544+0000] {logging_mixin.py:151} INFO - [2026-01-23T08:20:46.544+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/gx_validate.py
+[2026-01-23T08:20:47.009+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/gx_validate.py
+[2026-01-23T08:20:47.025+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/gx_validate.py took 0.487 seconds
+[2026-01-23T08:21:17.739+0000] {processor.py:157} INFO - Started process (PID=267) to work on /opt/airflow/dags/gx_validate.py
+[2026-01-23T08:21:17.740+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/gx_validate.py for tasks to queue
+[2026-01-23T08:21:17.741+0000] {logging_mixin.py:151} INFO - [2026-01-23T08:21:17.741+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/gx_validate.py
+[2026-01-23T08:21:18.081+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/gx_validate.py
+[2026-01-23T08:21:18.094+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/gx_validate.py took 0.359 seconds
+[2026-01-23T08:21:48.922+0000] {processor.py:157} INFO - Started process (PID=288) to work on /opt/airflow/dags/gx_validate.py
+[2026-01-23T08:21:48.923+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/gx_validate.py for tasks to queue
+[2026-01-23T08:21:48.924+0000] {logging_mixin.py:151} INFO - [2026-01-23T08:21:48.924+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/gx_validate.py
+[2026-01-23T08:21:49.254+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/gx_validate.py
+[2026-01-23T08:21:49.266+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/gx_validate.py took 0.347 seconds
+[2026-01-23T08:22:19.505+0000] {processor.py:157} INFO - Started process (PID=309) to work on /opt/airflow/dags/gx_validate.py
+[2026-01-23T08:22:19.507+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/gx_validate.py for tasks to queue
+[2026-01-23T08:22:19.509+0000] {logging_mixin.py:151} INFO - [2026-01-23T08:22:19.508+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/gx_validate.py
+[2026-01-23T08:22:19.887+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/gx_validate.py
+[2026-01-23T08:22:19.902+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/gx_validate.py took 0.400 seconds
+[2026-01-23T08:22:49.945+0000] {processor.py:157} INFO - Started process (PID=330) to work on /opt/airflow/dags/gx_validate.py
+[2026-01-23T08:22:49.946+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/gx_validate.py for tasks to queue
+[2026-01-23T08:22:49.946+0000] {logging_mixin.py:151} INFO - [2026-01-23T08:22:49.946+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/gx_validate.py
+[2026-01-23T08:22:50.266+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/gx_validate.py
+[2026-01-23T08:22:50.278+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/gx_validate.py took 0.337 seconds
+[2026-01-23T08:23:21.213+0000] {processor.py:157} INFO - Started process (PID=351) to work on /opt/airflow/dags/gx_validate.py
+[2026-01-23T08:23:21.215+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/gx_validate.py for tasks to queue
+[2026-01-23T08:23:21.216+0000] {logging_mixin.py:151} INFO - [2026-01-23T08:23:21.215+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/gx_validate.py
+[2026-01-23T08:23:21.522+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/gx_validate.py
+[2026-01-23T08:23:21.537+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/gx_validate.py took 0.327 seconds
+[2026-01-23T08:24:14.116+0000] {processor.py:157} INFO - Started process (PID=185) to work on /opt/airflow/dags/gx_validate.py
+[2026-01-23T08:24:14.118+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/gx_validate.py for tasks to queue
+[2026-01-23T08:24:14.118+0000] {logging_mixin.py:151} INFO - [2026-01-23T08:24:14.118+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/gx_validate.py
+[2026-01-23T08:24:15.106+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/gx_validate.py
+[2026-01-23T08:24:15.118+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/gx_validate.py took 1.004 seconds
+[2026-01-23T08:24:45.360+0000] {processor.py:157} INFO - Started process (PID=218) to work on /opt/airflow/dags/gx_validate.py
+[2026-01-23T08:24:45.362+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/gx_validate.py for tasks to queue
+[2026-01-23T08:24:45.362+0000] {logging_mixin.py:151} INFO - [2026-01-23T08:24:45.362+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/gx_validate.py
+[2026-01-23T08:24:45.671+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/gx_validate.py
+[2026-01-23T08:24:45.682+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/gx_validate.py took 0.325 seconds
+[2026-01-23T08:25:15.708+0000] {processor.py:157} INFO - Started process (PID=244) to work on /opt/airflow/dags/gx_validate.py
+[2026-01-23T08:25:15.710+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/gx_validate.py for tasks to queue
+[2026-01-23T08:25:15.710+0000] {logging_mixin.py:151} INFO - [2026-01-23T08:25:15.710+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/gx_validate.py
+[2026-01-23T08:25:16.006+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/gx_validate.py
+[2026-01-23T08:25:16.017+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/gx_validate.py took 0.312 seconds
+[2026-01-23T08:25:46.065+0000] {processor.py:157} INFO - Started process (PID=260) to work on /opt/airflow/dags/gx_validate.py
+[2026-01-23T08:25:46.067+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/gx_validate.py for tasks to queue
+[2026-01-23T08:25:46.070+0000] {logging_mixin.py:151} INFO - [2026-01-23T08:25:46.069+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/gx_validate.py
+[2026-01-23T08:25:46.476+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/gx_validate.py
+[2026-01-23T08:25:46.492+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/gx_validate.py took 0.433 seconds
+[2026-01-23T08:26:16.545+0000] {processor.py:157} INFO - Started process (PID=281) to work on /opt/airflow/dags/gx_validate.py
+[2026-01-23T08:26:16.546+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/gx_validate.py for tasks to queue
+[2026-01-23T08:26:16.547+0000] {logging_mixin.py:151} INFO - [2026-01-23T08:26:16.546+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/gx_validate.py
+[2026-01-23T08:26:16.841+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/gx_validate.py
+[2026-01-23T08:26:16.853+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/gx_validate.py took 0.311 seconds
+[2026-01-23T08:26:46.953+0000] {processor.py:157} INFO - Started process (PID=302) to work on /opt/airflow/dags/gx_validate.py
+[2026-01-23T08:26:46.954+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/gx_validate.py for tasks to queue
+[2026-01-23T08:26:46.955+0000] {logging_mixin.py:151} INFO - [2026-01-23T08:26:46.955+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/gx_validate.py
+[2026-01-23T08:26:47.306+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/gx_validate.py
+[2026-01-23T08:26:47.319+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/gx_validate.py took 0.370 seconds
+[2026-01-23T08:28:02.523+0000] {processor.py:157} INFO - Started process (PID=185) to work on /opt/airflow/dags/gx_validate.py
+[2026-01-23T08:28:02.524+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/gx_validate.py for tasks to queue
+[2026-01-23T08:28:02.525+0000] {logging_mixin.py:151} INFO - [2026-01-23T08:28:02.525+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/gx_validate.py
+[2026-01-23T08:28:03.546+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/gx_validate.py
+[2026-01-23T08:28:03.557+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/gx_validate.py took 1.037 seconds
+[2026-01-23T08:28:33.995+0000] {processor.py:157} INFO - Started process (PID=225) to work on /opt/airflow/dags/gx_validate.py
+[2026-01-23T08:28:33.996+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/gx_validate.py for tasks to queue
+[2026-01-23T08:28:33.997+0000] {logging_mixin.py:151} INFO - [2026-01-23T08:28:33.997+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/gx_validate.py
+[2026-01-23T08:28:34.377+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/gx_validate.py
+[2026-01-23T08:28:34.388+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/gx_validate.py took 0.395 seconds
+[2026-01-23T08:29:04.478+0000] {processor.py:157} INFO - Started process (PID=246) to work on /opt/airflow/dags/gx_validate.py
+[2026-01-23T08:29:04.480+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/gx_validate.py for tasks to queue
+[2026-01-23T08:29:04.481+0000] {logging_mixin.py:151} INFO - [2026-01-23T08:29:04.481+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/gx_validate.py
+[2026-01-23T08:29:04.878+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/gx_validate.py
+[2026-01-23T08:29:04.893+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/gx_validate.py took 0.418 seconds
+[2026-01-23T08:29:34.953+0000] {processor.py:157} INFO - Started process (PID=267) to work on /opt/airflow/dags/gx_validate.py
+[2026-01-23T08:29:34.954+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/gx_validate.py for tasks to queue
+[2026-01-23T08:29:34.955+0000] {logging_mixin.py:151} INFO - [2026-01-23T08:29:34.955+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/gx_validate.py
+[2026-01-23T08:29:35.420+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/gx_validate.py
+[2026-01-23T08:29:35.439+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/gx_validate.py took 0.489 seconds
+[2026-01-23T08:31:59.954+0000] {processor.py:157} INFO - Started process (PID=181) to work on /opt/airflow/dags/gx_validate.py
+[2026-01-23T08:31:59.957+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/gx_validate.py for tasks to queue
+[2026-01-23T08:31:59.957+0000] {logging_mixin.py:151} INFO - [2026-01-23T08:31:59.957+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/gx_validate.py
+[2026-01-23T08:32:01.142+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/gx_validate.py
+[2026-01-23T08:32:01.155+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/gx_validate.py took 1.205 seconds
+[2026-01-23T08:32:31.461+0000] {processor.py:157} INFO - Started process (PID=235) to work on /opt/airflow/dags/gx_validate.py
+[2026-01-23T08:32:31.463+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/gx_validate.py for tasks to queue
+[2026-01-23T08:32:31.464+0000] {logging_mixin.py:151} INFO - [2026-01-23T08:32:31.464+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/gx_validate.py
+[2026-01-23T08:32:33.723+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/gx_validate.py
+[2026-01-23T08:32:33.748+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/gx_validate.py took 2.294 seconds
+[2026-01-23T08:33:03.877+0000] {processor.py:157} INFO - Started process (PID=291) to work on /opt/airflow/dags/gx_validate.py
+[2026-01-23T08:33:03.879+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/gx_validate.py for tasks to queue
+[2026-01-23T08:33:03.879+0000] {logging_mixin.py:151} INFO - [2026-01-23T08:33:03.879+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/gx_validate.py
+[2026-01-23T08:33:05.549+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/gx_validate.py
+[2026-01-23T08:33:05.566+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/gx_validate.py took 1.694 seconds
+[2026-01-23T08:33:36.185+0000] {processor.py:157} INFO - Started process (PID=347) to work on /opt/airflow/dags/gx_validate.py
+[2026-01-23T08:33:36.187+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/gx_validate.py for tasks to queue
+[2026-01-23T08:33:36.189+0000] {logging_mixin.py:151} INFO - [2026-01-23T08:33:36.188+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/gx_validate.py
+[2026-01-23T08:33:37.024+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/gx_validate.py
+[2026-01-23T08:33:37.050+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/gx_validate.py took 0.873 seconds
+[2026-01-23T08:34:07.334+0000] {processor.py:157} INFO - Started process (PID=368) to work on /opt/airflow/dags/gx_validate.py
+[2026-01-23T08:34:07.335+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/gx_validate.py for tasks to queue
+[2026-01-23T08:34:07.336+0000] {logging_mixin.py:151} INFO - [2026-01-23T08:34:07.335+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/gx_validate.py
+[2026-01-23T08:34:07.965+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/gx_validate.py
+[2026-01-23T08:34:07.981+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/gx_validate.py took 0.651 seconds
+[2026-01-23T08:34:38.557+0000] {processor.py:157} INFO - Started process (PID=401) to work on /opt/airflow/dags/gx_validate.py
+[2026-01-23T08:34:38.558+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/gx_validate.py for tasks to queue
+[2026-01-23T08:34:38.559+0000] {logging_mixin.py:151} INFO - [2026-01-23T08:34:38.559+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/gx_validate.py
+[2026-01-23T08:34:39.069+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/gx_validate.py
+[2026-01-23T08:34:39.090+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/gx_validate.py took 0.536 seconds
+[2026-01-23T08:35:10.122+0000] {processor.py:157} INFO - Started process (PID=545) to work on /opt/airflow/dags/gx_validate.py
+[2026-01-23T08:35:10.123+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/gx_validate.py for tasks to queue
+[2026-01-23T08:35:10.124+0000] {logging_mixin.py:151} INFO - [2026-01-23T08:35:10.124+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/gx_validate.py
+[2026-01-23T08:35:10.517+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/gx_validate.py
+[2026-01-23T08:35:10.529+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/gx_validate.py took 0.411 seconds
+[2026-01-23T15:07:20.370+0000] {processor.py:157} INFO - Started process (PID=181) to work on /opt/airflow/dags/gx_validate.py
+[2026-01-23T15:07:20.372+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/gx_validate.py for tasks to queue
+[2026-01-23T15:07:20.373+0000] {logging_mixin.py:151} INFO - [2026-01-23T15:07:20.373+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/gx_validate.py
+[2026-01-23T15:07:21.589+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/gx_validate.py
+[2026-01-23T15:07:21.599+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/gx_validate.py took 1.232 seconds
+[2026-01-23T15:07:51.854+0000] {processor.py:157} INFO - Started process (PID=235) to work on /opt/airflow/dags/gx_validate.py
+[2026-01-23T15:07:51.856+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/gx_validate.py for tasks to queue
+[2026-01-23T15:07:51.857+0000] {logging_mixin.py:151} INFO - [2026-01-23T15:07:51.856+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/gx_validate.py
+[2026-01-23T15:07:54.096+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/gx_validate.py
+[2026-01-23T15:07:54.109+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/gx_validate.py took 2.258 seconds
+[2026-01-23T15:08:24.779+0000] {processor.py:157} INFO - Started process (PID=291) to work on /opt/airflow/dags/gx_validate.py
+[2026-01-23T15:08:24.782+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/gx_validate.py for tasks to queue
+[2026-01-23T15:08:24.783+0000] {logging_mixin.py:151} INFO - [2026-01-23T15:08:24.783+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/gx_validate.py
+[2026-01-23T15:08:28.493+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/gx_validate.py
+[2026-01-23T15:08:28.514+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/gx_validate.py took 3.738 seconds
+[2026-01-23T15:08:59.397+0000] {processor.py:157} INFO - Started process (PID=347) to work on /opt/airflow/dags/gx_validate.py
+[2026-01-23T15:08:59.399+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/gx_validate.py for tasks to queue
+[2026-01-23T15:08:59.400+0000] {logging_mixin.py:151} INFO - [2026-01-23T15:08:59.400+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/gx_validate.py
+[2026-01-23T15:08:59.770+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/gx_validate.py
+[2026-01-23T15:08:59.783+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/gx_validate.py took 0.389 seconds
+[2026-01-23T15:09:29.863+0000] {processor.py:157} INFO - Started process (PID=368) to work on /opt/airflow/dags/gx_validate.py
+[2026-01-23T15:09:29.864+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/gx_validate.py for tasks to queue
+[2026-01-23T15:09:29.865+0000] {logging_mixin.py:151} INFO - [2026-01-23T15:09:29.865+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/gx_validate.py
+[2026-01-23T15:09:30.247+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/gx_validate.py
+[2026-01-23T15:09:30.258+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/gx_validate.py took 0.399 seconds
+[2026-01-23T15:10:00.291+0000] {processor.py:157} INFO - Started process (PID=389) to work on /opt/airflow/dags/gx_validate.py
+[2026-01-23T15:10:00.293+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/gx_validate.py for tasks to queue
+[2026-01-23T15:10:00.293+0000] {logging_mixin.py:151} INFO - [2026-01-23T15:10:00.293+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/gx_validate.py
+[2026-01-23T15:10:00.659+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/gx_validate.py
+[2026-01-23T15:10:00.671+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/gx_validate.py took 0.384 seconds
+[2026-01-23T15:11:26.230+0000] {processor.py:157} INFO - Started process (PID=179) to work on /opt/airflow/dags/gx_validate.py
+[2026-01-23T15:11:26.231+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/gx_validate.py for tasks to queue
+[2026-01-23T15:11:26.232+0000] {logging_mixin.py:151} INFO - [2026-01-23T15:11:26.232+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/gx_validate.py
+[2026-01-23T15:11:27.336+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/gx_validate.py
+[2026-01-23T15:11:27.349+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/gx_validate.py took 1.123 seconds
+[2026-01-23T15:11:57.719+0000] {processor.py:157} INFO - Started process (PID=240) to work on /opt/airflow/dags/gx_validate.py
+[2026-01-23T15:11:57.720+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/gx_validate.py for tasks to queue
+[2026-01-23T15:11:57.721+0000] {logging_mixin.py:151} INFO - [2026-01-23T15:11:57.721+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/gx_validate.py
+[2026-01-23T15:11:59.161+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/gx_validate.py
+[2026-01-23T15:11:59.182+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/gx_validate.py took 1.466 seconds
+[2026-01-23T15:12:29.669+0000] {processor.py:157} INFO - Started process (PID=291) to work on /opt/airflow/dags/gx_validate.py
+[2026-01-23T15:12:29.670+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/gx_validate.py for tasks to queue
+[2026-01-23T15:12:29.671+0000] {logging_mixin.py:151} INFO - [2026-01-23T15:12:29.671+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/gx_validate.py
+[2026-01-23T15:12:31.258+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/gx_validate.py
+[2026-01-23T15:12:31.272+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/gx_validate.py took 1.606 seconds
+[2026-01-23T15:13:01.916+0000] {processor.py:157} INFO - Started process (PID=332) to work on /opt/airflow/dags/gx_validate.py
+[2026-01-23T15:13:01.918+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/gx_validate.py for tasks to queue
+[2026-01-23T15:13:01.920+0000] {logging_mixin.py:151} INFO - [2026-01-23T15:13:01.919+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/gx_validate.py
+[2026-01-23T15:13:02.410+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/gx_validate.py
+[2026-01-23T15:13:02.421+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/gx_validate.py took 0.509 seconds
+[2026-01-23T15:13:32.473+0000] {processor.py:157} INFO - Started process (PID=369) to work on /opt/airflow/dags/gx_validate.py
+[2026-01-23T15:13:32.474+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/gx_validate.py for tasks to queue
+[2026-01-23T15:13:32.475+0000] {logging_mixin.py:151} INFO - [2026-01-23T15:13:32.475+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/gx_validate.py
+[2026-01-23T15:13:32.838+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/gx_validate.py
+[2026-01-23T15:13:32.849+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/gx_validate.py took 0.379 seconds
+[2026-01-23T15:14:03.009+0000] {processor.py:157} INFO - Started process (PID=390) to work on /opt/airflow/dags/gx_validate.py
+[2026-01-23T15:14:03.010+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/gx_validate.py for tasks to queue
+[2026-01-23T15:14:03.011+0000] {logging_mixin.py:151} INFO - [2026-01-23T15:14:03.010+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/gx_validate.py
+[2026-01-23T15:14:03.336+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/gx_validate.py
+[2026-01-23T15:14:03.347+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/gx_validate.py took 0.341 seconds
+[2026-01-23T15:15:30.106+0000] {processor.py:157} INFO - Started process (PID=180) to work on /opt/airflow/dags/gx_validate.py
+[2026-01-23T15:15:30.108+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/gx_validate.py for tasks to queue
+[2026-01-23T15:15:30.110+0000] {logging_mixin.py:151} INFO - [2026-01-23T15:15:30.109+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/gx_validate.py
+[2026-01-23T15:15:31.726+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/gx_validate.py
+[2026-01-23T15:15:31.739+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/gx_validate.py took 1.639 seconds
+[2026-01-23T15:16:02.529+0000] {processor.py:157} INFO - Started process (PID=240) to work on /opt/airflow/dags/gx_validate.py
+[2026-01-23T15:16:02.543+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/gx_validate.py for tasks to queue
+[2026-01-23T15:16:02.544+0000] {logging_mixin.py:151} INFO - [2026-01-23T15:16:02.544+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/gx_validate.py
+[2026-01-23T15:16:04.044+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/gx_validate.py
+[2026-01-23T15:16:04.067+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/gx_validate.py took 1.554 seconds
+[2026-01-23T15:16:34.131+0000] {processor.py:157} INFO - Started process (PID=291) to work on /opt/airflow/dags/gx_validate.py
+[2026-01-23T15:16:34.133+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/gx_validate.py for tasks to queue
+[2026-01-23T15:16:34.134+0000] {logging_mixin.py:151} INFO - [2026-01-23T15:16:34.134+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/gx_validate.py
+[2026-01-23T15:16:34.984+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/gx_validate.py
+[2026-01-23T15:16:34.999+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/gx_validate.py took 0.872 seconds
+[2026-01-23T15:17:05.868+0000] {processor.py:157} INFO - Started process (PID=347) to work on /opt/airflow/dags/gx_validate.py
+[2026-01-23T15:17:05.869+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/gx_validate.py for tasks to queue
+[2026-01-23T15:17:05.870+0000] {logging_mixin.py:151} INFO - [2026-01-23T15:17:05.869+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/gx_validate.py
+[2026-01-23T15:17:06.485+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/gx_validate.py
+[2026-01-23T15:17:06.498+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/gx_validate.py took 0.633 seconds
+[2026-01-23T15:17:36.805+0000] {processor.py:157} INFO - Started process (PID=368) to work on /opt/airflow/dags/gx_validate.py
+[2026-01-23T15:17:36.806+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/gx_validate.py for tasks to queue
+[2026-01-23T15:17:36.807+0000] {logging_mixin.py:151} INFO - [2026-01-23T15:17:36.806+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/gx_validate.py
+[2026-01-23T15:17:40.275+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/gx_validate.py
+[2026-01-23T15:17:40.287+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/gx_validate.py took 3.487 seconds
+[2026-01-23T15:18:10.362+0000] {processor.py:157} INFO - Started process (PID=403) to work on /opt/airflow/dags/gx_validate.py
+[2026-01-23T15:18:10.363+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/gx_validate.py for tasks to queue
+[2026-01-23T15:18:10.364+0000] {logging_mixin.py:151} INFO - [2026-01-23T15:18:10.364+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/gx_validate.py
+[2026-01-23T15:18:10.848+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/gx_validate.py
+[2026-01-23T15:18:10.863+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/gx_validate.py took 0.505 seconds
+[2026-01-23T15:18:41.374+0000] {processor.py:157} INFO - Started process (PID=427) to work on /opt/airflow/dags/gx_validate.py
+[2026-01-23T15:18:41.376+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/gx_validate.py for tasks to queue
+[2026-01-23T15:18:41.376+0000] {logging_mixin.py:151} INFO - [2026-01-23T15:18:41.376+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/gx_validate.py
+[2026-01-23T15:18:41.812+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/gx_validate.py
+[2026-01-23T15:18:41.824+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/gx_validate.py took 0.454 seconds
+[2026-01-23T15:19:12.739+0000] {processor.py:157} INFO - Started process (PID=567) to work on /opt/airflow/dags/gx_validate.py
+[2026-01-23T15:19:12.740+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/gx_validate.py for tasks to queue
+[2026-01-23T15:19:12.740+0000] {logging_mixin.py:151} INFO - [2026-01-23T15:19:12.740+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/gx_validate.py
+[2026-01-23T15:19:12.964+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/gx_validate.py
+[2026-01-23T15:19:12.977+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/gx_validate.py took 0.242 seconds
+[2026-01-23T15:19:43.386+0000] {processor.py:157} INFO - Started process (PID=588) to work on /opt/airflow/dags/gx_validate.py
+[2026-01-23T15:19:43.387+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/gx_validate.py for tasks to queue
+[2026-01-23T15:19:43.388+0000] {logging_mixin.py:151} INFO - [2026-01-23T15:19:43.387+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/gx_validate.py
+[2026-01-23T15:19:43.633+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/gx_validate.py
+[2026-01-23T15:19:43.648+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/gx_validate.py took 0.265 seconds
+[2026-01-23T15:20:13.949+0000] {processor.py:157} INFO - Started process (PID=609) to work on /opt/airflow/dags/gx_validate.py
+[2026-01-23T15:20:13.951+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/gx_validate.py for tasks to queue
+[2026-01-23T15:20:13.951+0000] {logging_mixin.py:151} INFO - [2026-01-23T15:20:13.951+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/gx_validate.py
+[2026-01-23T15:20:14.192+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/gx_validate.py
+[2026-01-23T15:20:14.207+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/gx_validate.py took 0.260 seconds
+[2026-01-23T15:20:44.750+0000] {processor.py:157} INFO - Started process (PID=630) to work on /opt/airflow/dags/gx_validate.py
+[2026-01-23T15:20:44.778+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/gx_validate.py for tasks to queue
+[2026-01-23T15:20:44.780+0000] {logging_mixin.py:151} INFO - [2026-01-23T15:20:44.779+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/gx_validate.py
+[2026-01-23T15:20:45.052+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/gx_validate.py
+[2026-01-23T15:20:45.066+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/gx_validate.py took 0.320 seconds
+[2026-01-23T15:21:15.692+0000] {processor.py:157} INFO - Started process (PID=651) to work on /opt/airflow/dags/gx_validate.py
+[2026-01-23T15:21:15.693+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/gx_validate.py for tasks to queue
+[2026-01-23T15:21:15.694+0000] {logging_mixin.py:151} INFO - [2026-01-23T15:21:15.694+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/gx_validate.py
+[2026-01-23T15:21:16.110+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/gx_validate.py
+[2026-01-23T15:21:16.124+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/gx_validate.py took 0.435 seconds
+[2026-01-23T15:21:46.418+0000] {processor.py:157} INFO - Started process (PID=672) to work on /opt/airflow/dags/gx_validate.py
+[2026-01-23T15:21:46.419+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/gx_validate.py for tasks to queue
+[2026-01-23T15:21:46.420+0000] {logging_mixin.py:151} INFO - [2026-01-23T15:21:46.420+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/gx_validate.py
+[2026-01-23T15:21:46.665+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/gx_validate.py
+[2026-01-23T15:21:46.679+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/gx_validate.py took 0.264 seconds
+[2026-01-23T15:22:17.105+0000] {processor.py:157} INFO - Started process (PID=693) to work on /opt/airflow/dags/gx_validate.py
+[2026-01-23T15:22:17.106+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/gx_validate.py for tasks to queue
+[2026-01-23T15:22:17.107+0000] {logging_mixin.py:151} INFO - [2026-01-23T15:22:17.106+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/gx_validate.py
+[2026-01-23T15:22:17.350+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/gx_validate.py
+[2026-01-23T15:22:17.365+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/gx_validate.py took 0.263 seconds
+[2026-01-23T15:22:47.893+0000] {processor.py:157} INFO - Started process (PID=714) to work on /opt/airflow/dags/gx_validate.py
+[2026-01-23T15:22:47.894+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/gx_validate.py for tasks to queue
+[2026-01-23T15:22:47.895+0000] {logging_mixin.py:151} INFO - [2026-01-23T15:22:47.895+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/gx_validate.py
+[2026-01-23T15:22:48.137+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/gx_validate.py
+[2026-01-23T15:22:48.152+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/gx_validate.py took 0.263 seconds
+[2026-01-23T15:23:18.672+0000] {processor.py:157} INFO - Started process (PID=735) to work on /opt/airflow/dags/gx_validate.py
+[2026-01-23T15:23:18.674+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/gx_validate.py for tasks to queue
+[2026-01-23T15:23:18.675+0000] {logging_mixin.py:151} INFO - [2026-01-23T15:23:18.674+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/gx_validate.py
+[2026-01-23T15:23:18.902+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/gx_validate.py
+[2026-01-23T15:23:18.918+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/gx_validate.py took 0.250 seconds
+[2026-01-23T15:23:49.310+0000] {processor.py:157} INFO - Started process (PID=756) to work on /opt/airflow/dags/gx_validate.py
+[2026-01-23T15:23:49.311+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/gx_validate.py for tasks to queue
+[2026-01-23T15:23:49.312+0000] {logging_mixin.py:151} INFO - [2026-01-23T15:23:49.312+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/gx_validate.py
+[2026-01-23T15:23:49.561+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/gx_validate.py
+[2026-01-23T15:23:49.576+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/gx_validate.py took 0.269 seconds
+[2026-01-23T15:23:52.325+0000] {processor.py:157} INFO - Started process (PID=762) to work on /opt/airflow/dags/gx_validate.py
+[2026-01-23T15:23:52.326+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/gx_validate.py for tasks to queue
+[2026-01-23T15:23:52.326+0000] {logging_mixin.py:151} INFO - [2026-01-23T15:23:52.326+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/gx_validate.py
+[2026-01-23T15:23:52.544+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/gx_validate.py
+[2026-01-23T15:23:52.557+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/gx_validate.py took 0.235 seconds
+[2026-01-23T15:24:23.056+0000] {processor.py:157} INFO - Started process (PID=793) to work on /opt/airflow/dags/gx_validate.py
+[2026-01-23T15:24:23.058+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/gx_validate.py for tasks to queue
+[2026-01-23T15:24:23.058+0000] {logging_mixin.py:151} INFO - [2026-01-23T15:24:23.058+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/gx_validate.py
+[2026-01-23T15:24:23.305+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/gx_validate.py
+[2026-01-23T15:24:23.323+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/gx_validate.py took 0.271 seconds
+[2026-01-23T15:24:53.357+0000] {processor.py:157} INFO - Started process (PID=845) to work on /opt/airflow/dags/gx_validate.py
+[2026-01-23T15:24:53.366+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/gx_validate.py for tasks to queue
+[2026-01-23T15:24:53.368+0000] {logging_mixin.py:151} INFO - [2026-01-23T15:24:53.367+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/gx_validate.py
+[2026-01-23T15:24:53.754+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/gx_validate.py
+[2026-01-23T15:24:53.776+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/gx_validate.py took 0.427 seconds
+[2026-01-23T15:25:24.130+0000] {processor.py:157} INFO - Started process (PID=879) to work on /opt/airflow/dags/gx_validate.py
+[2026-01-23T15:25:24.131+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/gx_validate.py for tasks to queue
+[2026-01-23T15:25:24.132+0000] {logging_mixin.py:151} INFO - [2026-01-23T15:25:24.132+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/gx_validate.py
+[2026-01-23T15:25:24.460+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/gx_validate.py
+[2026-01-23T15:25:24.477+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/gx_validate.py took 0.351 seconds
+[2026-01-23T15:25:54.910+0000] {processor.py:157} INFO - Started process (PID=1022) to work on /opt/airflow/dags/gx_validate.py
+[2026-01-23T15:25:54.912+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/gx_validate.py for tasks to queue
+[2026-01-23T15:25:54.912+0000] {logging_mixin.py:151} INFO - [2026-01-23T15:25:54.912+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/gx_validate.py
+[2026-01-23T15:25:55.158+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/gx_validate.py
+[2026-01-23T15:25:55.173+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/gx_validate.py took 0.266 seconds
+[2026-01-23T15:26:25.687+0000] {processor.py:157} INFO - Started process (PID=1043) to work on /opt/airflow/dags/gx_validate.py
+[2026-01-23T15:26:25.688+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/gx_validate.py for tasks to queue
+[2026-01-23T15:26:25.688+0000] {logging_mixin.py:151} INFO - [2026-01-23T15:26:25.688+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/gx_validate.py
+[2026-01-23T15:26:25.914+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/gx_validate.py
+[2026-01-23T15:26:25.931+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/gx_validate.py took 0.247 seconds
+[2026-01-23T15:26:56.517+0000] {processor.py:157} INFO - Started process (PID=1064) to work on /opt/airflow/dags/gx_validate.py
+[2026-01-23T15:26:56.519+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/gx_validate.py for tasks to queue
+[2026-01-23T15:26:56.520+0000] {logging_mixin.py:151} INFO - [2026-01-23T15:26:56.519+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/gx_validate.py
+[2026-01-23T15:26:56.782+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/gx_validate.py
+[2026-01-23T15:26:56.798+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/gx_validate.py took 0.284 seconds
+[2026-01-23T15:27:27.293+0000] {processor.py:157} INFO - Started process (PID=1085) to work on /opt/airflow/dags/gx_validate.py
+[2026-01-23T15:27:27.293+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/gx_validate.py for tasks to queue
+[2026-01-23T15:27:27.294+0000] {logging_mixin.py:151} INFO - [2026-01-23T15:27:27.294+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/gx_validate.py
+[2026-01-23T15:27:27.605+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/gx_validate.py
+[2026-01-23T15:27:27.620+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/gx_validate.py took 0.331 seconds
+[2026-01-23T15:27:58.067+0000] {processor.py:157} INFO - Started process (PID=1106) to work on /opt/airflow/dags/gx_validate.py
+[2026-01-23T15:27:58.069+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/gx_validate.py for tasks to queue
+[2026-01-23T15:27:58.069+0000] {logging_mixin.py:151} INFO - [2026-01-23T15:27:58.069+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/gx_validate.py
+[2026-01-23T15:27:58.324+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/gx_validate.py
+[2026-01-23T15:27:58.339+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/gx_validate.py took 0.275 seconds
+[2026-01-23T15:28:29.027+0000] {processor.py:157} INFO - Started process (PID=1127) to work on /opt/airflow/dags/gx_validate.py
+[2026-01-23T15:28:29.028+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/gx_validate.py for tasks to queue
+[2026-01-23T15:28:29.029+0000] {logging_mixin.py:151} INFO - [2026-01-23T15:28:29.028+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/gx_validate.py
+[2026-01-23T15:28:29.252+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/gx_validate.py
+[2026-01-23T15:28:29.267+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/gx_validate.py took 0.243 seconds
+[2026-01-23T15:28:59.835+0000] {processor.py:157} INFO - Started process (PID=1148) to work on /opt/airflow/dags/gx_validate.py
+[2026-01-23T15:28:59.836+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/gx_validate.py for tasks to queue
+[2026-01-23T15:28:59.837+0000] {logging_mixin.py:151} INFO - [2026-01-23T15:28:59.837+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/gx_validate.py
+[2026-01-23T15:29:00.048+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/gx_validate.py
+[2026-01-23T15:29:00.063+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/gx_validate.py took 0.231 seconds
+[2026-01-23T15:29:30.616+0000] {processor.py:157} INFO - Started process (PID=1169) to work on /opt/airflow/dags/gx_validate.py
+[2026-01-23T15:29:30.617+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/gx_validate.py for tasks to queue
+[2026-01-23T15:29:30.618+0000] {logging_mixin.py:151} INFO - [2026-01-23T15:29:30.617+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/gx_validate.py
+[2026-01-23T15:29:30.832+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/gx_validate.py
+[2026-01-23T15:29:30.845+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/gx_validate.py took 0.232 seconds
+[2026-01-23T15:30:01.442+0000] {processor.py:157} INFO - Started process (PID=1190) to work on /opt/airflow/dags/gx_validate.py
+[2026-01-23T15:30:01.443+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/gx_validate.py for tasks to queue
+[2026-01-23T15:30:01.444+0000] {logging_mixin.py:151} INFO - [2026-01-23T15:30:01.444+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/gx_validate.py
+[2026-01-23T15:30:01.664+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/gx_validate.py
+[2026-01-23T15:30:01.676+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/gx_validate.py took 0.238 seconds
+[2026-01-23T15:30:32.112+0000] {processor.py:157} INFO - Started process (PID=1196) to work on /opt/airflow/dags/gx_validate.py
+[2026-01-23T15:30:32.113+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/gx_validate.py for tasks to queue
+[2026-01-23T15:30:32.114+0000] {logging_mixin.py:151} INFO - [2026-01-23T15:30:32.113+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/gx_validate.py
+[2026-01-23T15:30:32.404+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/gx_validate.py
+[2026-01-23T15:30:32.417+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/gx_validate.py took 0.309 seconds
+[2026-01-23T15:31:04.131+0000] {processor.py:157} INFO - Started process (PID=1217) to work on /opt/airflow/dags/gx_validate.py
+[2026-01-23T15:31:04.132+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/gx_validate.py for tasks to queue
+[2026-01-23T15:31:04.133+0000] {logging_mixin.py:151} INFO - [2026-01-23T15:31:04.133+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/gx_validate.py
+[2026-01-23T15:31:04.366+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/gx_validate.py
+[2026-01-23T15:31:04.381+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/gx_validate.py took 0.254 seconds
+[2026-01-23T15:31:35.021+0000] {processor.py:157} INFO - Started process (PID=1238) to work on /opt/airflow/dags/gx_validate.py
+[2026-01-23T15:31:35.022+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/gx_validate.py for tasks to queue
+[2026-01-23T15:31:35.023+0000] {logging_mixin.py:151} INFO - [2026-01-23T15:31:35.023+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/gx_validate.py
+[2026-01-23T15:31:35.293+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/gx_validate.py
+[2026-01-23T15:31:35.308+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/gx_validate.py took 0.292 seconds
+[2026-01-23T15:32:06.987+0000] {processor.py:157} INFO - Started process (PID=1259) to work on /opt/airflow/dags/gx_validate.py
+[2026-01-23T15:32:06.989+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/gx_validate.py for tasks to queue
+[2026-01-23T15:32:06.990+0000] {logging_mixin.py:151} INFO - [2026-01-23T15:32:06.989+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/gx_validate.py
+[2026-01-23T15:32:07.238+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/gx_validate.py
+[2026-01-23T15:32:07.254+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/gx_validate.py took 0.270 seconds
+[2026-01-23T15:32:37.857+0000] {processor.py:157} INFO - Started process (PID=1280) to work on /opt/airflow/dags/gx_validate.py
+[2026-01-23T15:32:37.858+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/gx_validate.py for tasks to queue
+[2026-01-23T15:32:37.859+0000] {logging_mixin.py:151} INFO - [2026-01-23T15:32:37.859+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/gx_validate.py
+[2026-01-23T15:32:38.112+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/gx_validate.py
+[2026-01-23T15:32:38.129+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/gx_validate.py took 0.276 seconds
+[2026-01-23T15:33:09.855+0000] {processor.py:157} INFO - Started process (PID=1301) to work on /opt/airflow/dags/gx_validate.py
+[2026-01-23T15:33:09.856+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/gx_validate.py for tasks to queue
+[2026-01-23T15:33:09.858+0000] {logging_mixin.py:151} INFO - [2026-01-23T15:33:09.857+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/gx_validate.py
+[2026-01-23T15:33:10.200+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/gx_validate.py
+[2026-01-23T15:33:10.219+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/gx_validate.py took 0.368 seconds
+[2026-01-23T15:33:41.870+0000] {processor.py:157} INFO - Started process (PID=1322) to work on /opt/airflow/dags/gx_validate.py
+[2026-01-23T15:33:41.873+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/gx_validate.py for tasks to queue
+[2026-01-23T15:33:41.874+0000] {logging_mixin.py:151} INFO - [2026-01-23T15:33:41.873+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/gx_validate.py
+[2026-01-23T15:33:42.168+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/gx_validate.py
+[2026-01-23T15:33:42.185+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/gx_validate.py took 0.322 seconds
+[2026-01-23T15:34:12.743+0000] {processor.py:157} INFO - Started process (PID=1343) to work on /opt/airflow/dags/gx_validate.py
+[2026-01-23T15:34:12.744+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/gx_validate.py for tasks to queue
+[2026-01-23T15:34:12.745+0000] {logging_mixin.py:151} INFO - [2026-01-23T15:34:12.745+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/gx_validate.py
+[2026-01-23T15:34:12.990+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/gx_validate.py
+[2026-01-23T15:34:13.006+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/gx_validate.py took 0.267 seconds
+[2026-01-23T15:34:44.648+0000] {processor.py:157} INFO - Started process (PID=1364) to work on /opt/airflow/dags/gx_validate.py
+[2026-01-23T15:34:44.650+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/gx_validate.py for tasks to queue
+[2026-01-23T15:34:44.651+0000] {logging_mixin.py:151} INFO - [2026-01-23T15:34:44.651+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/gx_validate.py
+[2026-01-23T15:34:44.925+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/gx_validate.py
+[2026-01-23T15:34:44.940+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/gx_validate.py took 0.296 seconds
+[2026-01-23T15:35:15.539+0000] {processor.py:157} INFO - Started process (PID=1385) to work on /opt/airflow/dags/gx_validate.py
+[2026-01-23T15:35:15.540+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/gx_validate.py for tasks to queue
+[2026-01-23T15:35:15.541+0000] {logging_mixin.py:151} INFO - [2026-01-23T15:35:15.541+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/gx_validate.py
+[2026-01-23T15:35:15.828+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/gx_validate.py
+[2026-01-23T15:35:15.847+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/gx_validate.py took 0.312 seconds
+[2026-01-23T15:35:47.559+0000] {processor.py:157} INFO - Started process (PID=1406) to work on /opt/airflow/dags/gx_validate.py
+[2026-01-23T15:35:47.561+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/gx_validate.py for tasks to queue
+[2026-01-23T15:35:47.562+0000] {logging_mixin.py:151} INFO - [2026-01-23T15:35:47.561+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/gx_validate.py
+[2026-01-23T15:35:47.811+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/gx_validate.py
+[2026-01-23T15:35:47.825+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/gx_validate.py took 0.270 seconds
+[2026-01-23T15:36:19.395+0000] {processor.py:157} INFO - Started process (PID=1427) to work on /opt/airflow/dags/gx_validate.py
+[2026-01-23T15:36:19.396+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/gx_validate.py for tasks to queue
+[2026-01-23T15:36:19.397+0000] {logging_mixin.py:151} INFO - [2026-01-23T15:36:19.397+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/gx_validate.py
+[2026-01-23T15:36:19.641+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/gx_validate.py
+[2026-01-23T15:36:19.656+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/gx_validate.py took 0.266 seconds
+[2026-01-23T15:36:50.336+0000] {processor.py:157} INFO - Started process (PID=1448) to work on /opt/airflow/dags/gx_validate.py
+[2026-01-23T15:36:50.337+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/gx_validate.py for tasks to queue
+[2026-01-23T15:36:50.338+0000] {logging_mixin.py:151} INFO - [2026-01-23T15:36:50.338+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/gx_validate.py
+[2026-01-23T15:36:50.582+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/gx_validate.py
+[2026-01-23T15:36:50.599+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/gx_validate.py took 0.267 seconds
+[2026-01-23T15:37:22.369+0000] {processor.py:157} INFO - Started process (PID=1469) to work on /opt/airflow/dags/gx_validate.py
+[2026-01-23T15:37:22.370+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/gx_validate.py for tasks to queue
+[2026-01-23T15:37:22.371+0000] {logging_mixin.py:151} INFO - [2026-01-23T15:37:22.371+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/gx_validate.py
+[2026-01-23T15:37:22.615+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/gx_validate.py
+[2026-01-23T15:37:22.630+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/gx_validate.py took 0.265 seconds
+[2026-01-23T15:37:53.287+0000] {processor.py:157} INFO - Started process (PID=1490) to work on /opt/airflow/dags/gx_validate.py
+[2026-01-23T15:37:53.289+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/gx_validate.py for tasks to queue
+[2026-01-23T15:37:53.290+0000] {logging_mixin.py:151} INFO - [2026-01-23T15:37:53.289+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/gx_validate.py
+[2026-01-23T15:37:53.540+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/gx_validate.py
+[2026-01-23T15:37:53.557+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/gx_validate.py took 0.274 seconds
+[2026-01-23T16:14:18.469+0000] {processor.py:157} INFO - Started process (PID=174) to work on /opt/airflow/dags/gx_validate.py
+[2026-01-23T16:14:18.470+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/gx_validate.py for tasks to queue
+[2026-01-23T16:14:18.471+0000] {logging_mixin.py:151} INFO - [2026-01-23T16:14:18.471+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/gx_validate.py
+[2026-01-23T16:14:20.083+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/gx_validate.py
+[2026-01-23T16:14:20.098+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/gx_validate.py took 1.635 seconds
+[2026-01-23T16:14:51.092+0000] {processor.py:157} INFO - Started process (PID=240) to work on /opt/airflow/dags/gx_validate.py
+[2026-01-23T16:14:51.094+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/gx_validate.py for tasks to queue
+[2026-01-23T16:14:51.099+0000] {logging_mixin.py:151} INFO - [2026-01-23T16:14:51.097+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/gx_validate.py
+[2026-01-23T16:14:52.443+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/gx_validate.py
+[2026-01-23T16:14:52.480+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/gx_validate.py took 1.401 seconds
+[2026-01-23T16:15:22.652+0000] {processor.py:157} INFO - Started process (PID=285) to work on /opt/airflow/dags/gx_validate.py
+[2026-01-23T16:15:22.654+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/gx_validate.py for tasks to queue
+[2026-01-23T16:15:22.655+0000] {logging_mixin.py:151} INFO - [2026-01-23T16:15:22.655+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/gx_validate.py
+[2026-01-23T16:15:23.552+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/gx_validate.py
+[2026-01-23T16:15:23.576+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/gx_validate.py took 0.928 seconds
+[2026-01-23T16:15:54.185+0000] {processor.py:157} INFO - Started process (PID=313) to work on /opt/airflow/dags/gx_validate.py
+[2026-01-23T16:15:54.220+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/gx_validate.py for tasks to queue
+[2026-01-23T16:15:54.221+0000] {logging_mixin.py:151} INFO - [2026-01-23T16:15:54.221+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/gx_validate.py
+[2026-01-23T16:15:55.509+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/gx_validate.py
+[2026-01-23T16:15:55.524+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/gx_validate.py took 1.343 seconds
+[2026-01-23T16:16:26.316+0000] {processor.py:157} INFO - Started process (PID=370) to work on /opt/airflow/dags/gx_validate.py
+[2026-01-23T16:16:26.334+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/gx_validate.py for tasks to queue
+[2026-01-23T16:16:26.337+0000] {logging_mixin.py:151} INFO - [2026-01-23T16:16:26.335+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/gx_validate.py
+[2026-01-23T16:16:27.239+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/gx_validate.py
+[2026-01-23T16:16:27.261+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/gx_validate.py took 1.036 seconds
+[2026-01-23T16:17:00.433+0000] {processor.py:157} INFO - Started process (PID=391) to work on /opt/airflow/dags/gx_validate.py
+[2026-01-23T16:17:00.434+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/gx_validate.py for tasks to queue
+[2026-01-23T16:17:00.438+0000] {logging_mixin.py:151} INFO - [2026-01-23T16:17:00.438+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/gx_validate.py
+[2026-01-23T16:17:02.322+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/gx_validate.py
+[2026-01-23T16:17:02.344+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/gx_validate.py took 1.917 seconds
+[2026-01-23T16:17:32.708+0000] {processor.py:157} INFO - Started process (PID=425) to work on /opt/airflow/dags/gx_validate.py
+[2026-01-23T16:17:32.709+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/gx_validate.py for tasks to queue
+[2026-01-23T16:17:32.711+0000] {logging_mixin.py:151} INFO - [2026-01-23T16:17:32.710+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/gx_validate.py
+[2026-01-23T16:17:33.322+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/gx_validate.py
+[2026-01-23T16:17:33.339+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/gx_validate.py took 0.637 seconds
+[2026-01-23T16:18:04.332+0000] {processor.py:157} INFO - Started process (PID=446) to work on /opt/airflow/dags/gx_validate.py
+[2026-01-23T16:18:04.334+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/gx_validate.py for tasks to queue
+[2026-01-23T16:18:04.337+0000] {logging_mixin.py:151} INFO - [2026-01-23T16:18:04.336+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/gx_validate.py
+[2026-01-23T16:18:05.295+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/gx_validate.py
+[2026-01-23T16:18:05.320+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/gx_validate.py took 0.999 seconds
+[2026-01-23T16:18:36.251+0000] {processor.py:157} INFO - Started process (PID=590) to work on /opt/airflow/dags/gx_validate.py
+[2026-01-23T16:18:36.252+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/gx_validate.py for tasks to queue
+[2026-01-23T16:18:36.253+0000] {logging_mixin.py:151} INFO - [2026-01-23T16:18:36.253+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/gx_validate.py
+[2026-01-23T16:18:36.573+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/gx_validate.py
+[2026-01-23T16:18:36.589+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/gx_validate.py took 0.342 seconds
+[2026-01-23T16:19:07.474+0000] {processor.py:157} INFO - Started process (PID=611) to work on /opt/airflow/dags/gx_validate.py
+[2026-01-23T16:19:07.495+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/gx_validate.py for tasks to queue
+[2026-01-23T16:19:07.496+0000] {logging_mixin.py:151} INFO - [2026-01-23T16:19:07.495+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/gx_validate.py
+[2026-01-23T16:19:07.753+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/gx_validate.py
+[2026-01-23T16:19:07.771+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/gx_validate.py took 0.301 seconds
+[2026-01-23T16:19:38.659+0000] {processor.py:157} INFO - Started process (PID=632) to work on /opt/airflow/dags/gx_validate.py
+[2026-01-23T16:19:38.660+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/gx_validate.py for tasks to queue
+[2026-01-23T16:19:38.662+0000] {logging_mixin.py:151} INFO - [2026-01-23T16:19:38.661+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/gx_validate.py
+[2026-01-23T16:19:39.055+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/gx_validate.py
+[2026-01-23T16:19:39.079+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/gx_validate.py took 0.426 seconds
+[2026-01-23T16:20:09.979+0000] {processor.py:157} INFO - Started process (PID=653) to work on /opt/airflow/dags/gx_validate.py
+[2026-01-23T16:20:09.981+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/gx_validate.py for tasks to queue
+[2026-01-23T16:20:09.982+0000] {logging_mixin.py:151} INFO - [2026-01-23T16:20:09.982+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/gx_validate.py
+[2026-01-23T16:20:10.233+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/gx_validate.py
+[2026-01-23T16:20:10.255+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/gx_validate.py took 0.281 seconds
+[2026-01-23T16:20:41.251+0000] {processor.py:157} INFO - Started process (PID=674) to work on /opt/airflow/dags/gx_validate.py
+[2026-01-23T16:20:41.252+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/gx_validate.py for tasks to queue
+[2026-01-23T16:20:41.253+0000] {logging_mixin.py:151} INFO - [2026-01-23T16:20:41.252+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/gx_validate.py
+[2026-01-23T16:20:41.604+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/gx_validate.py
+[2026-01-23T16:20:41.622+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/gx_validate.py took 0.376 seconds
+[2026-01-23T16:21:12.126+0000] {processor.py:157} INFO - Started process (PID=695) to work on /opt/airflow/dags/gx_validate.py
+[2026-01-23T16:21:12.140+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/gx_validate.py for tasks to queue
+[2026-01-23T16:21:12.140+0000] {logging_mixin.py:151} INFO - [2026-01-23T16:21:12.140+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/gx_validate.py
+[2026-01-23T16:21:12.416+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/gx_validate.py
+[2026-01-23T16:21:12.434+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/gx_validate.py took 0.311 seconds
+[2026-01-23T16:21:43.305+0000] {processor.py:157} INFO - Started process (PID=716) to work on /opt/airflow/dags/gx_validate.py
+[2026-01-23T16:21:43.306+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/gx_validate.py for tasks to queue
+[2026-01-23T16:21:43.306+0000] {logging_mixin.py:151} INFO - [2026-01-23T16:21:43.306+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/gx_validate.py
+[2026-01-23T16:21:43.609+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/gx_validate.py
+[2026-01-23T16:21:43.628+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/gx_validate.py took 0.327 seconds
+[2026-01-23T16:22:14.073+0000] {processor.py:157} INFO - Started process (PID=737) to work on /opt/airflow/dags/gx_validate.py
+[2026-01-23T16:22:14.088+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/gx_validate.py for tasks to queue
+[2026-01-23T16:22:14.089+0000] {logging_mixin.py:151} INFO - [2026-01-23T16:22:14.088+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/gx_validate.py
+[2026-01-23T16:22:14.426+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/gx_validate.py
+[2026-01-23T16:22:14.451+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/gx_validate.py took 0.382 seconds
+[2026-01-23T16:22:44.490+0000] {processor.py:157} INFO - Started process (PID=758) to work on /opt/airflow/dags/gx_validate.py
+[2026-01-23T16:22:44.491+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/gx_validate.py for tasks to queue
+[2026-01-23T16:22:44.492+0000] {logging_mixin.py:151} INFO - [2026-01-23T16:22:44.492+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/gx_validate.py
+[2026-01-23T16:22:44.754+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/gx_validate.py
+[2026-01-23T16:22:44.777+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/gx_validate.py took 0.291 seconds
+[2026-01-23T16:23:15.341+0000] {processor.py:157} INFO - Started process (PID=779) to work on /opt/airflow/dags/gx_validate.py
+[2026-01-23T16:23:15.343+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/gx_validate.py for tasks to queue
+[2026-01-23T16:23:15.345+0000] {logging_mixin.py:151} INFO - [2026-01-23T16:23:15.344+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/gx_validate.py
+[2026-01-23T16:23:15.770+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/gx_validate.py
+[2026-01-23T16:23:15.799+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/gx_validate.py took 0.463 seconds
+[2026-01-23T16:23:46.696+0000] {processor.py:157} INFO - Started process (PID=800) to work on /opt/airflow/dags/gx_validate.py
+[2026-01-23T16:23:46.697+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/gx_validate.py for tasks to queue
+[2026-01-23T16:23:46.698+0000] {logging_mixin.py:151} INFO - [2026-01-23T16:23:46.698+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/gx_validate.py
+[2026-01-23T16:23:47.000+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/gx_validate.py
+[2026-01-23T16:23:47.022+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/gx_validate.py took 0.330 seconds
+[2026-01-23T16:24:17.754+0000] {processor.py:157} INFO - Started process (PID=821) to work on /opt/airflow/dags/gx_validate.py
+[2026-01-23T16:24:17.757+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/gx_validate.py for tasks to queue
+[2026-01-23T16:24:17.758+0000] {logging_mixin.py:151} INFO - [2026-01-23T16:24:17.758+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/gx_validate.py
+[2026-01-23T16:24:18.027+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/gx_validate.py
+[2026-01-23T16:24:18.045+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/gx_validate.py took 0.295 seconds
+[2026-01-23T16:24:48.841+0000] {processor.py:157} INFO - Started process (PID=842) to work on /opt/airflow/dags/gx_validate.py
+[2026-01-23T16:24:48.842+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/gx_validate.py for tasks to queue
+[2026-01-23T16:24:48.844+0000] {logging_mixin.py:151} INFO - [2026-01-23T16:24:48.843+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/gx_validate.py
+[2026-01-23T16:24:49.109+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/gx_validate.py
+[2026-01-23T16:24:49.128+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/gx_validate.py took 0.292 seconds

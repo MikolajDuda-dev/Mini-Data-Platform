@@ -1,0 +1,997 @@
+[2026-01-23T00:00:06.210+0000] {processor.py:157} INFO - Started process (PID=1913) to work on /opt/airflow/dags/quality_check.py
+[2026-01-23T00:00:06.211+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/quality_check.py for tasks to queue
+[2026-01-23T00:00:06.212+0000] {logging_mixin.py:151} INFO - [2026-01-23T00:00:06.212+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/quality_check.py
+[2026-01-23T00:00:06.228+0000] {processor.py:839} INFO - DAG(s) dict_keys(['2_data_quality_check']) retrieved from /opt/airflow/dags/quality_check.py
+[2026-01-23T00:00:06.534+0000] {logging_mixin.py:151} INFO - [2026-01-23T00:00:06.533+0000] {security.py:708} INFO - Not syncing DAG-level permissions for DAG 'DAG:2_data_quality_check' as access control is unset.
+[2026-01-23T00:00:06.534+0000] {logging_mixin.py:151} INFO - [2026-01-23T00:00:06.534+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2026-01-23T00:00:06.546+0000] {logging_mixin.py:151} INFO - [2026-01-23T00:00:06.546+0000] {dag.py:3696} INFO - Setting next_dagrun for 2_data_quality_check to None, run_after=None
+[2026-01-23T00:00:06.570+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/quality_check.py took 0.368 seconds
+[2026-01-23T00:00:37.409+0000] {processor.py:157} INFO - Started process (PID=1992) to work on /opt/airflow/dags/quality_check.py
+[2026-01-23T00:00:37.412+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/quality_check.py for tasks to queue
+[2026-01-23T00:00:37.414+0000] {logging_mixin.py:151} INFO - [2026-01-23T00:00:37.413+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/quality_check.py
+[2026-01-23T00:00:37.425+0000] {processor.py:839} INFO - DAG(s) dict_keys(['2_data_quality_check']) retrieved from /opt/airflow/dags/quality_check.py
+[2026-01-23T00:00:37.457+0000] {logging_mixin.py:151} INFO - [2026-01-23T00:00:37.457+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2026-01-23T00:00:37.470+0000] {logging_mixin.py:151} INFO - [2026-01-23T00:00:37.470+0000] {dag.py:3696} INFO - Setting next_dagrun for 2_data_quality_check to None, run_after=None
+[2026-01-23T00:00:37.500+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/quality_check.py took 0.095 seconds
+[2026-01-23T00:01:07.604+0000] {processor.py:157} INFO - Started process (PID=2013) to work on /opt/airflow/dags/quality_check.py
+[2026-01-23T00:01:07.605+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/quality_check.py for tasks to queue
+[2026-01-23T00:01:07.606+0000] {logging_mixin.py:151} INFO - [2026-01-23T00:01:07.606+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/quality_check.py
+[2026-01-23T00:01:07.619+0000] {processor.py:839} INFO - DAG(s) dict_keys(['2_data_quality_check']) retrieved from /opt/airflow/dags/quality_check.py
+[2026-01-23T00:01:07.654+0000] {logging_mixin.py:151} INFO - [2026-01-23T00:01:07.654+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2026-01-23T00:01:07.669+0000] {logging_mixin.py:151} INFO - [2026-01-23T00:01:07.669+0000] {dag.py:3696} INFO - Setting next_dagrun for 2_data_quality_check to None, run_after=None
+[2026-01-23T00:01:07.693+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/quality_check.py took 0.093 seconds
+[2026-01-23T00:01:37.800+0000] {processor.py:157} INFO - Started process (PID=2034) to work on /opt/airflow/dags/quality_check.py
+[2026-01-23T00:01:37.802+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/quality_check.py for tasks to queue
+[2026-01-23T00:01:37.802+0000] {logging_mixin.py:151} INFO - [2026-01-23T00:01:37.802+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/quality_check.py
+[2026-01-23T00:01:37.813+0000] {processor.py:839} INFO - DAG(s) dict_keys(['2_data_quality_check']) retrieved from /opt/airflow/dags/quality_check.py
+[2026-01-23T00:01:37.859+0000] {logging_mixin.py:151} INFO - [2026-01-23T00:01:37.859+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2026-01-23T00:01:37.871+0000] {logging_mixin.py:151} INFO - [2026-01-23T00:01:37.871+0000] {dag.py:3696} INFO - Setting next_dagrun for 2_data_quality_check to None, run_after=None
+[2026-01-23T00:01:37.896+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/quality_check.py took 0.099 seconds
+[2026-01-23T00:02:08.001+0000] {processor.py:157} INFO - Started process (PID=2055) to work on /opt/airflow/dags/quality_check.py
+[2026-01-23T00:02:08.002+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/quality_check.py for tasks to queue
+[2026-01-23T00:02:08.003+0000] {logging_mixin.py:151} INFO - [2026-01-23T00:02:08.003+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/quality_check.py
+[2026-01-23T00:02:08.012+0000] {processor.py:839} INFO - DAG(s) dict_keys(['2_data_quality_check']) retrieved from /opt/airflow/dags/quality_check.py
+[2026-01-23T00:02:08.041+0000] {logging_mixin.py:151} INFO - [2026-01-23T00:02:08.041+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2026-01-23T00:02:08.053+0000] {logging_mixin.py:151} INFO - [2026-01-23T00:02:08.053+0000] {dag.py:3696} INFO - Setting next_dagrun for 2_data_quality_check to None, run_after=None
+[2026-01-23T00:02:08.080+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/quality_check.py took 0.082 seconds
+[2026-01-23T00:02:38.194+0000] {processor.py:157} INFO - Started process (PID=2076) to work on /opt/airflow/dags/quality_check.py
+[2026-01-23T00:02:38.196+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/quality_check.py for tasks to queue
+[2026-01-23T00:02:38.197+0000] {logging_mixin.py:151} INFO - [2026-01-23T00:02:38.197+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/quality_check.py
+[2026-01-23T00:02:38.207+0000] {processor.py:839} INFO - DAG(s) dict_keys(['2_data_quality_check']) retrieved from /opt/airflow/dags/quality_check.py
+[2026-01-23T00:02:38.239+0000] {logging_mixin.py:151} INFO - [2026-01-23T00:02:38.238+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2026-01-23T00:02:38.252+0000] {logging_mixin.py:151} INFO - [2026-01-23T00:02:38.251+0000] {dag.py:3696} INFO - Setting next_dagrun for 2_data_quality_check to None, run_after=None
+[2026-01-23T00:02:38.277+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/quality_check.py took 0.087 seconds
+[2026-01-23T00:03:08.990+0000] {processor.py:157} INFO - Started process (PID=2097) to work on /opt/airflow/dags/quality_check.py
+[2026-01-23T00:03:08.992+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/quality_check.py for tasks to queue
+[2026-01-23T00:03:08.993+0000] {logging_mixin.py:151} INFO - [2026-01-23T00:03:08.992+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/quality_check.py
+[2026-01-23T00:03:09.007+0000] {processor.py:839} INFO - DAG(s) dict_keys(['2_data_quality_check']) retrieved from /opt/airflow/dags/quality_check.py
+[2026-01-23T00:03:09.042+0000] {logging_mixin.py:151} INFO - [2026-01-23T00:03:09.042+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2026-01-23T00:03:09.059+0000] {logging_mixin.py:151} INFO - [2026-01-23T00:03:09.059+0000] {dag.py:3696} INFO - Setting next_dagrun for 2_data_quality_check to None, run_after=None
+[2026-01-23T00:03:09.088+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/quality_check.py took 0.102 seconds
+[2026-01-23T00:03:39.245+0000] {processor.py:157} INFO - Started process (PID=2118) to work on /opt/airflow/dags/quality_check.py
+[2026-01-23T00:03:39.246+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/quality_check.py for tasks to queue
+[2026-01-23T00:03:39.247+0000] {logging_mixin.py:151} INFO - [2026-01-23T00:03:39.246+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/quality_check.py
+[2026-01-23T00:03:39.256+0000] {processor.py:839} INFO - DAG(s) dict_keys(['2_data_quality_check']) retrieved from /opt/airflow/dags/quality_check.py
+[2026-01-23T00:03:39.285+0000] {logging_mixin.py:151} INFO - [2026-01-23T00:03:39.285+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2026-01-23T00:03:39.297+0000] {logging_mixin.py:151} INFO - [2026-01-23T00:03:39.297+0000] {dag.py:3696} INFO - Setting next_dagrun for 2_data_quality_check to None, run_after=None
+[2026-01-23T00:03:39.319+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/quality_check.py took 0.077 seconds
+[2026-01-23T00:04:09.352+0000] {processor.py:157} INFO - Started process (PID=2139) to work on /opt/airflow/dags/quality_check.py
+[2026-01-23T00:04:09.354+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/quality_check.py for tasks to queue
+[2026-01-23T00:04:09.355+0000] {logging_mixin.py:151} INFO - [2026-01-23T00:04:09.354+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/quality_check.py
+[2026-01-23T00:04:09.364+0000] {processor.py:839} INFO - DAG(s) dict_keys(['2_data_quality_check']) retrieved from /opt/airflow/dags/quality_check.py
+[2026-01-23T00:04:09.392+0000] {logging_mixin.py:151} INFO - [2026-01-23T00:04:09.392+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2026-01-23T00:04:09.405+0000] {logging_mixin.py:151} INFO - [2026-01-23T00:04:09.404+0000] {dag.py:3696} INFO - Setting next_dagrun for 2_data_quality_check to None, run_after=None
+[2026-01-23T00:04:09.426+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/quality_check.py took 0.077 seconds
+[2026-01-23T00:04:40.168+0000] {processor.py:157} INFO - Started process (PID=2160) to work on /opt/airflow/dags/quality_check.py
+[2026-01-23T00:04:40.170+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/quality_check.py for tasks to queue
+[2026-01-23T00:04:40.171+0000] {logging_mixin.py:151} INFO - [2026-01-23T00:04:40.171+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/quality_check.py
+[2026-01-23T00:04:40.181+0000] {processor.py:839} INFO - DAG(s) dict_keys(['2_data_quality_check']) retrieved from /opt/airflow/dags/quality_check.py
+[2026-01-23T00:04:40.212+0000] {logging_mixin.py:151} INFO - [2026-01-23T00:04:40.212+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2026-01-23T00:04:40.224+0000] {logging_mixin.py:151} INFO - [2026-01-23T00:04:40.224+0000] {dag.py:3696} INFO - Setting next_dagrun for 2_data_quality_check to None, run_after=None
+[2026-01-23T00:04:40.245+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/quality_check.py took 0.082 seconds
+[2026-01-23T00:05:10.487+0000] {processor.py:157} INFO - Started process (PID=2181) to work on /opt/airflow/dags/quality_check.py
+[2026-01-23T00:05:10.489+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/quality_check.py for tasks to queue
+[2026-01-23T00:05:10.490+0000] {logging_mixin.py:151} INFO - [2026-01-23T00:05:10.490+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/quality_check.py
+[2026-01-23T00:05:10.504+0000] {processor.py:839} INFO - DAG(s) dict_keys(['2_data_quality_check']) retrieved from /opt/airflow/dags/quality_check.py
+[2026-01-23T00:05:10.546+0000] {logging_mixin.py:151} INFO - [2026-01-23T00:05:10.545+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2026-01-23T00:05:10.561+0000] {logging_mixin.py:151} INFO - [2026-01-23T00:05:10.561+0000] {dag.py:3696} INFO - Setting next_dagrun for 2_data_quality_check to None, run_after=None
+[2026-01-23T00:05:10.588+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/quality_check.py took 0.105 seconds
+[2026-01-23T00:05:41.306+0000] {processor.py:157} INFO - Started process (PID=2202) to work on /opt/airflow/dags/quality_check.py
+[2026-01-23T00:05:41.309+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/quality_check.py for tasks to queue
+[2026-01-23T00:05:41.310+0000] {logging_mixin.py:151} INFO - [2026-01-23T00:05:41.310+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/quality_check.py
+[2026-01-23T00:05:41.320+0000] {processor.py:839} INFO - DAG(s) dict_keys(['2_data_quality_check']) retrieved from /opt/airflow/dags/quality_check.py
+[2026-01-23T00:05:41.356+0000] {logging_mixin.py:151} INFO - [2026-01-23T00:05:41.356+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2026-01-23T00:05:41.369+0000] {logging_mixin.py:151} INFO - [2026-01-23T00:05:41.368+0000] {dag.py:3696} INFO - Setting next_dagrun for 2_data_quality_check to None, run_after=None
+[2026-01-23T00:05:41.392+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/quality_check.py took 0.090 seconds
+[2026-01-23T00:06:12.092+0000] {processor.py:157} INFO - Started process (PID=2223) to work on /opt/airflow/dags/quality_check.py
+[2026-01-23T00:06:12.098+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/quality_check.py for tasks to queue
+[2026-01-23T00:06:12.107+0000] {logging_mixin.py:151} INFO - [2026-01-23T00:06:12.099+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/quality_check.py
+[2026-01-23T00:06:12.130+0000] {processor.py:839} INFO - DAG(s) dict_keys(['2_data_quality_check']) retrieved from /opt/airflow/dags/quality_check.py
+[2026-01-23T00:06:12.152+0000] {logging_mixin.py:151} INFO - [2026-01-23T00:06:12.152+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2026-01-23T00:06:12.171+0000] {logging_mixin.py:151} INFO - [2026-01-23T00:06:12.171+0000] {dag.py:3696} INFO - Setting next_dagrun for 2_data_quality_check to None, run_after=None
+[2026-01-23T00:06:12.200+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/quality_check.py took 0.119 seconds
+[2026-01-23T00:06:42.428+0000] {processor.py:157} INFO - Started process (PID=2262) to work on /opt/airflow/dags/quality_check.py
+[2026-01-23T00:06:42.430+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/quality_check.py for tasks to queue
+[2026-01-23T00:06:42.432+0000] {logging_mixin.py:151} INFO - [2026-01-23T00:06:42.431+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/quality_check.py
+[2026-01-23T00:06:42.448+0000] {processor.py:839} INFO - DAG(s) dict_keys(['2_data_quality_check']) retrieved from /opt/airflow/dags/quality_check.py
+[2026-01-23T00:06:42.472+0000] {logging_mixin.py:151} INFO - [2026-01-23T00:06:42.472+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2026-01-23T00:06:42.493+0000] {logging_mixin.py:151} INFO - [2026-01-23T00:06:42.493+0000] {dag.py:3696} INFO - Setting next_dagrun for 2_data_quality_check to None, run_after=None
+[2026-01-23T00:06:42.529+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/quality_check.py took 0.108 seconds
+[2026-01-23T00:07:13.172+0000] {processor.py:157} INFO - Started process (PID=2344) to work on /opt/airflow/dags/quality_check.py
+[2026-01-23T00:07:13.197+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/quality_check.py for tasks to queue
+[2026-01-23T00:07:13.199+0000] {logging_mixin.py:151} INFO - [2026-01-23T00:07:13.199+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/quality_check.py
+[2026-01-23T00:07:13.505+0000] {processor.py:839} INFO - DAG(s) dict_keys(['2_data_quality_check']) retrieved from /opt/airflow/dags/quality_check.py
+[2026-01-23T00:07:13.599+0000] {logging_mixin.py:151} INFO - [2026-01-23T00:07:13.599+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2026-01-23T00:07:13.612+0000] {logging_mixin.py:151} INFO - [2026-01-23T00:07:13.612+0000] {dag.py:3696} INFO - Setting next_dagrun for 2_data_quality_check to None, run_after=None
+[2026-01-23T00:07:13.858+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/quality_check.py took 0.693 seconds
+[2026-01-23T00:07:43.906+0000] {processor.py:157} INFO - Started process (PID=2378) to work on /opt/airflow/dags/quality_check.py
+[2026-01-23T00:07:43.907+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/quality_check.py for tasks to queue
+[2026-01-23T00:07:43.908+0000] {logging_mixin.py:151} INFO - [2026-01-23T00:07:43.908+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/quality_check.py
+[2026-01-23T00:07:43.921+0000] {processor.py:839} INFO - DAG(s) dict_keys(['2_data_quality_check']) retrieved from /opt/airflow/dags/quality_check.py
+[2026-01-23T00:07:43.958+0000] {logging_mixin.py:151} INFO - [2026-01-23T00:07:43.958+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2026-01-23T00:07:43.972+0000] {logging_mixin.py:151} INFO - [2026-01-23T00:07:43.971+0000] {dag.py:3696} INFO - Setting next_dagrun for 2_data_quality_check to None, run_after=None
+[2026-01-23T00:07:43.996+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/quality_check.py took 0.095 seconds
+[2026-01-23T00:08:14.185+0000] {processor.py:157} INFO - Started process (PID=2427) to work on /opt/airflow/dags/quality_check.py
+[2026-01-23T00:08:14.187+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/quality_check.py for tasks to queue
+[2026-01-23T00:08:14.188+0000] {logging_mixin.py:151} INFO - [2026-01-23T00:08:14.188+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/quality_check.py
+[2026-01-23T00:08:14.199+0000] {processor.py:839} INFO - DAG(s) dict_keys(['2_data_quality_check']) retrieved from /opt/airflow/dags/quality_check.py
+[2026-01-23T00:08:14.231+0000] {logging_mixin.py:151} INFO - [2026-01-23T00:08:14.231+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2026-01-23T00:08:14.243+0000] {logging_mixin.py:151} INFO - [2026-01-23T00:08:14.243+0000] {dag.py:3696} INFO - Setting next_dagrun for 2_data_quality_check to None, run_after=None
+[2026-01-23T00:08:14.265+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/quality_check.py took 0.084 seconds
+[2026-01-23T00:08:44.997+0000] {processor.py:157} INFO - Started process (PID=2542) to work on /opt/airflow/dags/quality_check.py
+[2026-01-23T00:08:44.998+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/quality_check.py for tasks to queue
+[2026-01-23T00:08:44.999+0000] {logging_mixin.py:151} INFO - [2026-01-23T00:08:44.999+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/quality_check.py
+[2026-01-23T00:08:45.009+0000] {processor.py:839} INFO - DAG(s) dict_keys(['2_data_quality_check']) retrieved from /opt/airflow/dags/quality_check.py
+[2026-01-23T00:08:45.037+0000] {logging_mixin.py:151} INFO - [2026-01-23T00:08:45.037+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2026-01-23T00:08:45.048+0000] {logging_mixin.py:151} INFO - [2026-01-23T00:08:45.048+0000] {dag.py:3696} INFO - Setting next_dagrun for 2_data_quality_check to None, run_after=None
+[2026-01-23T00:08:45.072+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/quality_check.py took 0.078 seconds
+[2026-01-23T00:09:15.766+0000] {processor.py:157} INFO - Started process (PID=2563) to work on /opt/airflow/dags/quality_check.py
+[2026-01-23T00:09:15.768+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/quality_check.py for tasks to queue
+[2026-01-23T00:09:15.768+0000] {logging_mixin.py:151} INFO - [2026-01-23T00:09:15.768+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/quality_check.py
+[2026-01-23T00:09:15.777+0000] {processor.py:839} INFO - DAG(s) dict_keys(['2_data_quality_check']) retrieved from /opt/airflow/dags/quality_check.py
+[2026-01-23T00:09:15.805+0000] {logging_mixin.py:151} INFO - [2026-01-23T00:09:15.804+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2026-01-23T00:09:15.817+0000] {logging_mixin.py:151} INFO - [2026-01-23T00:09:15.817+0000] {dag.py:3696} INFO - Setting next_dagrun for 2_data_quality_check to None, run_after=None
+[2026-01-23T00:09:15.837+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/quality_check.py took 0.074 seconds
+[2026-01-23T00:09:46.399+0000] {processor.py:157} INFO - Started process (PID=2584) to work on /opt/airflow/dags/quality_check.py
+[2026-01-23T00:09:46.400+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/quality_check.py for tasks to queue
+[2026-01-23T00:09:46.401+0000] {logging_mixin.py:151} INFO - [2026-01-23T00:09:46.401+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/quality_check.py
+[2026-01-23T00:09:46.413+0000] {processor.py:839} INFO - DAG(s) dict_keys(['2_data_quality_check']) retrieved from /opt/airflow/dags/quality_check.py
+[2026-01-23T00:09:46.454+0000] {logging_mixin.py:151} INFO - [2026-01-23T00:09:46.453+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2026-01-23T00:09:46.469+0000] {logging_mixin.py:151} INFO - [2026-01-23T00:09:46.469+0000] {dag.py:3696} INFO - Setting next_dagrun for 2_data_quality_check to None, run_after=None
+[2026-01-23T00:09:46.504+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/quality_check.py took 0.110 seconds
+[2026-01-23T00:11:31.247+0000] {processor.py:157} INFO - Started process (PID=170) to work on /opt/airflow/dags/quality_check.py
+[2026-01-23T00:11:31.280+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/quality_check.py for tasks to queue
+[2026-01-23T00:11:31.282+0000] {logging_mixin.py:151} INFO - [2026-01-23T00:11:31.281+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/quality_check.py
+[2026-01-23T00:11:31.312+0000] {processor.py:839} INFO - DAG(s) dict_keys(['2_data_quality_check']) retrieved from /opt/airflow/dags/quality_check.py
+[2026-01-23T00:11:31.356+0000] {logging_mixin.py:151} INFO - [2026-01-23T00:11:31.356+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2026-01-23T00:11:31.378+0000] {logging_mixin.py:151} INFO - [2026-01-23T00:11:31.377+0000] {dag.py:3696} INFO - Setting next_dagrun for 2_data_quality_check to None, run_after=None
+[2026-01-23T00:11:31.414+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/quality_check.py took 0.170 seconds
+[2026-01-23T00:12:02.399+0000] {processor.py:157} INFO - Started process (PID=234) to work on /opt/airflow/dags/quality_check.py
+[2026-01-23T00:12:02.404+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/quality_check.py for tasks to queue
+[2026-01-23T00:12:02.423+0000] {logging_mixin.py:151} INFO - [2026-01-23T00:12:02.422+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/quality_check.py
+[2026-01-23T00:12:02.530+0000] {processor.py:839} INFO - DAG(s) dict_keys(['2_data_quality_check']) retrieved from /opt/airflow/dags/quality_check.py
+[2026-01-23T00:12:02.573+0000] {logging_mixin.py:151} INFO - [2026-01-23T00:12:02.572+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2026-01-23T00:12:02.838+0000] {logging_mixin.py:151} INFO - [2026-01-23T00:12:02.838+0000] {dag.py:3696} INFO - Setting next_dagrun for 2_data_quality_check to None, run_after=None
+[2026-01-23T00:12:02.935+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/quality_check.py took 0.553 seconds
+[2026-01-23T00:12:33.453+0000] {processor.py:157} INFO - Started process (PID=276) to work on /opt/airflow/dags/quality_check.py
+[2026-01-23T00:12:33.454+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/quality_check.py for tasks to queue
+[2026-01-23T00:12:33.458+0000] {logging_mixin.py:151} INFO - [2026-01-23T00:12:33.457+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/quality_check.py
+[2026-01-23T00:12:33.501+0000] {processor.py:839} INFO - DAG(s) dict_keys(['2_data_quality_check']) retrieved from /opt/airflow/dags/quality_check.py
+[2026-01-23T00:12:33.634+0000] {logging_mixin.py:151} INFO - [2026-01-23T00:12:33.634+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2026-01-23T00:12:33.681+0000] {logging_mixin.py:151} INFO - [2026-01-23T00:12:33.681+0000] {dag.py:3696} INFO - Setting next_dagrun for 2_data_quality_check to None, run_after=None
+[2026-01-23T00:12:33.736+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/quality_check.py took 0.290 seconds
+[2026-01-23T00:13:04.232+0000] {processor.py:157} INFO - Started process (PID=332) to work on /opt/airflow/dags/quality_check.py
+[2026-01-23T00:13:04.234+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/quality_check.py for tasks to queue
+[2026-01-23T00:13:04.236+0000] {logging_mixin.py:151} INFO - [2026-01-23T00:13:04.235+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/quality_check.py
+[2026-01-23T00:13:04.259+0000] {processor.py:839} INFO - DAG(s) dict_keys(['2_data_quality_check']) retrieved from /opt/airflow/dags/quality_check.py
+[2026-01-23T00:13:04.333+0000] {logging_mixin.py:151} INFO - [2026-01-23T00:13:04.332+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2026-01-23T00:13:04.376+0000] {logging_mixin.py:151} INFO - [2026-01-23T00:13:04.375+0000] {dag.py:3696} INFO - Setting next_dagrun for 2_data_quality_check to None, run_after=None
+[2026-01-23T00:13:04.435+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/quality_check.py took 0.213 seconds
+[2026-01-23T00:13:35.050+0000] {processor.py:157} INFO - Started process (PID=353) to work on /opt/airflow/dags/quality_check.py
+[2026-01-23T00:13:35.053+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/quality_check.py for tasks to queue
+[2026-01-23T00:13:35.054+0000] {logging_mixin.py:151} INFO - [2026-01-23T00:13:35.053+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/quality_check.py
+[2026-01-23T00:13:35.068+0000] {processor.py:839} INFO - DAG(s) dict_keys(['2_data_quality_check']) retrieved from /opt/airflow/dags/quality_check.py
+[2026-01-23T00:13:35.105+0000] {logging_mixin.py:151} INFO - [2026-01-23T00:13:35.104+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2026-01-23T00:13:35.121+0000] {logging_mixin.py:151} INFO - [2026-01-23T00:13:35.121+0000] {dag.py:3696} INFO - Setting next_dagrun for 2_data_quality_check to None, run_after=None
+[2026-01-23T00:13:35.149+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/quality_check.py took 0.105 seconds
+[2026-01-23T00:14:05.678+0000] {processor.py:157} INFO - Started process (PID=387) to work on /opt/airflow/dags/quality_check.py
+[2026-01-23T00:14:05.679+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/quality_check.py for tasks to queue
+[2026-01-23T00:14:05.680+0000] {logging_mixin.py:151} INFO - [2026-01-23T00:14:05.680+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/quality_check.py
+[2026-01-23T00:14:05.694+0000] {processor.py:839} INFO - DAG(s) dict_keys(['2_data_quality_check']) retrieved from /opt/airflow/dags/quality_check.py
+[2026-01-23T00:14:05.732+0000] {logging_mixin.py:151} INFO - [2026-01-23T00:14:05.731+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2026-01-23T00:14:05.748+0000] {logging_mixin.py:151} INFO - [2026-01-23T00:14:05.748+0000] {dag.py:3696} INFO - Setting next_dagrun for 2_data_quality_check to None, run_after=None
+[2026-01-23T00:14:05.939+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/quality_check.py took 0.265 seconds
+[2026-01-23T00:14:36.363+0000] {processor.py:157} INFO - Started process (PID=466) to work on /opt/airflow/dags/quality_check.py
+[2026-01-23T00:14:36.365+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/quality_check.py for tasks to queue
+[2026-01-23T00:14:36.366+0000] {logging_mixin.py:151} INFO - [2026-01-23T00:14:36.365+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/quality_check.py
+[2026-01-23T00:14:36.384+0000] {processor.py:839} INFO - DAG(s) dict_keys(['2_data_quality_check']) retrieved from /opt/airflow/dags/quality_check.py
+[2026-01-23T00:14:36.432+0000] {logging_mixin.py:151} INFO - [2026-01-23T00:14:36.431+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2026-01-23T00:14:36.623+0000] {logging_mixin.py:151} INFO - [2026-01-23T00:14:36.622+0000] {dag.py:3696} INFO - Setting next_dagrun for 2_data_quality_check to None, run_after=None
+[2026-01-23T00:14:36.658+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/quality_check.py took 0.302 seconds
+[2026-01-23T00:15:07.052+0000] {processor.py:157} INFO - Started process (PID=552) to work on /opt/airflow/dags/quality_check.py
+[2026-01-23T00:15:07.054+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/quality_check.py for tasks to queue
+[2026-01-23T00:15:07.054+0000] {logging_mixin.py:151} INFO - [2026-01-23T00:15:07.054+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/quality_check.py
+[2026-01-23T00:15:07.307+0000] {processor.py:839} INFO - DAG(s) dict_keys(['2_data_quality_check']) retrieved from /opt/airflow/dags/quality_check.py
+[2026-01-23T00:15:07.348+0000] {logging_mixin.py:151} INFO - [2026-01-23T00:15:07.348+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2026-01-23T00:15:07.365+0000] {logging_mixin.py:151} INFO - [2026-01-23T00:15:07.365+0000] {dag.py:3696} INFO - Setting next_dagrun for 2_data_quality_check to None, run_after=None
+[2026-01-23T00:15:07.388+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/quality_check.py took 0.340 seconds
+[2026-01-23T00:15:37.446+0000] {processor.py:157} INFO - Started process (PID=573) to work on /opt/airflow/dags/quality_check.py
+[2026-01-23T00:15:37.449+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/quality_check.py for tasks to queue
+[2026-01-23T00:15:37.450+0000] {logging_mixin.py:151} INFO - [2026-01-23T00:15:37.449+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/quality_check.py
+[2026-01-23T00:15:37.461+0000] {processor.py:839} INFO - DAG(s) dict_keys(['2_data_quality_check']) retrieved from /opt/airflow/dags/quality_check.py
+[2026-01-23T00:15:37.494+0000] {logging_mixin.py:151} INFO - [2026-01-23T00:15:37.494+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2026-01-23T00:15:37.507+0000] {logging_mixin.py:151} INFO - [2026-01-23T00:15:37.507+0000] {dag.py:3696} INFO - Setting next_dagrun for 2_data_quality_check to None, run_after=None
+[2026-01-23T00:15:37.527+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/quality_check.py took 0.084 seconds
+[2026-01-23T00:16:08.145+0000] {processor.py:157} INFO - Started process (PID=594) to work on /opt/airflow/dags/quality_check.py
+[2026-01-23T00:16:08.147+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/quality_check.py for tasks to queue
+[2026-01-23T00:16:08.149+0000] {logging_mixin.py:151} INFO - [2026-01-23T00:16:08.148+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/quality_check.py
+[2026-01-23T00:16:08.166+0000] {processor.py:839} INFO - DAG(s) dict_keys(['2_data_quality_check']) retrieved from /opt/airflow/dags/quality_check.py
+[2026-01-23T00:16:08.212+0000] {logging_mixin.py:151} INFO - [2026-01-23T00:16:08.212+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2026-01-23T00:16:08.229+0000] {logging_mixin.py:151} INFO - [2026-01-23T00:16:08.229+0000] {dag.py:3696} INFO - Setting next_dagrun for 2_data_quality_check to None, run_after=None
+[2026-01-23T00:16:08.262+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/quality_check.py took 0.122 seconds
+[2026-01-23T00:16:38.885+0000] {processor.py:157} INFO - Started process (PID=615) to work on /opt/airflow/dags/quality_check.py
+[2026-01-23T00:16:38.886+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/quality_check.py for tasks to queue
+[2026-01-23T00:16:38.887+0000] {logging_mixin.py:151} INFO - [2026-01-23T00:16:38.887+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/quality_check.py
+[2026-01-23T00:16:38.896+0000] {processor.py:839} INFO - DAG(s) dict_keys(['2_data_quality_check']) retrieved from /opt/airflow/dags/quality_check.py
+[2026-01-23T00:16:38.928+0000] {logging_mixin.py:151} INFO - [2026-01-23T00:16:38.928+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2026-01-23T00:16:38.940+0000] {logging_mixin.py:151} INFO - [2026-01-23T00:16:38.940+0000] {dag.py:3696} INFO - Setting next_dagrun for 2_data_quality_check to None, run_after=None
+[2026-01-23T00:16:38.961+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/quality_check.py took 0.081 seconds
+[2026-01-23T00:17:09.593+0000] {processor.py:157} INFO - Started process (PID=636) to work on /opt/airflow/dags/quality_check.py
+[2026-01-23T00:17:09.594+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/quality_check.py for tasks to queue
+[2026-01-23T00:17:09.595+0000] {logging_mixin.py:151} INFO - [2026-01-23T00:17:09.595+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/quality_check.py
+[2026-01-23T00:17:09.607+0000] {processor.py:839} INFO - DAG(s) dict_keys(['2_data_quality_check']) retrieved from /opt/airflow/dags/quality_check.py
+[2026-01-23T00:17:09.639+0000] {logging_mixin.py:151} INFO - [2026-01-23T00:17:09.638+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2026-01-23T00:17:09.651+0000] {logging_mixin.py:151} INFO - [2026-01-23T00:17:09.651+0000] {dag.py:3696} INFO - Setting next_dagrun for 2_data_quality_check to None, run_after=None
+[2026-01-23T00:17:09.674+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/quality_check.py took 0.085 seconds
+[2026-01-23T00:17:40.285+0000] {processor.py:157} INFO - Started process (PID=657) to work on /opt/airflow/dags/quality_check.py
+[2026-01-23T00:17:40.286+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/quality_check.py for tasks to queue
+[2026-01-23T00:17:40.288+0000] {logging_mixin.py:151} INFO - [2026-01-23T00:17:40.287+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/quality_check.py
+[2026-01-23T00:17:40.301+0000] {processor.py:839} INFO - DAG(s) dict_keys(['2_data_quality_check']) retrieved from /opt/airflow/dags/quality_check.py
+[2026-01-23T00:17:40.344+0000] {logging_mixin.py:151} INFO - [2026-01-23T00:17:40.344+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2026-01-23T00:17:40.360+0000] {logging_mixin.py:151} INFO - [2026-01-23T00:17:40.360+0000] {dag.py:3696} INFO - Setting next_dagrun for 2_data_quality_check to None, run_after=None
+[2026-01-23T00:17:40.403+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/quality_check.py took 0.122 seconds
+[2026-01-23T00:18:10.580+0000] {processor.py:157} INFO - Started process (PID=678) to work on /opt/airflow/dags/quality_check.py
+[2026-01-23T00:18:10.582+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/quality_check.py for tasks to queue
+[2026-01-23T00:18:10.583+0000] {logging_mixin.py:151} INFO - [2026-01-23T00:18:10.582+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/quality_check.py
+[2026-01-23T00:18:10.597+0000] {processor.py:839} INFO - DAG(s) dict_keys(['2_data_quality_check']) retrieved from /opt/airflow/dags/quality_check.py
+[2026-01-23T00:18:10.630+0000] {logging_mixin.py:151} INFO - [2026-01-23T00:18:10.630+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2026-01-23T00:18:10.644+0000] {logging_mixin.py:151} INFO - [2026-01-23T00:18:10.643+0000] {dag.py:3696} INFO - Setting next_dagrun for 2_data_quality_check to None, run_after=None
+[2026-01-23T00:18:10.669+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/quality_check.py took 0.094 seconds
+[2026-01-23T08:15:23.351+0000] {processor.py:157} INFO - Started process (PID=171) to work on /opt/airflow/dags/quality_check.py
+[2026-01-23T08:15:23.383+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/quality_check.py for tasks to queue
+[2026-01-23T08:15:23.384+0000] {logging_mixin.py:151} INFO - [2026-01-23T08:15:23.383+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/quality_check.py
+[2026-01-23T08:15:23.420+0000] {processor.py:839} INFO - DAG(s) dict_keys(['2_data_quality_check']) retrieved from /opt/airflow/dags/quality_check.py
+[2026-01-23T08:15:23.630+0000] {logging_mixin.py:151} INFO - [2026-01-23T08:15:23.630+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2026-01-23T08:15:23.689+0000] {logging_mixin.py:151} INFO - [2026-01-23T08:15:23.688+0000] {dag.py:3696} INFO - Setting next_dagrun for 2_data_quality_check to None, run_after=None
+[2026-01-23T08:15:23.852+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/quality_check.py took 0.509 seconds
+[2026-01-23T08:15:53.953+0000] {processor.py:157} INFO - Started process (PID=193) to work on /opt/airflow/dags/quality_check.py
+[2026-01-23T08:15:53.957+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/quality_check.py for tasks to queue
+[2026-01-23T08:15:53.960+0000] {logging_mixin.py:151} INFO - [2026-01-23T08:15:53.959+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/quality_check.py
+[2026-01-23T08:15:54.006+0000] {processor.py:839} INFO - DAG(s) dict_keys(['2_data_quality_check']) retrieved from /opt/airflow/dags/quality_check.py
+[2026-01-23T08:15:54.024+0000] {logging_mixin.py:151} INFO - [2026-01-23T08:15:54.023+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2026-01-23T08:15:54.090+0000] {logging_mixin.py:151} INFO - [2026-01-23T08:15:54.090+0000] {dag.py:3696} INFO - Setting next_dagrun for 2_data_quality_check to None, run_after=None
+[2026-01-23T08:15:54.124+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/quality_check.py took 0.180 seconds
+[2026-01-23T08:16:24.287+0000] {processor.py:157} INFO - Started process (PID=265) to work on /opt/airflow/dags/quality_check.py
+[2026-01-23T08:16:24.288+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/quality_check.py for tasks to queue
+[2026-01-23T08:16:24.289+0000] {logging_mixin.py:151} INFO - [2026-01-23T08:16:24.289+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/quality_check.py
+[2026-01-23T08:16:24.327+0000] {processor.py:839} INFO - DAG(s) dict_keys(['2_data_quality_check']) retrieved from /opt/airflow/dags/quality_check.py
+[2026-01-23T08:16:24.383+0000] {logging_mixin.py:151} INFO - [2026-01-23T08:16:24.382+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2026-01-23T08:16:24.428+0000] {logging_mixin.py:151} INFO - [2026-01-23T08:16:24.427+0000] {dag.py:3696} INFO - Setting next_dagrun for 2_data_quality_check to None, run_after=None
+[2026-01-23T08:16:24.466+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/quality_check.py took 0.185 seconds
+[2026-01-23T08:16:55.057+0000] {processor.py:157} INFO - Started process (PID=299) to work on /opt/airflow/dags/quality_check.py
+[2026-01-23T08:16:55.058+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/quality_check.py for tasks to queue
+[2026-01-23T08:16:55.060+0000] {logging_mixin.py:151} INFO - [2026-01-23T08:16:55.059+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/quality_check.py
+[2026-01-23T08:16:55.077+0000] {processor.py:839} INFO - DAG(s) dict_keys(['2_data_quality_check']) retrieved from /opt/airflow/dags/quality_check.py
+[2026-01-23T08:16:55.126+0000] {logging_mixin.py:151} INFO - [2026-01-23T08:16:55.126+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2026-01-23T08:16:55.350+0000] {logging_mixin.py:151} INFO - [2026-01-23T08:16:55.350+0000] {dag.py:3696} INFO - Setting next_dagrun for 2_data_quality_check to None, run_after=None
+[2026-01-23T08:16:55.374+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/quality_check.py took 0.321 seconds
+[2026-01-23T08:17:25.631+0000] {processor.py:157} INFO - Started process (PID=355) to work on /opt/airflow/dags/quality_check.py
+[2026-01-23T08:17:25.632+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/quality_check.py for tasks to queue
+[2026-01-23T08:17:25.633+0000] {logging_mixin.py:151} INFO - [2026-01-23T08:17:25.633+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/quality_check.py
+[2026-01-23T08:17:25.643+0000] {processor.py:839} INFO - DAG(s) dict_keys(['2_data_quality_check']) retrieved from /opt/airflow/dags/quality_check.py
+[2026-01-23T08:17:25.816+0000] {logging_mixin.py:151} INFO - [2026-01-23T08:17:25.815+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2026-01-23T08:17:25.827+0000] {logging_mixin.py:151} INFO - [2026-01-23T08:17:25.827+0000] {dag.py:3696} INFO - Setting next_dagrun for 2_data_quality_check to None, run_after=None
+[2026-01-23T08:17:25.848+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/quality_check.py took 0.220 seconds
+[2026-01-23T08:17:56.274+0000] {processor.py:157} INFO - Started process (PID=376) to work on /opt/airflow/dags/quality_check.py
+[2026-01-23T08:17:56.276+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/quality_check.py for tasks to queue
+[2026-01-23T08:17:56.277+0000] {logging_mixin.py:151} INFO - [2026-01-23T08:17:56.276+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/quality_check.py
+[2026-01-23T08:17:56.288+0000] {processor.py:839} INFO - DAG(s) dict_keys(['2_data_quality_check']) retrieved from /opt/airflow/dags/quality_check.py
+[2026-01-23T08:17:56.321+0000] {logging_mixin.py:151} INFO - [2026-01-23T08:17:56.320+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2026-01-23T08:17:56.333+0000] {logging_mixin.py:151} INFO - [2026-01-23T08:17:56.333+0000] {dag.py:3696} INFO - Setting next_dagrun for 2_data_quality_check to None, run_after=None
+[2026-01-23T08:17:56.361+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/quality_check.py took 0.090 seconds
+[2026-01-23T08:19:43.603+0000] {processor.py:157} INFO - Started process (PID=174) to work on /opt/airflow/dags/quality_check.py
+[2026-01-23T08:19:43.608+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/quality_check.py for tasks to queue
+[2026-01-23T08:19:43.609+0000] {logging_mixin.py:151} INFO - [2026-01-23T08:19:43.608+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/quality_check.py
+[2026-01-23T08:19:43.635+0000] {processor.py:839} INFO - DAG(s) dict_keys(['2_data_quality_check']) retrieved from /opt/airflow/dags/quality_check.py
+[2026-01-23T08:19:43.667+0000] {logging_mixin.py:151} INFO - [2026-01-23T08:19:43.667+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2026-01-23T08:19:43.682+0000] {logging_mixin.py:151} INFO - [2026-01-23T08:19:43.682+0000] {dag.py:3696} INFO - Setting next_dagrun for 2_data_quality_check to None, run_after=None
+[2026-01-23T08:19:43.705+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/quality_check.py took 0.109 seconds
+[2026-01-23T08:20:14.049+0000] {processor.py:157} INFO - Started process (PID=210) to work on /opt/airflow/dags/quality_check.py
+[2026-01-23T08:20:14.051+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/quality_check.py for tasks to queue
+[2026-01-23T08:20:14.052+0000] {logging_mixin.py:151} INFO - [2026-01-23T08:20:14.052+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/quality_check.py
+[2026-01-23T08:20:14.073+0000] {processor.py:839} INFO - DAG(s) dict_keys(['2_data_quality_check']) retrieved from /opt/airflow/dags/quality_check.py
+[2026-01-23T08:20:14.095+0000] {logging_mixin.py:151} INFO - [2026-01-23T08:20:14.095+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2026-01-23T08:20:14.149+0000] {logging_mixin.py:151} INFO - [2026-01-23T08:20:14.149+0000] {dag.py:3696} INFO - Setting next_dagrun for 2_data_quality_check to None, run_after=None
+[2026-01-23T08:20:14.176+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/quality_check.py took 0.133 seconds
+[2026-01-23T08:20:44.517+0000] {processor.py:157} INFO - Started process (PID=231) to work on /opt/airflow/dags/quality_check.py
+[2026-01-23T08:20:44.519+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/quality_check.py for tasks to queue
+[2026-01-23T08:20:44.521+0000] {logging_mixin.py:151} INFO - [2026-01-23T08:20:44.521+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/quality_check.py
+[2026-01-23T08:20:44.542+0000] {processor.py:839} INFO - DAG(s) dict_keys(['2_data_quality_check']) retrieved from /opt/airflow/dags/quality_check.py
+[2026-01-23T08:20:44.597+0000] {logging_mixin.py:151} INFO - [2026-01-23T08:20:44.597+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2026-01-23T08:20:44.623+0000] {logging_mixin.py:151} INFO - [2026-01-23T08:20:44.623+0000] {dag.py:3696} INFO - Setting next_dagrun for 2_data_quality_check to None, run_after=None
+[2026-01-23T08:20:44.648+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/quality_check.py took 0.137 seconds
+[2026-01-23T08:21:14.715+0000] {processor.py:157} INFO - Started process (PID=252) to work on /opt/airflow/dags/quality_check.py
+[2026-01-23T08:21:14.716+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/quality_check.py for tasks to queue
+[2026-01-23T08:21:14.717+0000] {logging_mixin.py:151} INFO - [2026-01-23T08:21:14.717+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/quality_check.py
+[2026-01-23T08:21:14.730+0000] {processor.py:839} INFO - DAG(s) dict_keys(['2_data_quality_check']) retrieved from /opt/airflow/dags/quality_check.py
+[2026-01-23T08:21:14.756+0000] {logging_mixin.py:151} INFO - [2026-01-23T08:21:14.756+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2026-01-23T08:21:14.768+0000] {logging_mixin.py:151} INFO - [2026-01-23T08:21:14.768+0000] {dag.py:3696} INFO - Setting next_dagrun for 2_data_quality_check to None, run_after=None
+[2026-01-23T08:21:14.790+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/quality_check.py took 0.079 seconds
+[2026-01-23T08:21:44.894+0000] {processor.py:157} INFO - Started process (PID=273) to work on /opt/airflow/dags/quality_check.py
+[2026-01-23T08:21:44.896+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/quality_check.py for tasks to queue
+[2026-01-23T08:21:44.897+0000] {logging_mixin.py:151} INFO - [2026-01-23T08:21:44.896+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/quality_check.py
+[2026-01-23T08:21:44.909+0000] {processor.py:839} INFO - DAG(s) dict_keys(['2_data_quality_check']) retrieved from /opt/airflow/dags/quality_check.py
+[2026-01-23T08:21:44.935+0000] {logging_mixin.py:151} INFO - [2026-01-23T08:21:44.935+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2026-01-23T08:21:44.947+0000] {logging_mixin.py:151} INFO - [2026-01-23T08:21:44.946+0000] {dag.py:3696} INFO - Setting next_dagrun for 2_data_quality_check to None, run_after=None
+[2026-01-23T08:21:44.966+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/quality_check.py took 0.076 seconds
+[2026-01-23T08:22:15.359+0000] {processor.py:157} INFO - Started process (PID=294) to work on /opt/airflow/dags/quality_check.py
+[2026-01-23T08:22:15.361+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/quality_check.py for tasks to queue
+[2026-01-23T08:22:15.363+0000] {logging_mixin.py:151} INFO - [2026-01-23T08:22:15.362+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/quality_check.py
+[2026-01-23T08:22:15.378+0000] {processor.py:839} INFO - DAG(s) dict_keys(['2_data_quality_check']) retrieved from /opt/airflow/dags/quality_check.py
+[2026-01-23T08:22:15.411+0000] {logging_mixin.py:151} INFO - [2026-01-23T08:22:15.411+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2026-01-23T08:22:15.425+0000] {logging_mixin.py:151} INFO - [2026-01-23T08:22:15.425+0000] {dag.py:3696} INFO - Setting next_dagrun for 2_data_quality_check to None, run_after=None
+[2026-01-23T08:22:15.451+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/quality_check.py took 0.098 seconds
+[2026-01-23T08:22:45.756+0000] {processor.py:157} INFO - Started process (PID=315) to work on /opt/airflow/dags/quality_check.py
+[2026-01-23T08:22:45.758+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/quality_check.py for tasks to queue
+[2026-01-23T08:22:45.759+0000] {logging_mixin.py:151} INFO - [2026-01-23T08:22:45.758+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/quality_check.py
+[2026-01-23T08:22:45.769+0000] {processor.py:839} INFO - DAG(s) dict_keys(['2_data_quality_check']) retrieved from /opt/airflow/dags/quality_check.py
+[2026-01-23T08:22:45.794+0000] {logging_mixin.py:151} INFO - [2026-01-23T08:22:45.794+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2026-01-23T08:22:45.806+0000] {logging_mixin.py:151} INFO - [2026-01-23T08:22:45.806+0000] {dag.py:3696} INFO - Setting next_dagrun for 2_data_quality_check to None, run_after=None
+[2026-01-23T08:22:45.826+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/quality_check.py took 0.074 seconds
+[2026-01-23T08:23:16.082+0000] {processor.py:157} INFO - Started process (PID=336) to work on /opt/airflow/dags/quality_check.py
+[2026-01-23T08:23:16.083+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/quality_check.py for tasks to queue
+[2026-01-23T08:23:16.084+0000] {logging_mixin.py:151} INFO - [2026-01-23T08:23:16.084+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/quality_check.py
+[2026-01-23T08:23:16.094+0000] {processor.py:839} INFO - DAG(s) dict_keys(['2_data_quality_check']) retrieved from /opt/airflow/dags/quality_check.py
+[2026-01-23T08:23:16.123+0000] {logging_mixin.py:151} INFO - [2026-01-23T08:23:16.122+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2026-01-23T08:23:16.136+0000] {logging_mixin.py:151} INFO - [2026-01-23T08:23:16.136+0000] {dag.py:3696} INFO - Setting next_dagrun for 2_data_quality_check to None, run_after=None
+[2026-01-23T08:23:16.157+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/quality_check.py took 0.080 seconds
+[2026-01-23T08:24:13.994+0000] {processor.py:157} INFO - Started process (PID=174) to work on /opt/airflow/dags/quality_check.py
+[2026-01-23T08:24:13.996+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/quality_check.py for tasks to queue
+[2026-01-23T08:24:13.997+0000] {logging_mixin.py:151} INFO - [2026-01-23T08:24:13.997+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/quality_check.py
+[2026-01-23T08:24:14.015+0000] {processor.py:839} INFO - DAG(s) dict_keys(['2_data_quality_check']) retrieved from /opt/airflow/dags/quality_check.py
+[2026-01-23T08:24:14.049+0000] {logging_mixin.py:151} INFO - [2026-01-23T08:24:14.049+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2026-01-23T08:24:14.066+0000] {logging_mixin.py:151} INFO - [2026-01-23T08:24:14.066+0000] {dag.py:3696} INFO - Setting next_dagrun for 2_data_quality_check to None, run_after=None
+[2026-01-23T08:24:14.092+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/quality_check.py took 0.103 seconds
+[2026-01-23T08:24:44.340+0000] {processor.py:157} INFO - Started process (PID=208) to work on /opt/airflow/dags/quality_check.py
+[2026-01-23T08:24:44.342+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/quality_check.py for tasks to queue
+[2026-01-23T08:24:44.343+0000] {logging_mixin.py:151} INFO - [2026-01-23T08:24:44.343+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/quality_check.py
+[2026-01-23T08:24:44.354+0000] {processor.py:839} INFO - DAG(s) dict_keys(['2_data_quality_check']) retrieved from /opt/airflow/dags/quality_check.py
+[2026-01-23T08:24:44.369+0000] {logging_mixin.py:151} INFO - [2026-01-23T08:24:44.368+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2026-01-23T08:24:44.381+0000] {logging_mixin.py:151} INFO - [2026-01-23T08:24:44.380+0000] {dag.py:3696} INFO - Setting next_dagrun for 2_data_quality_check to None, run_after=None
+[2026-01-23T08:24:44.400+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/quality_check.py took 0.064 seconds
+[2026-01-23T08:25:14.618+0000] {processor.py:157} INFO - Started process (PID=229) to work on /opt/airflow/dags/quality_check.py
+[2026-01-23T08:25:14.619+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/quality_check.py for tasks to queue
+[2026-01-23T08:25:14.620+0000] {logging_mixin.py:151} INFO - [2026-01-23T08:25:14.620+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/quality_check.py
+[2026-01-23T08:25:14.630+0000] {processor.py:839} INFO - DAG(s) dict_keys(['2_data_quality_check']) retrieved from /opt/airflow/dags/quality_check.py
+[2026-01-23T08:25:14.666+0000] {logging_mixin.py:151} INFO - [2026-01-23T08:25:14.666+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2026-01-23T08:25:14.677+0000] {logging_mixin.py:151} INFO - [2026-01-23T08:25:14.677+0000] {dag.py:3696} INFO - Setting next_dagrun for 2_data_quality_check to None, run_after=None
+[2026-01-23T08:25:14.697+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/quality_check.py took 0.083 seconds
+[2026-01-23T08:25:44.897+0000] {processor.py:157} INFO - Started process (PID=250) to work on /opt/airflow/dags/quality_check.py
+[2026-01-23T08:25:44.899+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/quality_check.py for tasks to queue
+[2026-01-23T08:25:44.901+0000] {logging_mixin.py:151} INFO - [2026-01-23T08:25:44.901+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/quality_check.py
+[2026-01-23T08:25:44.922+0000] {processor.py:839} INFO - DAG(s) dict_keys(['2_data_quality_check']) retrieved from /opt/airflow/dags/quality_check.py
+[2026-01-23T08:25:44.977+0000] {logging_mixin.py:151} INFO - [2026-01-23T08:25:44.976+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2026-01-23T08:25:45.001+0000] {logging_mixin.py:151} INFO - [2026-01-23T08:25:45.000+0000] {dag.py:3696} INFO - Setting next_dagrun for 2_data_quality_check to None, run_after=None
+[2026-01-23T08:25:45.028+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/quality_check.py took 0.138 seconds
+[2026-01-23T08:26:15.451+0000] {processor.py:157} INFO - Started process (PID=271) to work on /opt/airflow/dags/quality_check.py
+[2026-01-23T08:26:15.453+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/quality_check.py for tasks to queue
+[2026-01-23T08:26:15.454+0000] {logging_mixin.py:151} INFO - [2026-01-23T08:26:15.453+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/quality_check.py
+[2026-01-23T08:26:15.462+0000] {processor.py:839} INFO - DAG(s) dict_keys(['2_data_quality_check']) retrieved from /opt/airflow/dags/quality_check.py
+[2026-01-23T08:26:15.488+0000] {logging_mixin.py:151} INFO - [2026-01-23T08:26:15.488+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2026-01-23T08:26:15.500+0000] {logging_mixin.py:151} INFO - [2026-01-23T08:26:15.500+0000] {dag.py:3696} INFO - Setting next_dagrun for 2_data_quality_check to None, run_after=None
+[2026-01-23T08:26:15.519+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/quality_check.py took 0.071 seconds
+[2026-01-23T08:26:45.833+0000] {processor.py:157} INFO - Started process (PID=292) to work on /opt/airflow/dags/quality_check.py
+[2026-01-23T08:26:45.835+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/quality_check.py for tasks to queue
+[2026-01-23T08:26:45.837+0000] {logging_mixin.py:151} INFO - [2026-01-23T08:26:45.836+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/quality_check.py
+[2026-01-23T08:26:45.850+0000] {processor.py:839} INFO - DAG(s) dict_keys(['2_data_quality_check']) retrieved from /opt/airflow/dags/quality_check.py
+[2026-01-23T08:26:45.882+0000] {logging_mixin.py:151} INFO - [2026-01-23T08:26:45.882+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2026-01-23T08:26:45.897+0000] {logging_mixin.py:151} INFO - [2026-01-23T08:26:45.897+0000] {dag.py:3696} INFO - Setting next_dagrun for 2_data_quality_check to None, run_after=None
+[2026-01-23T08:26:45.924+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/quality_check.py took 0.096 seconds
+[2026-01-23T08:28:02.398+0000] {processor.py:157} INFO - Started process (PID=174) to work on /opt/airflow/dags/quality_check.py
+[2026-01-23T08:28:02.401+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/quality_check.py for tasks to queue
+[2026-01-23T08:28:02.402+0000] {logging_mixin.py:151} INFO - [2026-01-23T08:28:02.401+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/quality_check.py
+[2026-01-23T08:28:02.419+0000] {processor.py:839} INFO - DAG(s) dict_keys(['2_data_quality_check']) retrieved from /opt/airflow/dags/quality_check.py
+[2026-01-23T08:28:02.450+0000] {logging_mixin.py:151} INFO - [2026-01-23T08:28:02.450+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2026-01-23T08:28:02.467+0000] {logging_mixin.py:151} INFO - [2026-01-23T08:28:02.467+0000] {dag.py:3696} INFO - Setting next_dagrun for 2_data_quality_check to None, run_after=None
+[2026-01-23T08:28:02.494+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/quality_check.py took 0.099 seconds
+[2026-01-23T08:28:32.800+0000] {processor.py:157} INFO - Started process (PID=210) to work on /opt/airflow/dags/quality_check.py
+[2026-01-23T08:28:32.803+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/quality_check.py for tasks to queue
+[2026-01-23T08:28:32.806+0000] {logging_mixin.py:151} INFO - [2026-01-23T08:28:32.805+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/quality_check.py
+[2026-01-23T08:28:32.843+0000] {processor.py:839} INFO - DAG(s) dict_keys(['2_data_quality_check']) retrieved from /opt/airflow/dags/quality_check.py
+[2026-01-23T08:28:32.866+0000] {logging_mixin.py:151} INFO - [2026-01-23T08:28:32.865+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2026-01-23T08:28:32.934+0000] {logging_mixin.py:151} INFO - [2026-01-23T08:28:32.934+0000] {dag.py:3696} INFO - Setting next_dagrun for 2_data_quality_check to None, run_after=None
+[2026-01-23T08:28:32.962+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/quality_check.py took 0.173 seconds
+[2026-01-23T08:29:03.285+0000] {processor.py:157} INFO - Started process (PID=231) to work on /opt/airflow/dags/quality_check.py
+[2026-01-23T08:29:03.286+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/quality_check.py for tasks to queue
+[2026-01-23T08:29:03.287+0000] {logging_mixin.py:151} INFO - [2026-01-23T08:29:03.287+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/quality_check.py
+[2026-01-23T08:29:03.298+0000] {processor.py:839} INFO - DAG(s) dict_keys(['2_data_quality_check']) retrieved from /opt/airflow/dags/quality_check.py
+[2026-01-23T08:29:03.335+0000] {logging_mixin.py:151} INFO - [2026-01-23T08:29:03.335+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2026-01-23T08:29:03.345+0000] {logging_mixin.py:151} INFO - [2026-01-23T08:29:03.345+0000] {dag.py:3696} INFO - Setting next_dagrun for 2_data_quality_check to None, run_after=None
+[2026-01-23T08:29:03.368+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/quality_check.py took 0.087 seconds
+[2026-01-23T08:29:33.718+0000] {processor.py:157} INFO - Started process (PID=252) to work on /opt/airflow/dags/quality_check.py
+[2026-01-23T08:29:33.720+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/quality_check.py for tasks to queue
+[2026-01-23T08:29:33.721+0000] {logging_mixin.py:151} INFO - [2026-01-23T08:29:33.720+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/quality_check.py
+[2026-01-23T08:29:33.733+0000] {processor.py:839} INFO - DAG(s) dict_keys(['2_data_quality_check']) retrieved from /opt/airflow/dags/quality_check.py
+[2026-01-23T08:29:33.769+0000] {logging_mixin.py:151} INFO - [2026-01-23T08:29:33.768+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2026-01-23T08:29:33.794+0000] {logging_mixin.py:151} INFO - [2026-01-23T08:29:33.794+0000] {dag.py:3696} INFO - Setting next_dagrun for 2_data_quality_check to None, run_after=None
+[2026-01-23T08:29:33.828+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/quality_check.py took 0.114 seconds
+[2026-01-23T08:31:59.818+0000] {processor.py:157} INFO - Started process (PID=170) to work on /opt/airflow/dags/quality_check.py
+[2026-01-23T08:31:59.820+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/quality_check.py for tasks to queue
+[2026-01-23T08:31:59.821+0000] {logging_mixin.py:151} INFO - [2026-01-23T08:31:59.821+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/quality_check.py
+[2026-01-23T08:31:59.845+0000] {processor.py:839} INFO - DAG(s) dict_keys(['2_data_quality_check']) retrieved from /opt/airflow/dags/quality_check.py
+[2026-01-23T08:31:59.881+0000] {logging_mixin.py:151} INFO - [2026-01-23T08:31:59.881+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2026-01-23T08:31:59.899+0000] {logging_mixin.py:151} INFO - [2026-01-23T08:31:59.898+0000] {dag.py:3696} INFO - Setting next_dagrun for 2_data_quality_check to None, run_after=None
+[2026-01-23T08:31:59.928+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/quality_check.py took 0.114 seconds
+[2026-01-23T08:32:30.448+0000] {processor.py:157} INFO - Started process (PID=224) to work on /opt/airflow/dags/quality_check.py
+[2026-01-23T08:32:30.485+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/quality_check.py for tasks to queue
+[2026-01-23T08:32:30.489+0000] {logging_mixin.py:151} INFO - [2026-01-23T08:32:30.489+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/quality_check.py
+[2026-01-23T08:32:30.544+0000] {processor.py:839} INFO - DAG(s) dict_keys(['2_data_quality_check']) retrieved from /opt/airflow/dags/quality_check.py
+[2026-01-23T08:32:30.564+0000] {logging_mixin.py:151} INFO - [2026-01-23T08:32:30.564+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2026-01-23T08:32:30.584+0000] {logging_mixin.py:151} INFO - [2026-01-23T08:32:30.584+0000] {dag.py:3696} INFO - Setting next_dagrun for 2_data_quality_check to None, run_after=None
+[2026-01-23T08:32:30.606+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/quality_check.py took 0.193 seconds
+[2026-01-23T08:33:01.040+0000] {processor.py:157} INFO - Started process (PID=276) to work on /opt/airflow/dags/quality_check.py
+[2026-01-23T08:33:01.062+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/quality_check.py for tasks to queue
+[2026-01-23T08:33:01.276+0000] {logging_mixin.py:151} INFO - [2026-01-23T08:33:01.275+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/quality_check.py
+[2026-01-23T08:33:01.632+0000] {processor.py:839} INFO - DAG(s) dict_keys(['2_data_quality_check']) retrieved from /opt/airflow/dags/quality_check.py
+[2026-01-23T08:33:01.755+0000] {logging_mixin.py:151} INFO - [2026-01-23T08:33:01.754+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2026-01-23T08:33:01.798+0000] {logging_mixin.py:151} INFO - [2026-01-23T08:33:01.798+0000] {dag.py:3696} INFO - Setting next_dagrun for 2_data_quality_check to None, run_after=None
+[2026-01-23T08:33:01.830+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/quality_check.py took 0.795 seconds
+[2026-01-23T08:33:32.029+0000] {processor.py:157} INFO - Started process (PID=337) to work on /opt/airflow/dags/quality_check.py
+[2026-01-23T08:33:32.031+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/quality_check.py for tasks to queue
+[2026-01-23T08:33:32.032+0000] {logging_mixin.py:151} INFO - [2026-01-23T08:33:32.031+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/quality_check.py
+[2026-01-23T08:33:32.042+0000] {processor.py:839} INFO - DAG(s) dict_keys(['2_data_quality_check']) retrieved from /opt/airflow/dags/quality_check.py
+[2026-01-23T08:33:32.081+0000] {logging_mixin.py:151} INFO - [2026-01-23T08:33:32.081+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2026-01-23T08:33:32.094+0000] {logging_mixin.py:151} INFO - [2026-01-23T08:33:32.094+0000] {dag.py:3696} INFO - Setting next_dagrun for 2_data_quality_check to None, run_after=None
+[2026-01-23T08:33:32.120+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/quality_check.py took 0.095 seconds
+[2026-01-23T08:34:02.187+0000] {processor.py:157} INFO - Started process (PID=358) to work on /opt/airflow/dags/quality_check.py
+[2026-01-23T08:34:02.188+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/quality_check.py for tasks to queue
+[2026-01-23T08:34:02.189+0000] {logging_mixin.py:151} INFO - [2026-01-23T08:34:02.189+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/quality_check.py
+[2026-01-23T08:34:02.203+0000] {processor.py:839} INFO - DAG(s) dict_keys(['2_data_quality_check']) retrieved from /opt/airflow/dags/quality_check.py
+[2026-01-23T08:34:02.238+0000] {logging_mixin.py:151} INFO - [2026-01-23T08:34:02.238+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2026-01-23T08:34:02.255+0000] {logging_mixin.py:151} INFO - [2026-01-23T08:34:02.255+0000] {dag.py:3696} INFO - Setting next_dagrun for 2_data_quality_check to None, run_after=None
+[2026-01-23T08:34:02.285+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/quality_check.py took 0.101 seconds
+[2026-01-23T08:34:32.399+0000] {processor.py:157} INFO - Started process (PID=391) to work on /opt/airflow/dags/quality_check.py
+[2026-01-23T08:34:32.401+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/quality_check.py for tasks to queue
+[2026-01-23T08:34:32.401+0000] {logging_mixin.py:151} INFO - [2026-01-23T08:34:32.401+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/quality_check.py
+[2026-01-23T08:34:32.418+0000] {processor.py:839} INFO - DAG(s) dict_keys(['2_data_quality_check']) retrieved from /opt/airflow/dags/quality_check.py
+[2026-01-23T08:34:32.454+0000] {logging_mixin.py:151} INFO - [2026-01-23T08:34:32.454+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2026-01-23T08:34:32.468+0000] {logging_mixin.py:151} INFO - [2026-01-23T08:34:32.468+0000] {dag.py:3696} INFO - Setting next_dagrun for 2_data_quality_check to None, run_after=None
+[2026-01-23T08:34:32.496+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/quality_check.py took 0.103 seconds
+[2026-01-23T08:35:02.797+0000] {processor.py:157} INFO - Started process (PID=523) to work on /opt/airflow/dags/quality_check.py
+[2026-01-23T08:35:02.799+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/quality_check.py for tasks to queue
+[2026-01-23T08:35:02.800+0000] {logging_mixin.py:151} INFO - [2026-01-23T08:35:02.800+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/quality_check.py
+[2026-01-23T08:35:02.811+0000] {processor.py:839} INFO - DAG(s) dict_keys(['2_data_quality_check']) retrieved from /opt/airflow/dags/quality_check.py
+[2026-01-23T08:35:02.848+0000] {logging_mixin.py:151} INFO - [2026-01-23T08:35:02.847+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2026-01-23T08:35:03.033+0000] {logging_mixin.py:151} INFO - [2026-01-23T08:35:03.033+0000] {dag.py:3696} INFO - Setting next_dagrun for 2_data_quality_check to None, run_after=None
+[2026-01-23T08:35:03.056+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/quality_check.py took 0.263 seconds
+[2026-01-23T15:07:20.160+0000] {processor.py:157} INFO - Started process (PID=170) to work on /opt/airflow/dags/quality_check.py
+[2026-01-23T15:07:20.178+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/quality_check.py for tasks to queue
+[2026-01-23T15:07:20.180+0000] {logging_mixin.py:151} INFO - [2026-01-23T15:07:20.179+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/quality_check.py
+[2026-01-23T15:07:20.224+0000] {processor.py:839} INFO - DAG(s) dict_keys(['2_data_quality_check']) retrieved from /opt/airflow/dags/quality_check.py
+[2026-01-23T15:07:20.282+0000] {logging_mixin.py:151} INFO - [2026-01-23T15:07:20.281+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2026-01-23T15:07:20.318+0000] {logging_mixin.py:151} INFO - [2026-01-23T15:07:20.318+0000] {dag.py:3696} INFO - Setting next_dagrun for 2_data_quality_check to None, run_after=None
+[2026-01-23T15:07:20.344+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/quality_check.py took 0.194 seconds
+[2026-01-23T15:07:50.722+0000] {processor.py:157} INFO - Started process (PID=225) to work on /opt/airflow/dags/quality_check.py
+[2026-01-23T15:07:50.723+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/quality_check.py for tasks to queue
+[2026-01-23T15:07:50.724+0000] {logging_mixin.py:151} INFO - [2026-01-23T15:07:50.723+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/quality_check.py
+[2026-01-23T15:07:50.738+0000] {processor.py:839} INFO - DAG(s) dict_keys(['2_data_quality_check']) retrieved from /opt/airflow/dags/quality_check.py
+[2026-01-23T15:07:50.768+0000] {logging_mixin.py:151} INFO - [2026-01-23T15:07:50.768+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2026-01-23T15:07:50.785+0000] {logging_mixin.py:151} INFO - [2026-01-23T15:07:50.785+0000] {dag.py:3696} INFO - Setting next_dagrun for 2_data_quality_check to None, run_after=None
+[2026-01-23T15:07:50.821+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/quality_check.py took 0.103 seconds
+[2026-01-23T15:08:21.449+0000] {processor.py:157} INFO - Started process (PID=276) to work on /opt/airflow/dags/quality_check.py
+[2026-01-23T15:08:21.499+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/quality_check.py for tasks to queue
+[2026-01-23T15:08:21.500+0000] {logging_mixin.py:151} INFO - [2026-01-23T15:08:21.500+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/quality_check.py
+[2026-01-23T15:08:21.989+0000] {processor.py:839} INFO - DAG(s) dict_keys(['2_data_quality_check']) retrieved from /opt/airflow/dags/quality_check.py
+[2026-01-23T15:08:22.071+0000] {logging_mixin.py:151} INFO - [2026-01-23T15:08:22.070+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2026-01-23T15:08:22.089+0000] {logging_mixin.py:151} INFO - [2026-01-23T15:08:22.088+0000] {dag.py:3696} INFO - Setting next_dagrun for 2_data_quality_check to None, run_after=None
+[2026-01-23T15:08:22.137+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/quality_check.py took 0.802 seconds
+[2026-01-23T15:08:52.235+0000] {processor.py:157} INFO - Started process (PID=301) to work on /opt/airflow/dags/quality_check.py
+[2026-01-23T15:08:52.236+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/quality_check.py for tasks to queue
+[2026-01-23T15:08:52.237+0000] {logging_mixin.py:151} INFO - [2026-01-23T15:08:52.237+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/quality_check.py
+[2026-01-23T15:08:52.248+0000] {processor.py:839} INFO - DAG(s) dict_keys(['2_data_quality_check']) retrieved from /opt/airflow/dags/quality_check.py
+[2026-01-23T15:08:52.284+0000] {logging_mixin.py:151} INFO - [2026-01-23T15:08:52.283+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2026-01-23T15:08:52.296+0000] {logging_mixin.py:151} INFO - [2026-01-23T15:08:52.296+0000] {dag.py:3696} INFO - Setting next_dagrun for 2_data_quality_check to None, run_after=None
+[2026-01-23T15:08:52.326+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/quality_check.py took 0.095 seconds
+[2026-01-23T15:09:22.817+0000] {processor.py:157} INFO - Started process (PID=353) to work on /opt/airflow/dags/quality_check.py
+[2026-01-23T15:09:22.818+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/quality_check.py for tasks to queue
+[2026-01-23T15:09:22.819+0000] {logging_mixin.py:151} INFO - [2026-01-23T15:09:22.819+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/quality_check.py
+[2026-01-23T15:09:22.831+0000] {processor.py:839} INFO - DAG(s) dict_keys(['2_data_quality_check']) retrieved from /opt/airflow/dags/quality_check.py
+[2026-01-23T15:09:22.861+0000] {logging_mixin.py:151} INFO - [2026-01-23T15:09:22.861+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2026-01-23T15:09:22.872+0000] {logging_mixin.py:151} INFO - [2026-01-23T15:09:22.872+0000] {dag.py:3696} INFO - Setting next_dagrun for 2_data_quality_check to None, run_after=None
+[2026-01-23T15:09:22.895+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/quality_check.py took 0.081 seconds
+[2026-01-23T15:09:53.246+0000] {processor.py:157} INFO - Started process (PID=374) to work on /opt/airflow/dags/quality_check.py
+[2026-01-23T15:09:53.247+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/quality_check.py for tasks to queue
+[2026-01-23T15:09:53.248+0000] {logging_mixin.py:151} INFO - [2026-01-23T15:09:53.247+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/quality_check.py
+[2026-01-23T15:09:53.259+0000] {processor.py:839} INFO - DAG(s) dict_keys(['2_data_quality_check']) retrieved from /opt/airflow/dags/quality_check.py
+[2026-01-23T15:09:53.290+0000] {logging_mixin.py:151} INFO - [2026-01-23T15:09:53.290+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2026-01-23T15:09:53.305+0000] {logging_mixin.py:151} INFO - [2026-01-23T15:09:53.305+0000] {dag.py:3696} INFO - Setting next_dagrun for 2_data_quality_check to None, run_after=None
+[2026-01-23T15:09:53.451+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/quality_check.py took 0.209 seconds
+[2026-01-23T15:11:26.102+0000] {processor.py:157} INFO - Started process (PID=170) to work on /opt/airflow/dags/quality_check.py
+[2026-01-23T15:11:26.112+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/quality_check.py for tasks to queue
+[2026-01-23T15:11:26.113+0000] {logging_mixin.py:151} INFO - [2026-01-23T15:11:26.113+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/quality_check.py
+[2026-01-23T15:11:26.134+0000] {processor.py:839} INFO - DAG(s) dict_keys(['2_data_quality_check']) retrieved from /opt/airflow/dags/quality_check.py
+[2026-01-23T15:11:26.168+0000] {logging_mixin.py:151} INFO - [2026-01-23T15:11:26.168+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2026-01-23T15:11:26.184+0000] {logging_mixin.py:151} INFO - [2026-01-23T15:11:26.184+0000] {dag.py:3696} INFO - Setting next_dagrun for 2_data_quality_check to None, run_after=None
+[2026-01-23T15:11:26.207+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/quality_check.py took 0.110 seconds
+[2026-01-23T15:11:56.555+0000] {processor.py:157} INFO - Started process (PID=224) to work on /opt/airflow/dags/quality_check.py
+[2026-01-23T15:11:56.558+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/quality_check.py for tasks to queue
+[2026-01-23T15:11:56.560+0000] {logging_mixin.py:151} INFO - [2026-01-23T15:11:56.559+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/quality_check.py
+[2026-01-23T15:11:56.594+0000] {processor.py:839} INFO - DAG(s) dict_keys(['2_data_quality_check']) retrieved from /opt/airflow/dags/quality_check.py
+[2026-01-23T15:11:56.622+0000] {logging_mixin.py:151} INFO - [2026-01-23T15:11:56.621+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2026-01-23T15:11:56.644+0000] {logging_mixin.py:151} INFO - [2026-01-23T15:11:56.644+0000] {dag.py:3696} INFO - Setting next_dagrun for 2_data_quality_check to None, run_after=None
+[2026-01-23T15:11:56.681+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/quality_check.py took 0.135 seconds
+[2026-01-23T15:12:27.201+0000] {processor.py:157} INFO - Started process (PID=276) to work on /opt/airflow/dags/quality_check.py
+[2026-01-23T15:12:27.205+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/quality_check.py for tasks to queue
+[2026-01-23T15:12:27.208+0000] {logging_mixin.py:151} INFO - [2026-01-23T15:12:27.207+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/quality_check.py
+[2026-01-23T15:12:27.279+0000] {processor.py:839} INFO - DAG(s) dict_keys(['2_data_quality_check']) retrieved from /opt/airflow/dags/quality_check.py
+[2026-01-23T15:12:27.465+0000] {logging_mixin.py:151} INFO - [2026-01-23T15:12:27.465+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2026-01-23T15:12:27.535+0000] {logging_mixin.py:151} INFO - [2026-01-23T15:12:27.534+0000] {dag.py:3696} INFO - Setting next_dagrun for 2_data_quality_check to None, run_after=None
+[2026-01-23T15:12:27.616+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/quality_check.py took 0.421 seconds
+[2026-01-23T15:12:57.690+0000] {processor.py:157} INFO - Started process (PID=301) to work on /opt/airflow/dags/quality_check.py
+[2026-01-23T15:12:57.701+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/quality_check.py for tasks to queue
+[2026-01-23T15:12:57.703+0000] {logging_mixin.py:151} INFO - [2026-01-23T15:12:57.702+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/quality_check.py
+[2026-01-23T15:12:57.728+0000] {processor.py:839} INFO - DAG(s) dict_keys(['2_data_quality_check']) retrieved from /opt/airflow/dags/quality_check.py
+[2026-01-23T15:12:57.789+0000] {logging_mixin.py:151} INFO - [2026-01-23T15:12:57.788+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2026-01-23T15:12:57.809+0000] {logging_mixin.py:151} INFO - [2026-01-23T15:12:57.809+0000] {dag.py:3696} INFO - Setting next_dagrun for 2_data_quality_check to None, run_after=None
+[2026-01-23T15:12:57.848+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/quality_check.py took 0.162 seconds
+[2026-01-23T15:13:28.345+0000] {processor.py:157} INFO - Started process (PID=354) to work on /opt/airflow/dags/quality_check.py
+[2026-01-23T15:13:28.346+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/quality_check.py for tasks to queue
+[2026-01-23T15:13:28.347+0000] {logging_mixin.py:151} INFO - [2026-01-23T15:13:28.347+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/quality_check.py
+[2026-01-23T15:13:28.357+0000] {processor.py:839} INFO - DAG(s) dict_keys(['2_data_quality_check']) retrieved from /opt/airflow/dags/quality_check.py
+[2026-01-23T15:13:28.386+0000] {logging_mixin.py:151} INFO - [2026-01-23T15:13:28.385+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2026-01-23T15:13:28.397+0000] {logging_mixin.py:151} INFO - [2026-01-23T15:13:28.397+0000] {dag.py:3696} INFO - Setting next_dagrun for 2_data_quality_check to None, run_after=None
+[2026-01-23T15:13:28.417+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/quality_check.py took 0.076 seconds
+[2026-01-23T15:13:58.749+0000] {processor.py:157} INFO - Started process (PID=375) to work on /opt/airflow/dags/quality_check.py
+[2026-01-23T15:13:58.750+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/quality_check.py for tasks to queue
+[2026-01-23T15:13:58.751+0000] {logging_mixin.py:151} INFO - [2026-01-23T15:13:58.751+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/quality_check.py
+[2026-01-23T15:13:58.761+0000] {processor.py:839} INFO - DAG(s) dict_keys(['2_data_quality_check']) retrieved from /opt/airflow/dags/quality_check.py
+[2026-01-23T15:13:58.791+0000] {logging_mixin.py:151} INFO - [2026-01-23T15:13:58.791+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2026-01-23T15:13:58.804+0000] {logging_mixin.py:151} INFO - [2026-01-23T15:13:58.804+0000] {dag.py:3696} INFO - Setting next_dagrun for 2_data_quality_check to None, run_after=None
+[2026-01-23T15:13:58.955+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/quality_check.py took 0.210 seconds
+[2026-01-23T15:15:29.851+0000] {processor.py:157} INFO - Started process (PID=170) to work on /opt/airflow/dags/quality_check.py
+[2026-01-23T15:15:29.854+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/quality_check.py for tasks to queue
+[2026-01-23T15:15:29.857+0000] {logging_mixin.py:151} INFO - [2026-01-23T15:15:29.856+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/quality_check.py
+[2026-01-23T15:15:29.902+0000] {processor.py:839} INFO - DAG(s) dict_keys(['2_data_quality_check']) retrieved from /opt/airflow/dags/quality_check.py
+[2026-01-23T15:15:29.973+0000] {logging_mixin.py:151} INFO - [2026-01-23T15:15:29.973+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2026-01-23T15:15:30.008+0000] {logging_mixin.py:151} INFO - [2026-01-23T15:15:30.007+0000] {dag.py:3696} INFO - Setting next_dagrun for 2_data_quality_check to None, run_after=None
+[2026-01-23T15:15:30.057+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/quality_check.py took 0.215 seconds
+[2026-01-23T15:16:00.174+0000] {processor.py:157} INFO - Started process (PID=225) to work on /opt/airflow/dags/quality_check.py
+[2026-01-23T15:16:00.177+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/quality_check.py for tasks to queue
+[2026-01-23T15:16:00.185+0000] {logging_mixin.py:151} INFO - [2026-01-23T15:16:00.178+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/quality_check.py
+[2026-01-23T15:16:00.254+0000] {processor.py:839} INFO - DAG(s) dict_keys(['2_data_quality_check']) retrieved from /opt/airflow/dags/quality_check.py
+[2026-01-23T15:16:00.315+0000] {logging_mixin.py:151} INFO - [2026-01-23T15:16:00.314+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2026-01-23T15:16:00.374+0000] {logging_mixin.py:151} INFO - [2026-01-23T15:16:00.373+0000] {dag.py:3696} INFO - Setting next_dagrun for 2_data_quality_check to None, run_after=None
+[2026-01-23T15:16:00.439+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/quality_check.py took 0.281 seconds
+[2026-01-23T15:16:30.739+0000] {processor.py:157} INFO - Started process (PID=276) to work on /opt/airflow/dags/quality_check.py
+[2026-01-23T15:16:30.740+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/quality_check.py for tasks to queue
+[2026-01-23T15:16:30.741+0000] {logging_mixin.py:151} INFO - [2026-01-23T15:16:30.741+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/quality_check.py
+[2026-01-23T15:16:30.763+0000] {processor.py:839} INFO - DAG(s) dict_keys(['2_data_quality_check']) retrieved from /opt/airflow/dags/quality_check.py
+[2026-01-23T15:16:30.884+0000] {logging_mixin.py:151} INFO - [2026-01-23T15:16:30.884+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2026-01-23T15:16:30.905+0000] {logging_mixin.py:151} INFO - [2026-01-23T15:16:30.905+0000] {dag.py:3696} INFO - Setting next_dagrun for 2_data_quality_check to None, run_after=None
+[2026-01-23T15:16:30.935+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/quality_check.py took 0.200 seconds
+[2026-01-23T15:17:01.658+0000] {processor.py:157} INFO - Started process (PID=332) to work on /opt/airflow/dags/quality_check.py
+[2026-01-23T15:17:01.661+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/quality_check.py for tasks to queue
+[2026-01-23T15:17:01.662+0000] {logging_mixin.py:151} INFO - [2026-01-23T15:17:01.661+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/quality_check.py
+[2026-01-23T15:17:01.718+0000] {processor.py:839} INFO - DAG(s) dict_keys(['2_data_quality_check']) retrieved from /opt/airflow/dags/quality_check.py
+[2026-01-23T15:17:01.775+0000] {logging_mixin.py:151} INFO - [2026-01-23T15:17:01.775+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2026-01-23T15:17:01.791+0000] {logging_mixin.py:151} INFO - [2026-01-23T15:17:01.790+0000] {dag.py:3696} INFO - Setting next_dagrun for 2_data_quality_check to None, run_after=None
+[2026-01-23T15:17:01.815+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/quality_check.py took 0.164 seconds
+[2026-01-23T15:17:31.916+0000] {processor.py:157} INFO - Started process (PID=353) to work on /opt/airflow/dags/quality_check.py
+[2026-01-23T15:17:31.931+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/quality_check.py for tasks to queue
+[2026-01-23T15:17:31.932+0000] {logging_mixin.py:151} INFO - [2026-01-23T15:17:31.932+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/quality_check.py
+[2026-01-23T15:17:32.121+0000] {processor.py:839} INFO - DAG(s) dict_keys(['2_data_quality_check']) retrieved from /opt/airflow/dags/quality_check.py
+[2026-01-23T15:17:32.548+0000] {logging_mixin.py:151} INFO - [2026-01-23T15:17:32.548+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2026-01-23T15:17:32.587+0000] {logging_mixin.py:151} INFO - [2026-01-23T15:17:32.586+0000] {dag.py:3696} INFO - Setting next_dagrun for 2_data_quality_check to None, run_after=None
+[2026-01-23T15:17:32.744+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/quality_check.py took 0.855 seconds
+[2026-01-23T15:18:03.399+0000] {processor.py:157} INFO - Started process (PID=374) to work on /opt/airflow/dags/quality_check.py
+[2026-01-23T15:18:03.403+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/quality_check.py for tasks to queue
+[2026-01-23T15:18:03.409+0000] {logging_mixin.py:151} INFO - [2026-01-23T15:18:03.407+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/quality_check.py
+[2026-01-23T15:18:03.460+0000] {processor.py:839} INFO - DAG(s) dict_keys(['2_data_quality_check']) retrieved from /opt/airflow/dags/quality_check.py
+[2026-01-23T15:18:03.551+0000] {logging_mixin.py:151} INFO - [2026-01-23T15:18:03.550+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2026-01-23T15:18:03.585+0000] {logging_mixin.py:151} INFO - [2026-01-23T15:18:03.585+0000] {dag.py:3696} INFO - Setting next_dagrun for 2_data_quality_check to None, run_after=None
+[2026-01-23T15:18:04.032+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/quality_check.py took 0.658 seconds
+[2026-01-23T15:18:34.774+0000] {processor.py:157} INFO - Started process (PID=409) to work on /opt/airflow/dags/quality_check.py
+[2026-01-23T15:18:34.790+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/quality_check.py for tasks to queue
+[2026-01-23T15:18:34.793+0000] {logging_mixin.py:151} INFO - [2026-01-23T15:18:34.791+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/quality_check.py
+[2026-01-23T15:18:34.821+0000] {processor.py:839} INFO - DAG(s) dict_keys(['2_data_quality_check']) retrieved from /opt/airflow/dags/quality_check.py
+[2026-01-23T15:18:34.913+0000] {logging_mixin.py:151} INFO - [2026-01-23T15:18:34.913+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2026-01-23T15:18:35.269+0000] {logging_mixin.py:151} INFO - [2026-01-23T15:18:35.269+0000] {dag.py:3696} INFO - Setting next_dagrun for 2_data_quality_check to None, run_after=None
+[2026-01-23T15:18:35.309+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/quality_check.py took 0.642 seconds
+[2026-01-23T15:19:05.365+0000] {processor.py:157} INFO - Started process (PID=552) to work on /opt/airflow/dags/quality_check.py
+[2026-01-23T15:19:05.367+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/quality_check.py for tasks to queue
+[2026-01-23T15:19:05.367+0000] {logging_mixin.py:151} INFO - [2026-01-23T15:19:05.367+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/quality_check.py
+[2026-01-23T15:19:05.376+0000] {processor.py:839} INFO - DAG(s) dict_keys(['2_data_quality_check']) retrieved from /opt/airflow/dags/quality_check.py
+[2026-01-23T15:19:05.538+0000] {logging_mixin.py:151} INFO - [2026-01-23T15:19:05.538+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2026-01-23T15:19:05.546+0000] {logging_mixin.py:151} INFO - [2026-01-23T15:19:05.546+0000] {dag.py:3696} INFO - Setting next_dagrun for 2_data_quality_check to None, run_after=None
+[2026-01-23T15:19:05.565+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/quality_check.py took 0.203 seconds
+[2026-01-23T15:19:36.246+0000] {processor.py:157} INFO - Started process (PID=573) to work on /opt/airflow/dags/quality_check.py
+[2026-01-23T15:19:36.248+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/quality_check.py for tasks to queue
+[2026-01-23T15:19:36.249+0000] {logging_mixin.py:151} INFO - [2026-01-23T15:19:36.248+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/quality_check.py
+[2026-01-23T15:19:36.260+0000] {processor.py:839} INFO - DAG(s) dict_keys(['2_data_quality_check']) retrieved from /opt/airflow/dags/quality_check.py
+[2026-01-23T15:19:36.293+0000] {logging_mixin.py:151} INFO - [2026-01-23T15:19:36.293+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2026-01-23T15:19:36.305+0000] {logging_mixin.py:151} INFO - [2026-01-23T15:19:36.305+0000] {dag.py:3696} INFO - Setting next_dagrun for 2_data_quality_check to None, run_after=None
+[2026-01-23T15:19:36.324+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/quality_check.py took 0.082 seconds
+[2026-01-23T15:20:06.904+0000] {processor.py:157} INFO - Started process (PID=594) to work on /opt/airflow/dags/quality_check.py
+[2026-01-23T15:20:06.906+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/quality_check.py for tasks to queue
+[2026-01-23T15:20:06.907+0000] {logging_mixin.py:151} INFO - [2026-01-23T15:20:06.906+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/quality_check.py
+[2026-01-23T15:20:06.919+0000] {processor.py:839} INFO - DAG(s) dict_keys(['2_data_quality_check']) retrieved from /opt/airflow/dags/quality_check.py
+[2026-01-23T15:20:06.956+0000] {logging_mixin.py:151} INFO - [2026-01-23T15:20:06.956+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2026-01-23T15:20:06.970+0000] {logging_mixin.py:151} INFO - [2026-01-23T15:20:06.970+0000] {dag.py:3696} INFO - Setting next_dagrun for 2_data_quality_check to None, run_after=None
+[2026-01-23T15:20:06.996+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/quality_check.py took 0.095 seconds
+[2026-01-23T15:20:37.611+0000] {processor.py:157} INFO - Started process (PID=615) to work on /opt/airflow/dags/quality_check.py
+[2026-01-23T15:20:37.612+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/quality_check.py for tasks to queue
+[2026-01-23T15:20:37.613+0000] {logging_mixin.py:151} INFO - [2026-01-23T15:20:37.612+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/quality_check.py
+[2026-01-23T15:20:37.625+0000] {processor.py:839} INFO - DAG(s) dict_keys(['2_data_quality_check']) retrieved from /opt/airflow/dags/quality_check.py
+[2026-01-23T15:20:37.657+0000] {logging_mixin.py:151} INFO - [2026-01-23T15:20:37.657+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2026-01-23T15:20:37.669+0000] {logging_mixin.py:151} INFO - [2026-01-23T15:20:37.669+0000] {dag.py:3696} INFO - Setting next_dagrun for 2_data_quality_check to None, run_after=None
+[2026-01-23T15:20:37.689+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/quality_check.py took 0.083 seconds
+[2026-01-23T15:21:08.527+0000] {processor.py:157} INFO - Started process (PID=636) to work on /opt/airflow/dags/quality_check.py
+[2026-01-23T15:21:08.528+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/quality_check.py for tasks to queue
+[2026-01-23T15:21:08.530+0000] {logging_mixin.py:151} INFO - [2026-01-23T15:21:08.529+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/quality_check.py
+[2026-01-23T15:21:08.545+0000] {processor.py:839} INFO - DAG(s) dict_keys(['2_data_quality_check']) retrieved from /opt/airflow/dags/quality_check.py
+[2026-01-23T15:21:08.600+0000] {logging_mixin.py:151} INFO - [2026-01-23T15:21:08.600+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2026-01-23T15:21:08.614+0000] {logging_mixin.py:151} INFO - [2026-01-23T15:21:08.614+0000] {dag.py:3696} INFO - Setting next_dagrun for 2_data_quality_check to None, run_after=None
+[2026-01-23T15:21:08.636+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/quality_check.py took 0.117 seconds
+[2026-01-23T15:21:39.270+0000] {processor.py:157} INFO - Started process (PID=657) to work on /opt/airflow/dags/quality_check.py
+[2026-01-23T15:21:39.271+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/quality_check.py for tasks to queue
+[2026-01-23T15:21:39.272+0000] {logging_mixin.py:151} INFO - [2026-01-23T15:21:39.272+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/quality_check.py
+[2026-01-23T15:21:39.285+0000] {processor.py:839} INFO - DAG(s) dict_keys(['2_data_quality_check']) retrieved from /opt/airflow/dags/quality_check.py
+[2026-01-23T15:21:39.318+0000] {logging_mixin.py:151} INFO - [2026-01-23T15:21:39.318+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2026-01-23T15:21:39.330+0000] {logging_mixin.py:151} INFO - [2026-01-23T15:21:39.330+0000] {dag.py:3696} INFO - Setting next_dagrun for 2_data_quality_check to None, run_after=None
+[2026-01-23T15:21:39.354+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/quality_check.py took 0.089 seconds
+[2026-01-23T15:22:09.959+0000] {processor.py:157} INFO - Started process (PID=678) to work on /opt/airflow/dags/quality_check.py
+[2026-01-23T15:22:09.961+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/quality_check.py for tasks to queue
+[2026-01-23T15:22:09.962+0000] {logging_mixin.py:151} INFO - [2026-01-23T15:22:09.961+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/quality_check.py
+[2026-01-23T15:22:09.973+0000] {processor.py:839} INFO - DAG(s) dict_keys(['2_data_quality_check']) retrieved from /opt/airflow/dags/quality_check.py
+[2026-01-23T15:22:10.006+0000] {logging_mixin.py:151} INFO - [2026-01-23T15:22:10.006+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2026-01-23T15:22:10.018+0000] {logging_mixin.py:151} INFO - [2026-01-23T15:22:10.018+0000] {dag.py:3696} INFO - Setting next_dagrun for 2_data_quality_check to None, run_after=None
+[2026-01-23T15:22:10.040+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/quality_check.py took 0.085 seconds
+[2026-01-23T15:22:40.736+0000] {processor.py:157} INFO - Started process (PID=699) to work on /opt/airflow/dags/quality_check.py
+[2026-01-23T15:22:40.738+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/quality_check.py for tasks to queue
+[2026-01-23T15:22:40.739+0000] {logging_mixin.py:151} INFO - [2026-01-23T15:22:40.739+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/quality_check.py
+[2026-01-23T15:22:40.751+0000] {processor.py:839} INFO - DAG(s) dict_keys(['2_data_quality_check']) retrieved from /opt/airflow/dags/quality_check.py
+[2026-01-23T15:22:40.783+0000] {logging_mixin.py:151} INFO - [2026-01-23T15:22:40.783+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2026-01-23T15:22:40.796+0000] {logging_mixin.py:151} INFO - [2026-01-23T15:22:40.796+0000] {dag.py:3696} INFO - Setting next_dagrun for 2_data_quality_check to None, run_after=None
+[2026-01-23T15:22:40.821+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/quality_check.py took 0.088 seconds
+[2026-01-23T15:23:11.483+0000] {processor.py:157} INFO - Started process (PID=720) to work on /opt/airflow/dags/quality_check.py
+[2026-01-23T15:23:11.485+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/quality_check.py for tasks to queue
+[2026-01-23T15:23:11.487+0000] {logging_mixin.py:151} INFO - [2026-01-23T15:23:11.486+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/quality_check.py
+[2026-01-23T15:23:11.507+0000] {processor.py:839} INFO - DAG(s) dict_keys(['2_data_quality_check']) retrieved from /opt/airflow/dags/quality_check.py
+[2026-01-23T15:23:11.556+0000] {logging_mixin.py:151} INFO - [2026-01-23T15:23:11.556+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2026-01-23T15:23:11.573+0000] {logging_mixin.py:151} INFO - [2026-01-23T15:23:11.573+0000] {dag.py:3696} INFO - Setting next_dagrun for 2_data_quality_check to None, run_after=None
+[2026-01-23T15:23:11.601+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/quality_check.py took 0.123 seconds
+[2026-01-23T15:23:42.455+0000] {processor.py:157} INFO - Started process (PID=741) to work on /opt/airflow/dags/quality_check.py
+[2026-01-23T15:23:42.457+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/quality_check.py for tasks to queue
+[2026-01-23T15:23:42.458+0000] {logging_mixin.py:151} INFO - [2026-01-23T15:23:42.458+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/quality_check.py
+[2026-01-23T15:23:42.472+0000] {processor.py:839} INFO - DAG(s) dict_keys(['2_data_quality_check']) retrieved from /opt/airflow/dags/quality_check.py
+[2026-01-23T15:23:42.522+0000] {logging_mixin.py:151} INFO - [2026-01-23T15:23:42.521+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2026-01-23T15:23:42.548+0000] {logging_mixin.py:151} INFO - [2026-01-23T15:23:42.544+0000] {dag.py:3696} INFO - Setting next_dagrun for 2_data_quality_check to None, run_after=None
+[2026-01-23T15:23:42.684+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/quality_check.py took 0.235 seconds
+[2026-01-23T15:24:13.809+0000] {processor.py:157} INFO - Started process (PID=774) to work on /opt/airflow/dags/quality_check.py
+[2026-01-23T15:24:13.812+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/quality_check.py for tasks to queue
+[2026-01-23T15:24:13.813+0000] {logging_mixin.py:151} INFO - [2026-01-23T15:24:13.813+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/quality_check.py
+[2026-01-23T15:24:13.841+0000] {processor.py:839} INFO - DAG(s) dict_keys(['2_data_quality_check']) retrieved from /opt/airflow/dags/quality_check.py
+[2026-01-23T15:24:13.899+0000] {logging_mixin.py:151} INFO - [2026-01-23T15:24:13.899+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2026-01-23T15:24:13.932+0000] {logging_mixin.py:151} INFO - [2026-01-23T15:24:13.932+0000] {dag.py:3696} INFO - Setting next_dagrun for 2_data_quality_check to None, run_after=None
+[2026-01-23T15:24:13.967+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/quality_check.py took 0.167 seconds
+[2026-01-23T15:24:45.655+0000] {processor.py:157} INFO - Started process (PID=830) to work on /opt/airflow/dags/quality_check.py
+[2026-01-23T15:24:45.657+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/quality_check.py for tasks to queue
+[2026-01-23T15:24:45.659+0000] {logging_mixin.py:151} INFO - [2026-01-23T15:24:45.658+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/quality_check.py
+[2026-01-23T15:24:45.692+0000] {processor.py:839} INFO - DAG(s) dict_keys(['2_data_quality_check']) retrieved from /opt/airflow/dags/quality_check.py
+[2026-01-23T15:24:45.791+0000] {logging_mixin.py:151} INFO - [2026-01-23T15:24:45.791+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2026-01-23T15:24:45.816+0000] {logging_mixin.py:151} INFO - [2026-01-23T15:24:45.816+0000] {dag.py:3696} INFO - Setting next_dagrun for 2_data_quality_check to None, run_after=None
+[2026-01-23T15:24:45.851+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/quality_check.py took 0.202 seconds
+[2026-01-23T15:25:17.012+0000] {processor.py:157} INFO - Started process (PID=864) to work on /opt/airflow/dags/quality_check.py
+[2026-01-23T15:25:17.096+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/quality_check.py for tasks to queue
+[2026-01-23T15:25:17.098+0000] {logging_mixin.py:151} INFO - [2026-01-23T15:25:17.097+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/quality_check.py
+[2026-01-23T15:25:17.110+0000] {processor.py:839} INFO - DAG(s) dict_keys(['2_data_quality_check']) retrieved from /opt/airflow/dags/quality_check.py
+[2026-01-23T15:25:17.149+0000] {logging_mixin.py:151} INFO - [2026-01-23T15:25:17.148+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2026-01-23T15:25:17.162+0000] {logging_mixin.py:151} INFO - [2026-01-23T15:25:17.162+0000] {dag.py:3696} INFO - Setting next_dagrun for 2_data_quality_check to None, run_after=None
+[2026-01-23T15:25:17.722+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/quality_check.py took 0.716 seconds
+[2026-01-23T15:25:48.765+0000] {processor.py:157} INFO - Started process (PID=974) to work on /opt/airflow/dags/quality_check.py
+[2026-01-23T15:25:48.766+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/quality_check.py for tasks to queue
+[2026-01-23T15:25:48.767+0000] {logging_mixin.py:151} INFO - [2026-01-23T15:25:48.767+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/quality_check.py
+[2026-01-23T15:25:48.777+0000] {processor.py:839} INFO - DAG(s) dict_keys(['2_data_quality_check']) retrieved from /opt/airflow/dags/quality_check.py
+[2026-01-23T15:25:48.808+0000] {logging_mixin.py:151} INFO - [2026-01-23T15:25:48.807+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2026-01-23T15:25:48.820+0000] {logging_mixin.py:151} INFO - [2026-01-23T15:25:48.820+0000] {dag.py:3696} INFO - Setting next_dagrun for 2_data_quality_check to None, run_after=None
+[2026-01-23T15:25:48.844+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/quality_check.py took 0.082 seconds
+[2026-01-23T15:26:20.568+0000] {processor.py:157} INFO - Started process (PID=1028) to work on /opt/airflow/dags/quality_check.py
+[2026-01-23T15:26:20.569+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/quality_check.py for tasks to queue
+[2026-01-23T15:26:20.570+0000] {logging_mixin.py:151} INFO - [2026-01-23T15:26:20.569+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/quality_check.py
+[2026-01-23T15:26:20.579+0000] {processor.py:839} INFO - DAG(s) dict_keys(['2_data_quality_check']) retrieved from /opt/airflow/dags/quality_check.py
+[2026-01-23T15:26:20.606+0000] {logging_mixin.py:151} INFO - [2026-01-23T15:26:20.605+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2026-01-23T15:26:20.617+0000] {logging_mixin.py:151} INFO - [2026-01-23T15:26:20.616+0000] {dag.py:3696} INFO - Setting next_dagrun for 2_data_quality_check to None, run_after=None
+[2026-01-23T15:26:20.635+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/quality_check.py took 0.071 seconds
+[2026-01-23T15:26:51.383+0000] {processor.py:157} INFO - Started process (PID=1049) to work on /opt/airflow/dags/quality_check.py
+[2026-01-23T15:26:51.384+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/quality_check.py for tasks to queue
+[2026-01-23T15:26:51.385+0000] {logging_mixin.py:151} INFO - [2026-01-23T15:26:51.384+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/quality_check.py
+[2026-01-23T15:26:51.396+0000] {processor.py:839} INFO - DAG(s) dict_keys(['2_data_quality_check']) retrieved from /opt/airflow/dags/quality_check.py
+[2026-01-23T15:26:51.429+0000] {logging_mixin.py:151} INFO - [2026-01-23T15:26:51.429+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2026-01-23T15:26:51.442+0000] {logging_mixin.py:151} INFO - [2026-01-23T15:26:51.442+0000] {dag.py:3696} INFO - Setting next_dagrun for 2_data_quality_check to None, run_after=None
+[2026-01-23T15:26:51.465+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/quality_check.py took 0.086 seconds
+[2026-01-23T15:27:23.170+0000] {processor.py:157} INFO - Started process (PID=1070) to work on /opt/airflow/dags/quality_check.py
+[2026-01-23T15:27:23.171+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/quality_check.py for tasks to queue
+[2026-01-23T15:27:23.172+0000] {logging_mixin.py:151} INFO - [2026-01-23T15:27:23.172+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/quality_check.py
+[2026-01-23T15:27:23.183+0000] {processor.py:839} INFO - DAG(s) dict_keys(['2_data_quality_check']) retrieved from /opt/airflow/dags/quality_check.py
+[2026-01-23T15:27:23.213+0000] {logging_mixin.py:151} INFO - [2026-01-23T15:27:23.213+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2026-01-23T15:27:23.224+0000] {logging_mixin.py:151} INFO - [2026-01-23T15:27:23.224+0000] {dag.py:3696} INFO - Setting next_dagrun for 2_data_quality_check to None, run_after=None
+[2026-01-23T15:27:23.244+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/quality_check.py took 0.079 seconds
+[2026-01-23T15:27:54.941+0000] {processor.py:157} INFO - Started process (PID=1091) to work on /opt/airflow/dags/quality_check.py
+[2026-01-23T15:27:54.942+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/quality_check.py for tasks to queue
+[2026-01-23T15:27:54.943+0000] {logging_mixin.py:151} INFO - [2026-01-23T15:27:54.943+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/quality_check.py
+[2026-01-23T15:27:54.955+0000] {processor.py:839} INFO - DAG(s) dict_keys(['2_data_quality_check']) retrieved from /opt/airflow/dags/quality_check.py
+[2026-01-23T15:27:54.985+0000] {logging_mixin.py:151} INFO - [2026-01-23T15:27:54.985+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2026-01-23T15:27:54.996+0000] {logging_mixin.py:151} INFO - [2026-01-23T15:27:54.995+0000] {dag.py:3696} INFO - Setting next_dagrun for 2_data_quality_check to None, run_after=None
+[2026-01-23T15:27:55.021+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/quality_check.py took 0.084 seconds
+[2026-01-23T15:28:25.907+0000] {processor.py:157} INFO - Started process (PID=1112) to work on /opt/airflow/dags/quality_check.py
+[2026-01-23T15:28:25.908+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/quality_check.py for tasks to queue
+[2026-01-23T15:28:25.909+0000] {logging_mixin.py:151} INFO - [2026-01-23T15:28:25.909+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/quality_check.py
+[2026-01-23T15:28:25.921+0000] {processor.py:839} INFO - DAG(s) dict_keys(['2_data_quality_check']) retrieved from /opt/airflow/dags/quality_check.py
+[2026-01-23T15:28:25.952+0000] {logging_mixin.py:151} INFO - [2026-01-23T15:28:25.952+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2026-01-23T15:28:25.965+0000] {logging_mixin.py:151} INFO - [2026-01-23T15:28:25.965+0000] {dag.py:3696} INFO - Setting next_dagrun for 2_data_quality_check to None, run_after=None
+[2026-01-23T15:28:25.987+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/quality_check.py took 0.084 seconds
+[2026-01-23T15:28:57.722+0000] {processor.py:157} INFO - Started process (PID=1133) to work on /opt/airflow/dags/quality_check.py
+[2026-01-23T15:28:57.723+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/quality_check.py for tasks to queue
+[2026-01-23T15:28:57.723+0000] {logging_mixin.py:151} INFO - [2026-01-23T15:28:57.723+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/quality_check.py
+[2026-01-23T15:28:57.732+0000] {processor.py:839} INFO - DAG(s) dict_keys(['2_data_quality_check']) retrieved from /opt/airflow/dags/quality_check.py
+[2026-01-23T15:28:57.762+0000] {logging_mixin.py:151} INFO - [2026-01-23T15:28:57.761+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2026-01-23T15:28:57.773+0000] {logging_mixin.py:151} INFO - [2026-01-23T15:28:57.773+0000] {dag.py:3696} INFO - Setting next_dagrun for 2_data_quality_check to None, run_after=None
+[2026-01-23T15:28:57.793+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/quality_check.py took 0.075 seconds
+[2026-01-23T15:29:29.507+0000] {processor.py:157} INFO - Started process (PID=1154) to work on /opt/airflow/dags/quality_check.py
+[2026-01-23T15:29:29.508+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/quality_check.py for tasks to queue
+[2026-01-23T15:29:29.509+0000] {logging_mixin.py:151} INFO - [2026-01-23T15:29:29.509+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/quality_check.py
+[2026-01-23T15:29:29.520+0000] {processor.py:839} INFO - DAG(s) dict_keys(['2_data_quality_check']) retrieved from /opt/airflow/dags/quality_check.py
+[2026-01-23T15:29:29.549+0000] {logging_mixin.py:151} INFO - [2026-01-23T15:29:29.549+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2026-01-23T15:29:29.560+0000] {logging_mixin.py:151} INFO - [2026-01-23T15:29:29.560+0000] {dag.py:3696} INFO - Setting next_dagrun for 2_data_quality_check to None, run_after=None
+[2026-01-23T15:29:29.577+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/quality_check.py took 0.073 seconds
+[2026-01-23T15:30:00.334+0000] {processor.py:157} INFO - Started process (PID=1175) to work on /opt/airflow/dags/quality_check.py
+[2026-01-23T15:30:00.335+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/quality_check.py for tasks to queue
+[2026-01-23T15:30:00.336+0000] {logging_mixin.py:151} INFO - [2026-01-23T15:30:00.336+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/quality_check.py
+[2026-01-23T15:30:00.346+0000] {processor.py:839} INFO - DAG(s) dict_keys(['2_data_quality_check']) retrieved from /opt/airflow/dags/quality_check.py
+[2026-01-23T15:30:00.379+0000] {logging_mixin.py:151} INFO - [2026-01-23T15:30:00.379+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2026-01-23T15:30:00.391+0000] {logging_mixin.py:151} INFO - [2026-01-23T15:30:00.391+0000] {dag.py:3696} INFO - Setting next_dagrun for 2_data_quality_check to None, run_after=None
+[2026-01-23T15:30:00.409+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/quality_check.py took 0.078 seconds
+[2026-01-23T15:30:32.119+0000] {processor.py:157} INFO - Started process (PID=1199) to work on /opt/airflow/dags/quality_check.py
+[2026-01-23T15:30:32.120+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/quality_check.py for tasks to queue
+[2026-01-23T15:30:32.121+0000] {logging_mixin.py:151} INFO - [2026-01-23T15:30:32.120+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/quality_check.py
+[2026-01-23T15:30:32.131+0000] {processor.py:839} INFO - DAG(s) dict_keys(['2_data_quality_check']) retrieved from /opt/airflow/dags/quality_check.py
+[2026-01-23T15:30:32.170+0000] {logging_mixin.py:151} INFO - [2026-01-23T15:30:32.170+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2026-01-23T15:30:32.186+0000] {logging_mixin.py:151} INFO - [2026-01-23T15:30:32.185+0000] {dag.py:3696} INFO - Setting next_dagrun for 2_data_quality_check to None, run_after=None
+[2026-01-23T15:30:32.209+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/quality_check.py took 0.094 seconds
+[2026-01-23T15:31:04.136+0000] {processor.py:157} INFO - Started process (PID=1220) to work on /opt/airflow/dags/quality_check.py
+[2026-01-23T15:31:04.137+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/quality_check.py for tasks to queue
+[2026-01-23T15:31:04.137+0000] {logging_mixin.py:151} INFO - [2026-01-23T15:31:04.137+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/quality_check.py
+[2026-01-23T15:31:04.148+0000] {processor.py:839} INFO - DAG(s) dict_keys(['2_data_quality_check']) retrieved from /opt/airflow/dags/quality_check.py
+[2026-01-23T15:31:04.175+0000] {logging_mixin.py:151} INFO - [2026-01-23T15:31:04.175+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2026-01-23T15:31:04.186+0000] {logging_mixin.py:151} INFO - [2026-01-23T15:31:04.185+0000] {dag.py:3696} INFO - Setting next_dagrun for 2_data_quality_check to None, run_after=None
+[2026-01-23T15:31:04.204+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/quality_check.py took 0.071 seconds
+[2026-01-23T15:31:35.027+0000] {processor.py:157} INFO - Started process (PID=1241) to work on /opt/airflow/dags/quality_check.py
+[2026-01-23T15:31:35.028+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/quality_check.py for tasks to queue
+[2026-01-23T15:31:35.029+0000] {logging_mixin.py:151} INFO - [2026-01-23T15:31:35.029+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/quality_check.py
+[2026-01-23T15:31:35.038+0000] {processor.py:839} INFO - DAG(s) dict_keys(['2_data_quality_check']) retrieved from /opt/airflow/dags/quality_check.py
+[2026-01-23T15:31:35.067+0000] {logging_mixin.py:151} INFO - [2026-01-23T15:31:35.067+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2026-01-23T15:31:35.079+0000] {logging_mixin.py:151} INFO - [2026-01-23T15:31:35.079+0000] {dag.py:3696} INFO - Setting next_dagrun for 2_data_quality_check to None, run_after=None
+[2026-01-23T15:31:35.102+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/quality_check.py took 0.079 seconds
+[2026-01-23T15:32:06.992+0000] {processor.py:157} INFO - Started process (PID=1262) to work on /opt/airflow/dags/quality_check.py
+[2026-01-23T15:32:06.993+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/quality_check.py for tasks to queue
+[2026-01-23T15:32:06.994+0000] {logging_mixin.py:151} INFO - [2026-01-23T15:32:06.993+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/quality_check.py
+[2026-01-23T15:32:07.005+0000] {processor.py:839} INFO - DAG(s) dict_keys(['2_data_quality_check']) retrieved from /opt/airflow/dags/quality_check.py
+[2026-01-23T15:32:07.036+0000] {logging_mixin.py:151} INFO - [2026-01-23T15:32:07.036+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2026-01-23T15:32:07.049+0000] {logging_mixin.py:151} INFO - [2026-01-23T15:32:07.049+0000] {dag.py:3696} INFO - Setting next_dagrun for 2_data_quality_check to None, run_after=None
+[2026-01-23T15:32:07.070+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/quality_check.py took 0.081 seconds
+[2026-01-23T15:32:37.863+0000] {processor.py:157} INFO - Started process (PID=1283) to work on /opt/airflow/dags/quality_check.py
+[2026-01-23T15:32:37.864+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/quality_check.py for tasks to queue
+[2026-01-23T15:32:37.865+0000] {logging_mixin.py:151} INFO - [2026-01-23T15:32:37.865+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/quality_check.py
+[2026-01-23T15:32:37.876+0000] {processor.py:839} INFO - DAG(s) dict_keys(['2_data_quality_check']) retrieved from /opt/airflow/dags/quality_check.py
+[2026-01-23T15:32:37.912+0000] {logging_mixin.py:151} INFO - [2026-01-23T15:32:37.912+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2026-01-23T15:32:37.924+0000] {logging_mixin.py:151} INFO - [2026-01-23T15:32:37.924+0000] {dag.py:3696} INFO - Setting next_dagrun for 2_data_quality_check to None, run_after=None
+[2026-01-23T15:32:37.946+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/quality_check.py took 0.087 seconds
+[2026-01-23T15:33:09.863+0000] {processor.py:157} INFO - Started process (PID=1304) to work on /opt/airflow/dags/quality_check.py
+[2026-01-23T15:33:09.864+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/quality_check.py for tasks to queue
+[2026-01-23T15:33:09.865+0000] {logging_mixin.py:151} INFO - [2026-01-23T15:33:09.865+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/quality_check.py
+[2026-01-23T15:33:09.879+0000] {processor.py:839} INFO - DAG(s) dict_keys(['2_data_quality_check']) retrieved from /opt/airflow/dags/quality_check.py
+[2026-01-23T15:33:09.920+0000] {logging_mixin.py:151} INFO - [2026-01-23T15:33:09.920+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2026-01-23T15:33:09.936+0000] {logging_mixin.py:151} INFO - [2026-01-23T15:33:09.935+0000] {dag.py:3696} INFO - Setting next_dagrun for 2_data_quality_check to None, run_after=None
+[2026-01-23T15:33:09.965+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/quality_check.py took 0.107 seconds
+[2026-01-23T15:33:41.875+0000] {processor.py:157} INFO - Started process (PID=1325) to work on /opt/airflow/dags/quality_check.py
+[2026-01-23T15:33:41.876+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/quality_check.py for tasks to queue
+[2026-01-23T15:33:41.877+0000] {logging_mixin.py:151} INFO - [2026-01-23T15:33:41.877+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/quality_check.py
+[2026-01-23T15:33:41.890+0000] {processor.py:839} INFO - DAG(s) dict_keys(['2_data_quality_check']) retrieved from /opt/airflow/dags/quality_check.py
+[2026-01-23T15:33:41.934+0000] {logging_mixin.py:151} INFO - [2026-01-23T15:33:41.934+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2026-01-23T15:33:41.950+0000] {logging_mixin.py:151} INFO - [2026-01-23T15:33:41.950+0000] {dag.py:3696} INFO - Setting next_dagrun for 2_data_quality_check to None, run_after=None
+[2026-01-23T15:33:41.977+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/quality_check.py took 0.105 seconds
+[2026-01-23T15:34:12.749+0000] {processor.py:157} INFO - Started process (PID=1346) to work on /opt/airflow/dags/quality_check.py
+[2026-01-23T15:34:12.751+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/quality_check.py for tasks to queue
+[2026-01-23T15:34:12.751+0000] {logging_mixin.py:151} INFO - [2026-01-23T15:34:12.751+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/quality_check.py
+[2026-01-23T15:34:12.763+0000] {processor.py:839} INFO - DAG(s) dict_keys(['2_data_quality_check']) retrieved from /opt/airflow/dags/quality_check.py
+[2026-01-23T15:34:12.795+0000] {logging_mixin.py:151} INFO - [2026-01-23T15:34:12.794+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2026-01-23T15:34:12.807+0000] {logging_mixin.py:151} INFO - [2026-01-23T15:34:12.807+0000] {dag.py:3696} INFO - Setting next_dagrun for 2_data_quality_check to None, run_after=None
+[2026-01-23T15:34:12.827+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/quality_check.py took 0.082 seconds
+[2026-01-23T15:34:44.654+0000] {processor.py:157} INFO - Started process (PID=1367) to work on /opt/airflow/dags/quality_check.py
+[2026-01-23T15:34:44.656+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/quality_check.py for tasks to queue
+[2026-01-23T15:34:44.657+0000] {logging_mixin.py:151} INFO - [2026-01-23T15:34:44.656+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/quality_check.py
+[2026-01-23T15:34:44.668+0000] {processor.py:839} INFO - DAG(s) dict_keys(['2_data_quality_check']) retrieved from /opt/airflow/dags/quality_check.py
+[2026-01-23T15:34:44.698+0000] {logging_mixin.py:151} INFO - [2026-01-23T15:34:44.698+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2026-01-23T15:34:44.711+0000] {logging_mixin.py:151} INFO - [2026-01-23T15:34:44.711+0000] {dag.py:3696} INFO - Setting next_dagrun for 2_data_quality_check to None, run_after=None
+[2026-01-23T15:34:44.732+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/quality_check.py took 0.082 seconds
+[2026-01-23T15:35:15.546+0000] {processor.py:157} INFO - Started process (PID=1388) to work on /opt/airflow/dags/quality_check.py
+[2026-01-23T15:35:15.548+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/quality_check.py for tasks to queue
+[2026-01-23T15:35:15.549+0000] {logging_mixin.py:151} INFO - [2026-01-23T15:35:15.548+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/quality_check.py
+[2026-01-23T15:35:15.560+0000] {processor.py:839} INFO - DAG(s) dict_keys(['2_data_quality_check']) retrieved from /opt/airflow/dags/quality_check.py
+[2026-01-23T15:35:15.591+0000] {logging_mixin.py:151} INFO - [2026-01-23T15:35:15.591+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2026-01-23T15:35:15.604+0000] {logging_mixin.py:151} INFO - [2026-01-23T15:35:15.603+0000] {dag.py:3696} INFO - Setting next_dagrun for 2_data_quality_check to None, run_after=None
+[2026-01-23T15:35:15.632+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/quality_check.py took 0.090 seconds
+[2026-01-23T15:35:47.566+0000] {processor.py:157} INFO - Started process (PID=1409) to work on /opt/airflow/dags/quality_check.py
+[2026-01-23T15:35:47.567+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/quality_check.py for tasks to queue
+[2026-01-23T15:35:47.568+0000] {logging_mixin.py:151} INFO - [2026-01-23T15:35:47.568+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/quality_check.py
+[2026-01-23T15:35:47.579+0000] {processor.py:839} INFO - DAG(s) dict_keys(['2_data_quality_check']) retrieved from /opt/airflow/dags/quality_check.py
+[2026-01-23T15:35:47.607+0000] {logging_mixin.py:151} INFO - [2026-01-23T15:35:47.606+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2026-01-23T15:35:47.618+0000] {logging_mixin.py:151} INFO - [2026-01-23T15:35:47.618+0000] {dag.py:3696} INFO - Setting next_dagrun for 2_data_quality_check to None, run_after=None
+[2026-01-23T15:35:47.638+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/quality_check.py took 0.075 seconds
+[2026-01-23T15:36:19.402+0000] {processor.py:157} INFO - Started process (PID=1430) to work on /opt/airflow/dags/quality_check.py
+[2026-01-23T15:36:19.404+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/quality_check.py for tasks to queue
+[2026-01-23T15:36:19.405+0000] {logging_mixin.py:151} INFO - [2026-01-23T15:36:19.404+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/quality_check.py
+[2026-01-23T15:36:19.416+0000] {processor.py:839} INFO - DAG(s) dict_keys(['2_data_quality_check']) retrieved from /opt/airflow/dags/quality_check.py
+[2026-01-23T15:36:19.449+0000] {logging_mixin.py:151} INFO - [2026-01-23T15:36:19.448+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2026-01-23T15:36:19.462+0000] {logging_mixin.py:151} INFO - [2026-01-23T15:36:19.461+0000] {dag.py:3696} INFO - Setting next_dagrun for 2_data_quality_check to None, run_after=None
+[2026-01-23T15:36:19.482+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/quality_check.py took 0.085 seconds
+[2026-01-23T15:36:50.341+0000] {processor.py:157} INFO - Started process (PID=1451) to work on /opt/airflow/dags/quality_check.py
+[2026-01-23T15:36:50.342+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/quality_check.py for tasks to queue
+[2026-01-23T15:36:50.343+0000] {logging_mixin.py:151} INFO - [2026-01-23T15:36:50.343+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/quality_check.py
+[2026-01-23T15:36:50.354+0000] {processor.py:839} INFO - DAG(s) dict_keys(['2_data_quality_check']) retrieved from /opt/airflow/dags/quality_check.py
+[2026-01-23T15:36:50.384+0000] {logging_mixin.py:151} INFO - [2026-01-23T15:36:50.383+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2026-01-23T15:36:50.396+0000] {logging_mixin.py:151} INFO - [2026-01-23T15:36:50.396+0000] {dag.py:3696} INFO - Setting next_dagrun for 2_data_quality_check to None, run_after=None
+[2026-01-23T15:36:50.416+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/quality_check.py took 0.079 seconds
+[2026-01-23T15:37:22.374+0000] {processor.py:157} INFO - Started process (PID=1472) to work on /opt/airflow/dags/quality_check.py
+[2026-01-23T15:37:22.375+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/quality_check.py for tasks to queue
+[2026-01-23T15:37:22.376+0000] {logging_mixin.py:151} INFO - [2026-01-23T15:37:22.376+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/quality_check.py
+[2026-01-23T15:37:22.387+0000] {processor.py:839} INFO - DAG(s) dict_keys(['2_data_quality_check']) retrieved from /opt/airflow/dags/quality_check.py
+[2026-01-23T15:37:22.419+0000] {logging_mixin.py:151} INFO - [2026-01-23T15:37:22.419+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2026-01-23T15:37:22.432+0000] {logging_mixin.py:151} INFO - [2026-01-23T15:37:22.432+0000] {dag.py:3696} INFO - Setting next_dagrun for 2_data_quality_check to None, run_after=None
+[2026-01-23T15:37:22.452+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/quality_check.py took 0.081 seconds
+[2026-01-23T15:37:53.293+0000] {processor.py:157} INFO - Started process (PID=1493) to work on /opt/airflow/dags/quality_check.py
+[2026-01-23T15:37:53.294+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/quality_check.py for tasks to queue
+[2026-01-23T15:37:53.295+0000] {logging_mixin.py:151} INFO - [2026-01-23T15:37:53.295+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/quality_check.py
+[2026-01-23T15:37:53.308+0000] {processor.py:839} INFO - DAG(s) dict_keys(['2_data_quality_check']) retrieved from /opt/airflow/dags/quality_check.py
+[2026-01-23T15:37:53.340+0000] {logging_mixin.py:151} INFO - [2026-01-23T15:37:53.340+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2026-01-23T15:37:53.353+0000] {logging_mixin.py:151} INFO - [2026-01-23T15:37:53.353+0000] {dag.py:3696} INFO - Setting next_dagrun for 2_data_quality_check to None, run_after=None
+[2026-01-23T15:37:53.373+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/quality_check.py took 0.083 seconds
+[2026-01-23T16:14:18.663+0000] {processor.py:157} INFO - Started process (PID=180) to work on /opt/airflow/dags/quality_check.py
+[2026-01-23T16:14:18.665+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/quality_check.py for tasks to queue
+[2026-01-23T16:14:18.666+0000] {logging_mixin.py:151} INFO - [2026-01-23T16:14:18.665+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/quality_check.py
+[2026-01-23T16:14:18.684+0000] {processor.py:839} INFO - DAG(s) dict_keys(['2_data_quality_check']) retrieved from /opt/airflow/dags/quality_check.py
+[2026-01-23T16:14:18.705+0000] {logging_mixin.py:151} INFO - [2026-01-23T16:14:18.704+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2026-01-23T16:14:18.725+0000] {logging_mixin.py:151} INFO - [2026-01-23T16:14:18.725+0000] {dag.py:3696} INFO - Setting next_dagrun for 2_data_quality_check to None, run_after=None
+[2026-01-23T16:14:18.758+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/quality_check.py took 0.100 seconds
+[2026-01-23T16:14:48.947+0000] {processor.py:157} INFO - Started process (PID=225) to work on /opt/airflow/dags/quality_check.py
+[2026-01-23T16:14:48.950+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/quality_check.py for tasks to queue
+[2026-01-23T16:14:48.952+0000] {logging_mixin.py:151} INFO - [2026-01-23T16:14:48.951+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/quality_check.py
+[2026-01-23T16:14:48.966+0000] {processor.py:839} INFO - DAG(s) dict_keys(['2_data_quality_check']) retrieved from /opt/airflow/dags/quality_check.py
+[2026-01-23T16:14:48.989+0000] {logging_mixin.py:151} INFO - [2026-01-23T16:14:48.988+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2026-01-23T16:14:49.006+0000] {logging_mixin.py:151} INFO - [2026-01-23T16:14:49.006+0000] {dag.py:3696} INFO - Setting next_dagrun for 2_data_quality_check to None, run_after=None
+[2026-01-23T16:14:49.039+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/quality_check.py took 0.098 seconds
+[2026-01-23T16:15:20.064+0000] {processor.py:157} INFO - Started process (PID=271) to work on /opt/airflow/dags/quality_check.py
+[2026-01-23T16:15:20.068+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/quality_check.py for tasks to queue
+[2026-01-23T16:15:20.070+0000] {logging_mixin.py:151} INFO - [2026-01-23T16:15:20.069+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/quality_check.py
+[2026-01-23T16:15:20.090+0000] {processor.py:839} INFO - DAG(s) dict_keys(['2_data_quality_check']) retrieved from /opt/airflow/dags/quality_check.py
+[2026-01-23T16:15:20.208+0000] {logging_mixin.py:151} INFO - [2026-01-23T16:15:20.207+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2026-01-23T16:15:20.274+0000] {logging_mixin.py:151} INFO - [2026-01-23T16:15:20.274+0000] {dag.py:3696} INFO - Setting next_dagrun for 2_data_quality_check to None, run_after=None
+[2026-01-23T16:15:20.345+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/quality_check.py took 0.291 seconds
+[2026-01-23T16:15:51.236+0000] {processor.py:157} INFO - Started process (PID=301) to work on /opt/airflow/dags/quality_check.py
+[2026-01-23T16:15:51.238+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/quality_check.py for tasks to queue
+[2026-01-23T16:15:51.240+0000] {logging_mixin.py:151} INFO - [2026-01-23T16:15:51.239+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/quality_check.py
+[2026-01-23T16:15:51.269+0000] {processor.py:839} INFO - DAG(s) dict_keys(['2_data_quality_check']) retrieved from /opt/airflow/dags/quality_check.py
+[2026-01-23T16:15:52.058+0000] {logging_mixin.py:151} INFO - [2026-01-23T16:15:52.058+0000] {security.py:708} INFO - Not syncing DAG-level permissions for DAG 'DAG:2_data_quality_check' as access control is unset.
+[2026-01-23T16:15:52.059+0000] {logging_mixin.py:151} INFO - [2026-01-23T16:15:52.059+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2026-01-23T16:15:52.072+0000] {logging_mixin.py:151} INFO - [2026-01-23T16:15:52.072+0000] {dag.py:2937} INFO - Creating ORM DAG for 2_data_quality_check
+[2026-01-23T16:15:52.073+0000] {logging_mixin.py:151} INFO - [2026-01-23T16:15:52.072+0000] {dag.py:3696} INFO - Setting next_dagrun for 2_data_quality_check to None, run_after=None
+[2026-01-23T16:15:52.103+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/quality_check.py took 0.896 seconds
+[2026-01-23T16:16:22.875+0000] {processor.py:157} INFO - Started process (PID=360) to work on /opt/airflow/dags/quality_check.py
+[2026-01-23T16:16:22.877+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/quality_check.py for tasks to queue
+[2026-01-23T16:16:22.878+0000] {logging_mixin.py:151} INFO - [2026-01-23T16:16:22.878+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/quality_check.py
+[2026-01-23T16:16:22.924+0000] {processor.py:839} INFO - DAG(s) dict_keys(['2_data_quality_check']) retrieved from /opt/airflow/dags/quality_check.py
+[2026-01-23T16:16:23.053+0000] {logging_mixin.py:151} INFO - [2026-01-23T16:16:23.052+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2026-01-23T16:16:23.104+0000] {logging_mixin.py:151} INFO - [2026-01-23T16:16:23.104+0000] {dag.py:3696} INFO - Setting next_dagrun for 2_data_quality_check to None, run_after=None
+[2026-01-23T16:16:23.147+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/quality_check.py took 0.281 seconds
+[2026-01-23T16:16:54.062+0000] {processor.py:157} INFO - Started process (PID=379) to work on /opt/airflow/dags/quality_check.py
+[2026-01-23T16:16:54.072+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/quality_check.py for tasks to queue
+[2026-01-23T16:16:54.074+0000] {logging_mixin.py:151} INFO - [2026-01-23T16:16:54.074+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/quality_check.py
+[2026-01-23T16:16:54.092+0000] {processor.py:839} INFO - DAG(s) dict_keys(['2_data_quality_check']) retrieved from /opt/airflow/dags/quality_check.py
+[2026-01-23T16:16:54.133+0000] {logging_mixin.py:151} INFO - [2026-01-23T16:16:54.133+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2026-01-23T16:16:54.293+0000] {logging_mixin.py:151} INFO - [2026-01-23T16:16:54.292+0000] {dag.py:3696} INFO - Setting next_dagrun for 2_data_quality_check to None, run_after=None
+[2026-01-23T16:17:00.393+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/quality_check.py took 6.338 seconds
+[2026-01-23T16:17:30.676+0000] {processor.py:157} INFO - Started process (PID=402) to work on /opt/airflow/dags/quality_check.py
+[2026-01-23T16:17:30.679+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/quality_check.py for tasks to queue
+[2026-01-23T16:17:30.680+0000] {logging_mixin.py:151} INFO - [2026-01-23T16:17:30.679+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/quality_check.py
+[2026-01-23T16:17:30.699+0000] {processor.py:839} INFO - DAG(s) dict_keys(['2_data_quality_check']) retrieved from /opt/airflow/dags/quality_check.py
+[2026-01-23T16:17:30.760+0000] {logging_mixin.py:151} INFO - [2026-01-23T16:17:30.760+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2026-01-23T16:17:30.942+0000] {logging_mixin.py:151} INFO - [2026-01-23T16:17:30.942+0000] {dag.py:3696} INFO - Setting next_dagrun for 2_data_quality_check to None, run_after=None
+[2026-01-23T16:17:30.974+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/quality_check.py took 0.302 seconds
+[2026-01-23T16:18:01.139+0000] {processor.py:157} INFO - Started process (PID=436) to work on /opt/airflow/dags/quality_check.py
+[2026-01-23T16:18:01.559+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/quality_check.py for tasks to queue
+[2026-01-23T16:18:01.629+0000] {logging_mixin.py:151} INFO - [2026-01-23T16:18:01.561+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/quality_check.py
+[2026-01-23T16:18:02.731+0000] {processor.py:839} INFO - DAG(s) dict_keys(['2_data_quality_check']) retrieved from /opt/airflow/dags/quality_check.py
+[2026-01-23T16:18:02.946+0000] {logging_mixin.py:151} INFO - [2026-01-23T16:18:02.945+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2026-01-23T16:18:02.981+0000] {logging_mixin.py:151} INFO - [2026-01-23T16:18:02.980+0000] {dag.py:3696} INFO - Setting next_dagrun for 2_data_quality_check to None, run_after=None
+[2026-01-23T16:18:03.033+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/quality_check.py took 1.902 seconds
+[2026-01-23T16:18:33.093+0000] {processor.py:157} INFO - Started process (PID=569) to work on /opt/airflow/dags/quality_check.py
+[2026-01-23T16:18:33.095+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/quality_check.py for tasks to queue
+[2026-01-23T16:18:33.097+0000] {logging_mixin.py:151} INFO - [2026-01-23T16:18:33.096+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/quality_check.py
+[2026-01-23T16:18:33.112+0000] {processor.py:839} INFO - DAG(s) dict_keys(['2_data_quality_check']) retrieved from /opt/airflow/dags/quality_check.py
+[2026-01-23T16:18:33.152+0000] {logging_mixin.py:151} INFO - [2026-01-23T16:18:33.152+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2026-01-23T16:18:33.171+0000] {logging_mixin.py:151} INFO - [2026-01-23T16:18:33.170+0000] {dag.py:3696} INFO - Setting next_dagrun for 2_data_quality_check to None, run_after=None
+[2026-01-23T16:18:33.204+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/quality_check.py took 0.115 seconds
+[2026-01-23T16:19:03.327+0000] {processor.py:157} INFO - Started process (PID=601) to work on /opt/airflow/dags/quality_check.py
+[2026-01-23T16:19:03.331+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/quality_check.py for tasks to queue
+[2026-01-23T16:19:03.332+0000] {logging_mixin.py:151} INFO - [2026-01-23T16:19:03.331+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/quality_check.py
+[2026-01-23T16:19:03.344+0000] {processor.py:839} INFO - DAG(s) dict_keys(['2_data_quality_check']) retrieved from /opt/airflow/dags/quality_check.py
+[2026-01-23T16:19:03.382+0000] {logging_mixin.py:151} INFO - [2026-01-23T16:19:03.381+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2026-01-23T16:19:03.399+0000] {logging_mixin.py:151} INFO - [2026-01-23T16:19:03.399+0000] {dag.py:3696} INFO - Setting next_dagrun for 2_data_quality_check to None, run_after=None
+[2026-01-23T16:19:03.427+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/quality_check.py took 0.105 seconds
+[2026-01-23T16:19:33.504+0000] {processor.py:157} INFO - Started process (PID=622) to work on /opt/airflow/dags/quality_check.py
+[2026-01-23T16:19:33.505+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/quality_check.py for tasks to queue
+[2026-01-23T16:19:33.506+0000] {logging_mixin.py:151} INFO - [2026-01-23T16:19:33.506+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/quality_check.py
+[2026-01-23T16:19:33.518+0000] {processor.py:839} INFO - DAG(s) dict_keys(['2_data_quality_check']) retrieved from /opt/airflow/dags/quality_check.py
+[2026-01-23T16:19:33.556+0000] {logging_mixin.py:151} INFO - [2026-01-23T16:19:33.555+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2026-01-23T16:19:33.569+0000] {logging_mixin.py:151} INFO - [2026-01-23T16:19:33.569+0000] {dag.py:3696} INFO - Setting next_dagrun for 2_data_quality_check to None, run_after=None
+[2026-01-23T16:19:33.595+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/quality_check.py took 0.095 seconds
+[2026-01-23T16:20:03.835+0000] {processor.py:157} INFO - Started process (PID=643) to work on /opt/airflow/dags/quality_check.py
+[2026-01-23T16:20:03.850+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/quality_check.py for tasks to queue
+[2026-01-23T16:20:03.851+0000] {logging_mixin.py:151} INFO - [2026-01-23T16:20:03.850+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/quality_check.py
+[2026-01-23T16:20:03.865+0000] {processor.py:839} INFO - DAG(s) dict_keys(['2_data_quality_check']) retrieved from /opt/airflow/dags/quality_check.py
+[2026-01-23T16:20:03.905+0000] {logging_mixin.py:151} INFO - [2026-01-23T16:20:03.905+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2026-01-23T16:20:03.919+0000] {logging_mixin.py:151} INFO - [2026-01-23T16:20:03.919+0000] {dag.py:3696} INFO - Setting next_dagrun for 2_data_quality_check to None, run_after=None
+[2026-01-23T16:20:03.944+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/quality_check.py took 0.114 seconds
+[2026-01-23T16:20:34.097+0000] {processor.py:157} INFO - Started process (PID=664) to work on /opt/airflow/dags/quality_check.py
+[2026-01-23T16:20:34.099+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/quality_check.py for tasks to queue
+[2026-01-23T16:20:34.100+0000] {logging_mixin.py:151} INFO - [2026-01-23T16:20:34.100+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/quality_check.py
+[2026-01-23T16:20:34.114+0000] {processor.py:839} INFO - DAG(s) dict_keys(['2_data_quality_check']) retrieved from /opt/airflow/dags/quality_check.py
+[2026-01-23T16:20:34.151+0000] {logging_mixin.py:151} INFO - [2026-01-23T16:20:34.150+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2026-01-23T16:20:34.165+0000] {logging_mixin.py:151} INFO - [2026-01-23T16:20:34.164+0000] {dag.py:3696} INFO - Setting next_dagrun for 2_data_quality_check to None, run_after=None
+[2026-01-23T16:20:34.190+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/quality_check.py took 0.099 seconds
+[2026-01-23T16:21:04.951+0000] {processor.py:157} INFO - Started process (PID=685) to work on /opt/airflow/dags/quality_check.py
+[2026-01-23T16:21:04.953+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/quality_check.py for tasks to queue
+[2026-01-23T16:21:04.955+0000] {logging_mixin.py:151} INFO - [2026-01-23T16:21:04.954+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/quality_check.py
+[2026-01-23T16:21:04.978+0000] {processor.py:839} INFO - DAG(s) dict_keys(['2_data_quality_check']) retrieved from /opt/airflow/dags/quality_check.py
+[2026-01-23T16:21:05.025+0000] {logging_mixin.py:151} INFO - [2026-01-23T16:21:05.025+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2026-01-23T16:21:05.043+0000] {logging_mixin.py:151} INFO - [2026-01-23T16:21:05.042+0000] {dag.py:3696} INFO - Setting next_dagrun for 2_data_quality_check to None, run_after=None
+[2026-01-23T16:21:05.065+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/quality_check.py took 0.120 seconds
+[2026-01-23T16:21:35.147+0000] {processor.py:157} INFO - Started process (PID=706) to work on /opt/airflow/dags/quality_check.py
+[2026-01-23T16:21:35.148+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/quality_check.py for tasks to queue
+[2026-01-23T16:21:35.149+0000] {logging_mixin.py:151} INFO - [2026-01-23T16:21:35.149+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/quality_check.py
+[2026-01-23T16:21:35.163+0000] {processor.py:839} INFO - DAG(s) dict_keys(['2_data_quality_check']) retrieved from /opt/airflow/dags/quality_check.py
+[2026-01-23T16:21:35.201+0000] {logging_mixin.py:151} INFO - [2026-01-23T16:21:35.200+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2026-01-23T16:21:35.215+0000] {logging_mixin.py:151} INFO - [2026-01-23T16:21:35.214+0000] {dag.py:3696} INFO - Setting next_dagrun for 2_data_quality_check to None, run_after=None
+[2026-01-23T16:21:35.242+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/quality_check.py took 0.100 seconds
+[2026-01-23T16:22:06.025+0000] {processor.py:157} INFO - Started process (PID=727) to work on /opt/airflow/dags/quality_check.py
+[2026-01-23T16:22:06.033+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/quality_check.py for tasks to queue
+[2026-01-23T16:22:06.035+0000] {logging_mixin.py:151} INFO - [2026-01-23T16:22:06.034+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/quality_check.py
+[2026-01-23T16:22:06.053+0000] {processor.py:839} INFO - DAG(s) dict_keys(['2_data_quality_check']) retrieved from /opt/airflow/dags/quality_check.py
+[2026-01-23T16:22:06.100+0000] {logging_mixin.py:151} INFO - [2026-01-23T16:22:06.099+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2026-01-23T16:22:06.118+0000] {logging_mixin.py:151} INFO - [2026-01-23T16:22:06.118+0000] {dag.py:3696} INFO - Setting next_dagrun for 2_data_quality_check to None, run_after=None
+[2026-01-23T16:22:06.146+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/quality_check.py took 0.127 seconds
+[2026-01-23T16:22:36.299+0000] {processor.py:157} INFO - Started process (PID=748) to work on /opt/airflow/dags/quality_check.py
+[2026-01-23T16:22:36.300+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/quality_check.py for tasks to queue
+[2026-01-23T16:22:36.301+0000] {logging_mixin.py:151} INFO - [2026-01-23T16:22:36.300+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/quality_check.py
+[2026-01-23T16:22:36.313+0000] {processor.py:839} INFO - DAG(s) dict_keys(['2_data_quality_check']) retrieved from /opt/airflow/dags/quality_check.py
+[2026-01-23T16:22:36.362+0000] {logging_mixin.py:151} INFO - [2026-01-23T16:22:36.362+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2026-01-23T16:22:36.383+0000] {logging_mixin.py:151} INFO - [2026-01-23T16:22:36.383+0000] {dag.py:3696} INFO - Setting next_dagrun for 2_data_quality_check to None, run_after=None
+[2026-01-23T16:22:36.419+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/quality_check.py took 0.124 seconds
+[2026-01-23T16:23:07.182+0000] {processor.py:157} INFO - Started process (PID=769) to work on /opt/airflow/dags/quality_check.py
+[2026-01-23T16:23:07.197+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/quality_check.py for tasks to queue
+[2026-01-23T16:23:07.198+0000] {logging_mixin.py:151} INFO - [2026-01-23T16:23:07.197+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/quality_check.py
+[2026-01-23T16:23:07.209+0000] {processor.py:839} INFO - DAG(s) dict_keys(['2_data_quality_check']) retrieved from /opt/airflow/dags/quality_check.py
+[2026-01-23T16:23:07.241+0000] {logging_mixin.py:151} INFO - [2026-01-23T16:23:07.241+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2026-01-23T16:23:07.254+0000] {logging_mixin.py:151} INFO - [2026-01-23T16:23:07.254+0000] {dag.py:3696} INFO - Setting next_dagrun for 2_data_quality_check to None, run_after=None
+[2026-01-23T16:23:07.281+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/quality_check.py took 0.103 seconds
+[2026-01-23T16:23:37.522+0000] {processor.py:157} INFO - Started process (PID=788) to work on /opt/airflow/dags/quality_check.py
+[2026-01-23T16:23:37.523+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/quality_check.py for tasks to queue
+[2026-01-23T16:23:37.524+0000] {logging_mixin.py:151} INFO - [2026-01-23T16:23:37.524+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/quality_check.py
+[2026-01-23T16:23:37.535+0000] {processor.py:839} INFO - DAG(s) dict_keys(['2_data_quality_check']) retrieved from /opt/airflow/dags/quality_check.py
+[2026-01-23T16:23:37.569+0000] {logging_mixin.py:151} INFO - [2026-01-23T16:23:37.569+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2026-01-23T16:23:37.584+0000] {logging_mixin.py:151} INFO - [2026-01-23T16:23:37.584+0000] {dag.py:3696} INFO - Setting next_dagrun for 2_data_quality_check to None, run_after=None
+[2026-01-23T16:23:37.611+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/quality_check.py took 0.094 seconds
+[2026-01-23T16:24:09.540+0000] {processor.py:157} INFO - Started process (PID=809) to work on /opt/airflow/dags/quality_check.py
+[2026-01-23T16:24:09.542+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/quality_check.py for tasks to queue
+[2026-01-23T16:24:09.543+0000] {logging_mixin.py:151} INFO - [2026-01-23T16:24:09.543+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/quality_check.py
+[2026-01-23T16:24:09.560+0000] {processor.py:839} INFO - DAG(s) dict_keys(['2_data_quality_check']) retrieved from /opt/airflow/dags/quality_check.py
+[2026-01-23T16:24:09.611+0000] {logging_mixin.py:151} INFO - [2026-01-23T16:24:09.611+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2026-01-23T16:24:09.636+0000] {logging_mixin.py:151} INFO - [2026-01-23T16:24:09.636+0000] {dag.py:3696} INFO - Setting next_dagrun for 2_data_quality_check to None, run_after=None
+[2026-01-23T16:24:09.681+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/quality_check.py took 0.147 seconds
+[2026-01-23T16:24:40.684+0000] {processor.py:157} INFO - Started process (PID=832) to work on /opt/airflow/dags/quality_check.py
+[2026-01-23T16:24:40.685+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/quality_check.py for tasks to queue
+[2026-01-23T16:24:40.686+0000] {logging_mixin.py:151} INFO - [2026-01-23T16:24:40.686+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/quality_check.py
+[2026-01-23T16:24:40.697+0000] {processor.py:839} INFO - DAG(s) dict_keys(['2_data_quality_check']) retrieved from /opt/airflow/dags/quality_check.py
+[2026-01-23T16:24:40.735+0000] {logging_mixin.py:151} INFO - [2026-01-23T16:24:40.735+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2026-01-23T16:24:40.749+0000] {logging_mixin.py:151} INFO - [2026-01-23T16:24:40.748+0000] {dag.py:3696} INFO - Setting next_dagrun for 2_data_quality_check to None, run_after=None
+[2026-01-23T16:24:40.772+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/quality_check.py took 0.093 seconds

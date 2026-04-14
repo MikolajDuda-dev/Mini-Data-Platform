@@ -1,0 +1,219 @@
+[2026-01-22T22:11:16.985+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: 3_mlops_full_pipeline.run_simulation manual__2026-01-22T22:11:05.425335+00:00 [queued]>
+[2026-01-22T22:11:16.992+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: 3_mlops_full_pipeline.run_simulation manual__2026-01-22T22:11:05.425335+00:00 [queued]>
+[2026-01-22T22:11:16.993+0000] {taskinstance.py:1359} INFO - Starting attempt 1 of 1
+[2026-01-22T22:11:17.007+0000] {taskinstance.py:1380} INFO - Executing <Task(BashOperator): run_simulation> on 2026-01-22 22:11:05.425335+00:00
+[2026-01-22T22:11:17.012+0000] {standard_task_runner.py:57} INFO - Started process 1758 to run task
+[2026-01-22T22:11:17.015+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', '3_mlops_full_pipeline', 'run_simulation', 'manual__2026-01-22T22:11:05.425335+00:00', '--job-id', '92', '--raw', '--subdir', 'DAGS_FOLDER/mlops_pipeline.py', '--cfg-path', '/tmp/tmp0xosu3ua']
+[2026-01-22T22:11:17.018+0000] {standard_task_runner.py:85} INFO - Job 92: Subtask run_simulation
+[2026-01-22T22:11:17.065+0000] {task_command.py:415} INFO - Running <TaskInstance: 3_mlops_full_pipeline.run_simulation manual__2026-01-22T22:11:05.425335+00:00 [running]> on host 24f0deffc5ba
+[2026-01-22T22:11:17.146+0000] {taskinstance.py:1660} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='3_mlops_full_pipeline' AIRFLOW_CTX_TASK_ID='run_simulation' AIRFLOW_CTX_EXECUTION_DATE='2026-01-22T22:11:05.425335+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-01-22T22:11:05.425335+00:00'
+[2026-01-22T22:11:17.147+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2026-01-22T22:11:17.148+0000] {subprocess.py:75} INFO - Running command: ['/bin/bash', '-c', 'python /opt/***/dags/simulate_process.py']
+[2026-01-22T22:11:17.158+0000] {subprocess.py:86} INFO - Output:
+[2026-01-22T22:11:39.442+0000] {subprocess.py:93} INFO - >>> Tabela orders gotowa.
+[2026-01-22T22:11:39.443+0000] {subprocess.py:93} INFO - >>> Rozpoczynam generowanie paczki danych (20 rekordów)...
+[2026-01-22T22:11:39.443+0000] {subprocess.py:93} INFO - Dodano: Keyboard | Klient: Richard Munoz
+[2026-01-22T22:11:39.443+0000] {subprocess.py:93} INFO - Dodano: Laptop | Klient: Eric Young
+[2026-01-22T22:11:39.443+0000] {subprocess.py:93} INFO - Dodano: Laptop | Klient: Thomas Bauer
+[2026-01-22T22:11:39.443+0000] {subprocess.py:93} INFO - Dodano: Keyboard | Klient: Dawn Cruz
+[2026-01-22T22:11:39.443+0000] {subprocess.py:93} INFO - Dodano: Headphones | Klient: Matthew Henry
+[2026-01-22T22:11:39.443+0000] {subprocess.py:93} INFO - Dodano: Headphones | Klient: Jennifer Miller
+[2026-01-22T22:11:39.443+0000] {subprocess.py:93} INFO - Dodano: Keyboard | Klient: Jamie Pena
+[2026-01-22T22:11:39.444+0000] {subprocess.py:93} INFO - Dodano: Laptop | Klient: Mr. Keith Duran MD
+[2026-01-22T22:11:39.444+0000] {subprocess.py:93} INFO - Dodano: Monitor | Klient: Joanne Harper
+[2026-01-22T22:11:39.444+0000] {subprocess.py:93} INFO - Dodano: Laptop | Klient: Jennifer Alvarez
+[2026-01-22T22:11:39.444+0000] {subprocess.py:93} INFO - Dodano: Monitor | Klient: Brittany Hernandez
+[2026-01-22T22:11:39.444+0000] {subprocess.py:93} INFO - Dodano: Headphones | Klient: Joseph Walker
+[2026-01-22T22:11:39.444+0000] {subprocess.py:93} INFO - Dodano: Mouse | Klient: Kaitlin Dixon
+[2026-01-22T22:11:39.444+0000] {subprocess.py:93} INFO - Dodano: Monitor | Klient: Connie Carter
+[2026-01-22T22:11:39.444+0000] {subprocess.py:93} INFO - Dodano: Mouse | Klient: Pamela Rodriguez
+[2026-01-22T22:11:39.445+0000] {subprocess.py:93} INFO - Dodano: Mouse | Klient: Kevin Butler
+[2026-01-22T22:11:39.445+0000] {subprocess.py:93} INFO - Dodano: Headphones | Klient: Laura Collins
+[2026-01-22T22:11:39.445+0000] {subprocess.py:93} INFO - Dodano: Mouse | Klient: Jeffrey Benjamin
+[2026-01-22T22:11:39.445+0000] {subprocess.py:93} INFO - Dodano: Laptop | Klient: Sarah Young
+[2026-01-22T22:11:39.445+0000] {subprocess.py:93} INFO - Dodano: Keyboard | Klient: Brandon Anderson
+[2026-01-22T22:11:39.445+0000] {subprocess.py:93} INFO - Dodano: Monitor | Klient: Brittany White
+[2026-01-22T22:11:39.445+0000] {subprocess.py:93} INFO - Dodano: Laptop | Klient: James Watkins
+[2026-01-22T22:11:39.445+0000] {subprocess.py:93} INFO - Dodano: Keyboard | Klient: Justin Cabrera
+[2026-01-22T22:11:39.445+0000] {subprocess.py:93} INFO - Dodano: Monitor | Klient: Martha Rose MD
+[2026-01-22T22:11:39.445+0000] {subprocess.py:93} INFO - Dodano: Laptop | Klient: Nicole Brown
+[2026-01-22T22:11:39.446+0000] {subprocess.py:93} INFO - Dodano: Keyboard | Klient: Elizabeth Garrison
+[2026-01-22T22:11:39.446+0000] {subprocess.py:93} INFO - Dodano: Mouse | Klient: Tristan Nichols
+[2026-01-22T22:11:39.446+0000] {subprocess.py:93} INFO - Dodano: Monitor | Klient: Ann Sanchez
+[2026-01-22T22:11:39.446+0000] {subprocess.py:93} INFO - Dodano: Mouse | Klient: Tyler Lee
+[2026-01-22T22:11:39.446+0000] {subprocess.py:93} INFO - Dodano: Mouse | Klient: Renee Vaughn
+[2026-01-22T22:11:39.446+0000] {subprocess.py:93} INFO - Dodano: Monitor | Klient: John Lara
+[2026-01-22T22:11:39.446+0000] {subprocess.py:93} INFO - Dodano: Keyboard | Klient: Jason Blankenship
+[2026-01-22T22:11:39.446+0000] {subprocess.py:93} INFO - Dodano: Keyboard | Klient: Joshua Hanson
+[2026-01-22T22:11:39.446+0000] {subprocess.py:93} INFO - Dodano: Mouse | Klient: Dana Johnson
+[2026-01-22T22:11:39.446+0000] {subprocess.py:93} INFO - Dodano: Laptop | Klient: Laurie Swanson MD
+[2026-01-22T22:11:39.446+0000] {subprocess.py:93} INFO - Dodano: Keyboard | Klient: Derek May
+[2026-01-22T22:11:39.447+0000] {subprocess.py:93} INFO - Dodano: Laptop | Klient: Jacob Hernandez
+[2026-01-22T22:11:39.447+0000] {subprocess.py:93} INFO - Dodano: Laptop | Klient: Kylie Black
+[2026-01-22T22:11:39.447+0000] {subprocess.py:93} INFO - Dodano: Mouse | Klient: Ashley Graves
+[2026-01-22T22:11:39.447+0000] {subprocess.py:93} INFO - Dodano: Headphones | Klient: Theodore Zamora
+[2026-01-22T22:11:39.447+0000] {subprocess.py:93} INFO - Dodano: Laptop | Klient: Debra Bradley
+[2026-01-22T22:11:39.447+0000] {subprocess.py:93} INFO - Dodano: Laptop | Klient: Cheryl Hall
+[2026-01-22T22:11:39.447+0000] {subprocess.py:93} INFO - Dodano: Headphones | Klient: Cheryl Collins
+[2026-01-22T22:11:39.447+0000] {subprocess.py:93} INFO - Dodano: Keyboard | Klient: Paul Dickerson
+[2026-01-22T22:11:39.447+0000] {subprocess.py:93} INFO - Dodano: Mouse | Klient: Timothy Espinoza
+[2026-01-22T22:11:39.447+0000] {subprocess.py:93} INFO - Dodano: Keyboard | Klient: Casey Nguyen
+[2026-01-22T22:11:39.447+0000] {subprocess.py:93} INFO - Dodano: Laptop | Klient: Natasha Gibbs
+[2026-01-22T22:11:39.447+0000] {subprocess.py:93} INFO - Dodano: Laptop | Klient: Kenneth Webb
+[2026-01-22T22:11:39.447+0000] {subprocess.py:93} INFO - Dodano: Monitor | Klient: Nicole Cox
+[2026-01-22T22:11:39.448+0000] {subprocess.py:93} INFO - Dodano: Laptop | Klient: Tammy Romero
+[2026-01-22T22:11:39.448+0000] {subprocess.py:93} INFO - Dodano: Laptop | Klient: John Ramirez
+[2026-01-22T22:11:39.448+0000] {subprocess.py:93} INFO - Dodano: Laptop | Klient: Ronald Logan
+[2026-01-22T22:11:39.448+0000] {subprocess.py:93} INFO - Dodano: Laptop | Klient: Isaac Davidson
+[2026-01-22T22:11:39.448+0000] {subprocess.py:93} INFO - Dodano: Headphones | Klient: Timothy Valdez
+[2026-01-22T22:11:39.448+0000] {subprocess.py:93} INFO - Dodano: Headphones | Klient: Crystal Solis
+[2026-01-22T22:11:39.448+0000] {subprocess.py:93} INFO - Dodano: Mouse | Klient: Carlos Rojas
+[2026-01-22T22:11:39.448+0000] {subprocess.py:93} INFO - Dodano: Monitor | Klient: Tamara Nelson
+[2026-01-22T22:11:39.449+0000] {subprocess.py:93} INFO - Dodano: Headphones | Klient: Justin White
+[2026-01-22T22:11:39.449+0000] {subprocess.py:93} INFO - Dodano: Headphones | Klient: James Barnes
+[2026-01-22T22:11:39.449+0000] {subprocess.py:93} INFO - Dodano: Keyboard | Klient: Jennifer Cook
+[2026-01-22T22:11:39.449+0000] {subprocess.py:93} INFO - Dodano: Mouse | Klient: Ashlee Saunders
+[2026-01-22T22:11:39.449+0000] {subprocess.py:93} INFO - Dodano: Keyboard | Klient: Antonio Gray
+[2026-01-22T22:11:39.449+0000] {subprocess.py:93} INFO - Dodano: Mouse | Klient: Martin Hardin
+[2026-01-22T22:11:39.449+0000] {subprocess.py:93} INFO - Dodano: Keyboard | Klient: Matthew Cline
+[2026-01-22T22:11:39.449+0000] {subprocess.py:93} INFO - Dodano: Laptop | Klient: Alexandra Hernandez
+[2026-01-22T22:11:39.450+0000] {subprocess.py:93} INFO - Dodano: Keyboard | Klient: Robert Wilson
+[2026-01-22T22:11:39.450+0000] {subprocess.py:93} INFO - Dodano: Keyboard | Klient: Jason Harris
+[2026-01-22T22:11:39.450+0000] {subprocess.py:93} INFO - Dodano: Keyboard | Klient: Maria Parker
+[2026-01-22T22:11:39.450+0000] {subprocess.py:93} INFO - Dodano: Laptop | Klient: Russell Jones
+[2026-01-22T22:11:39.450+0000] {subprocess.py:93} INFO - Dodano: Monitor | Klient: Cindy Calhoun
+[2026-01-22T22:11:39.450+0000] {subprocess.py:93} INFO - Dodano: Monitor | Klient: David Salinas
+[2026-01-22T22:11:39.450+0000] {subprocess.py:93} INFO - Dodano: Headphones | Klient: John Valentine
+[2026-01-22T22:11:39.450+0000] {subprocess.py:93} INFO - Dodano: Laptop | Klient: Scott Walker
+[2026-01-22T22:11:39.450+0000] {subprocess.py:93} INFO - Dodano: Laptop | Klient: Kevin Simmons
+[2026-01-22T22:11:39.450+0000] {subprocess.py:93} INFO - Dodano: Headphones | Klient: Darrell Thompson
+[2026-01-22T22:11:39.450+0000] {subprocess.py:93} INFO - Dodano: Monitor | Klient: Michael Williams
+[2026-01-22T22:11:39.450+0000] {subprocess.py:93} INFO - Dodano: Headphones | Klient: Martin Wallace
+[2026-01-22T22:11:39.450+0000] {subprocess.py:93} INFO - Dodano: Headphones | Klient: Mario Williams
+[2026-01-22T22:11:39.450+0000] {subprocess.py:93} INFO - Dodano: Monitor | Klient: Sabrina Nelson
+[2026-01-22T22:11:39.450+0000] {subprocess.py:93} INFO - Dodano: Headphones | Klient: Jaime Howard
+[2026-01-22T22:11:39.451+0000] {subprocess.py:93} INFO - Dodano: Laptop | Klient: Brian Graves
+[2026-01-22T22:11:39.451+0000] {subprocess.py:93} INFO - Dodano: Laptop | Klient: Rachel Boyd
+[2026-01-22T22:11:39.451+0000] {subprocess.py:93} INFO - Dodano: Monitor | Klient: Christopher Holmes
+[2026-01-22T22:11:39.451+0000] {subprocess.py:93} INFO - Dodano: Headphones | Klient: Jamie Costa
+[2026-01-22T22:11:39.451+0000] {subprocess.py:93} INFO - Dodano: Laptop | Klient: Nicole Phillips
+[2026-01-22T22:11:39.451+0000] {subprocess.py:93} INFO - Dodano: Monitor | Klient: Brittany Wright
+[2026-01-22T22:11:39.451+0000] {subprocess.py:93} INFO - Dodano: Laptop | Klient: Marcus Delgado
+[2026-01-22T22:11:39.451+0000] {subprocess.py:93} INFO - Dodano: Monitor | Klient: Roy Washington
+[2026-01-22T22:11:39.451+0000] {subprocess.py:93} INFO - Dodano: Mouse | Klient: Mary Palmer
+[2026-01-22T22:11:39.451+0000] {subprocess.py:93} INFO - Dodano: Keyboard | Klient: Kelly Anderson
+[2026-01-22T22:11:39.451+0000] {subprocess.py:93} INFO - Dodano: Laptop | Klient: Danielle Perkins
+[2026-01-22T22:11:39.451+0000] {subprocess.py:93} INFO - Dodano: Keyboard | Klient: Bryan Patel
+[2026-01-22T22:11:39.451+0000] {subprocess.py:93} INFO - Dodano: Laptop | Klient: Brianna Lewis
+[2026-01-22T22:11:39.451+0000] {subprocess.py:93} INFO - Dodano: Headphones | Klient: Matthew Mitchell
+[2026-01-22T22:11:39.451+0000] {subprocess.py:93} INFO - Dodano: Headphones | Klient: Jessica Simmons
+[2026-01-22T22:11:39.451+0000] {subprocess.py:93} INFO - Dodano: Monitor | Klient: Brandi Little
+[2026-01-22T22:11:39.452+0000] {subprocess.py:93} INFO - Dodano: Mouse | Klient: Robert Mcmahon DVM
+[2026-01-22T22:11:39.452+0000] {subprocess.py:93} INFO - Dodano: Mouse | Klient: Catherine Williams
+[2026-01-22T22:11:39.452+0000] {subprocess.py:93} INFO - Dodano: Mouse | Klient: Christopher Whitney
+[2026-01-22T22:11:39.452+0000] {subprocess.py:93} INFO - Dodano: Laptop | Klient: Ann Diaz
+[2026-01-22T22:11:39.452+0000] {subprocess.py:93} INFO - Dodano: Monitor | Klient: Harold Black
+[2026-01-22T22:11:39.452+0000] {subprocess.py:93} INFO - Dodano: Headphones | Klient: Joseph Peterson
+[2026-01-22T22:11:39.452+0000] {subprocess.py:93} INFO - Dodano: Monitor | Klient: Edward Wagner
+[2026-01-22T22:11:39.452+0000] {subprocess.py:93} INFO - Dodano: Laptop | Klient: Christian Johnson
+[2026-01-22T22:11:39.452+0000] {subprocess.py:93} INFO - Dodano: Laptop | Klient: Dustin Rice
+[2026-01-22T22:11:39.453+0000] {subprocess.py:93} INFO - Dodano: Monitor | Klient: Luke Case
+[2026-01-22T22:11:39.453+0000] {subprocess.py:93} INFO - Dodano: Keyboard | Klient: Debbie Oneill
+[2026-01-22T22:11:39.453+0000] {subprocess.py:93} INFO - Dodano: Mouse | Klient: Gary Perry
+[2026-01-22T22:11:39.453+0000] {subprocess.py:93} INFO - Dodano: Headphones | Klient: Todd Hughes
+[2026-01-22T22:11:39.453+0000] {subprocess.py:93} INFO - Dodano: Headphones | Klient: Linda Johnson
+[2026-01-22T22:11:39.453+0000] {subprocess.py:93} INFO - Dodano: Headphones | Klient: Katherine Delgado
+[2026-01-22T22:11:39.453+0000] {subprocess.py:93} INFO - Dodano: Monitor | Klient: Erin Cordova
+[2026-01-22T22:11:39.453+0000] {subprocess.py:93} INFO - Dodano: Monitor | Klient: Becky Bray
+[2026-01-22T22:11:39.453+0000] {subprocess.py:93} INFO - Dodano: Mouse | Klient: Madison Powell
+[2026-01-22T22:11:39.453+0000] {subprocess.py:93} INFO - Dodano: Monitor | Klient: Jamie Coleman
+[2026-01-22T22:11:39.453+0000] {subprocess.py:93} INFO - Dodano: Mouse | Klient: Joshua Brooks
+[2026-01-22T22:11:39.454+0000] {subprocess.py:93} INFO - Dodano: Mouse | Klient: David Lynch
+[2026-01-22T22:11:39.454+0000] {subprocess.py:93} INFO - Dodano: Monitor | Klient: Brittney Lopez
+[2026-01-22T22:11:39.454+0000] {subprocess.py:93} INFO - Dodano: Mouse | Klient: Jordan Boyer
+[2026-01-22T22:11:39.454+0000] {subprocess.py:93} INFO - Dodano: Monitor | Klient: Edwin Walker
+[2026-01-22T22:11:39.454+0000] {subprocess.py:93} INFO - Dodano: Headphones | Klient: Sean Bennett
+[2026-01-22T22:11:39.454+0000] {subprocess.py:93} INFO - Dodano: Keyboard | Klient: Tiffany Boyer
+[2026-01-22T22:11:39.454+0000] {subprocess.py:93} INFO - Dodano: Keyboard | Klient: Dalton Roman
+[2026-01-22T22:11:39.454+0000] {subprocess.py:93} INFO - Dodano: Mouse | Klient: Ashley Villa
+[2026-01-22T22:11:39.454+0000] {subprocess.py:93} INFO - Dodano: Mouse | Klient: Erika Walker
+[2026-01-22T22:11:39.454+0000] {subprocess.py:93} INFO - Dodano: Monitor | Klient: Robert Morales
+[2026-01-22T22:11:39.454+0000] {subprocess.py:93} INFO - Dodano: Laptop | Klient: Derek White
+[2026-01-22T22:11:39.454+0000] {subprocess.py:93} INFO - Dodano: Monitor | Klient: Jennifer Jackson
+[2026-01-22T22:11:39.454+0000] {subprocess.py:93} INFO - Dodano: Headphones | Klient: Chad Garcia
+[2026-01-22T22:11:39.454+0000] {subprocess.py:93} INFO - Dodano: Monitor | Klient: Heather Davis
+[2026-01-22T22:11:39.454+0000] {subprocess.py:93} INFO - Dodano: Monitor | Klient: Michael Hall
+[2026-01-22T22:11:39.454+0000] {subprocess.py:93} INFO - Dodano: Headphones | Klient: David Williams
+[2026-01-22T22:11:39.455+0000] {subprocess.py:93} INFO - Dodano: Mouse | Klient: Matthew Brennan
+[2026-01-22T22:11:39.455+0000] {subprocess.py:93} INFO - Dodano: Keyboard | Klient: John Alexander
+[2026-01-22T22:11:39.455+0000] {subprocess.py:93} INFO - Dodano: Laptop | Klient: Christopher Williams DVM
+[2026-01-22T22:11:39.455+0000] {subprocess.py:93} INFO - Dodano: Monitor | Klient: Christopher Anderson
+[2026-01-22T22:11:39.455+0000] {subprocess.py:93} INFO - Dodano: Monitor | Klient: Benjamin Miller
+[2026-01-22T22:11:39.455+0000] {subprocess.py:93} INFO - Dodano: Monitor | Klient: Melissa Ramos
+[2026-01-22T22:11:39.455+0000] {subprocess.py:93} INFO - Dodano: Laptop | Klient: Patrick Jones
+[2026-01-22T22:11:39.455+0000] {subprocess.py:93} INFO - Dodano: Mouse | Klient: Jose Nichols
+[2026-01-22T22:11:39.455+0000] {subprocess.py:93} INFO - Dodano: Mouse | Klient: Alan Stokes Jr.
+[2026-01-22T22:11:39.455+0000] {subprocess.py:93} INFO - Dodano: Keyboard | Klient: Tanya Foster DVM
+[2026-01-22T22:11:39.455+0000] {subprocess.py:93} INFO - Dodano: Mouse | Klient: Jordan Walker
+[2026-01-22T22:11:39.455+0000] {subprocess.py:93} INFO - Dodano: Headphones | Klient: Amber Tucker
+[2026-01-22T22:11:39.455+0000] {subprocess.py:93} INFO - Dodano: Keyboard | Klient: Julia Harper
+[2026-01-22T22:11:39.456+0000] {subprocess.py:93} INFO - Dodano: Mouse | Klient: Marcia Phillips
+[2026-01-22T22:11:39.456+0000] {subprocess.py:93} INFO - Dodano: Monitor | Klient: Brian Johnson
+[2026-01-22T22:11:39.456+0000] {subprocess.py:93} INFO - Dodano: Headphones | Klient: Patricia Goodwin
+[2026-01-22T22:11:39.456+0000] {subprocess.py:93} INFO - Dodano: Monitor | Klient: Julia Salazar
+[2026-01-22T22:11:39.456+0000] {subprocess.py:93} INFO - Dodano: Monitor | Klient: James Blackburn
+[2026-01-22T22:11:39.456+0000] {subprocess.py:93} INFO - Dodano: Headphones | Klient: Benjamin Salazar
+[2026-01-22T22:11:39.456+0000] {subprocess.py:93} INFO - Dodano: Mouse | Klient: Amanda Gallagher
+[2026-01-22T22:11:39.457+0000] {subprocess.py:93} INFO - Dodano: Monitor | Klient: Teresa Gibson
+[2026-01-22T22:11:39.457+0000] {subprocess.py:93} INFO - Dodano: Mouse | Klient: Joanna Parker
+[2026-01-22T22:11:39.457+0000] {subprocess.py:93} INFO - Dodano: Laptop | Klient: Danielle Walker
+[2026-01-22T22:11:39.457+0000] {subprocess.py:93} INFO - Dodano: Laptop | Klient: James Coleman
+[2026-01-22T22:11:39.457+0000] {subprocess.py:93} INFO - Dodano: Mouse | Klient: Michael Mcclain
+[2026-01-22T22:11:39.457+0000] {subprocess.py:93} INFO - Dodano: Mouse | Klient: Michael Ross
+[2026-01-22T22:11:39.457+0000] {subprocess.py:93} INFO - Dodano: Headphones | Klient: Evan Lowe
+[2026-01-22T22:11:39.457+0000] {subprocess.py:93} INFO - Dodano: Keyboard | Klient: Christine Williams
+[2026-01-22T22:11:39.457+0000] {subprocess.py:93} INFO - Dodano: Headphones | Klient: Paul Cline
+[2026-01-22T22:11:39.457+0000] {subprocess.py:93} INFO - Dodano: Keyboard | Klient: Dawn Reid
+[2026-01-22T22:11:39.457+0000] {subprocess.py:93} INFO - Dodano: Mouse | Klient: Crystal White
+[2026-01-22T22:11:39.457+0000] {subprocess.py:93} INFO - Dodano: Monitor | Klient: Kristen Nunez
+[2026-01-22T22:11:39.457+0000] {subprocess.py:93} INFO - Dodano: Mouse | Klient: Tracy Wilson
+[2026-01-22T22:11:39.457+0000] {subprocess.py:93} INFO - Dodano: Mouse | Klient: Scott Foster
+[2026-01-22T22:11:39.458+0000] {subprocess.py:93} INFO - Dodano: Laptop | Klient: Pamela Graves
+[2026-01-22T22:11:39.458+0000] {subprocess.py:93} INFO - Dodano: Monitor | Klient: Connor Long
+[2026-01-22T22:11:39.458+0000] {subprocess.py:93} INFO - Dodano: Mouse | Klient: Robert Garcia
+[2026-01-22T22:11:39.458+0000] {subprocess.py:93} INFO - Dodano: Monitor | Klient: Nicole Newman
+[2026-01-22T22:11:39.458+0000] {subprocess.py:93} INFO - Dodano: Laptop | Klient: Tara Wright
+[2026-01-22T22:11:39.458+0000] {subprocess.py:93} INFO - Dodano: Keyboard | Klient: Theresa Gray
+[2026-01-22T22:11:39.458+0000] {subprocess.py:93} INFO - Dodano: Monitor | Klient: Gina Fisher
+[2026-01-22T22:11:39.458+0000] {subprocess.py:93} INFO - Dodano: Mouse | Klient: Joe Jackson
+[2026-01-22T22:11:39.458+0000] {subprocess.py:93} INFO - Dodano: Mouse | Klient: Gary Kaufman
+[2026-01-22T22:11:39.458+0000] {subprocess.py:93} INFO - Dodano: Keyboard | Klient: Jordan Rios
+[2026-01-22T22:11:39.458+0000] {subprocess.py:93} INFO - Dodano: Mouse | Klient: Vincent Tran
+[2026-01-22T22:11:39.458+0000] {subprocess.py:93} INFO - Dodano: Monitor | Klient: Courtney Johnson
+[2026-01-22T22:11:39.458+0000] {subprocess.py:93} INFO - Dodano: Mouse | Klient: Elizabeth Wiggins
+[2026-01-22T22:11:39.458+0000] {subprocess.py:93} INFO - Dodano: Headphones | Klient: Jason Harvey
+[2026-01-22T22:11:39.458+0000] {subprocess.py:93} INFO - Dodano: Keyboard | Klient: Renee Jacobs
+[2026-01-22T22:11:39.458+0000] {subprocess.py:93} INFO - Dodano: Monitor | Klient: Susan Torres
+[2026-01-22T22:11:39.458+0000] {subprocess.py:93} INFO - Dodano: Headphones | Klient: Ernest Martin
+[2026-01-22T22:11:39.459+0000] {subprocess.py:93} INFO - Dodano: Headphones | Klient: Peggy Kline
+[2026-01-22T22:11:39.459+0000] {subprocess.py:93} INFO - Dodano: Mouse | Klient: Cole Gutierrez
+[2026-01-22T22:11:39.459+0000] {subprocess.py:93} INFO - Dodano: Headphones | Klient: Ryan Serrano
+[2026-01-22T22:11:39.459+0000] {subprocess.py:93} INFO - Dodano: Headphones | Klient: Erika Smith
+[2026-01-22T22:11:39.459+0000] {subprocess.py:93} INFO - Dodano: Laptop | Klient: Debra White
+[2026-01-22T22:11:39.459+0000] {subprocess.py:93} INFO - Dodano: Mouse | Klient: Laura King
+[2026-01-22T22:11:39.459+0000] {subprocess.py:93} INFO - Dodano: Mouse | Klient: Mark Cook
+[2026-01-22T22:11:39.459+0000] {subprocess.py:93} INFO - Dodano: Laptop | Klient: Shirley Edwards
+[2026-01-22T22:11:39.459+0000] {subprocess.py:93} INFO - Dodano: Laptop | Klient: Kelly Stewart
+[2026-01-22T22:11:39.459+0000] {subprocess.py:93} INFO - Dodano: Monitor | Klient: Dana Miller
+[2026-01-22T22:11:39.459+0000] {subprocess.py:93} INFO - Dodano: Mouse | Klient: Taylor Alvarado
+[2026-01-22T22:11:39.459+0000] {subprocess.py:93} INFO - Dodano: Laptop | Klient: Wendy Sellers
+[2026-01-22T22:11:39.459+0000] {subprocess.py:93} INFO - Dodano: Laptop | Klient: Leonard Blackwell
+[2026-01-22T22:11:39.459+0000] {subprocess.py:93} INFO - Dodano: Headphones | Klient: Alexander Marsh
+[2026-01-22T22:11:39.460+0000] {subprocess.py:93} INFO - Dodano: Keyboard | Klient: Leslie Boyd
+[2026-01-22T22:11:39.460+0000] {subprocess.py:93} INFO - Dodano: Laptop | Klient: Jennifer Mcdonald
+[2026-01-22T22:11:39.460+0000] {subprocess.py:93} INFO - Dodano: Keyboard | Klient: Emily Santos
+[2026-01-22T22:11:39.460+0000] {subprocess.py:93} INFO - >>> Zakończono generowanie danych.
+[2026-01-22T22:11:39.466+0000] {subprocess.py:97} INFO - Command exited with return code 0
+[2026-01-22T22:11:39.495+0000] {taskinstance.py:1398} INFO - Marking task as SUCCESS. dag_id=3_mlops_full_pipeline, task_id=run_simulation, execution_date=20260122T221105, start_date=20260122T221116, end_date=20260122T221139
+[2026-01-22T22:11:39.551+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 0
+[2026-01-22T22:11:39.572+0000] {taskinstance.py:2776} INFO - 0 downstream tasks scheduled from follow-on schedule check

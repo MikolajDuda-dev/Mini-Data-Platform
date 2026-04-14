@@ -1,0 +1,900 @@
+[2026-01-23T16:16:16.778+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: 3_mlops_full_pipeline.spark_bronze_to_silver manual__2026-01-23T16:14:45+00:00 [queued]>
+[2026-01-23T16:16:16.790+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: 3_mlops_full_pipeline.spark_bronze_to_silver manual__2026-01-23T16:14:45+00:00 [queued]>
+[2026-01-23T16:16:16.790+0000] {taskinstance.py:1359} INFO - Starting attempt 1 of 1
+[2026-01-23T16:16:16.808+0000] {taskinstance.py:1380} INFO - Executing <Task(BashOperator): spark_bronze_to_silver> on 2026-01-23 16:14:45+00:00
+[2026-01-23T16:16:16.814+0000] {standard_task_runner.py:57} INFO - Started process 342 to run task
+[2026-01-23T16:16:16.819+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', '3_mlops_full_pipeline', 'spark_bronze_to_silver', 'manual__2026-01-23T16:14:45+00:00', '--job-id', '5', '--raw', '--subdir', 'DAGS_FOLDER/mlops_pipeline.py', '--cfg-path', '/tmp/tmpj3ic39gq']
+[2026-01-23T16:16:16.822+0000] {standard_task_runner.py:85} INFO - Job 5: Subtask spark_bronze_to_silver
+[2026-01-23T16:16:16.882+0000] {task_command.py:415} INFO - Running <TaskInstance: 3_mlops_full_pipeline.spark_bronze_to_silver manual__2026-01-23T16:14:45+00:00 [running]> on host 9b26c2287a34
+[2026-01-23T16:16:16.980+0000] {taskinstance.py:1660} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='3_mlops_full_pipeline' AIRFLOW_CTX_TASK_ID='spark_bronze_to_silver' AIRFLOW_CTX_EXECUTION_DATE='2026-01-23T16:14:45+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-01-23T16:14:45+00:00'
+[2026-01-23T16:16:16.982+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2026-01-23T16:16:16.984+0000] {subprocess.py:75} INFO - Running command: ['/bin/bash', '-c', '\n        # Added \'-u 0\' flag to run as root\n        docker exec -u 0 -i spark-master /opt/spark/bin/spark-submit         --packages io.delta:delta-spark_2.12:3.1.0,org.apache.hadoop:hadoop-aws:3.3.4         --conf "spark.sql.extensions=io.delta.sql.DeltaSparkSessionExtension"         --conf "spark.sql.catalog.spark_catalog=org.apache.spark.sql.delta.catalog.DeltaCatalog"         /opt/spark-jobs/bronze_to_silver.py\n        ']
+[2026-01-23T16:16:17.000+0000] {subprocess.py:86} INFO - Output:
+[2026-01-23T16:16:20.186+0000] {subprocess.py:93} INFO - :: loading settings :: url = jar:file:/opt/spark/jars/ivy-2.5.1.jar!/org/apache/ivy/core/settings/ivysettings.xml
+[2026-01-23T16:16:20.421+0000] {subprocess.py:93} INFO - Ivy Default Cache set to: /root/.ivy2/cache
+[2026-01-23T16:16:20.422+0000] {subprocess.py:93} INFO - The jars for the packages stored in: /root/.ivy2/jars
+[2026-01-23T16:16:20.429+0000] {subprocess.py:93} INFO - io.delta#delta-spark_2.12 added as a dependency
+[2026-01-23T16:16:20.429+0000] {subprocess.py:93} INFO - org.apache.hadoop#hadoop-aws added as a dependency
+[2026-01-23T16:16:20.430+0000] {subprocess.py:93} INFO - :: resolving dependencies :: org.apache.spark#spark-submit-parent-111f5f0d-182d-4e87-a7fb-06655c4e8f8e;1.0
+[2026-01-23T16:16:20.431+0000] {subprocess.py:93} INFO - 	confs: [default]
+[2026-01-23T16:16:21.100+0000] {subprocess.py:93} INFO - 	found io.delta#delta-spark_2.12;3.1.0 in central
+[2026-01-23T16:16:21.189+0000] {subprocess.py:93} INFO - 	found io.delta#delta-storage;3.1.0 in central
+[2026-01-23T16:16:22.295+0000] {subprocess.py:93} INFO - 	found org.antlr#antlr4-runtime;4.9.3 in central
+[2026-01-23T16:16:23.026+0000] {subprocess.py:93} INFO - 	found org.apache.hadoop#hadoop-aws;3.3.4 in central
+[2026-01-23T16:16:23.831+0000] {subprocess.py:93} INFO - 	found com.amazonaws#aws-java-sdk-bundle;1.12.262 in central
+[2026-01-23T16:16:25.164+0000] {subprocess.py:93} INFO - 	found org.wildfly.openssl#wildfly-openssl;1.0.7.Final in central
+[2026-01-23T16:16:25.212+0000] {subprocess.py:93} INFO - downloading https://repo1.maven.org/maven2/io/delta/delta-spark_2.12/3.1.0/delta-spark_2.12-3.1.0.jar ...
+[2026-01-23T16:16:25.559+0000] {subprocess.py:93} INFO - 	[SUCCESSFUL ] io.delta#delta-spark_2.12;3.1.0!delta-spark_2.12.jar (380ms)
+[2026-01-23T16:16:25.634+0000] {subprocess.py:93} INFO - downloading https://repo1.maven.org/maven2/org/apache/hadoop/hadoop-aws/3.3.4/hadoop-aws-3.3.4.jar ...
+[2026-01-23T16:16:25.712+0000] {subprocess.py:93} INFO - 	[SUCCESSFUL ] org.apache.hadoop#hadoop-aws;3.3.4!hadoop-aws.jar (151ms)
+[2026-01-23T16:16:25.744+0000] {subprocess.py:93} INFO - downloading https://repo1.maven.org/maven2/io/delta/delta-storage/3.1.0/delta-storage-3.1.0.jar ...
+[2026-01-23T16:16:25.774+0000] {subprocess.py:93} INFO - 	[SUCCESSFUL ] io.delta#delta-storage;3.1.0!delta-storage.jar (60ms)
+[2026-01-23T16:16:25.807+0000] {subprocess.py:93} INFO - downloading https://repo1.maven.org/maven2/org/antlr/antlr4-runtime/4.9.3/antlr4-runtime-4.9.3.jar ...
+[2026-01-23T16:16:25.860+0000] {subprocess.py:93} INFO - 	[SUCCESSFUL ] org.antlr#antlr4-runtime;4.9.3!antlr4-runtime.jar (85ms)
+[2026-01-23T16:16:25.895+0000] {subprocess.py:93} INFO - downloading https://repo1.maven.org/maven2/com/amazonaws/aws-java-sdk-bundle/1.12.262/aws-java-sdk-bundle-1.12.262.jar ...
+[2026-01-23T16:16:40.702+0000] {subprocess.py:93} INFO - 	[SUCCESSFUL ] com.amazonaws#aws-java-sdk-bundle;1.12.262!aws-java-sdk-bundle.jar (14841ms)
+[2026-01-23T16:16:40.761+0000] {subprocess.py:93} INFO - downloading https://repo1.maven.org/maven2/org/wildfly/openssl/wildfly-openssl/1.0.7.Final/wildfly-openssl-1.0.7.Final.jar ...
+[2026-01-23T16:16:40.822+0000] {subprocess.py:93} INFO - 	[SUCCESSFUL ] org.wildfly.openssl#wildfly-openssl;1.0.7.Final!wildfly-openssl.jar (95ms)
+[2026-01-23T16:16:40.822+0000] {subprocess.py:93} INFO - :: resolution report :: resolve 4746ms :: artifacts dl 15645ms
+[2026-01-23T16:16:40.823+0000] {subprocess.py:93} INFO - 	:: modules in use:
+[2026-01-23T16:16:40.823+0000] {subprocess.py:93} INFO - 	com.amazonaws#aws-java-sdk-bundle;1.12.262 from central in [default]
+[2026-01-23T16:16:40.823+0000] {subprocess.py:93} INFO - 	io.delta#delta-spark_2.12;3.1.0 from central in [default]
+[2026-01-23T16:16:40.823+0000] {subprocess.py:93} INFO - 	io.delta#delta-storage;3.1.0 from central in [default]
+[2026-01-23T16:16:40.823+0000] {subprocess.py:93} INFO - 	org.antlr#antlr4-runtime;4.9.3 from central in [default]
+[2026-01-23T16:16:40.824+0000] {subprocess.py:93} INFO - 	org.apache.hadoop#hadoop-aws;3.3.4 from central in [default]
+[2026-01-23T16:16:40.824+0000] {subprocess.py:93} INFO - 	org.wildfly.openssl#wildfly-openssl;1.0.7.Final from central in [default]
+[2026-01-23T16:16:40.824+0000] {subprocess.py:93} INFO - 	---------------------------------------------------------------------
+[2026-01-23T16:16:40.824+0000] {subprocess.py:93} INFO - 	|                  |            modules            ||   artifacts   |
+[2026-01-23T16:16:40.824+0000] {subprocess.py:93} INFO - 	|       conf       | number| search|dwnlded|evicted|| number|dwnlded|
+[2026-01-23T16:16:40.825+0000] {subprocess.py:93} INFO - 	---------------------------------------------------------------------
+[2026-01-23T16:16:40.825+0000] {subprocess.py:93} INFO - 	|      default     |   6   |   6   |   6   |   0   ||   6   |   6   |
+[2026-01-23T16:16:40.825+0000] {subprocess.py:93} INFO - 	---------------------------------------------------------------------
+[2026-01-23T16:16:40.871+0000] {subprocess.py:93} INFO - :: retrieving :: org.apache.spark#spark-submit-parent-111f5f0d-182d-4e87-a7fb-06655c4e8f8e
+[2026-01-23T16:16:40.871+0000] {subprocess.py:93} INFO - 	confs: [default]
+[2026-01-23T16:16:44.966+0000] {subprocess.py:93} INFO - 	6 artifacts copied, 0 already retrieved (281149kB/4095ms)
+[2026-01-23T16:16:48.134+0000] {subprocess.py:93} INFO - 26/01/23 16:16:48 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+[2026-01-23T16:16:51.694+0000] {subprocess.py:93} INFO - >>> Initializing Spark Session (Bronze -> Silver)...
+[2026-01-23T16:16:51.978+0000] {subprocess.py:93} INFO - 26/01/23 16:16:51 INFO SparkContext: Running Spark version 3.5.1
+[2026-01-23T16:16:51.979+0000] {subprocess.py:93} INFO - 26/01/23 16:16:51 INFO SparkContext: OS info Linux, 6.6.87.1-microsoft-standard-WSL2, amd64
+[2026-01-23T16:16:51.979+0000] {subprocess.py:93} INFO - 26/01/23 16:16:51 INFO SparkContext: Java version 11.0.22
+[2026-01-23T16:16:52.017+0000] {subprocess.py:93} INFO - 26/01/23 16:16:52 INFO ResourceUtils: ==============================================================
+[2026-01-23T16:16:52.018+0000] {subprocess.py:93} INFO - 26/01/23 16:16:52 INFO ResourceUtils: No custom resources configured for spark.driver.
+[2026-01-23T16:16:52.018+0000] {subprocess.py:93} INFO - 26/01/23 16:16:52 INFO ResourceUtils: ==============================================================
+[2026-01-23T16:16:52.019+0000] {subprocess.py:93} INFO - 26/01/23 16:16:52 INFO SparkContext: Submitted application: BronzeToSilver
+[2026-01-23T16:16:52.056+0000] {subprocess.py:93} INFO - 26/01/23 16:16:52 INFO ResourceProfile: Default ResourceProfile created, executor resources: Map(cores -> name: cores, amount: 1, script: , vendor: , memory -> name: memory, amount: 1024, script: , vendor: , offHeap -> name: offHeap, amount: 0, script: , vendor: ), task resources: Map(cpus -> name: cpus, amount: 1.0)
+[2026-01-23T16:16:52.074+0000] {subprocess.py:93} INFO - 26/01/23 16:16:52 INFO ResourceProfile: Limiting resource is cpu
+[2026-01-23T16:16:52.075+0000] {subprocess.py:93} INFO - 26/01/23 16:16:52 INFO ResourceProfileManager: Added ResourceProfile id: 0
+[2026-01-23T16:16:52.193+0000] {subprocess.py:93} INFO - 26/01/23 16:16:52 INFO SecurityManager: Changing view acls to: root
+[2026-01-23T16:16:52.194+0000] {subprocess.py:93} INFO - 26/01/23 16:16:52 INFO SecurityManager: Changing modify acls to: root
+[2026-01-23T16:16:52.195+0000] {subprocess.py:93} INFO - 26/01/23 16:16:52 INFO SecurityManager: Changing view acls groups to:
+[2026-01-23T16:16:52.195+0000] {subprocess.py:93} INFO - 26/01/23 16:16:52 INFO SecurityManager: Changing modify acls groups to:
+[2026-01-23T16:16:52.196+0000] {subprocess.py:93} INFO - 26/01/23 16:16:52 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users with view permissions: root; groups with view permissions: EMPTY; users with modify permissions: root; groups with modify permissions: EMPTY
+[2026-01-23T16:16:52.694+0000] {subprocess.py:93} INFO - 26/01/23 16:16:52 INFO Utils: Successfully started service 'sparkDriver' on port 40939.
+[2026-01-23T16:16:52.760+0000] {subprocess.py:93} INFO - 26/01/23 16:16:52 INFO SparkEnv: Registering MapOutputTracker
+[2026-01-23T16:16:52.838+0000] {subprocess.py:93} INFO - 26/01/23 16:16:52 INFO SparkEnv: Registering BlockManagerMaster
+[2026-01-23T16:16:52.877+0000] {subprocess.py:93} INFO - 26/01/23 16:16:52 INFO BlockManagerMasterEndpoint: Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+[2026-01-23T16:16:52.877+0000] {subprocess.py:93} INFO - 26/01/23 16:16:52 INFO BlockManagerMasterEndpoint: BlockManagerMasterEndpoint up
+[2026-01-23T16:16:52.885+0000] {subprocess.py:93} INFO - 26/01/23 16:16:52 INFO SparkEnv: Registering BlockManagerMasterHeartbeat
+[2026-01-23T16:16:52.931+0000] {subprocess.py:93} INFO - 26/01/23 16:16:52 INFO DiskBlockManager: Created local directory at /tmp/blockmgr-575de646-1d41-46a5-ada8-645bc265b816
+[2026-01-23T16:16:52.951+0000] {subprocess.py:93} INFO - 26/01/23 16:16:52 INFO MemoryStore: MemoryStore started with capacity 434.4 MiB
+[2026-01-23T16:16:52.973+0000] {subprocess.py:93} INFO - 26/01/23 16:16:52 INFO SparkEnv: Registering OutputCommitCoordinator
+[2026-01-23T16:16:53.375+0000] {subprocess.py:93} INFO - 26/01/23 16:16:53 INFO JettyUtils: Start Jetty 0.0.0.0:4040 for SparkUI
+[2026-01-23T16:16:53.519+0000] {subprocess.py:93} INFO - 26/01/23 16:16:53 INFO Utils: Successfully started service 'SparkUI' on port 4040.
+[2026-01-23T16:16:53.599+0000] {subprocess.py:93} INFO - 26/01/23 16:16:53 INFO SparkContext: Added JAR file:///root/.ivy2/jars/io.delta_delta-spark_2.12-3.1.0.jar at spark://870244d36fa2:40939/jars/io.delta_delta-spark_2.12-3.1.0.jar with timestamp 1769185011959
+[2026-01-23T16:16:53.610+0000] {subprocess.py:93} INFO - 26/01/23 16:16:53 INFO SparkContext: Added JAR file:///root/.ivy2/jars/org.apache.hadoop_hadoop-aws-3.3.4.jar at spark://870244d36fa2:40939/jars/org.apache.hadoop_hadoop-aws-3.3.4.jar with timestamp 1769185011959
+[2026-01-23T16:16:53.615+0000] {subprocess.py:93} INFO - 26/01/23 16:16:53 INFO SparkContext: Added JAR file:///root/.ivy2/jars/io.delta_delta-storage-3.1.0.jar at spark://870244d36fa2:40939/jars/io.delta_delta-storage-3.1.0.jar with timestamp 1769185011959
+[2026-01-23T16:16:53.617+0000] {subprocess.py:93} INFO - 26/01/23 16:16:53 INFO SparkContext: Added JAR file:///root/.ivy2/jars/org.antlr_antlr4-runtime-4.9.3.jar at spark://870244d36fa2:40939/jars/org.antlr_antlr4-runtime-4.9.3.jar with timestamp 1769185011959
+[2026-01-23T16:16:53.619+0000] {subprocess.py:93} INFO - 26/01/23 16:16:53 INFO SparkContext: Added JAR file:///root/.ivy2/jars/com.amazonaws_aws-java-sdk-bundle-1.12.262.jar at spark://870244d36fa2:40939/jars/com.amazonaws_aws-java-sdk-bundle-1.12.262.jar with timestamp 1769185011959
+[2026-01-23T16:16:53.621+0000] {subprocess.py:93} INFO - 26/01/23 16:16:53 INFO SparkContext: Added JAR file:///root/.ivy2/jars/org.wildfly.openssl_wildfly-openssl-1.0.7.Final.jar at spark://870244d36fa2:40939/jars/org.wildfly.openssl_wildfly-openssl-1.0.7.Final.jar with timestamp 1769185011959
+[2026-01-23T16:16:53.633+0000] {subprocess.py:93} INFO - 26/01/23 16:16:53 INFO SparkContext: Added file file:///root/.ivy2/jars/io.delta_delta-spark_2.12-3.1.0.jar at file:///root/.ivy2/jars/io.delta_delta-spark_2.12-3.1.0.jar with timestamp 1769185011959
+[2026-01-23T16:16:53.653+0000] {subprocess.py:93} INFO - 26/01/23 16:16:53 INFO Utils: Copying /root/.ivy2/jars/io.delta_delta-spark_2.12-3.1.0.jar to /tmp/spark-bdd8516e-877c-48cf-9f38-9ddeb7ccffc7/userFiles-432c2278-7800-47a1-bbf5-a79e327e95f7/io.delta_delta-spark_2.12-3.1.0.jar
+[2026-01-23T16:16:53.741+0000] {subprocess.py:93} INFO - 26/01/23 16:16:53 INFO SparkContext: Added file file:///root/.ivy2/jars/org.apache.hadoop_hadoop-aws-3.3.4.jar at file:///root/.ivy2/jars/org.apache.hadoop_hadoop-aws-3.3.4.jar with timestamp 1769185011959
+[2026-01-23T16:16:53.741+0000] {subprocess.py:93} INFO - 26/01/23 16:16:53 INFO Utils: Copying /root/.ivy2/jars/org.apache.hadoop_hadoop-aws-3.3.4.jar to /tmp/spark-bdd8516e-877c-48cf-9f38-9ddeb7ccffc7/userFiles-432c2278-7800-47a1-bbf5-a79e327e95f7/org.apache.hadoop_hadoop-aws-3.3.4.jar
+[2026-01-23T16:16:53.755+0000] {subprocess.py:93} INFO - 26/01/23 16:16:53 INFO SparkContext: Added file file:///root/.ivy2/jars/io.delta_delta-storage-3.1.0.jar at file:///root/.ivy2/jars/io.delta_delta-storage-3.1.0.jar with timestamp 1769185011959
+[2026-01-23T16:16:53.756+0000] {subprocess.py:93} INFO - 26/01/23 16:16:53 INFO Utils: Copying /root/.ivy2/jars/io.delta_delta-storage-3.1.0.jar to /tmp/spark-bdd8516e-877c-48cf-9f38-9ddeb7ccffc7/userFiles-432c2278-7800-47a1-bbf5-a79e327e95f7/io.delta_delta-storage-3.1.0.jar
+[2026-01-23T16:16:53.763+0000] {subprocess.py:93} INFO - 26/01/23 16:16:53 INFO SparkContext: Added file file:///root/.ivy2/jars/org.antlr_antlr4-runtime-4.9.3.jar at file:///root/.ivy2/jars/org.antlr_antlr4-runtime-4.9.3.jar with timestamp 1769185011959
+[2026-01-23T16:16:53.764+0000] {subprocess.py:93} INFO - 26/01/23 16:16:53 INFO Utils: Copying /root/.ivy2/jars/org.antlr_antlr4-runtime-4.9.3.jar to /tmp/spark-bdd8516e-877c-48cf-9f38-9ddeb7ccffc7/userFiles-432c2278-7800-47a1-bbf5-a79e327e95f7/org.antlr_antlr4-runtime-4.9.3.jar
+[2026-01-23T16:16:53.770+0000] {subprocess.py:93} INFO - 26/01/23 16:16:53 INFO SparkContext: Added file file:///root/.ivy2/jars/com.amazonaws_aws-java-sdk-bundle-1.12.262.jar at file:///root/.ivy2/jars/com.amazonaws_aws-java-sdk-bundle-1.12.262.jar with timestamp 1769185011959
+[2026-01-23T16:16:53.771+0000] {subprocess.py:93} INFO - 26/01/23 16:16:53 INFO Utils: Copying /root/.ivy2/jars/com.amazonaws_aws-java-sdk-bundle-1.12.262.jar to /tmp/spark-bdd8516e-877c-48cf-9f38-9ddeb7ccffc7/userFiles-432c2278-7800-47a1-bbf5-a79e327e95f7/com.amazonaws_aws-java-sdk-bundle-1.12.262.jar
+[2026-01-23T16:16:56.736+0000] {subprocess.py:93} INFO - 26/01/23 16:16:56 INFO SparkContext: Added file file:///root/.ivy2/jars/org.wildfly.openssl_wildfly-openssl-1.0.7.Final.jar at file:///root/.ivy2/jars/org.wildfly.openssl_wildfly-openssl-1.0.7.Final.jar with timestamp 1769185011959
+[2026-01-23T16:16:56.736+0000] {subprocess.py:93} INFO - 26/01/23 16:16:56 INFO Utils: Copying /root/.ivy2/jars/org.wildfly.openssl_wildfly-openssl-1.0.7.Final.jar to /tmp/spark-bdd8516e-877c-48cf-9f38-9ddeb7ccffc7/userFiles-432c2278-7800-47a1-bbf5-a79e327e95f7/org.wildfly.openssl_wildfly-openssl-1.0.7.Final.jar
+[2026-01-23T16:16:58.209+0000] {subprocess.py:93} INFO - 26/01/23 16:16:58 INFO Executor: Starting executor ID driver on host 870244d36fa2
+[2026-01-23T16:16:58.209+0000] {subprocess.py:93} INFO - 26/01/23 16:16:58 INFO Executor: OS info Linux, 6.6.87.1-microsoft-standard-WSL2, amd64
+[2026-01-23T16:16:58.210+0000] {subprocess.py:93} INFO - 26/01/23 16:16:58 INFO Executor: Java version 11.0.22
+[2026-01-23T16:16:58.322+0000] {subprocess.py:93} INFO - 26/01/23 16:16:58 INFO Executor: Starting executor with user classpath (userClassPathFirst = false): ''
+[2026-01-23T16:16:58.323+0000] {subprocess.py:93} INFO - 26/01/23 16:16:58 INFO Executor: Created or updated repl class loader org.apache.spark.util.MutableURLClassLoader@7f025e0d for default.
+[2026-01-23T16:16:58.435+0000] {subprocess.py:93} INFO - 26/01/23 16:16:58 INFO Executor: Fetching file:///root/.ivy2/jars/io.delta_delta-spark_2.12-3.1.0.jar with timestamp 1769185011959
+[2026-01-23T16:16:58.731+0000] {subprocess.py:93} INFO - 26/01/23 16:16:58 INFO Utils: /root/.ivy2/jars/io.delta_delta-spark_2.12-3.1.0.jar has been previously copied to /tmp/spark-bdd8516e-877c-48cf-9f38-9ddeb7ccffc7/userFiles-432c2278-7800-47a1-bbf5-a79e327e95f7/io.delta_delta-spark_2.12-3.1.0.jar
+[2026-01-23T16:16:58.737+0000] {subprocess.py:93} INFO - 26/01/23 16:16:58 INFO Executor: Fetching file:///root/.ivy2/jars/org.apache.hadoop_hadoop-aws-3.3.4.jar with timestamp 1769185011959
+[2026-01-23T16:16:58.738+0000] {subprocess.py:93} INFO - 26/01/23 16:16:58 INFO Utils: /root/.ivy2/jars/org.apache.hadoop_hadoop-aws-3.3.4.jar has been previously copied to /tmp/spark-bdd8516e-877c-48cf-9f38-9ddeb7ccffc7/userFiles-432c2278-7800-47a1-bbf5-a79e327e95f7/org.apache.hadoop_hadoop-aws-3.3.4.jar
+[2026-01-23T16:16:58.744+0000] {subprocess.py:93} INFO - 26/01/23 16:16:58 INFO Executor: Fetching file:///root/.ivy2/jars/com.amazonaws_aws-java-sdk-bundle-1.12.262.jar with timestamp 1769185011959
+[2026-01-23T16:17:01.172+0000] {subprocess.py:93} INFO - 26/01/23 16:17:01 INFO Utils: /root/.ivy2/jars/com.amazonaws_aws-java-sdk-bundle-1.12.262.jar has been previously copied to /tmp/spark-bdd8516e-877c-48cf-9f38-9ddeb7ccffc7/userFiles-432c2278-7800-47a1-bbf5-a79e327e95f7/com.amazonaws_aws-java-sdk-bundle-1.12.262.jar
+[2026-01-23T16:17:01.187+0000] {subprocess.py:93} INFO - 26/01/23 16:17:01 INFO Executor: Fetching file:///root/.ivy2/jars/io.delta_delta-storage-3.1.0.jar with timestamp 1769185011959
+[2026-01-23T16:17:01.188+0000] {subprocess.py:93} INFO - 26/01/23 16:17:01 INFO Utils: /root/.ivy2/jars/io.delta_delta-storage-3.1.0.jar has been previously copied to /tmp/spark-bdd8516e-877c-48cf-9f38-9ddeb7ccffc7/userFiles-432c2278-7800-47a1-bbf5-a79e327e95f7/io.delta_delta-storage-3.1.0.jar
+[2026-01-23T16:17:01.230+0000] {subprocess.py:93} INFO - 26/01/23 16:17:01 INFO Executor: Fetching file:///root/.ivy2/jars/org.antlr_antlr4-runtime-4.9.3.jar with timestamp 1769185011959
+[2026-01-23T16:17:01.236+0000] {subprocess.py:93} INFO - 26/01/23 16:17:01 INFO Utils: /root/.ivy2/jars/org.antlr_antlr4-runtime-4.9.3.jar has been previously copied to /tmp/spark-bdd8516e-877c-48cf-9f38-9ddeb7ccffc7/userFiles-432c2278-7800-47a1-bbf5-a79e327e95f7/org.antlr_antlr4-runtime-4.9.3.jar
+[2026-01-23T16:17:01.240+0000] {subprocess.py:93} INFO - 26/01/23 16:17:01 INFO Executor: Fetching file:///root/.ivy2/jars/org.wildfly.openssl_wildfly-openssl-1.0.7.Final.jar with timestamp 1769185011959
+[2026-01-23T16:17:01.241+0000] {subprocess.py:93} INFO - 26/01/23 16:17:01 INFO Utils: /root/.ivy2/jars/org.wildfly.openssl_wildfly-openssl-1.0.7.Final.jar has been previously copied to /tmp/spark-bdd8516e-877c-48cf-9f38-9ddeb7ccffc7/userFiles-432c2278-7800-47a1-bbf5-a79e327e95f7/org.wildfly.openssl_wildfly-openssl-1.0.7.Final.jar
+[2026-01-23T16:17:01.249+0000] {subprocess.py:93} INFO - 26/01/23 16:17:01 INFO Executor: Fetching spark://870244d36fa2:40939/jars/org.wildfly.openssl_wildfly-openssl-1.0.7.Final.jar with timestamp 1769185011959
+[2026-01-23T16:17:01.474+0000] {subprocess.py:93} INFO - 26/01/23 16:17:01 INFO TransportClientFactory: Successfully created connection to 870244d36fa2/172.18.0.3:40939 after 204 ms (0 ms spent in bootstraps)
+[2026-01-23T16:17:01.489+0000] {subprocess.py:93} INFO - 26/01/23 16:17:01 INFO Utils: Fetching spark://870244d36fa2:40939/jars/org.wildfly.openssl_wildfly-openssl-1.0.7.Final.jar to /tmp/spark-bdd8516e-877c-48cf-9f38-9ddeb7ccffc7/userFiles-432c2278-7800-47a1-bbf5-a79e327e95f7/fetchFileTemp9577556116041484088.tmp
+[2026-01-23T16:17:01.544+0000] {subprocess.py:93} INFO - 26/01/23 16:17:01 INFO Utils: /tmp/spark-bdd8516e-877c-48cf-9f38-9ddeb7ccffc7/userFiles-432c2278-7800-47a1-bbf5-a79e327e95f7/fetchFileTemp9577556116041484088.tmp has been previously copied to /tmp/spark-bdd8516e-877c-48cf-9f38-9ddeb7ccffc7/userFiles-432c2278-7800-47a1-bbf5-a79e327e95f7/org.wildfly.openssl_wildfly-openssl-1.0.7.Final.jar
+[2026-01-23T16:17:01.552+0000] {subprocess.py:93} INFO - 26/01/23 16:17:01 INFO Executor: Adding file:/tmp/spark-bdd8516e-877c-48cf-9f38-9ddeb7ccffc7/userFiles-432c2278-7800-47a1-bbf5-a79e327e95f7/org.wildfly.openssl_wildfly-openssl-1.0.7.Final.jar to class loader default
+[2026-01-23T16:17:01.552+0000] {subprocess.py:93} INFO - 26/01/23 16:17:01 INFO Executor: Fetching spark://870244d36fa2:40939/jars/io.delta_delta-spark_2.12-3.1.0.jar with timestamp 1769185011959
+[2026-01-23T16:17:01.554+0000] {subprocess.py:93} INFO - 26/01/23 16:17:01 INFO Utils: Fetching spark://870244d36fa2:40939/jars/io.delta_delta-spark_2.12-3.1.0.jar to /tmp/spark-bdd8516e-877c-48cf-9f38-9ddeb7ccffc7/userFiles-432c2278-7800-47a1-bbf5-a79e327e95f7/fetchFileTemp1660541071964294837.tmp
+[2026-01-23T16:17:01.605+0000] {subprocess.py:93} INFO - 26/01/23 16:17:01 INFO Utils: /tmp/spark-bdd8516e-877c-48cf-9f38-9ddeb7ccffc7/userFiles-432c2278-7800-47a1-bbf5-a79e327e95f7/fetchFileTemp1660541071964294837.tmp has been previously copied to /tmp/spark-bdd8516e-877c-48cf-9f38-9ddeb7ccffc7/userFiles-432c2278-7800-47a1-bbf5-a79e327e95f7/io.delta_delta-spark_2.12-3.1.0.jar
+[2026-01-23T16:17:01.677+0000] {subprocess.py:93} INFO - 26/01/23 16:17:01 INFO Executor: Adding file:/tmp/spark-bdd8516e-877c-48cf-9f38-9ddeb7ccffc7/userFiles-432c2278-7800-47a1-bbf5-a79e327e95f7/io.delta_delta-spark_2.12-3.1.0.jar to class loader default
+[2026-01-23T16:17:01.678+0000] {subprocess.py:93} INFO - 26/01/23 16:17:01 INFO Executor: Fetching spark://870244d36fa2:40939/jars/com.amazonaws_aws-java-sdk-bundle-1.12.262.jar with timestamp 1769185011959
+[2026-01-23T16:17:01.679+0000] {subprocess.py:93} INFO - 26/01/23 16:17:01 INFO Utils: Fetching spark://870244d36fa2:40939/jars/com.amazonaws_aws-java-sdk-bundle-1.12.262.jar to /tmp/spark-bdd8516e-877c-48cf-9f38-9ddeb7ccffc7/userFiles-432c2278-7800-47a1-bbf5-a79e327e95f7/fetchFileTemp7123072918223463479.tmp
+[2026-01-23T16:17:08.192+0000] {subprocess.py:93} INFO - 26/01/23 16:17:08 INFO Utils: /tmp/spark-bdd8516e-877c-48cf-9f38-9ddeb7ccffc7/userFiles-432c2278-7800-47a1-bbf5-a79e327e95f7/fetchFileTemp7123072918223463479.tmp has been previously copied to /tmp/spark-bdd8516e-877c-48cf-9f38-9ddeb7ccffc7/userFiles-432c2278-7800-47a1-bbf5-a79e327e95f7/com.amazonaws_aws-java-sdk-bundle-1.12.262.jar
+[2026-01-23T16:17:08.249+0000] {subprocess.py:93} INFO - 26/01/23 16:17:08 INFO Executor: Adding file:/tmp/spark-bdd8516e-877c-48cf-9f38-9ddeb7ccffc7/userFiles-432c2278-7800-47a1-bbf5-a79e327e95f7/com.amazonaws_aws-java-sdk-bundle-1.12.262.jar to class loader default
+[2026-01-23T16:17:08.250+0000] {subprocess.py:93} INFO - 26/01/23 16:17:08 INFO Executor: Fetching spark://870244d36fa2:40939/jars/org.antlr_antlr4-runtime-4.9.3.jar with timestamp 1769185011959
+[2026-01-23T16:17:08.252+0000] {subprocess.py:93} INFO - 26/01/23 16:17:08 INFO Utils: Fetching spark://870244d36fa2:40939/jars/org.antlr_antlr4-runtime-4.9.3.jar to /tmp/spark-bdd8516e-877c-48cf-9f38-9ddeb7ccffc7/userFiles-432c2278-7800-47a1-bbf5-a79e327e95f7/fetchFileTemp6155223373391911802.tmp
+[2026-01-23T16:17:08.280+0000] {subprocess.py:93} INFO - 26/01/23 16:17:08 INFO Utils: /tmp/spark-bdd8516e-877c-48cf-9f38-9ddeb7ccffc7/userFiles-432c2278-7800-47a1-bbf5-a79e327e95f7/fetchFileTemp6155223373391911802.tmp has been previously copied to /tmp/spark-bdd8516e-877c-48cf-9f38-9ddeb7ccffc7/userFiles-432c2278-7800-47a1-bbf5-a79e327e95f7/org.antlr_antlr4-runtime-4.9.3.jar
+[2026-01-23T16:17:08.287+0000] {subprocess.py:93} INFO - 26/01/23 16:17:08 INFO Executor: Adding file:/tmp/spark-bdd8516e-877c-48cf-9f38-9ddeb7ccffc7/userFiles-432c2278-7800-47a1-bbf5-a79e327e95f7/org.antlr_antlr4-runtime-4.9.3.jar to class loader default
+[2026-01-23T16:17:08.287+0000] {subprocess.py:93} INFO - 26/01/23 16:17:08 INFO Executor: Fetching spark://870244d36fa2:40939/jars/io.delta_delta-storage-3.1.0.jar with timestamp 1769185011959
+[2026-01-23T16:17:08.288+0000] {subprocess.py:93} INFO - 26/01/23 16:17:08 INFO Utils: Fetching spark://870244d36fa2:40939/jars/io.delta_delta-storage-3.1.0.jar to /tmp/spark-bdd8516e-877c-48cf-9f38-9ddeb7ccffc7/userFiles-432c2278-7800-47a1-bbf5-a79e327e95f7/fetchFileTemp13138010282439321860.tmp
+[2026-01-23T16:17:08.293+0000] {subprocess.py:93} INFO - 26/01/23 16:17:08 INFO Utils: /tmp/spark-bdd8516e-877c-48cf-9f38-9ddeb7ccffc7/userFiles-432c2278-7800-47a1-bbf5-a79e327e95f7/fetchFileTemp13138010282439321860.tmp has been previously copied to /tmp/spark-bdd8516e-877c-48cf-9f38-9ddeb7ccffc7/userFiles-432c2278-7800-47a1-bbf5-a79e327e95f7/io.delta_delta-storage-3.1.0.jar
+[2026-01-23T16:17:08.299+0000] {subprocess.py:93} INFO - 26/01/23 16:17:08 INFO Executor: Adding file:/tmp/spark-bdd8516e-877c-48cf-9f38-9ddeb7ccffc7/userFiles-432c2278-7800-47a1-bbf5-a79e327e95f7/io.delta_delta-storage-3.1.0.jar to class loader default
+[2026-01-23T16:17:08.299+0000] {subprocess.py:93} INFO - 26/01/23 16:17:08 INFO Executor: Fetching spark://870244d36fa2:40939/jars/org.apache.hadoop_hadoop-aws-3.3.4.jar with timestamp 1769185011959
+[2026-01-23T16:17:08.301+0000] {subprocess.py:93} INFO - 26/01/23 16:17:08 INFO Utils: Fetching spark://870244d36fa2:40939/jars/org.apache.hadoop_hadoop-aws-3.3.4.jar to /tmp/spark-bdd8516e-877c-48cf-9f38-9ddeb7ccffc7/userFiles-432c2278-7800-47a1-bbf5-a79e327e95f7/fetchFileTemp7677439935318963599.tmp
+[2026-01-23T16:17:08.334+0000] {subprocess.py:93} INFO - 26/01/23 16:17:08 INFO Utils: /tmp/spark-bdd8516e-877c-48cf-9f38-9ddeb7ccffc7/userFiles-432c2278-7800-47a1-bbf5-a79e327e95f7/fetchFileTemp7677439935318963599.tmp has been previously copied to /tmp/spark-bdd8516e-877c-48cf-9f38-9ddeb7ccffc7/userFiles-432c2278-7800-47a1-bbf5-a79e327e95f7/org.apache.hadoop_hadoop-aws-3.3.4.jar
+[2026-01-23T16:17:08.339+0000] {subprocess.py:93} INFO - 26/01/23 16:17:08 INFO Executor: Adding file:/tmp/spark-bdd8516e-877c-48cf-9f38-9ddeb7ccffc7/userFiles-432c2278-7800-47a1-bbf5-a79e327e95f7/org.apache.hadoop_hadoop-aws-3.3.4.jar to class loader default
+[2026-01-23T16:17:08.358+0000] {subprocess.py:93} INFO - 26/01/23 16:17:08 INFO Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 43719.
+[2026-01-23T16:17:08.359+0000] {subprocess.py:93} INFO - 26/01/23 16:17:08 INFO NettyBlockTransferService: Server created on 870244d36fa2:43719
+[2026-01-23T16:17:08.362+0000] {subprocess.py:93} INFO - 26/01/23 16:17:08 INFO BlockManager: Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+[2026-01-23T16:17:08.376+0000] {subprocess.py:93} INFO - 26/01/23 16:17:08 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, 870244d36fa2, 43719, None)
+[2026-01-23T16:17:08.382+0000] {subprocess.py:93} INFO - 26/01/23 16:17:08 INFO BlockManagerMasterEndpoint: Registering block manager 870244d36fa2:43719 with 434.4 MiB RAM, BlockManagerId(driver, 870244d36fa2, 43719, None)
+[2026-01-23T16:17:08.385+0000] {subprocess.py:93} INFO - 26/01/23 16:17:08 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, 870244d36fa2, 43719, None)
+[2026-01-23T16:17:08.388+0000] {subprocess.py:93} INFO - 26/01/23 16:17:08 INFO BlockManager: Initialized BlockManager: BlockManagerId(driver, 870244d36fa2, 43719, None)
+[2026-01-23T16:17:09.105+0000] {subprocess.py:93} INFO - >>> Reading from Bronze layer...
+[2026-01-23T16:17:09.116+0000] {subprocess.py:93} INFO - 26/01/23 16:17:09 INFO SharedState: Setting hive.metastore.warehouse.dir ('null') to the value of spark.sql.warehouse.dir.
+[2026-01-23T16:17:09.119+0000] {subprocess.py:93} INFO - 26/01/23 16:17:09 INFO SharedState: Warehouse path is 'file:/opt/spark/spark-warehouse'.
+[2026-01-23T16:17:10.639+0000] {subprocess.py:93} INFO - 26/01/23 16:17:10 WARN MetricsConfig: Cannot locate configuration: tried hadoop-metrics2-s3a-file-system.properties,hadoop-metrics2.properties
+[2026-01-23T16:17:10.663+0000] {subprocess.py:93} INFO - 26/01/23 16:17:10 INFO MetricsSystemImpl: Scheduled Metric snapshot period at 10 second(s).
+[2026-01-23T16:17:10.664+0000] {subprocess.py:93} INFO - 26/01/23 16:17:10 INFO MetricsSystemImpl: s3a-file-system metrics system started
+[2026-01-23T16:17:12.028+0000] {subprocess.py:93} INFO - 26/01/23 16:17:12 INFO InMemoryFileIndex: It took 92 ms to list leaf files for 1 paths.
+[2026-01-23T16:17:12.666+0000] {subprocess.py:93} INFO - 26/01/23 16:17:12 INFO SparkContext: Starting job: parquet at <unknown>:0
+[2026-01-23T16:17:12.688+0000] {subprocess.py:93} INFO - 26/01/23 16:17:12 INFO DAGScheduler: Got job 0 (parquet at <unknown>:0) with 1 output partitions
+[2026-01-23T16:17:12.688+0000] {subprocess.py:93} INFO - 26/01/23 16:17:12 INFO DAGScheduler: Final stage: ResultStage 0 (parquet at <unknown>:0)
+[2026-01-23T16:17:12.689+0000] {subprocess.py:93} INFO - 26/01/23 16:17:12 INFO DAGScheduler: Parents of final stage: List()
+[2026-01-23T16:17:12.691+0000] {subprocess.py:93} INFO - 26/01/23 16:17:12 INFO DAGScheduler: Missing parents: List()
+[2026-01-23T16:17:12.696+0000] {subprocess.py:93} INFO - 26/01/23 16:17:12 INFO DAGScheduler: Submitting ResultStage 0 (MapPartitionsRDD[1] at parquet at <unknown>:0), which has no missing parents
+[2026-01-23T16:17:12.796+0000] {subprocess.py:93} INFO - 26/01/23 16:17:12 INFO MemoryStore: Block broadcast_0 stored as values in memory (estimated size 106.8 KiB, free 434.3 MiB)
+[2026-01-23T16:17:12.857+0000] {subprocess.py:93} INFO - 26/01/23 16:17:12 INFO MemoryStore: Block broadcast_0_piece0 stored as bytes in memory (estimated size 38.6 KiB, free 434.3 MiB)
+[2026-01-23T16:17:12.862+0000] {subprocess.py:93} INFO - 26/01/23 16:17:12 INFO BlockManagerInfo: Added broadcast_0_piece0 in memory on 870244d36fa2:43719 (size: 38.6 KiB, free: 434.4 MiB)
+[2026-01-23T16:17:12.872+0000] {subprocess.py:93} INFO - 26/01/23 16:17:12 INFO SparkContext: Created broadcast 0 from broadcast at DAGScheduler.scala:1585
+[2026-01-23T16:17:12.895+0000] {subprocess.py:93} INFO - 26/01/23 16:17:12 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 0 (MapPartitionsRDD[1] at parquet at <unknown>:0) (first 15 tasks are for partitions Vector(0))
+[2026-01-23T16:17:12.897+0000] {subprocess.py:93} INFO - 26/01/23 16:17:12 INFO TaskSchedulerImpl: Adding task set 0.0 with 1 tasks resource profile 0
+[2026-01-23T16:17:12.982+0000] {subprocess.py:93} INFO - 26/01/23 16:17:12 INFO TaskSetManager: Starting task 0.0 in stage 0.0 (TID 0) (870244d36fa2, executor driver, partition 0, PROCESS_LOCAL, 8856 bytes)
+[2026-01-23T16:17:13.009+0000] {subprocess.py:93} INFO - 26/01/23 16:17:13 INFO Executor: Running task 0.0 in stage 0.0 (TID 0)
+[2026-01-23T16:17:13.296+0000] {subprocess.py:93} INFO - 26/01/23 16:17:13 INFO S3AInputStream: Switching to Random IO seek policy
+[2026-01-23T16:17:13.611+0000] {subprocess.py:93} INFO - 26/01/23 16:17:13 INFO Executor: Finished task 0.0 in stage 0.0 (TID 0). 2013 bytes result sent to driver
+[2026-01-23T16:17:13.634+0000] {subprocess.py:93} INFO - 26/01/23 16:17:13 INFO TaskSetManager: Finished task 0.0 in stage 0.0 (TID 0) in 690 ms on 870244d36fa2 (executor driver) (1/1)
+[2026-01-23T16:17:13.636+0000] {subprocess.py:93} INFO - 26/01/23 16:17:13 INFO TaskSchedulerImpl: Removed TaskSet 0.0, whose tasks have all completed, from pool
+[2026-01-23T16:17:13.643+0000] {subprocess.py:93} INFO - 26/01/23 16:17:13 INFO DAGScheduler: ResultStage 0 (parquet at <unknown>:0) finished in 0.925 s
+[2026-01-23T16:17:13.646+0000] {subprocess.py:93} INFO - 26/01/23 16:17:13 INFO DAGScheduler: Job 0 is finished. Cancelling potential speculative or zombie tasks for this job
+[2026-01-23T16:17:13.648+0000] {subprocess.py:93} INFO - 26/01/23 16:17:13 INFO TaskSchedulerImpl: Killing all running tasks in stage 0: Stage finished
+[2026-01-23T16:17:13.651+0000] {subprocess.py:93} INFO - 26/01/23 16:17:13 INFO DAGScheduler: Job 0 finished: parquet at <unknown>:0, took 0.985243 s
+[2026-01-23T16:17:14.158+0000] {subprocess.py:93} INFO - 26/01/23 16:17:14 INFO BlockManagerInfo: Removed broadcast_0_piece0 on 870244d36fa2:43719 in memory (size: 38.6 KiB, free: 434.4 MiB)
+[2026-01-23T16:17:14.592+0000] {subprocess.py:93} INFO - >>> Successfully read Parquet files from Bronze.
+[2026-01-23T16:17:14.592+0000] {subprocess.py:93} INFO - >>> Transforming data...
+[2026-01-23T16:17:14.850+0000] {subprocess.py:93} INFO - >>> Sample data after transformation:
+[2026-01-23T16:17:15.451+0000] {subprocess.py:93} INFO - 26/01/23 16:17:15 INFO FileSourceStrategy: Pushed Filters:
+[2026-01-23T16:17:15.454+0000] {subprocess.py:93} INFO - 26/01/23 16:17:15 INFO FileSourceStrategy: Post-Scan Filters:
+[2026-01-23T16:17:16.023+0000] {subprocess.py:93} INFO - 26/01/23 16:17:16 INFO CodeGenerator: Code generated in 298.589611 ms
+[2026-01-23T16:17:16.052+0000] {subprocess.py:93} INFO - 26/01/23 16:17:16 INFO MemoryStore: Block broadcast_1 stored as values in memory (estimated size 206.7 KiB, free 434.2 MiB)
+[2026-01-23T16:17:16.072+0000] {subprocess.py:93} INFO - 26/01/23 16:17:16 INFO MemoryStore: Block broadcast_1_piece0 stored as bytes in memory (estimated size 36.5 KiB, free 434.2 MiB)
+[2026-01-23T16:17:16.073+0000] {subprocess.py:93} INFO - 26/01/23 16:17:16 INFO BlockManagerInfo: Added broadcast_1_piece0 in memory on 870244d36fa2:43719 (size: 36.5 KiB, free: 434.4 MiB)
+[2026-01-23T16:17:16.074+0000] {subprocess.py:93} INFO - 26/01/23 16:17:16 INFO SparkContext: Created broadcast 1 from showString at <unknown>:0
+[2026-01-23T16:17:16.104+0000] {subprocess.py:93} INFO - 26/01/23 16:17:16 INFO FileSourceScanExec: Planning scan with bin packing, max size: 4194304 bytes, open cost is considered as scanning 4194304 bytes.
+[2026-01-23T16:17:16.169+0000] {subprocess.py:93} INFO - 26/01/23 16:17:16 INFO SparkContext: Starting job: showString at <unknown>:0
+[2026-01-23T16:17:16.171+0000] {subprocess.py:93} INFO - 26/01/23 16:17:16 INFO DAGScheduler: Got job 1 (showString at <unknown>:0) with 1 output partitions
+[2026-01-23T16:17:16.172+0000] {subprocess.py:93} INFO - 26/01/23 16:17:16 INFO DAGScheduler: Final stage: ResultStage 1 (showString at <unknown>:0)
+[2026-01-23T16:17:16.172+0000] {subprocess.py:93} INFO - 26/01/23 16:17:16 INFO DAGScheduler: Parents of final stage: List()
+[2026-01-23T16:17:16.174+0000] {subprocess.py:93} INFO - 26/01/23 16:17:16 INFO DAGScheduler: Missing parents: List()
+[2026-01-23T16:17:16.176+0000] {subprocess.py:93} INFO - 26/01/23 16:17:16 INFO DAGScheduler: Submitting ResultStage 1 (MapPartitionsRDD[5] at showString at <unknown>:0), which has no missing parents
+[2026-01-23T16:17:16.209+0000] {subprocess.py:93} INFO - 26/01/23 16:17:16 INFO MemoryStore: Block broadcast_2 stored as values in memory (estimated size 19.0 KiB, free 434.1 MiB)
+[2026-01-23T16:17:16.220+0000] {subprocess.py:93} INFO - 26/01/23 16:17:16 INFO MemoryStore: Block broadcast_2_piece0 stored as bytes in memory (estimated size 7.7 KiB, free 434.1 MiB)
+[2026-01-23T16:17:16.222+0000] {subprocess.py:93} INFO - 26/01/23 16:17:16 INFO BlockManagerInfo: Added broadcast_2_piece0 in memory on 870244d36fa2:43719 (size: 7.7 KiB, free: 434.4 MiB)
+[2026-01-23T16:17:16.223+0000] {subprocess.py:93} INFO - 26/01/23 16:17:16 INFO SparkContext: Created broadcast 2 from broadcast at DAGScheduler.scala:1585
+[2026-01-23T16:17:16.224+0000] {subprocess.py:93} INFO - 26/01/23 16:17:16 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 1 (MapPartitionsRDD[5] at showString at <unknown>:0) (first 15 tasks are for partitions Vector(0))
+[2026-01-23T16:17:16.225+0000] {subprocess.py:93} INFO - 26/01/23 16:17:16 INFO TaskSchedulerImpl: Adding task set 1.0 with 1 tasks resource profile 0
+[2026-01-23T16:17:16.238+0000] {subprocess.py:93} INFO - 26/01/23 16:17:16 INFO TaskSetManager: Starting task 0.0 in stage 1.0 (TID 1) (870244d36fa2, executor driver, partition 0, PROCESS_LOCAL, 9361 bytes)
+[2026-01-23T16:17:16.239+0000] {subprocess.py:93} INFO - 26/01/23 16:17:16 INFO Executor: Running task 0.0 in stage 1.0 (TID 1)
+[2026-01-23T16:17:16.359+0000] {subprocess.py:93} INFO - 26/01/23 16:17:16 INFO CodeGenerator: Code generated in 32.64259 ms
+[2026-01-23T16:17:16.365+0000] {subprocess.py:93} INFO - 26/01/23 16:17:16 INFO FileScanRDD: Reading File path: s3a://bronze/data/orders/orders_20260123161612.parquet, range: 0-5394, partition values: [empty row]
+[2026-01-23T16:17:16.386+0000] {subprocess.py:93} INFO - 26/01/23 16:17:16 INFO S3AInputStream: Switching to Random IO seek policy
+[2026-01-23T16:17:17.281+0000] {subprocess.py:93} INFO - 26/01/23 16:17:17 INFO CodecPool: Got brand-new decompressor [.snappy]
+[2026-01-23T16:17:18.399+0000] {subprocess.py:93} INFO - 26/01/23 16:17:18 INFO Executor: Finished task 0.0 in stage 1.0 (TID 1). 2295 bytes result sent to driver
+[2026-01-23T16:17:18.403+0000] {subprocess.py:93} INFO - 26/01/23 16:17:18 INFO TaskSetManager: Finished task 0.0 in stage 1.0 (TID 1) in 2174 ms on 870244d36fa2 (executor driver) (1/1)
+[2026-01-23T16:17:18.403+0000] {subprocess.py:93} INFO - 26/01/23 16:17:18 INFO TaskSchedulerImpl: Removed TaskSet 1.0, whose tasks have all completed, from pool
+[2026-01-23T16:17:18.405+0000] {subprocess.py:93} INFO - 26/01/23 16:17:18 INFO DAGScheduler: ResultStage 1 (showString at <unknown>:0) finished in 2.225 s
+[2026-01-23T16:17:18.407+0000] {subprocess.py:93} INFO - 26/01/23 16:17:18 INFO DAGScheduler: Job 1 is finished. Cancelling potential speculative or zombie tasks for this job
+[2026-01-23T16:17:18.408+0000] {subprocess.py:93} INFO - 26/01/23 16:17:18 INFO TaskSchedulerImpl: Killing all running tasks in stage 1: Stage finished
+[2026-01-23T16:17:18.408+0000] {subprocess.py:93} INFO - 26/01/23 16:17:18 INFO DAGScheduler: Job 1 finished: showString at <unknown>:0, took 0.654059 s
+[2026-01-23T16:17:19.398+0000] {subprocess.py:93} INFO - 26/01/23 16:17:19 INFO BlockManagerInfo: Removed broadcast_2_piece0 on 870244d36fa2:43719 in memory (size: 7.7 KiB, free: 434.4 MiB)
+[2026-01-23T16:17:19.607+0000] {subprocess.py:93} INFO - 26/01/23 16:17:19 INFO CodeGenerator: Code generated in 18.558374 ms
+[2026-01-23T16:17:19.621+0000] {subprocess.py:93} INFO - +--------+------------------+------------+--------+-------+--------------------------+
+[2026-01-23T16:17:19.621+0000] {subprocess.py:93} INFO - |order_id|customer_name     |product_name|quantity|price  |order_date                |
+[2026-01-23T16:17:19.621+0000] {subprocess.py:93} INFO - +--------+------------------+------------+--------+-------+--------------------------+
+[2026-01-23T16:17:19.621+0000] {subprocess.py:93} INFO - |1       |Sarah Tucker      |Laptop      |5       |972.82 |2026-01-23 16:16:07.69241 |
+[2026-01-23T16:17:19.622+0000] {subprocess.py:93} INFO - |2       |Thomas Young      |Keyboard    |5       |1442.36|2026-01-23 16:16:07.802661|
+[2026-01-23T16:17:19.622+0000] {subprocess.py:93} INFO - |3       |Jesus Adams       |Laptop      |3       |133.49 |2026-01-23 16:16:07.90774 |
+[2026-01-23T16:17:19.622+0000] {subprocess.py:93} INFO - |4       |Nicole Cole       |Mouse       |1       |1148.89|2026-01-23 16:16:08.012664|
+[2026-01-23T16:17:19.622+0000] {subprocess.py:93} INFO - |5       |Patricia White DDS|Monitor     |1       |681.47 |2026-01-23 16:16:08.117665|
+[2026-01-23T16:17:19.622+0000] {subprocess.py:93} INFO - +--------+------------------+------------+--------+-------+--------------------------+
+[2026-01-23T16:17:19.622+0000] {subprocess.py:93} INFO - only showing top 5 rows
+[2026-01-23T16:17:19.622+0000] {subprocess.py:93} INFO - 
+[2026-01-23T16:17:19.622+0000] {subprocess.py:93} INFO - >>> Writing to Silver layer (Delta format)...
+[2026-01-23T16:17:19.863+0000] {subprocess.py:93} INFO - 26/01/23 16:17:19 INFO DelegatingLogStore: LogStore `LogStoreAdapter(io.delta.storage.S3SingleDriverLogStore)` is used for scheme `s3a`
+[2026-01-23T16:17:19.908+0000] {subprocess.py:93} INFO - 26/01/23 16:17:19 INFO DeltaLog: Creating initial snapshot without metadata, because the directory is empty
+[2026-01-23T16:17:20.035+0000] {subprocess.py:93} INFO - 26/01/23 16:17:20 INFO InitialSnapshot: [tableId=ed0280e7-0fc5-42ed-96be-bfda075686a3] Created snapshot InitialSnapshot(path=s3a://silver/data/orders/_delta_log, version=-1, metadata=Metadata(0c148341-ead9-4ca2-963b-a7676160415a,null,null,Format(parquet,Map()),null,List(),Map(),Some(1769185040024)), logSegment=LogSegment(s3a://silver/data/orders/_delta_log,-1,List(),org.apache.spark.sql.delta.EmptyCheckpointProvider$@551cd4cd,-1), checksumOpt=None)
+[2026-01-23T16:17:20.157+0000] {subprocess.py:93} INFO - 26/01/23 16:17:20 INFO DeltaLog: No delta log found for the Delta table at s3a://silver/data/orders/_delta_log
+[2026-01-23T16:17:20.159+0000] {subprocess.py:93} INFO - 26/01/23 16:17:20 INFO InitialSnapshot: [tableId=0c148341-ead9-4ca2-963b-a7676160415a] Created snapshot InitialSnapshot(path=s3a://silver/data/orders/_delta_log, version=-1, metadata=Metadata(a57c3935-3a04-4224-8ecb-3eeed7f5f961,null,null,Format(parquet,Map()),null,List(),Map(),Some(1769185040157)), logSegment=LogSegment(s3a://silver/data/orders/_delta_log,-1,List(),org.apache.spark.sql.delta.EmptyCheckpointProvider$@551cd4cd,-1), checksumOpt=None)
+[2026-01-23T16:17:20.249+0000] {subprocess.py:93} INFO - 26/01/23 16:17:20 INFO OptimisticTransaction: [tableId=a57c3935,txnId=70202251] Updated metadata from - to Metadata(e9691a89-de10-424e-903e-1cfb01540fd0,null,null,Format(parquet,Map()),{"type":"struct","fields":[{"name":"order_id","type":"integer","nullable":true,"metadata":{}},{"name":"customer_name","type":"string","nullable":true,"metadata":{}},{"name":"product_name","type":"string","nullable":true,"metadata":{}},{"name":"quantity","type":"integer","nullable":true,"metadata":{}},{"name":"price","type":"double","nullable":true,"metadata":{}},{"name":"order_date","type":"timestamp","nullable":true,"metadata":{}}]},List(),Map(),Some(1769185040223))
+[2026-01-23T16:17:20.335+0000] {subprocess.py:93} INFO - 26/01/23 16:17:20 INFO BlockManagerInfo: Removed broadcast_1_piece0 on 870244d36fa2:43719 in memory (size: 36.5 KiB, free: 434.4 MiB)
+[2026-01-23T16:17:20.918+0000] {subprocess.py:93} INFO - 26/01/23 16:17:20 INFO FileSourceStrategy: Pushed Filters:
+[2026-01-23T16:17:20.918+0000] {subprocess.py:93} INFO - 26/01/23 16:17:20 INFO FileSourceStrategy: Post-Scan Filters:
+[2026-01-23T16:17:20.963+0000] {subprocess.py:93} INFO - 26/01/23 16:17:20 INFO ParquetUtils: Using default output committer for Parquet: org.apache.parquet.hadoop.ParquetOutputCommitter
+[2026-01-23T16:17:21.019+0000] {subprocess.py:93} INFO - 26/01/23 16:17:21 INFO CodeGenerator: Code generated in 23.75163 ms
+[2026-01-23T16:17:21.025+0000] {subprocess.py:93} INFO - 26/01/23 16:17:21 INFO MemoryStore: Block broadcast_3 stored as values in memory (estimated size 206.7 KiB, free 434.2 MiB)
+[2026-01-23T16:17:21.043+0000] {subprocess.py:93} INFO - 26/01/23 16:17:21 INFO MemoryStore: Block broadcast_3_piece0 stored as bytes in memory (estimated size 36.5 KiB, free 434.2 MiB)
+[2026-01-23T16:17:21.044+0000] {subprocess.py:93} INFO - 26/01/23 16:17:21 INFO BlockManagerInfo: Added broadcast_3_piece0 in memory on 870244d36fa2:43719 (size: 36.5 KiB, free: 434.4 MiB)
+[2026-01-23T16:17:21.046+0000] {subprocess.py:93} INFO - 26/01/23 16:17:21 INFO SparkContext: Created broadcast 3 from save at <unknown>:0
+[2026-01-23T16:17:21.049+0000] {subprocess.py:93} INFO - 26/01/23 16:17:21 INFO FileSourceScanExec: Planning scan with bin packing, max size: 4194304 bytes, open cost is considered as scanning 4194304 bytes.
+[2026-01-23T16:17:21.195+0000] {subprocess.py:93} INFO - 26/01/23 16:17:21 INFO SparkContext: Starting job: save at <unknown>:0
+[2026-01-23T16:17:21.197+0000] {subprocess.py:93} INFO - 26/01/23 16:17:21 INFO DAGScheduler: Got job 2 (save at <unknown>:0) with 1 output partitions
+[2026-01-23T16:17:21.197+0000] {subprocess.py:93} INFO - 26/01/23 16:17:21 INFO DAGScheduler: Final stage: ResultStage 2 (save at <unknown>:0)
+[2026-01-23T16:17:21.197+0000] {subprocess.py:93} INFO - 26/01/23 16:17:21 INFO DAGScheduler: Parents of final stage: List()
+[2026-01-23T16:17:21.199+0000] {subprocess.py:93} INFO - 26/01/23 16:17:21 INFO DAGScheduler: Missing parents: List()
+[2026-01-23T16:17:21.200+0000] {subprocess.py:93} INFO - 26/01/23 16:17:21 INFO DAGScheduler: Submitting ResultStage 2 (MapPartitionsRDD[8] at save at <unknown>:0), which has no missing parents
+[2026-01-23T16:17:21.238+0000] {subprocess.py:93} INFO - 26/01/23 16:17:21 INFO MemoryStore: Block broadcast_4 stored as values in memory (estimated size 351.1 KiB, free 433.8 MiB)
+[2026-01-23T16:17:21.243+0000] {subprocess.py:93} INFO - 26/01/23 16:17:21 INFO MemoryStore: Block broadcast_4_piece0 stored as bytes in memory (estimated size 125.4 KiB, free 433.7 MiB)
+[2026-01-23T16:17:21.244+0000] {subprocess.py:93} INFO - 26/01/23 16:17:21 INFO BlockManagerInfo: Added broadcast_4_piece0 in memory on 870244d36fa2:43719 (size: 125.4 KiB, free: 434.2 MiB)
+[2026-01-23T16:17:21.246+0000] {subprocess.py:93} INFO - 26/01/23 16:17:21 INFO SparkContext: Created broadcast 4 from broadcast at DAGScheduler.scala:1585
+[2026-01-23T16:17:21.247+0000] {subprocess.py:93} INFO - 26/01/23 16:17:21 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 2 (MapPartitionsRDD[8] at save at <unknown>:0) (first 15 tasks are for partitions Vector(0))
+[2026-01-23T16:17:21.247+0000] {subprocess.py:93} INFO - 26/01/23 16:17:21 INFO TaskSchedulerImpl: Adding task set 2.0 with 1 tasks resource profile 0
+[2026-01-23T16:17:21.251+0000] {subprocess.py:93} INFO - 26/01/23 16:17:21 INFO TaskSetManager: Starting task 0.0 in stage 2.0 (TID 2) (870244d36fa2, executor driver, partition 0, PROCESS_LOCAL, 9361 bytes)
+[2026-01-23T16:17:21.252+0000] {subprocess.py:93} INFO - 26/01/23 16:17:21 INFO Executor: Running task 0.0 in stage 2.0 (TID 2)
+[2026-01-23T16:17:21.348+0000] {subprocess.py:93} INFO - 26/01/23 16:17:21 INFO CodeGenerator: Code generated in 17.09726 ms
+[2026-01-23T16:17:21.396+0000] {subprocess.py:93} INFO - 26/01/23 16:17:21 INFO CodeGenerator: Code generated in 16.929413 ms
+[2026-01-23T16:17:21.523+0000] {subprocess.py:93} INFO - 26/01/23 16:17:21 INFO CodeGenerator: Code generated in 45.847307 ms
+[2026-01-23T16:17:21.549+0000] {subprocess.py:93} INFO - 26/01/23 16:17:21 INFO CodeGenerator: Code generated in 9.202376 ms
+[2026-01-23T16:17:21.555+0000] {subprocess.py:93} INFO - 26/01/23 16:17:21 INFO CodecConfig: Compression: SNAPPY
+[2026-01-23T16:17:21.558+0000] {subprocess.py:93} INFO - 26/01/23 16:17:21 INFO CodecConfig: Compression: SNAPPY
+[2026-01-23T16:17:21.579+0000] {subprocess.py:93} INFO - 26/01/23 16:17:21 INFO ParquetOutputFormat: ParquetRecordWriter [block size: 134217728b, row group padding size: 8388608b, validating: false]
+[2026-01-23T16:17:21.592+0000] {subprocess.py:93} INFO - 26/01/23 16:17:21 INFO ParquetWriteSupport: Initialized Parquet WriteSupport with Catalyst schema:
+[2026-01-23T16:17:21.593+0000] {subprocess.py:93} INFO - {
+[2026-01-23T16:17:21.593+0000] {subprocess.py:93} INFO -   "type" : "struct",
+[2026-01-23T16:17:21.593+0000] {subprocess.py:93} INFO -   "fields" : [ {
+[2026-01-23T16:17:21.593+0000] {subprocess.py:93} INFO -     "name" : "order_id",
+[2026-01-23T16:17:21.593+0000] {subprocess.py:93} INFO -     "type" : "integer",
+[2026-01-23T16:17:21.593+0000] {subprocess.py:93} INFO -     "nullable" : true,
+[2026-01-23T16:17:21.593+0000] {subprocess.py:93} INFO -     "metadata" : { }
+[2026-01-23T16:17:21.593+0000] {subprocess.py:93} INFO -   }, {
+[2026-01-23T16:17:21.594+0000] {subprocess.py:93} INFO -     "name" : "customer_name",
+[2026-01-23T16:17:21.594+0000] {subprocess.py:93} INFO -     "type" : "string",
+[2026-01-23T16:17:21.594+0000] {subprocess.py:93} INFO -     "nullable" : true,
+[2026-01-23T16:17:21.594+0000] {subprocess.py:93} INFO -     "metadata" : { }
+[2026-01-23T16:17:21.594+0000] {subprocess.py:93} INFO -   }, {
+[2026-01-23T16:17:21.594+0000] {subprocess.py:93} INFO -     "name" : "product_name",
+[2026-01-23T16:17:21.594+0000] {subprocess.py:93} INFO -     "type" : "string",
+[2026-01-23T16:17:21.594+0000] {subprocess.py:93} INFO -     "nullable" : true,
+[2026-01-23T16:17:21.594+0000] {subprocess.py:93} INFO -     "metadata" : { }
+[2026-01-23T16:17:21.594+0000] {subprocess.py:93} INFO -   }, {
+[2026-01-23T16:17:21.595+0000] {subprocess.py:93} INFO -     "name" : "quantity",
+[2026-01-23T16:17:21.595+0000] {subprocess.py:93} INFO -     "type" : "integer",
+[2026-01-23T16:17:21.595+0000] {subprocess.py:93} INFO -     "nullable" : true,
+[2026-01-23T16:17:21.595+0000] {subprocess.py:93} INFO -     "metadata" : { }
+[2026-01-23T16:17:21.595+0000] {subprocess.py:93} INFO -   }, {
+[2026-01-23T16:17:21.595+0000] {subprocess.py:93} INFO -     "name" : "price",
+[2026-01-23T16:17:21.595+0000] {subprocess.py:93} INFO -     "type" : "double",
+[2026-01-23T16:17:21.595+0000] {subprocess.py:93} INFO -     "nullable" : true,
+[2026-01-23T16:17:21.595+0000] {subprocess.py:93} INFO -     "metadata" : { }
+[2026-01-23T16:17:21.595+0000] {subprocess.py:93} INFO -   }, {
+[2026-01-23T16:17:21.595+0000] {subprocess.py:93} INFO -     "name" : "order_date",
+[2026-01-23T16:17:21.595+0000] {subprocess.py:93} INFO -     "type" : "timestamp",
+[2026-01-23T16:17:21.598+0000] {subprocess.py:93} INFO -     "nullable" : true,
+[2026-01-23T16:17:21.598+0000] {subprocess.py:93} INFO -     "metadata" : { }
+[2026-01-23T16:17:21.599+0000] {subprocess.py:93} INFO -   } ]
+[2026-01-23T16:17:21.599+0000] {subprocess.py:93} INFO - }
+[2026-01-23T16:17:21.599+0000] {subprocess.py:93} INFO - and corresponding Parquet message type:
+[2026-01-23T16:17:21.599+0000] {subprocess.py:93} INFO - message spark_schema {
+[2026-01-23T16:17:21.599+0000] {subprocess.py:93} INFO -   optional int32 order_id;
+[2026-01-23T16:17:21.600+0000] {subprocess.py:93} INFO -   optional binary customer_name (STRING);
+[2026-01-23T16:17:21.600+0000] {subprocess.py:93} INFO -   optional binary product_name (STRING);
+[2026-01-23T16:17:21.600+0000] {subprocess.py:93} INFO -   optional int32 quantity;
+[2026-01-23T16:17:21.600+0000] {subprocess.py:93} INFO -   optional double price;
+[2026-01-23T16:17:21.600+0000] {subprocess.py:93} INFO -   optional int96 order_date;
+[2026-01-23T16:17:21.600+0000] {subprocess.py:93} INFO - }
+[2026-01-23T16:17:21.600+0000] {subprocess.py:93} INFO - 
+[2026-01-23T16:17:21.600+0000] {subprocess.py:93} INFO - 
+[2026-01-23T16:17:21.666+0000] {subprocess.py:93} INFO - 26/01/23 16:17:21 INFO CodecPool: Got brand-new compressor [.snappy]
+[2026-01-23T16:17:21.808+0000] {subprocess.py:93} INFO - 26/01/23 16:17:21 INFO FileScanRDD: Reading File path: s3a://bronze/data/orders/orders_20260123161612.parquet, range: 0-5394, partition values: [empty row]
+[2026-01-23T16:17:21.824+0000] {subprocess.py:93} INFO - 26/01/23 16:17:21 INFO S3AInputStream: Switching to Random IO seek policy
+[2026-01-23T16:17:22.073+0000] {subprocess.py:93} INFO - 26/01/23 16:17:22 INFO CodeGenerator: Code generated in 9.12288 ms
+[2026-01-23T16:17:22.094+0000] {subprocess.py:93} INFO - 26/01/23 16:17:22 INFO CodeGenerator: Code generated in 12.935916 ms
+[2026-01-23T16:17:22.171+0000] {subprocess.py:93} INFO - 26/01/23 16:17:22 INFO Executor: Finished task 0.0 in stage 2.0 (TID 2). 4052 bytes result sent to driver
+[2026-01-23T16:17:22.175+0000] {subprocess.py:93} INFO - 26/01/23 16:17:22 INFO TaskSetManager: Finished task 0.0 in stage 2.0 (TID 2) in 925 ms on 870244d36fa2 (executor driver) (1/1)
+[2026-01-23T16:17:22.175+0000] {subprocess.py:93} INFO - 26/01/23 16:17:22 INFO TaskSchedulerImpl: Removed TaskSet 2.0, whose tasks have all completed, from pool
+[2026-01-23T16:17:22.176+0000] {subprocess.py:93} INFO - 26/01/23 16:17:22 INFO DAGScheduler: ResultStage 2 (save at <unknown>:0) finished in 0.975 s
+[2026-01-23T16:17:22.176+0000] {subprocess.py:93} INFO - 26/01/23 16:17:22 INFO DAGScheduler: Job 2 is finished. Cancelling potential speculative or zombie tasks for this job
+[2026-01-23T16:17:22.176+0000] {subprocess.py:93} INFO - 26/01/23 16:17:22 INFO TaskSchedulerImpl: Killing all running tasks in stage 2: Stage finished
+[2026-01-23T16:17:22.179+0000] {subprocess.py:93} INFO - 26/01/23 16:17:22 INFO DAGScheduler: Job 2 finished: save at <unknown>:0, took 0.983252 s
+[2026-01-23T16:17:22.182+0000] {subprocess.py:93} INFO - 26/01/23 16:17:22 INFO DeltaFileFormatWriter: Start to commit write Job c143cd77-5b2c-4ca8-903d-8ae692357fb3.
+[2026-01-23T16:17:22.183+0000] {subprocess.py:93} INFO - 26/01/23 16:17:22 INFO DeltaFileFormatWriter: Write Job c143cd77-5b2c-4ca8-903d-8ae692357fb3 committed. Elapsed time: 1 ms.
+[2026-01-23T16:17:22.191+0000] {subprocess.py:93} INFO - 26/01/23 16:17:22 INFO DeltaFileFormatWriter: Finished processing stats for write job c143cd77-5b2c-4ca8-903d-8ae692357fb3.
+[2026-01-23T16:17:23.446+0000] {subprocess.py:93} INFO - 26/01/23 16:17:23 INFO BlockManagerInfo: Removed broadcast_4_piece0 on 870244d36fa2:43719 in memory (size: 125.4 KiB, free: 434.4 MiB)
+[2026-01-23T16:17:24.088+0000] {subprocess.py:93} INFO - 26/01/23 16:17:24 INFO CodeGenerator: Code generated in 190.702405 ms
+[2026-01-23T16:17:24.198+0000] {subprocess.py:93} INFO - 26/01/23 16:17:24 INFO SparkContext: Starting job: $anonfun$recordDeltaOperationInternal$1 at DatabricksLogging.scala:128
+[2026-01-23T16:17:24.198+0000] {subprocess.py:93} INFO - 26/01/23 16:17:24 INFO DAGScheduler: Job 3 finished: $anonfun$recordDeltaOperationInternal$1 at DatabricksLogging.scala:128, took 0.000379 s
+[2026-01-23T16:17:24.282+0000] {subprocess.py:93} INFO - 26/01/23 16:17:24 INFO OptimisticTransaction: [tableId=a57c3935,txnId=70202251] Attempting to commit version 0 with 4 actions with Serializable isolation level
+[2026-01-23T16:17:24.560+0000] {subprocess.py:93} INFO - 26/01/23 16:17:24 INFO DeltaLog: Creating a new snapshot v0 for commit version 0
+[2026-01-23T16:17:24.561+0000] {subprocess.py:93} INFO - 26/01/23 16:17:24 INFO DeltaLog: Loading version 0.
+[2026-01-23T16:17:24.584+0000] {subprocess.py:93} INFO - 26/01/23 16:17:24 INFO DeltaLogFileIndex: Created DeltaLogFileIndex(JSON, numFilesInSegment: 1, totalFileSize: 1787)
+[2026-01-23T16:17:24.831+0000] {subprocess.py:93} INFO - 26/01/23 16:17:24 INFO DataSourceStrategy: Pruning directories with:
+[2026-01-23T16:17:24.836+0000] {subprocess.py:93} INFO - 26/01/23 16:17:24 INFO FileSourceStrategy: Pushed Filters:
+[2026-01-23T16:17:24.837+0000] {subprocess.py:93} INFO - 26/01/23 16:17:24 INFO FileSourceStrategy: Post-Scan Filters: (isnotnull(protocol#341.minReaderVersion) OR isnotnull(metaData#340.id))
+[2026-01-23T16:17:24.886+0000] {subprocess.py:93} INFO - 26/01/23 16:17:24 INFO CodeGenerator: Code generated in 28.226006 ms
+[2026-01-23T16:17:24.890+0000] {subprocess.py:93} INFO - 26/01/23 16:17:24 INFO MemoryStore: Block broadcast_5 stored as values in memory (estimated size 204.8 KiB, free 434.0 MiB)
+[2026-01-23T16:17:24.904+0000] {subprocess.py:93} INFO - 26/01/23 16:17:24 INFO MemoryStore: Block broadcast_5_piece0 stored as bytes in memory (estimated size 35.8 KiB, free 433.9 MiB)
+[2026-01-23T16:17:24.905+0000] {subprocess.py:93} INFO - 26/01/23 16:17:24 INFO BlockManagerInfo: Added broadcast_5_piece0 in memory on 870244d36fa2:43719 (size: 35.8 KiB, free: 434.3 MiB)
+[2026-01-23T16:17:24.908+0000] {subprocess.py:93} INFO - 26/01/23 16:17:24 INFO SparkContext: Created broadcast 5 from toString at <unknown>:0
+[2026-01-23T16:17:24.919+0000] {subprocess.py:93} INFO - 26/01/23 16:17:24 INFO FileSourceScanExec: Planning scan with bin packing, max size: 4194304 bytes, open cost is considered as scanning 4194304 bytes.
+[2026-01-23T16:17:24.990+0000] {subprocess.py:93} INFO - 26/01/23 16:17:24 INFO SparkContext: Starting job: toString at <unknown>:0
+[2026-01-23T16:17:24.992+0000] {subprocess.py:93} INFO - 26/01/23 16:17:24 INFO DAGScheduler: Got job 4 (toString at <unknown>:0) with 1 output partitions
+[2026-01-23T16:17:24.992+0000] {subprocess.py:93} INFO - 26/01/23 16:17:24 INFO DAGScheduler: Final stage: ResultStage 3 (toString at <unknown>:0)
+[2026-01-23T16:17:24.995+0000] {subprocess.py:93} INFO - 26/01/23 16:17:24 INFO DAGScheduler: Parents of final stage: List()
+[2026-01-23T16:17:24.996+0000] {subprocess.py:93} INFO - 26/01/23 16:17:24 INFO DAGScheduler: Missing parents: List()
+[2026-01-23T16:17:24.996+0000] {subprocess.py:93} INFO - 26/01/23 16:17:24 INFO DAGScheduler: Submitting ResultStage 3 (MapPartitionsRDD[16] at toString at <unknown>:0), which has no missing parents
+[2026-01-23T16:17:24.999+0000] {subprocess.py:93} INFO - 26/01/23 16:17:24 INFO MemoryStore: Block broadcast_6 stored as values in memory (estimated size 40.0 KiB, free 433.9 MiB)
+[2026-01-23T16:17:25.003+0000] {subprocess.py:93} INFO - 26/01/23 16:17:25 INFO MemoryStore: Block broadcast_6_piece0 stored as bytes in memory (estimated size 13.7 KiB, free 433.9 MiB)
+[2026-01-23T16:17:25.005+0000] {subprocess.py:93} INFO - 26/01/23 16:17:25 INFO BlockManagerInfo: Added broadcast_6_piece0 in memory on 870244d36fa2:43719 (size: 13.7 KiB, free: 434.3 MiB)
+[2026-01-23T16:17:25.006+0000] {subprocess.py:93} INFO - 26/01/23 16:17:25 INFO SparkContext: Created broadcast 6 from broadcast at DAGScheduler.scala:1585
+[2026-01-23T16:17:25.007+0000] {subprocess.py:93} INFO - 26/01/23 16:17:25 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 3 (MapPartitionsRDD[16] at toString at <unknown>:0) (first 15 tasks are for partitions Vector(0))
+[2026-01-23T16:17:25.008+0000] {subprocess.py:93} INFO - 26/01/23 16:17:25 INFO TaskSchedulerImpl: Adding task set 3.0 with 1 tasks resource profile 0
+[2026-01-23T16:17:25.011+0000] {subprocess.py:93} INFO - 26/01/23 16:17:25 INFO TaskSetManager: Starting task 0.0 in stage 3.0 (TID 3) (870244d36fa2, executor driver, partition 0, PROCESS_LOCAL, 9382 bytes)
+[2026-01-23T16:17:25.012+0000] {subprocess.py:93} INFO - 26/01/23 16:17:25 INFO Executor: Running task 0.0 in stage 3.0 (TID 3)
+[2026-01-23T16:17:25.075+0000] {subprocess.py:93} INFO - 26/01/23 16:17:25 INFO CodeGenerator: Code generated in 45.643606 ms
+[2026-01-23T16:17:25.079+0000] {subprocess.py:93} INFO - 26/01/23 16:17:25 INFO FileScanRDD: Reading File path: s3a://silver/data/orders/_delta_log/00000000000000000000.json, range: 0-1787, partition values: [0]
+[2026-01-23T16:17:25.124+0000] {subprocess.py:93} INFO - 26/01/23 16:17:25 INFO CodeGenerator: Code generated in 35.892067 ms
+[2026-01-23T16:17:25.218+0000] {subprocess.py:93} INFO - 26/01/23 16:17:25 INFO Executor: Finished task 0.0 in stage 3.0 (TID 3). 1949 bytes result sent to driver
+[2026-01-23T16:17:25.220+0000] {subprocess.py:93} INFO - 26/01/23 16:17:25 INFO TaskSetManager: Finished task 0.0 in stage 3.0 (TID 3) in 210 ms on 870244d36fa2 (executor driver) (1/1)
+[2026-01-23T16:17:25.221+0000] {subprocess.py:93} INFO - 26/01/23 16:17:25 INFO TaskSchedulerImpl: Removed TaskSet 3.0, whose tasks have all completed, from pool
+[2026-01-23T16:17:25.221+0000] {subprocess.py:93} INFO - 26/01/23 16:17:25 INFO DAGScheduler: ResultStage 3 (toString at <unknown>:0) finished in 0.225 s
+[2026-01-23T16:17:25.222+0000] {subprocess.py:93} INFO - 26/01/23 16:17:25 INFO DAGScheduler: Job 4 is finished. Cancelling potential speculative or zombie tasks for this job
+[2026-01-23T16:17:25.222+0000] {subprocess.py:93} INFO - 26/01/23 16:17:25 INFO TaskSchedulerImpl: Killing all running tasks in stage 3: Stage finished
+[2026-01-23T16:17:25.223+0000] {subprocess.py:93} INFO - 26/01/23 16:17:25 INFO DAGScheduler: Job 4 finished: toString at <unknown>:0, took 0.232244 s
+[2026-01-23T16:17:25.285+0000] {subprocess.py:93} INFO - 26/01/23 16:17:25 INFO CodeGenerator: Code generated in 46.011964 ms
+[2026-01-23T16:17:25.292+0000] {subprocess.py:93} INFO - 26/01/23 16:17:25 INFO Snapshot: [tableId=a57c3935-3a04-4224-8ecb-3eeed7f5f961] Created snapshot Snapshot(path=s3a://silver/data/orders/_delta_log, version=0, metadata=Metadata(e9691a89-de10-424e-903e-1cfb01540fd0,null,null,Format(parquet,Map()),{"type":"struct","fields":[{"name":"order_id","type":"integer","nullable":true,"metadata":{}},{"name":"customer_name","type":"string","nullable":true,"metadata":{}},{"name":"product_name","type":"string","nullable":true,"metadata":{}},{"name":"quantity","type":"integer","nullable":true,"metadata":{}},{"name":"price","type":"double","nullable":true,"metadata":{}},{"name":"order_date","type":"timestamp","nullable":true,"metadata":{}}]},List(),Map(),Some(1769185040223)), logSegment=LogSegment(s3a://silver/data/orders/_delta_log,0,WrappedArray(S3AFileStatus{path=s3a://silver/data/orders/_delta_log/00000000000000000000.json; isDirectory=false; length=1787; replication=1; blocksize=33554432; modification_time=1769185044477; access_time=0; owner=root; group=root; permission=rw-rw-rw-; isSymlink=false; hasAcl=false; isEncrypted=true; isErasureCoded=false} isEmptyDirectory=FALSE eTag=5c99749d629b424f06e6c6807b14e42a versionId=null),org.apache.spark.sql.delta.EmptyCheckpointProvider$@551cd4cd,1769185044477), checksumOpt=None)
+[2026-01-23T16:17:25.293+0000] {subprocess.py:93} INFO - 26/01/23 16:17:25 INFO DeltaLog: Updated snapshot to Snapshot(path=s3a://silver/data/orders/_delta_log, version=0, metadata=Metadata(e9691a89-de10-424e-903e-1cfb01540fd0,null,null,Format(parquet,Map()),{"type":"struct","fields":[{"name":"order_id","type":"integer","nullable":true,"metadata":{}},{"name":"customer_name","type":"string","nullable":true,"metadata":{}},{"name":"product_name","type":"string","nullable":true,"metadata":{}},{"name":"quantity","type":"integer","nullable":true,"metadata":{}},{"name":"price","type":"double","nullable":true,"metadata":{}},{"name":"order_date","type":"timestamp","nullable":true,"metadata":{}}]},List(),Map(),Some(1769185040223)), logSegment=LogSegment(s3a://silver/data/orders/_delta_log,0,WrappedArray(S3AFileStatus{path=s3a://silver/data/orders/_delta_log/00000000000000000000.json; isDirectory=false; length=1787; replication=1; blocksize=33554432; modification_time=1769185044477; access_time=0; owner=root; group=root; permission=rw-rw-rw-; isSymlink=false; hasAcl=false; isEncrypted=true; isErasureCoded=false} isEmptyDirectory=FALSE eTag=5c99749d629b424f06e6c6807b14e42a versionId=null),org.apache.spark.sql.delta.EmptyCheckpointProvider$@551cd4cd,1769185044477), checksumOpt=None)
+[2026-01-23T16:17:25.307+0000] {subprocess.py:93} INFO - 26/01/23 16:17:25 INFO Snapshot: [tableId=e9691a89-de10-424e-903e-1cfb01540fd0] DELTA: Compute snapshot for version: 0
+[2026-01-23T16:17:25.325+0000] {subprocess.py:93} INFO - 26/01/23 16:17:25 INFO MemoryStore: Block broadcast_7 stored as values in memory (estimated size 204.4 KiB, free 433.7 MiB)
+[2026-01-23T16:17:25.341+0000] {subprocess.py:93} INFO - 26/01/23 16:17:25 INFO MemoryStore: Block broadcast_7_piece0 stored as bytes in memory (estimated size 35.8 KiB, free 433.6 MiB)
+[2026-01-23T16:17:25.343+0000] {subprocess.py:93} INFO - 26/01/23 16:17:25 INFO BlockManagerInfo: Added broadcast_7_piece0 in memory on 870244d36fa2:43719 (size: 35.8 KiB, free: 434.3 MiB)
+[2026-01-23T16:17:25.345+0000] {subprocess.py:93} INFO - 26/01/23 16:17:25 INFO SparkContext: Created broadcast 7 from $anonfun$recordDeltaOperationInternal$1 at DatabricksLogging.scala:128
+[2026-01-23T16:17:25.426+0000] {subprocess.py:93} INFO - 26/01/23 16:17:25 INFO BlockManagerInfo: Removed broadcast_6_piece0 on 870244d36fa2:43719 in memory (size: 13.7 KiB, free: 434.3 MiB)
+[2026-01-23T16:17:25.780+0000] {subprocess.py:93} INFO - 26/01/23 16:17:25 INFO DataSourceStrategy: Pruning directories with:
+[2026-01-23T16:17:25.781+0000] {subprocess.py:93} INFO - 26/01/23 16:17:25 INFO FileSourceStrategy: Pushed Filters:
+[2026-01-23T16:17:25.782+0000] {subprocess.py:93} INFO - 26/01/23 16:17:25 INFO FileSourceStrategy: Post-Scan Filters:
+[2026-01-23T16:17:25.849+0000] {subprocess.py:93} INFO - 26/01/23 16:17:25 WARN SparkStringUtils: Truncated the string representation of a plan since it was too large. This behavior can be adjusted by setting 'spark.sql.debug.maxToStringFields'.
+[2026-01-23T16:17:26.021+0000] {subprocess.py:93} INFO - 26/01/23 16:17:26 INFO CodeGenerator: Code generated in 67.982198 ms
+[2026-01-23T16:17:26.025+0000] {subprocess.py:93} INFO - 26/01/23 16:17:26 INFO MemoryStore: Block broadcast_8 stored as values in memory (estimated size 204.8 KiB, free 433.5 MiB)
+[2026-01-23T16:17:26.034+0000] {subprocess.py:93} INFO - 26/01/23 16:17:26 INFO MemoryStore: Block broadcast_8_piece0 stored as bytes in memory (estimated size 35.8 KiB, free 433.5 MiB)
+[2026-01-23T16:17:26.035+0000] {subprocess.py:93} INFO - 26/01/23 16:17:26 INFO BlockManagerInfo: Added broadcast_8_piece0 in memory on 870244d36fa2:43719 (size: 35.8 KiB, free: 434.3 MiB)
+[2026-01-23T16:17:26.036+0000] {subprocess.py:93} INFO - 26/01/23 16:17:26 INFO SparkContext: Created broadcast 8 from $anonfun$recordDeltaOperationInternal$1 at DatabricksLogging.scala:128
+[2026-01-23T16:17:26.038+0000] {subprocess.py:93} INFO - 26/01/23 16:17:26 INFO FileSourceScanExec: Planning scan with bin packing, max size: 4194304 bytes, open cost is considered as scanning 4194304 bytes.
+[2026-01-23T16:17:26.092+0000] {subprocess.py:93} INFO - 26/01/23 16:17:26 INFO DAGScheduler: Registering RDD 20 ($anonfun$recordDeltaOperationInternal$1 at DatabricksLogging.scala:128) as input to shuffle 0
+[2026-01-23T16:17:26.099+0000] {subprocess.py:93} INFO - 26/01/23 16:17:26 INFO DAGScheduler: Got map stage job 5 ($anonfun$recordDeltaOperationInternal$1 at DatabricksLogging.scala:128) with 1 output partitions
+[2026-01-23T16:17:26.099+0000] {subprocess.py:93} INFO - 26/01/23 16:17:26 INFO DAGScheduler: Final stage: ShuffleMapStage 4 ($anonfun$recordDeltaOperationInternal$1 at DatabricksLogging.scala:128)
+[2026-01-23T16:17:26.099+0000] {subprocess.py:93} INFO - 26/01/23 16:17:26 INFO DAGScheduler: Parents of final stage: List()
+[2026-01-23T16:17:26.102+0000] {subprocess.py:93} INFO - 26/01/23 16:17:26 INFO DAGScheduler: Missing parents: List()
+[2026-01-23T16:17:26.105+0000] {subprocess.py:93} INFO - 26/01/23 16:17:26 INFO DAGScheduler: Submitting ShuffleMapStage 4 (MapPartitionsRDD[20] at $anonfun$recordDeltaOperationInternal$1 at DatabricksLogging.scala:128), which has no missing parents
+[2026-01-23T16:17:26.130+0000] {subprocess.py:93} INFO - 26/01/23 16:17:26 INFO MemoryStore: Block broadcast_9 stored as values in memory (estimated size 105.6 KiB, free 433.4 MiB)
+[2026-01-23T16:17:26.132+0000] {subprocess.py:93} INFO - 26/01/23 16:17:26 INFO MemoryStore: Block broadcast_9_piece0 stored as bytes in memory (estimated size 32.6 KiB, free 433.3 MiB)
+[2026-01-23T16:17:26.133+0000] {subprocess.py:93} INFO - 26/01/23 16:17:26 INFO BlockManagerInfo: Added broadcast_9_piece0 in memory on 870244d36fa2:43719 (size: 32.6 KiB, free: 434.2 MiB)
+[2026-01-23T16:17:26.133+0000] {subprocess.py:93} INFO - 26/01/23 16:17:26 INFO SparkContext: Created broadcast 9 from broadcast at DAGScheduler.scala:1585
+[2026-01-23T16:17:26.137+0000] {subprocess.py:93} INFO - 26/01/23 16:17:26 INFO DAGScheduler: Submitting 1 missing tasks from ShuffleMapStage 4 (MapPartitionsRDD[20] at $anonfun$recordDeltaOperationInternal$1 at DatabricksLogging.scala:128) (first 15 tasks are for partitions Vector(0))
+[2026-01-23T16:17:26.137+0000] {subprocess.py:93} INFO - 26/01/23 16:17:26 INFO TaskSchedulerImpl: Adding task set 4.0 with 1 tasks resource profile 0
+[2026-01-23T16:17:26.140+0000] {subprocess.py:93} INFO - 26/01/23 16:17:26 INFO TaskSetManager: Starting task 0.0 in stage 4.0 (TID 4) (870244d36fa2, executor driver, partition 0, PROCESS_LOCAL, 9371 bytes)
+[2026-01-23T16:17:26.141+0000] {subprocess.py:93} INFO - 26/01/23 16:17:26 INFO Executor: Running task 0.0 in stage 4.0 (TID 4)
+[2026-01-23T16:17:26.244+0000] {subprocess.py:93} INFO - 26/01/23 16:17:26 INFO CodeGenerator: Code generated in 64.153844 ms
+[2026-01-23T16:17:26.261+0000] {subprocess.py:93} INFO - 26/01/23 16:17:26 INFO CodeGenerator: Code generated in 8.781026 ms
+[2026-01-23T16:17:26.276+0000] {subprocess.py:93} INFO - 26/01/23 16:17:26 INFO FileScanRDD: Reading File path: s3a://silver/data/orders/_delta_log/00000000000000000000.json, range: 0-1787, partition values: [0]
+[2026-01-23T16:17:26.340+0000] {subprocess.py:93} INFO - 26/01/23 16:17:26 INFO CodeGenerator: Code generated in 47.076703 ms
+[2026-01-23T16:17:26.419+0000] {subprocess.py:93} INFO - 26/01/23 16:17:26 INFO Executor: Finished task 0.0 in stage 4.0 (TID 4). 1922 bytes result sent to driver
+[2026-01-23T16:17:26.422+0000] {subprocess.py:93} INFO - 26/01/23 16:17:26 INFO TaskSetManager: Finished task 0.0 in stage 4.0 (TID 4) in 283 ms on 870244d36fa2 (executor driver) (1/1)
+[2026-01-23T16:17:26.423+0000] {subprocess.py:93} INFO - 26/01/23 16:17:26 INFO TaskSchedulerImpl: Removed TaskSet 4.0, whose tasks have all completed, from pool
+[2026-01-23T16:17:26.425+0000] {subprocess.py:93} INFO - 26/01/23 16:17:26 INFO DAGScheduler: ShuffleMapStage 4 ($anonfun$recordDeltaOperationInternal$1 at DatabricksLogging.scala:128) finished in 0.317 s
+[2026-01-23T16:17:26.426+0000] {subprocess.py:93} INFO - 26/01/23 16:17:26 INFO DAGScheduler: looking for newly runnable stages
+[2026-01-23T16:17:26.426+0000] {subprocess.py:93} INFO - 26/01/23 16:17:26 INFO DAGScheduler: running: Set()
+[2026-01-23T16:17:26.426+0000] {subprocess.py:93} INFO - 26/01/23 16:17:26 INFO DAGScheduler: waiting: Set()
+[2026-01-23T16:17:26.427+0000] {subprocess.py:93} INFO - 26/01/23 16:17:26 INFO DAGScheduler: failed: Set()
+[2026-01-23T16:17:26.481+0000] {subprocess.py:93} INFO - 26/01/23 16:17:26 INFO BlockManagerInfo: Removed broadcast_9_piece0 on 870244d36fa2:43719 in memory (size: 32.6 KiB, free: 434.3 MiB)
+[2026-01-23T16:17:26.844+0000] {subprocess.py:93} INFO - 26/01/23 16:17:26 INFO CodeGenerator: Generated method too long to be JIT compiled: org.apache.spark.sql.catalyst.expressions.GeneratedClass$GeneratedIteratorForCodegenStage3.serializefromobject_doConsume_0$ is 24899 bytes
+[2026-01-23T16:17:26.845+0000] {subprocess.py:93} INFO - 26/01/23 16:17:26 INFO CodeGenerator: Code generated in 249.229693 ms
+[2026-01-23T16:17:26.926+0000] {subprocess.py:93} INFO - 26/01/23 16:17:26 INFO CodeGenerator: Code generated in 61.867852 ms
+[2026-01-23T16:17:27.397+0000] {subprocess.py:93} INFO - 26/01/23 16:17:27 INFO CodeGenerator: Code generated in 69.899898 ms
+[2026-01-23T16:17:27.410+0000] {subprocess.py:93} INFO - 26/01/23 16:17:27 INFO DAGScheduler: Registering RDD 30 ($anonfun$recordDeltaOperationInternal$1 at DatabricksLogging.scala:128) as input to shuffle 1
+[2026-01-23T16:17:27.410+0000] {subprocess.py:93} INFO - 26/01/23 16:17:27 INFO DAGScheduler: Got map stage job 6 ($anonfun$recordDeltaOperationInternal$1 at DatabricksLogging.scala:128) with 50 output partitions
+[2026-01-23T16:17:27.410+0000] {subprocess.py:93} INFO - 26/01/23 16:17:27 INFO DAGScheduler: Final stage: ShuffleMapStage 6 ($anonfun$recordDeltaOperationInternal$1 at DatabricksLogging.scala:128)
+[2026-01-23T16:17:27.411+0000] {subprocess.py:93} INFO - 26/01/23 16:17:27 INFO DAGScheduler: Parents of final stage: List(ShuffleMapStage 5)
+[2026-01-23T16:17:27.420+0000] {subprocess.py:93} INFO - 26/01/23 16:17:27 INFO DAGScheduler: Missing parents: List()
+[2026-01-23T16:17:27.421+0000] {subprocess.py:93} INFO - 26/01/23 16:17:27 INFO DAGScheduler: Submitting ShuffleMapStage 6 (MapPartitionsRDD[30] at $anonfun$recordDeltaOperationInternal$1 at DatabricksLogging.scala:128), which has no missing parents
+[2026-01-23T16:17:27.550+0000] {subprocess.py:93} INFO - 26/01/23 16:17:27 INFO MemoryStore: Block broadcast_10 stored as values in memory (estimated size 601.8 KiB, free 432.9 MiB)
+[2026-01-23T16:17:27.554+0000] {subprocess.py:93} INFO - 26/01/23 16:17:27 INFO MemoryStore: Block broadcast_10_piece0 stored as bytes in memory (estimated size 137.7 KiB, free 432.7 MiB)
+[2026-01-23T16:17:27.555+0000] {subprocess.py:93} INFO - 26/01/23 16:17:27 INFO BlockManagerInfo: Added broadcast_10_piece0 in memory on 870244d36fa2:43719 (size: 137.7 KiB, free: 434.1 MiB)
+[2026-01-23T16:17:27.556+0000] {subprocess.py:93} INFO - 26/01/23 16:17:27 INFO SparkContext: Created broadcast 10 from broadcast at DAGScheduler.scala:1585
+[2026-01-23T16:17:27.557+0000] {subprocess.py:93} INFO - 26/01/23 16:17:27 INFO DAGScheduler: Submitting 50 missing tasks from ShuffleMapStage 6 (MapPartitionsRDD[30] at $anonfun$recordDeltaOperationInternal$1 at DatabricksLogging.scala:128) (first 15 tasks are for partitions Vector(0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14))
+[2026-01-23T16:17:27.557+0000] {subprocess.py:93} INFO - 26/01/23 16:17:27 INFO TaskSchedulerImpl: Adding task set 6.0 with 50 tasks resource profile 0
+[2026-01-23T16:17:27.568+0000] {subprocess.py:93} INFO - 26/01/23 16:17:27 INFO TaskSetManager: Starting task 6.0 in stage 6.0 (TID 5) (870244d36fa2, executor driver, partition 6, NODE_LOCAL, 8733 bytes)
+[2026-01-23T16:17:27.568+0000] {subprocess.py:93} INFO - 26/01/23 16:17:27 INFO TaskSetManager: Starting task 42.0 in stage 6.0 (TID 6) (870244d36fa2, executor driver, partition 42, NODE_LOCAL, 8733 bytes)
+[2026-01-23T16:17:27.570+0000] {subprocess.py:93} INFO - 26/01/23 16:17:27 INFO TaskSetManager: Starting task 0.0 in stage 6.0 (TID 7) (870244d36fa2, executor driver, partition 0, PROCESS_LOCAL, 8733 bytes)
+[2026-01-23T16:17:27.570+0000] {subprocess.py:93} INFO - 26/01/23 16:17:27 INFO TaskSetManager: Starting task 1.0 in stage 6.0 (TID 8) (870244d36fa2, executor driver, partition 1, PROCESS_LOCAL, 8733 bytes)
+[2026-01-23T16:17:27.571+0000] {subprocess.py:93} INFO - 26/01/23 16:17:27 INFO TaskSetManager: Starting task 2.0 in stage 6.0 (TID 9) (870244d36fa2, executor driver, partition 2, PROCESS_LOCAL, 8733 bytes)
+[2026-01-23T16:17:27.571+0000] {subprocess.py:93} INFO - 26/01/23 16:17:27 INFO TaskSetManager: Starting task 3.0 in stage 6.0 (TID 10) (870244d36fa2, executor driver, partition 3, PROCESS_LOCAL, 8733 bytes)
+[2026-01-23T16:17:27.572+0000] {subprocess.py:93} INFO - 26/01/23 16:17:27 INFO TaskSetManager: Starting task 4.0 in stage 6.0 (TID 11) (870244d36fa2, executor driver, partition 4, PROCESS_LOCAL, 8733 bytes)
+[2026-01-23T16:17:27.572+0000] {subprocess.py:93} INFO - 26/01/23 16:17:27 INFO TaskSetManager: Starting task 5.0 in stage 6.0 (TID 12) (870244d36fa2, executor driver, partition 5, PROCESS_LOCAL, 8733 bytes)
+[2026-01-23T16:17:27.573+0000] {subprocess.py:93} INFO - 26/01/23 16:17:27 INFO TaskSetManager: Starting task 7.0 in stage 6.0 (TID 13) (870244d36fa2, executor driver, partition 7, PROCESS_LOCAL, 8733 bytes)
+[2026-01-23T16:17:27.574+0000] {subprocess.py:93} INFO - 26/01/23 16:17:27 INFO TaskSetManager: Starting task 8.0 in stage 6.0 (TID 14) (870244d36fa2, executor driver, partition 8, PROCESS_LOCAL, 8733 bytes)
+[2026-01-23T16:17:27.575+0000] {subprocess.py:93} INFO - 26/01/23 16:17:27 INFO TaskSetManager: Starting task 9.0 in stage 6.0 (TID 15) (870244d36fa2, executor driver, partition 9, PROCESS_LOCAL, 8733 bytes)
+[2026-01-23T16:17:27.576+0000] {subprocess.py:93} INFO - 26/01/23 16:17:27 INFO TaskSetManager: Starting task 10.0 in stage 6.0 (TID 16) (870244d36fa2, executor driver, partition 10, PROCESS_LOCAL, 8733 bytes)
+[2026-01-23T16:17:27.577+0000] {subprocess.py:93} INFO - 26/01/23 16:17:27 INFO Executor: Running task 6.0 in stage 6.0 (TID 5)
+[2026-01-23T16:17:27.579+0000] {subprocess.py:93} INFO - 26/01/23 16:17:27 INFO Executor: Running task 42.0 in stage 6.0 (TID 6)
+[2026-01-23T16:17:27.580+0000] {subprocess.py:93} INFO - 26/01/23 16:17:27 INFO Executor: Running task 0.0 in stage 6.0 (TID 7)
+[2026-01-23T16:17:27.581+0000] {subprocess.py:93} INFO - 26/01/23 16:17:27 INFO Executor: Running task 1.0 in stage 6.0 (TID 8)
+[2026-01-23T16:17:27.584+0000] {subprocess.py:93} INFO - 26/01/23 16:17:27 INFO Executor: Running task 2.0 in stage 6.0 (TID 9)
+[2026-01-23T16:17:27.586+0000] {subprocess.py:93} INFO - 26/01/23 16:17:27 INFO Executor: Running task 4.0 in stage 6.0 (TID 11)
+[2026-01-23T16:17:27.588+0000] {subprocess.py:93} INFO - 26/01/23 16:17:27 INFO Executor: Running task 3.0 in stage 6.0 (TID 10)
+[2026-01-23T16:17:27.591+0000] {subprocess.py:93} INFO - 26/01/23 16:17:27 INFO Executor: Running task 8.0 in stage 6.0 (TID 14)
+[2026-01-23T16:17:27.592+0000] {subprocess.py:93} INFO - 26/01/23 16:17:27 INFO Executor: Running task 5.0 in stage 6.0 (TID 12)
+[2026-01-23T16:17:27.593+0000] {subprocess.py:93} INFO - 26/01/23 16:17:27 INFO Executor: Running task 7.0 in stage 6.0 (TID 13)
+[2026-01-23T16:17:27.605+0000] {subprocess.py:93} INFO - 26/01/23 16:17:27 INFO Executor: Running task 10.0 in stage 6.0 (TID 16)
+[2026-01-23T16:17:27.606+0000] {subprocess.py:93} INFO - 26/01/23 16:17:27 INFO Executor: Running task 9.0 in stage 6.0 (TID 15)
+[2026-01-23T16:17:27.821+0000] {subprocess.py:93} INFO - 26/01/23 16:17:27 INFO ShuffleBlockFetcherIterator: Getting 0 (0.0 B) non-empty blocks including 0 (0.0 B) local and 0 (0.0 B) host-local and 0 (0.0 B) push-merged-local and 0 (0.0 B) remote blocks
+[2026-01-23T16:17:27.821+0000] {subprocess.py:93} INFO - 26/01/23 16:17:27 INFO ShuffleBlockFetcherIterator: Getting 0 (0.0 B) non-empty blocks including 0 (0.0 B) local and 0 (0.0 B) host-local and 0 (0.0 B) push-merged-local and 0 (0.0 B) remote blocks
+[2026-01-23T16:17:27.822+0000] {subprocess.py:93} INFO - 26/01/23 16:17:27 INFO ShuffleBlockFetcherIterator: Getting 0 (0.0 B) non-empty blocks including 0 (0.0 B) local and 0 (0.0 B) host-local and 0 (0.0 B) push-merged-local and 0 (0.0 B) remote blocks
+[2026-01-23T16:17:27.822+0000] {subprocess.py:93} INFO - 26/01/23 16:17:27 INFO ShuffleBlockFetcherIterator: Getting 0 (0.0 B) non-empty blocks including 0 (0.0 B) local and 0 (0.0 B) host-local and 0 (0.0 B) push-merged-local and 0 (0.0 B) remote blocks
+[2026-01-23T16:17:27.822+0000] {subprocess.py:93} INFO - 26/01/23 16:17:27 INFO ShuffleBlockFetcherIterator: Getting 0 (0.0 B) non-empty blocks including 0 (0.0 B) local and 0 (0.0 B) host-local and 0 (0.0 B) push-merged-local and 0 (0.0 B) remote blocks
+[2026-01-23T16:17:27.822+0000] {subprocess.py:93} INFO - 26/01/23 16:17:27 INFO ShuffleBlockFetcherIterator: Getting 0 (0.0 B) non-empty blocks including 0 (0.0 B) local and 0 (0.0 B) host-local and 0 (0.0 B) push-merged-local and 0 (0.0 B) remote blocks
+[2026-01-23T16:17:27.822+0000] {subprocess.py:93} INFO - 26/01/23 16:17:27 INFO ShuffleBlockFetcherIterator: Getting 0 (0.0 B) non-empty blocks including 0 (0.0 B) local and 0 (0.0 B) host-local and 0 (0.0 B) push-merged-local and 0 (0.0 B) remote blocks
+[2026-01-23T16:17:27.822+0000] {subprocess.py:93} INFO - 26/01/23 16:17:27 INFO ShuffleBlockFetcherIterator: Getting 0 (0.0 B) non-empty blocks including 0 (0.0 B) local and 0 (0.0 B) host-local and 0 (0.0 B) push-merged-local and 0 (0.0 B) remote blocks
+[2026-01-23T16:17:27.822+0000] {subprocess.py:93} INFO - 26/01/23 16:17:27 INFO ShuffleBlockFetcherIterator: Getting 0 (0.0 B) non-empty blocks including 0 (0.0 B) local and 0 (0.0 B) host-local and 0 (0.0 B) push-merged-local and 0 (0.0 B) remote blocks
+[2026-01-23T16:17:27.823+0000] {subprocess.py:93} INFO - 26/01/23 16:17:27 INFO ShuffleBlockFetcherIterator: Getting 0 (0.0 B) non-empty blocks including 0 (0.0 B) local and 0 (0.0 B) host-local and 0 (0.0 B) push-merged-local and 0 (0.0 B) remote blocks
+[2026-01-23T16:17:27.823+0000] {subprocess.py:93} INFO - 26/01/23 16:17:27 INFO ShuffleBlockFetcherIterator: Getting 1 (868.0 B) non-empty blocks including 1 (868.0 B) local and 0 (0.0 B) host-local and 0 (0.0 B) push-merged-local and 0 (0.0 B) remote blocks
+[2026-01-23T16:17:27.823+0000] {subprocess.py:93} INFO - 26/01/23 16:17:27 INFO ShuffleBlockFetcherIterator: Getting 1 (490.0 B) non-empty blocks including 1 (490.0 B) local and 0 (0.0 B) host-local and 0 (0.0 B) push-merged-local and 0 (0.0 B) remote blocks
+[2026-01-23T16:17:27.824+0000] {subprocess.py:93} INFO - 26/01/23 16:17:27 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 17 ms
+[2026-01-23T16:17:27.825+0000] {subprocess.py:93} INFO - 26/01/23 16:17:27 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 18 ms
+[2026-01-23T16:17:27.825+0000] {subprocess.py:93} INFO - 26/01/23 16:17:27 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 18 ms
+[2026-01-23T16:17:27.825+0000] {subprocess.py:93} INFO - 26/01/23 16:17:27 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 18 ms
+[2026-01-23T16:17:27.826+0000] {subprocess.py:93} INFO - 26/01/23 16:17:27 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 18 ms
+[2026-01-23T16:17:27.826+0000] {subprocess.py:93} INFO - 26/01/23 16:17:27 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 18 ms
+[2026-01-23T16:17:27.826+0000] {subprocess.py:93} INFO - 26/01/23 16:17:27 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 18 ms
+[2026-01-23T16:17:27.826+0000] {subprocess.py:93} INFO - 26/01/23 16:17:27 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 18 ms
+[2026-01-23T16:17:27.828+0000] {subprocess.py:93} INFO - 26/01/23 16:17:27 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 18 ms
+[2026-01-23T16:17:27.828+0000] {subprocess.py:93} INFO - 26/01/23 16:17:27 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 19 ms
+[2026-01-23T16:17:27.829+0000] {subprocess.py:93} INFO - 26/01/23 16:17:27 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 19 ms
+[2026-01-23T16:17:27.829+0000] {subprocess.py:93} INFO - 26/01/23 16:17:27 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 19 ms
+[2026-01-23T16:17:27.891+0000] {subprocess.py:93} INFO - 26/01/23 16:17:27 INFO CodeGenerator: Code generated in 60.864804 ms
+[2026-01-23T16:17:27.925+0000] {subprocess.py:93} INFO - 26/01/23 16:17:27 INFO CodeGenerator: Code generated in 19.611906 ms
+[2026-01-23T16:17:27.951+0000] {subprocess.py:93} INFO - 26/01/23 16:17:27 INFO CodeGenerator: Code generated in 6.778791 ms
+[2026-01-23T16:17:28.180+0000] {subprocess.py:93} INFO - 26/01/23 16:17:28 INFO CodeGenerator: Code generated in 86.233158 ms
+[2026-01-23T16:17:28.393+0000] {subprocess.py:93} INFO - 26/01/23 16:17:28 INFO CodeGenerator: Generated method too long to be JIT compiled: org.apache.spark.sql.catalyst.expressions.GeneratedClass$GeneratedIteratorForCodegenStage3.serializefromobject_doConsume_0$ is 24899 bytes
+[2026-01-23T16:17:28.394+0000] {subprocess.py:93} INFO - 26/01/23 16:17:28 INFO CodeGenerator: Code generated in 194.454175 ms
+[2026-01-23T16:17:28.420+0000] {subprocess.py:93} INFO - 26/01/23 16:17:28 INFO MemoryStore: Block rdd_27_9 stored as values in memory (estimated size 46.0 B, free 432.7 MiB)
+[2026-01-23T16:17:28.421+0000] {subprocess.py:93} INFO - 26/01/23 16:17:28 INFO MemoryStore: Block rdd_27_6 stored as values in memory (estimated size 577.0 B, free 432.7 MiB)
+[2026-01-23T16:17:28.422+0000] {subprocess.py:93} INFO - 26/01/23 16:17:28 INFO MemoryStore: Block rdd_27_42 stored as values in memory (estimated size 545.0 B, free 432.7 MiB)
+[2026-01-23T16:17:28.422+0000] {subprocess.py:93} INFO - 26/01/23 16:17:28 INFO MemoryStore: Block rdd_27_3 stored as values in memory (estimated size 46.0 B, free 432.7 MiB)
+[2026-01-23T16:17:28.422+0000] {subprocess.py:93} INFO - 26/01/23 16:17:28 INFO MemoryStore: Block rdd_27_4 stored as values in memory (estimated size 46.0 B, free 432.7 MiB)
+[2026-01-23T16:17:28.422+0000] {subprocess.py:93} INFO - 26/01/23 16:17:28 INFO BlockManagerInfo: Added rdd_27_9 in memory on 870244d36fa2:43719 (size: 46.0 B, free: 434.1 MiB)
+[2026-01-23T16:17:28.423+0000] {subprocess.py:93} INFO - 26/01/23 16:17:28 INFO MemoryStore: Block rdd_27_0 stored as values in memory (estimated size 46.0 B, free 432.7 MiB)
+[2026-01-23T16:17:28.423+0000] {subprocess.py:93} INFO - 26/01/23 16:17:28 INFO MemoryStore: Block rdd_27_5 stored as values in memory (estimated size 46.0 B, free 432.7 MiB)
+[2026-01-23T16:17:28.424+0000] {subprocess.py:93} INFO - 26/01/23 16:17:28 INFO MemoryStore: Block rdd_27_1 stored as values in memory (estimated size 46.0 B, free 432.7 MiB)
+[2026-01-23T16:17:28.424+0000] {subprocess.py:93} INFO - 26/01/23 16:17:28 INFO MemoryStore: Block rdd_27_8 stored as values in memory (estimated size 46.0 B, free 432.7 MiB)
+[2026-01-23T16:17:28.424+0000] {subprocess.py:93} INFO - 26/01/23 16:17:28 INFO BlockManagerInfo: Added rdd_27_3 in memory on 870244d36fa2:43719 (size: 46.0 B, free: 434.1 MiB)
+[2026-01-23T16:17:28.424+0000] {subprocess.py:93} INFO - 26/01/23 16:17:28 INFO MemoryStore: Block rdd_27_2 stored as values in memory (estimated size 46.0 B, free 432.7 MiB)
+[2026-01-23T16:17:28.425+0000] {subprocess.py:93} INFO - 26/01/23 16:17:28 INFO BlockManagerInfo: Added rdd_27_42 in memory on 870244d36fa2:43719 (size: 545.0 B, free: 434.1 MiB)
+[2026-01-23T16:17:28.425+0000] {subprocess.py:93} INFO - 26/01/23 16:17:28 INFO MemoryStore: Block rdd_27_7 stored as values in memory (estimated size 46.0 B, free 432.7 MiB)
+[2026-01-23T16:17:28.425+0000] {subprocess.py:93} INFO - 26/01/23 16:17:28 INFO MemoryStore: Block rdd_27_10 stored as values in memory (estimated size 46.0 B, free 432.7 MiB)
+[2026-01-23T16:17:28.425+0000] {subprocess.py:93} INFO - 26/01/23 16:17:28 INFO BlockManagerInfo: Added rdd_27_6 in memory on 870244d36fa2:43719 (size: 577.0 B, free: 434.1 MiB)
+[2026-01-23T16:17:28.425+0000] {subprocess.py:93} INFO - 26/01/23 16:17:28 INFO BlockManagerInfo: Added rdd_27_4 in memory on 870244d36fa2:43719 (size: 46.0 B, free: 434.1 MiB)
+[2026-01-23T16:17:28.426+0000] {subprocess.py:93} INFO - 26/01/23 16:17:28 INFO BlockManagerInfo: Added rdd_27_0 in memory on 870244d36fa2:43719 (size: 46.0 B, free: 434.1 MiB)
+[2026-01-23T16:17:28.426+0000] {subprocess.py:93} INFO - 26/01/23 16:17:28 INFO BlockManagerInfo: Added rdd_27_5 in memory on 870244d36fa2:43719 (size: 46.0 B, free: 434.1 MiB)
+[2026-01-23T16:17:28.426+0000] {subprocess.py:93} INFO - 26/01/23 16:17:28 INFO BlockManagerInfo: Added rdd_27_1 in memory on 870244d36fa2:43719 (size: 46.0 B, free: 434.1 MiB)
+[2026-01-23T16:17:28.427+0000] {subprocess.py:93} INFO - 26/01/23 16:17:28 INFO BlockManagerInfo: Added rdd_27_2 in memory on 870244d36fa2:43719 (size: 46.0 B, free: 434.1 MiB)
+[2026-01-23T16:17:28.427+0000] {subprocess.py:93} INFO - 26/01/23 16:17:28 INFO BlockManagerInfo: Added rdd_27_8 in memory on 870244d36fa2:43719 (size: 46.0 B, free: 434.1 MiB)
+[2026-01-23T16:17:28.429+0000] {subprocess.py:93} INFO - 26/01/23 16:17:28 INFO BlockManagerInfo: Added rdd_27_7 in memory on 870244d36fa2:43719 (size: 46.0 B, free: 434.1 MiB)
+[2026-01-23T16:17:28.429+0000] {subprocess.py:93} INFO - 26/01/23 16:17:28 INFO BlockManagerInfo: Added rdd_27_10 in memory on 870244d36fa2:43719 (size: 46.0 B, free: 434.1 MiB)
+[2026-01-23T16:17:28.512+0000] {subprocess.py:93} INFO - 26/01/23 16:17:28 INFO BlockManagerInfo: Removed broadcast_5_piece0 on 870244d36fa2:43719 in memory (size: 35.8 KiB, free: 434.2 MiB)
+[2026-01-23T16:17:28.527+0000] {subprocess.py:93} INFO - 26/01/23 16:17:28 INFO CodeGenerator: Code generated in 100.010217 ms
+[2026-01-23T16:17:28.566+0000] {subprocess.py:93} INFO - 26/01/23 16:17:28 INFO CodeGenerator: Code generated in 7.991033 ms
+[2026-01-23T16:17:28.627+0000] {subprocess.py:93} INFO - 26/01/23 16:17:28 INFO CodeGenerator: Code generated in 20.18722 ms
+[2026-01-23T16:17:28.635+0000] {subprocess.py:93} INFO - 26/01/23 16:17:28 INFO CodeGenerator: Code generated in 4.54781 ms
+[2026-01-23T16:17:28.680+0000] {subprocess.py:93} INFO - 26/01/23 16:17:28 INFO CodeGenerator: Code generated in 25.89324 ms
+[2026-01-23T16:17:28.725+0000] {subprocess.py:93} INFO - 26/01/23 16:17:28 INFO CodeGenerator: Code generated in 19.696452 ms
+[2026-01-23T16:17:28.750+0000] {subprocess.py:93} INFO - 26/01/23 16:17:28 INFO CodeGenerator: Code generated in 10.746095 ms
+[2026-01-23T16:17:28.804+0000] {subprocess.py:93} INFO - 26/01/23 16:17:28 INFO CodeGenerator: Code generated in 48.791179 ms
+[2026-01-23T16:17:28.876+0000] {subprocess.py:93} INFO - 26/01/23 16:17:28 INFO Executor: Finished task 42.0 in stage 6.0 (TID 6). 5346 bytes result sent to driver
+[2026-01-23T16:17:28.877+0000] {subprocess.py:93} INFO - 26/01/23 16:17:28 INFO Executor: Finished task 8.0 in stage 6.0 (TID 14). 5346 bytes result sent to driver
+[2026-01-23T16:17:28.877+0000] {subprocess.py:93} INFO - 26/01/23 16:17:28 INFO Executor: Finished task 2.0 in stage 6.0 (TID 9). 5346 bytes result sent to driver
+[2026-01-23T16:17:28.877+0000] {subprocess.py:93} INFO - 26/01/23 16:17:28 INFO Executor: Finished task 1.0 in stage 6.0 (TID 8). 5346 bytes result sent to driver
+[2026-01-23T16:17:28.879+0000] {subprocess.py:93} INFO - 26/01/23 16:17:28 INFO Executor: Finished task 6.0 in stage 6.0 (TID 5). 5346 bytes result sent to driver
+[2026-01-23T16:17:28.880+0000] {subprocess.py:93} INFO - 26/01/23 16:17:28 INFO Executor: Finished task 4.0 in stage 6.0 (TID 11). 5346 bytes result sent to driver
+[2026-01-23T16:17:28.881+0000] {subprocess.py:93} INFO - 26/01/23 16:17:28 INFO TaskSetManager: Starting task 11.0 in stage 6.0 (TID 17) (870244d36fa2, executor driver, partition 11, PROCESS_LOCAL, 8733 bytes)
+[2026-01-23T16:17:28.882+0000] {subprocess.py:93} INFO - 26/01/23 16:17:28 INFO Executor: Running task 11.0 in stage 6.0 (TID 17)
+[2026-01-23T16:17:28.882+0000] {subprocess.py:93} INFO - 26/01/23 16:17:28 INFO Executor: Finished task 0.0 in stage 6.0 (TID 7). 5346 bytes result sent to driver
+[2026-01-23T16:17:28.882+0000] {subprocess.py:93} INFO - 26/01/23 16:17:28 INFO TaskSetManager: Starting task 12.0 in stage 6.0 (TID 18) (870244d36fa2, executor driver, partition 12, PROCESS_LOCAL, 8733 bytes)
+[2026-01-23T16:17:28.882+0000] {subprocess.py:93} INFO - 26/01/23 16:17:28 INFO Executor: Finished task 5.0 in stage 6.0 (TID 12). 5346 bytes result sent to driver
+[2026-01-23T16:17:28.883+0000] {subprocess.py:93} INFO - 26/01/23 16:17:28 INFO Executor: Finished task 3.0 in stage 6.0 (TID 10). 5346 bytes result sent to driver
+[2026-01-23T16:17:28.884+0000] {subprocess.py:93} INFO - 26/01/23 16:17:28 INFO Executor: Running task 12.0 in stage 6.0 (TID 18)
+[2026-01-23T16:17:28.885+0000] {subprocess.py:93} INFO - 26/01/23 16:17:28 INFO TaskSetManager: Starting task 13.0 in stage 6.0 (TID 19) (870244d36fa2, executor driver, partition 13, PROCESS_LOCAL, 8733 bytes)
+[2026-01-23T16:17:28.885+0000] {subprocess.py:93} INFO - 26/01/23 16:17:28 INFO Executor: Finished task 9.0 in stage 6.0 (TID 15). 5346 bytes result sent to driver
+[2026-01-23T16:17:28.886+0000] {subprocess.py:93} INFO - 26/01/23 16:17:28 INFO Executor: Finished task 7.0 in stage 6.0 (TID 13). 5346 bytes result sent to driver
+[2026-01-23T16:17:28.886+0000] {subprocess.py:93} INFO - 26/01/23 16:17:28 INFO TaskSetManager: Starting task 14.0 in stage 6.0 (TID 20) (870244d36fa2, executor driver, partition 14, PROCESS_LOCAL, 8733 bytes)
+[2026-01-23T16:17:28.886+0000] {subprocess.py:93} INFO - 26/01/23 16:17:28 INFO Executor: Finished task 10.0 in stage 6.0 (TID 16). 5346 bytes result sent to driver
+[2026-01-23T16:17:28.886+0000] {subprocess.py:93} INFO - 26/01/23 16:17:28 INFO Executor: Running task 13.0 in stage 6.0 (TID 19)
+[2026-01-23T16:17:28.886+0000] {subprocess.py:93} INFO - 26/01/23 16:17:28 INFO TaskSetManager: Finished task 42.0 in stage 6.0 (TID 6) in 1318 ms on 870244d36fa2 (executor driver) (1/50)
+[2026-01-23T16:17:28.887+0000] {subprocess.py:93} INFO - 26/01/23 16:17:28 INFO Executor: Running task 14.0 in stage 6.0 (TID 20)
+[2026-01-23T16:17:28.889+0000] {subprocess.py:93} INFO - 26/01/23 16:17:28 INFO TaskSetManager: Starting task 15.0 in stage 6.0 (TID 21) (870244d36fa2, executor driver, partition 15, PROCESS_LOCAL, 8733 bytes)
+[2026-01-23T16:17:28.890+0000] {subprocess.py:93} INFO - 26/01/23 16:17:28 INFO Executor: Running task 15.0 in stage 6.0 (TID 21)
+[2026-01-23T16:17:28.890+0000] {subprocess.py:93} INFO - 26/01/23 16:17:28 INFO TaskSetManager: Starting task 16.0 in stage 6.0 (TID 22) (870244d36fa2, executor driver, partition 16, PROCESS_LOCAL, 8733 bytes)
+[2026-01-23T16:17:28.891+0000] {subprocess.py:93} INFO - 26/01/23 16:17:28 INFO Executor: Running task 16.0 in stage 6.0 (TID 22)
+[2026-01-23T16:17:28.892+0000] {subprocess.py:93} INFO - 26/01/23 16:17:28 INFO TaskSetManager: Starting task 17.0 in stage 6.0 (TID 23) (870244d36fa2, executor driver, partition 17, PROCESS_LOCAL, 8733 bytes)
+[2026-01-23T16:17:28.899+0000] {subprocess.py:93} INFO - 26/01/23 16:17:28 INFO TaskSetManager: Starting task 18.0 in stage 6.0 (TID 24) (870244d36fa2, executor driver, partition 18, PROCESS_LOCAL, 8733 bytes)
+[2026-01-23T16:17:28.899+0000] {subprocess.py:93} INFO - 26/01/23 16:17:28 INFO Executor: Running task 17.0 in stage 6.0 (TID 23)
+[2026-01-23T16:17:28.899+0000] {subprocess.py:93} INFO - 26/01/23 16:17:28 INFO Executor: Running task 18.0 in stage 6.0 (TID 24)
+[2026-01-23T16:17:28.900+0000] {subprocess.py:93} INFO - 26/01/23 16:17:28 INFO TaskSetManager: Starting task 19.0 in stage 6.0 (TID 25) (870244d36fa2, executor driver, partition 19, PROCESS_LOCAL, 8733 bytes)
+[2026-01-23T16:17:28.900+0000] {subprocess.py:93} INFO - 26/01/23 16:17:28 INFO TaskSetManager: Starting task 20.0 in stage 6.0 (TID 26) (870244d36fa2, executor driver, partition 20, PROCESS_LOCAL, 8733 bytes)
+[2026-01-23T16:17:28.900+0000] {subprocess.py:93} INFO - 26/01/23 16:17:28 INFO Executor: Running task 19.0 in stage 6.0 (TID 25)
+[2026-01-23T16:17:28.905+0000] {subprocess.py:93} INFO - 26/01/23 16:17:28 INFO Executor: Running task 20.0 in stage 6.0 (TID 26)
+[2026-01-23T16:17:28.906+0000] {subprocess.py:93} INFO - 26/01/23 16:17:28 INFO TaskSetManager: Starting task 21.0 in stage 6.0 (TID 27) (870244d36fa2, executor driver, partition 21, PROCESS_LOCAL, 8733 bytes)
+[2026-01-23T16:17:28.906+0000] {subprocess.py:93} INFO - 26/01/23 16:17:28 INFO TaskSetManager: Finished task 1.0 in stage 6.0 (TID 8) in 1334 ms on 870244d36fa2 (executor driver) (2/50)
+[2026-01-23T16:17:28.906+0000] {subprocess.py:93} INFO - 26/01/23 16:17:28 INFO Executor: Running task 21.0 in stage 6.0 (TID 27)
+[2026-01-23T16:17:28.914+0000] {subprocess.py:93} INFO - 26/01/23 16:17:28 INFO TaskSetManager: Finished task 6.0 in stage 6.0 (TID 5) in 1345 ms on 870244d36fa2 (executor driver) (3/50)
+[2026-01-23T16:17:28.919+0000] {subprocess.py:93} INFO - 26/01/23 16:17:28 INFO TaskSetManager: Finished task 4.0 in stage 6.0 (TID 11) in 1342 ms on 870244d36fa2 (executor driver) (4/50)
+[2026-01-23T16:17:28.920+0000] {subprocess.py:93} INFO - 26/01/23 16:17:28 INFO TaskSetManager: Finished task 2.0 in stage 6.0 (TID 9) in 1350 ms on 870244d36fa2 (executor driver) (5/50)
+[2026-01-23T16:17:28.924+0000] {subprocess.py:93} INFO - 26/01/23 16:17:28 INFO TaskSetManager: Finished task 5.0 in stage 6.0 (TID 12) in 1350 ms on 870244d36fa2 (executor driver) (6/50)
+[2026-01-23T16:17:28.927+0000] {subprocess.py:93} INFO - 26/01/23 16:17:28 INFO TaskSetManager: Finished task 8.0 in stage 6.0 (TID 14) in 1354 ms on 870244d36fa2 (executor driver) (7/50)
+[2026-01-23T16:17:28.934+0000] {subprocess.py:93} INFO - 26/01/23 16:17:28 INFO TaskSetManager: Finished task 10.0 in stage 6.0 (TID 16) in 1355 ms on 870244d36fa2 (executor driver) (8/50)
+[2026-01-23T16:17:28.935+0000] {subprocess.py:93} INFO - 26/01/23 16:17:28 INFO TaskSetManager: Finished task 0.0 in stage 6.0 (TID 7) in 1365 ms on 870244d36fa2 (executor driver) (9/50)
+[2026-01-23T16:17:28.938+0000] {subprocess.py:93} INFO - 26/01/23 16:17:28 INFO TaskSetManager: Finished task 7.0 in stage 6.0 (TID 13) in 1365 ms on 870244d36fa2 (executor driver) (10/50)
+[2026-01-23T16:17:28.940+0000] {subprocess.py:93} INFO - 26/01/23 16:17:28 INFO TaskSetManager: Starting task 22.0 in stage 6.0 (TID 28) (870244d36fa2, executor driver, partition 22, PROCESS_LOCAL, 8733 bytes)
+[2026-01-23T16:17:28.941+0000] {subprocess.py:93} INFO - 26/01/23 16:17:28 INFO TaskSetManager: Finished task 3.0 in stage 6.0 (TID 10) in 1370 ms on 870244d36fa2 (executor driver) (11/50)
+[2026-01-23T16:17:28.942+0000] {subprocess.py:93} INFO - 26/01/23 16:17:28 INFO Executor: Running task 22.0 in stage 6.0 (TID 28)
+[2026-01-23T16:17:28.946+0000] {subprocess.py:93} INFO - 26/01/23 16:17:28 INFO TaskSetManager: Finished task 9.0 in stage 6.0 (TID 15) in 1372 ms on 870244d36fa2 (executor driver) (12/50)
+[2026-01-23T16:17:28.978+0000] {subprocess.py:93} INFO - 26/01/23 16:17:28 INFO ShuffleBlockFetcherIterator: Getting 0 (0.0 B) non-empty blocks including 0 (0.0 B) local and 0 (0.0 B) host-local and 0 (0.0 B) push-merged-local and 0 (0.0 B) remote blocks
+[2026-01-23T16:17:28.978+0000] {subprocess.py:93} INFO - 26/01/23 16:17:28 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 1 ms
+[2026-01-23T16:17:28.986+0000] {subprocess.py:93} INFO - 26/01/23 16:17:28 INFO ShuffleBlockFetcherIterator: Getting 0 (0.0 B) non-empty blocks including 0 (0.0 B) local and 0 (0.0 B) host-local and 0 (0.0 B) push-merged-local and 0 (0.0 B) remote blocks
+[2026-01-23T16:17:28.987+0000] {subprocess.py:93} INFO - 26/01/23 16:17:28 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 1 ms
+[2026-01-23T16:17:28.991+0000] {subprocess.py:93} INFO - 26/01/23 16:17:28 INFO ShuffleBlockFetcherIterator: Getting 0 (0.0 B) non-empty blocks including 0 (0.0 B) local and 0 (0.0 B) host-local and 0 (0.0 B) push-merged-local and 0 (0.0 B) remote blocks
+[2026-01-23T16:17:28.992+0000] {subprocess.py:93} INFO - 26/01/23 16:17:28 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 1 ms
+[2026-01-23T16:17:28.993+0000] {subprocess.py:93} INFO - 26/01/23 16:17:28 INFO ShuffleBlockFetcherIterator: Getting 0 (0.0 B) non-empty blocks including 0 (0.0 B) local and 0 (0.0 B) host-local and 0 (0.0 B) push-merged-local and 0 (0.0 B) remote blocks
+[2026-01-23T16:17:28.994+0000] {subprocess.py:93} INFO - 26/01/23 16:17:28 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 1 ms
+[2026-01-23T16:17:29.001+0000] {subprocess.py:93} INFO - 26/01/23 16:17:29 INFO ShuffleBlockFetcherIterator: Getting 0 (0.0 B) non-empty blocks including 0 (0.0 B) local and 0 (0.0 B) host-local and 0 (0.0 B) push-merged-local and 0 (0.0 B) remote blocks
+[2026-01-23T16:17:29.001+0000] {subprocess.py:93} INFO - 26/01/23 16:17:29 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 1 ms
+[2026-01-23T16:17:29.006+0000] {subprocess.py:93} INFO - 26/01/23 16:17:29 INFO ShuffleBlockFetcherIterator: Getting 0 (0.0 B) non-empty blocks including 0 (0.0 B) local and 0 (0.0 B) host-local and 0 (0.0 B) push-merged-local and 0 (0.0 B) remote blocks
+[2026-01-23T16:17:29.007+0000] {subprocess.py:93} INFO - 26/01/23 16:17:29 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 2 ms
+[2026-01-23T16:17:29.021+0000] {subprocess.py:93} INFO - 26/01/23 16:17:29 INFO ShuffleBlockFetcherIterator: Getting 0 (0.0 B) non-empty blocks including 0 (0.0 B) local and 0 (0.0 B) host-local and 0 (0.0 B) push-merged-local and 0 (0.0 B) remote blocks
+[2026-01-23T16:17:29.021+0000] {subprocess.py:93} INFO - 26/01/23 16:17:29 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 9 ms
+[2026-01-23T16:17:29.023+0000] {subprocess.py:93} INFO - 26/01/23 16:17:29 INFO ShuffleBlockFetcherIterator: Getting 0 (0.0 B) non-empty blocks including 0 (0.0 B) local and 0 (0.0 B) host-local and 0 (0.0 B) push-merged-local and 0 (0.0 B) remote blocks
+[2026-01-23T16:17:29.024+0000] {subprocess.py:93} INFO - 26/01/23 16:17:29 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+[2026-01-23T16:17:29.025+0000] {subprocess.py:93} INFO - 26/01/23 16:17:29 INFO ShuffleBlockFetcherIterator: Getting 0 (0.0 B) non-empty blocks including 0 (0.0 B) local and 0 (0.0 B) host-local and 0 (0.0 B) push-merged-local and 0 (0.0 B) remote blocks
+[2026-01-23T16:17:29.027+0000] {subprocess.py:93} INFO - 26/01/23 16:17:29 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 13 ms
+[2026-01-23T16:17:29.027+0000] {subprocess.py:93} INFO - 26/01/23 16:17:29 INFO ShuffleBlockFetcherIterator: Getting 0 (0.0 B) non-empty blocks including 0 (0.0 B) local and 0 (0.0 B) host-local and 0 (0.0 B) push-merged-local and 0 (0.0 B) remote blocks
+[2026-01-23T16:17:29.031+0000] {subprocess.py:93} INFO - 26/01/23 16:17:29 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 4 ms
+[2026-01-23T16:17:29.039+0000] {subprocess.py:93} INFO - 26/01/23 16:17:29 INFO ShuffleBlockFetcherIterator: Getting 0 (0.0 B) non-empty blocks including 0 (0.0 B) local and 0 (0.0 B) host-local and 0 (0.0 B) push-merged-local and 0 (0.0 B) remote blocks
+[2026-01-23T16:17:29.041+0000] {subprocess.py:93} INFO - 26/01/23 16:17:29 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+[2026-01-23T16:17:29.044+0000] {subprocess.py:93} INFO - 26/01/23 16:17:29 INFO ShuffleBlockFetcherIterator: Getting 0 (0.0 B) non-empty blocks including 0 (0.0 B) local and 0 (0.0 B) host-local and 0 (0.0 B) push-merged-local and 0 (0.0 B) remote blocks
+[2026-01-23T16:17:29.046+0000] {subprocess.py:93} INFO - 26/01/23 16:17:29 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+[2026-01-23T16:17:29.136+0000] {subprocess.py:93} INFO - 26/01/23 16:17:29 INFO MemoryStore: Block rdd_27_18 stored as values in memory (estimated size 46.0 B, free 432.3 MiB)
+[2026-01-23T16:17:29.136+0000] {subprocess.py:93} INFO - 26/01/23 16:17:29 INFO MemoryStore: Block rdd_27_11 stored as values in memory (estimated size 46.0 B, free 432.3 MiB)
+[2026-01-23T16:17:29.139+0000] {subprocess.py:93} INFO - 26/01/23 16:17:29 INFO BlockManagerInfo: Added rdd_27_18 in memory on 870244d36fa2:43719 (size: 46.0 B, free: 434.2 MiB)
+[2026-01-23T16:17:29.140+0000] {subprocess.py:93} INFO - 26/01/23 16:17:29 INFO BlockManagerInfo: Added rdd_27_11 in memory on 870244d36fa2:43719 (size: 46.0 B, free: 434.2 MiB)
+[2026-01-23T16:17:29.143+0000] {subprocess.py:93} INFO - 26/01/23 16:17:29 INFO MemoryStore: Block rdd_27_14 stored as values in memory (estimated size 46.0 B, free 432.4 MiB)
+[2026-01-23T16:17:29.147+0000] {subprocess.py:93} INFO - 26/01/23 16:17:29 INFO MemoryStore: Block rdd_27_16 stored as values in memory (estimated size 46.0 B, free 432.5 MiB)
+[2026-01-23T16:17:29.148+0000] {subprocess.py:93} INFO - 26/01/23 16:17:29 INFO BlockManagerInfo: Added rdd_27_14 in memory on 870244d36fa2:43719 (size: 46.0 B, free: 434.2 MiB)
+[2026-01-23T16:17:29.149+0000] {subprocess.py:93} INFO - 26/01/23 16:17:29 INFO MemoryStore: Block rdd_27_12 stored as values in memory (estimated size 46.0 B, free 432.5 MiB)
+[2026-01-23T16:17:29.149+0000] {subprocess.py:93} INFO - 26/01/23 16:17:29 INFO BlockManagerInfo: Added rdd_27_16 in memory on 870244d36fa2:43719 (size: 46.0 B, free: 434.2 MiB)
+[2026-01-23T16:17:29.152+0000] {subprocess.py:93} INFO - 26/01/23 16:17:29 INFO MemoryStore: Block rdd_27_21 stored as values in memory (estimated size 46.0 B, free 432.6 MiB)
+[2026-01-23T16:17:29.154+0000] {subprocess.py:93} INFO - 26/01/23 16:17:29 INFO BlockManagerInfo: Added rdd_27_12 in memory on 870244d36fa2:43719 (size: 46.0 B, free: 434.2 MiB)
+[2026-01-23T16:17:29.155+0000] {subprocess.py:93} INFO - 26/01/23 16:17:29 INFO BlockManagerInfo: Added rdd_27_21 in memory on 870244d36fa2:43719 (size: 46.0 B, free: 434.2 MiB)
+[2026-01-23T16:17:29.190+0000] {subprocess.py:93} INFO - 26/01/23 16:17:29 INFO MemoryStore: Block rdd_27_13 stored as values in memory (estimated size 46.0 B, free 432.7 MiB)
+[2026-01-23T16:17:29.201+0000] {subprocess.py:93} INFO - 26/01/23 16:17:29 INFO BlockManagerInfo: Added rdd_27_13 in memory on 870244d36fa2:43719 (size: 46.0 B, free: 434.2 MiB)
+[2026-01-23T16:17:29.205+0000] {subprocess.py:93} INFO - 26/01/23 16:17:29 INFO MemoryStore: Block rdd_27_17 stored as values in memory (estimated size 46.0 B, free 432.7 MiB)
+[2026-01-23T16:17:29.206+0000] {subprocess.py:93} INFO - 26/01/23 16:17:29 INFO BlockManagerInfo: Added rdd_27_17 in memory on 870244d36fa2:43719 (size: 46.0 B, free: 434.2 MiB)
+[2026-01-23T16:17:29.209+0000] {subprocess.py:93} INFO - 26/01/23 16:17:29 INFO MemoryStore: Block rdd_27_15 stored as values in memory (estimated size 46.0 B, free 432.8 MiB)
+[2026-01-23T16:17:29.210+0000] {subprocess.py:93} INFO - 26/01/23 16:17:29 INFO BlockManagerInfo: Added rdd_27_15 in memory on 870244d36fa2:43719 (size: 46.0 B, free: 434.2 MiB)
+[2026-01-23T16:17:29.219+0000] {subprocess.py:93} INFO - 26/01/23 16:17:29 INFO Executor: Finished task 16.0 in stage 6.0 (TID 22). 5389 bytes result sent to driver
+[2026-01-23T16:17:29.220+0000] {subprocess.py:93} INFO - 26/01/23 16:17:29 INFO Executor: Finished task 18.0 in stage 6.0 (TID 24). 5346 bytes result sent to driver
+[2026-01-23T16:17:29.221+0000] {subprocess.py:93} INFO - 26/01/23 16:17:29 INFO MemoryStore: Block rdd_27_20 stored as values in memory (estimated size 46.0 B, free 432.9 MiB)
+[2026-01-23T16:17:29.224+0000] {subprocess.py:93} INFO - 26/01/23 16:17:29 INFO TaskSetManager: Starting task 23.0 in stage 6.0 (TID 29) (870244d36fa2, executor driver, partition 23, PROCESS_LOCAL, 8733 bytes)
+[2026-01-23T16:17:29.225+0000] {subprocess.py:93} INFO - 26/01/23 16:17:29 INFO Executor: Finished task 21.0 in stage 6.0 (TID 27). 5346 bytes result sent to driver
+[2026-01-23T16:17:29.227+0000] {subprocess.py:93} INFO - 26/01/23 16:17:29 INFO MemoryStore: Block rdd_27_22 stored as values in memory (estimated size 46.0 B, free 432.9 MiB)
+[2026-01-23T16:17:29.228+0000] {subprocess.py:93} INFO - 26/01/23 16:17:29 INFO TaskSetManager: Starting task 24.0 in stage 6.0 (TID 30) (870244d36fa2, executor driver, partition 24, PROCESS_LOCAL, 8733 bytes)
+[2026-01-23T16:17:29.229+0000] {subprocess.py:93} INFO - 26/01/23 16:17:29 INFO Executor: Running task 24.0 in stage 6.0 (TID 30)
+[2026-01-23T16:17:29.229+0000] {subprocess.py:93} INFO - 26/01/23 16:17:29 INFO BlockManagerInfo: Added rdd_27_20 in memory on 870244d36fa2:43719 (size: 46.0 B, free: 434.2 MiB)
+[2026-01-23T16:17:29.230+0000] {subprocess.py:93} INFO - 26/01/23 16:17:29 INFO TaskSetManager: Starting task 25.0 in stage 6.0 (TID 31) (870244d36fa2, executor driver, partition 25, PROCESS_LOCAL, 8733 bytes)
+[2026-01-23T16:17:29.233+0000] {subprocess.py:93} INFO - 26/01/23 16:17:29 INFO Executor: Running task 23.0 in stage 6.0 (TID 29)
+[2026-01-23T16:17:29.237+0000] {subprocess.py:93} INFO - 26/01/23 16:17:29 INFO TaskSetManager: Finished task 16.0 in stage 6.0 (TID 22) in 340 ms on 870244d36fa2 (executor driver) (13/50)
+[2026-01-23T16:17:29.238+0000] {subprocess.py:93} INFO - 26/01/23 16:17:29 INFO TaskSetManager: Finished task 18.0 in stage 6.0 (TID 24) in 339 ms on 870244d36fa2 (executor driver) (14/50)
+[2026-01-23T16:17:29.238+0000] {subprocess.py:93} INFO - 26/01/23 16:17:29 INFO Executor: Finished task 11.0 in stage 6.0 (TID 17). 5346 bytes result sent to driver
+[2026-01-23T16:17:29.238+0000] {subprocess.py:93} INFO - 26/01/23 16:17:29 INFO TaskSetManager: Finished task 21.0 in stage 6.0 (TID 27) in 331 ms on 870244d36fa2 (executor driver) (15/50)
+[2026-01-23T16:17:29.238+0000] {subprocess.py:93} INFO - 26/01/23 16:17:29 INFO Executor: Finished task 14.0 in stage 6.0 (TID 20). 5346 bytes result sent to driver
+[2026-01-23T16:17:29.238+0000] {subprocess.py:93} INFO - 26/01/23 16:17:29 INFO Executor: Running task 25.0 in stage 6.0 (TID 31)
+[2026-01-23T16:17:29.238+0000] {subprocess.py:93} INFO - 26/01/23 16:17:29 INFO BlockManagerInfo: Added rdd_27_22 in memory on 870244d36fa2:43719 (size: 46.0 B, free: 434.2 MiB)
+[2026-01-23T16:17:29.240+0000] {subprocess.py:93} INFO - 26/01/23 16:17:29 INFO TaskSetManager: Starting task 26.0 in stage 6.0 (TID 32) (870244d36fa2, executor driver, partition 26, PROCESS_LOCAL, 8733 bytes)
+[2026-01-23T16:17:29.246+0000] {subprocess.py:93} INFO - 26/01/23 16:17:29 INFO Executor: Running task 26.0 in stage 6.0 (TID 32)
+[2026-01-23T16:17:29.246+0000] {subprocess.py:93} INFO - 26/01/23 16:17:29 INFO MemoryStore: Block rdd_27_19 stored as values in memory (estimated size 46.0 B, free 433.0 MiB)
+[2026-01-23T16:17:29.246+0000] {subprocess.py:93} INFO - 26/01/23 16:17:29 INFO TaskSetManager: Starting task 27.0 in stage 6.0 (TID 33) (870244d36fa2, executor driver, partition 27, PROCESS_LOCAL, 8733 bytes)
+[2026-01-23T16:17:29.247+0000] {subprocess.py:93} INFO - 26/01/23 16:17:29 INFO BlockManagerInfo: Added rdd_27_19 in memory on 870244d36fa2:43719 (size: 46.0 B, free: 434.2 MiB)
+[2026-01-23T16:17:29.247+0000] {subprocess.py:93} INFO - 26/01/23 16:17:29 INFO TaskSetManager: Finished task 11.0 in stage 6.0 (TID 17) in 367 ms on 870244d36fa2 (executor driver) (16/50)
+[2026-01-23T16:17:29.247+0000] {subprocess.py:93} INFO - 26/01/23 16:17:29 INFO TaskSetManager: Finished task 14.0 in stage 6.0 (TID 20) in 359 ms on 870244d36fa2 (executor driver) (17/50)
+[2026-01-23T16:17:29.248+0000] {subprocess.py:93} INFO - 26/01/23 16:17:29 INFO Executor: Running task 27.0 in stage 6.0 (TID 33)
+[2026-01-23T16:17:29.258+0000] {subprocess.py:93} INFO - 26/01/23 16:17:29 INFO Executor: Finished task 12.0 in stage 6.0 (TID 18). 5346 bytes result sent to driver
+[2026-01-23T16:17:29.259+0000] {subprocess.py:93} INFO - 26/01/23 16:17:29 INFO TaskSetManager: Starting task 28.0 in stage 6.0 (TID 34) (870244d36fa2, executor driver, partition 28, PROCESS_LOCAL, 8733 bytes)
+[2026-01-23T16:17:29.261+0000] {subprocess.py:93} INFO - 26/01/23 16:17:29 INFO Executor: Running task 28.0 in stage 6.0 (TID 34)
+[2026-01-23T16:17:29.262+0000] {subprocess.py:93} INFO - 26/01/23 16:17:29 INFO TaskSetManager: Finished task 12.0 in stage 6.0 (TID 18) in 382 ms on 870244d36fa2 (executor driver) (18/50)
+[2026-01-23T16:17:29.278+0000] {subprocess.py:93} INFO - 26/01/23 16:17:29 INFO Executor: Finished task 13.0 in stage 6.0 (TID 19). 5346 bytes result sent to driver
+[2026-01-23T16:17:29.286+0000] {subprocess.py:93} INFO - 26/01/23 16:17:29 INFO TaskSetManager: Starting task 29.0 in stage 6.0 (TID 35) (870244d36fa2, executor driver, partition 29, PROCESS_LOCAL, 8733 bytes)
+[2026-01-23T16:17:29.286+0000] {subprocess.py:93} INFO - 26/01/23 16:17:29 INFO TaskSetManager: Finished task 13.0 in stage 6.0 (TID 19) in 403 ms on 870244d36fa2 (executor driver) (19/50)
+[2026-01-23T16:17:29.287+0000] {subprocess.py:93} INFO - 26/01/23 16:17:29 INFO Executor: Finished task 15.0 in stage 6.0 (TID 21). 5346 bytes result sent to driver
+[2026-01-23T16:17:29.287+0000] {subprocess.py:93} INFO - 26/01/23 16:17:29 INFO Executor: Running task 29.0 in stage 6.0 (TID 35)
+[2026-01-23T16:17:29.299+0000] {subprocess.py:93} INFO - 26/01/23 16:17:29 INFO TaskSetManager: Starting task 30.0 in stage 6.0 (TID 36) (870244d36fa2, executor driver, partition 30, PROCESS_LOCAL, 8733 bytes)
+[2026-01-23T16:17:29.299+0000] {subprocess.py:93} INFO - 26/01/23 16:17:29 INFO TaskSetManager: Finished task 15.0 in stage 6.0 (TID 21) in 410 ms on 870244d36fa2 (executor driver) (20/50)
+[2026-01-23T16:17:29.300+0000] {subprocess.py:93} INFO - 26/01/23 16:17:29 INFO Executor: Running task 30.0 in stage 6.0 (TID 36)
+[2026-01-23T16:17:29.305+0000] {subprocess.py:93} INFO - 26/01/23 16:17:29 INFO Executor: Finished task 17.0 in stage 6.0 (TID 23). 5346 bytes result sent to driver
+[2026-01-23T16:17:29.307+0000] {subprocess.py:93} INFO - 26/01/23 16:17:29 INFO Executor: Finished task 22.0 in stage 6.0 (TID 28). 5346 bytes result sent to driver
+[2026-01-23T16:17:29.308+0000] {subprocess.py:93} INFO - 26/01/23 16:17:29 INFO Executor: Finished task 20.0 in stage 6.0 (TID 26). 5346 bytes result sent to driver
+[2026-01-23T16:17:29.323+0000] {subprocess.py:93} INFO - 26/01/23 16:17:29 INFO ShuffleBlockFetcherIterator: Getting 0 (0.0 B) non-empty blocks including 0 (0.0 B) local and 0 (0.0 B) host-local and 0 (0.0 B) push-merged-local and 0 (0.0 B) remote blocks
+[2026-01-23T16:17:29.324+0000] {subprocess.py:93} INFO - 26/01/23 16:17:29 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 1 ms
+[2026-01-23T16:17:29.325+0000] {subprocess.py:93} INFO - 26/01/23 16:17:29 INFO TaskSetManager: Starting task 31.0 in stage 6.0 (TID 37) (870244d36fa2, executor driver, partition 31, PROCESS_LOCAL, 8733 bytes)
+[2026-01-23T16:17:29.326+0000] {subprocess.py:93} INFO - 26/01/23 16:17:29 INFO Executor: Running task 31.0 in stage 6.0 (TID 37)
+[2026-01-23T16:17:29.327+0000] {subprocess.py:93} INFO - 26/01/23 16:17:29 INFO ShuffleBlockFetcherIterator: Getting 0 (0.0 B) non-empty blocks including 0 (0.0 B) local and 0 (0.0 B) host-local and 0 (0.0 B) push-merged-local and 0 (0.0 B) remote blocks
+[2026-01-23T16:17:29.328+0000] {subprocess.py:93} INFO - 26/01/23 16:17:29 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+[2026-01-23T16:17:29.329+0000] {subprocess.py:93} INFO - 26/01/23 16:17:29 INFO ShuffleBlockFetcherIterator: Getting 0 (0.0 B) non-empty blocks including 0 (0.0 B) local and 0 (0.0 B) host-local and 0 (0.0 B) push-merged-local and 0 (0.0 B) remote blocks
+[2026-01-23T16:17:29.329+0000] {subprocess.py:93} INFO - 26/01/23 16:17:29 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+[2026-01-23T16:17:29.330+0000] {subprocess.py:93} INFO - 26/01/23 16:17:29 INFO TaskSetManager: Finished task 17.0 in stage 6.0 (TID 23) in 435 ms on 870244d36fa2 (executor driver) (21/50)
+[2026-01-23T16:17:29.332+0000] {subprocess.py:93} INFO - 26/01/23 16:17:29 INFO TaskSetManager: Starting task 32.0 in stage 6.0 (TID 38) (870244d36fa2, executor driver, partition 32, PROCESS_LOCAL, 8733 bytes)
+[2026-01-23T16:17:29.333+0000] {subprocess.py:93} INFO - 26/01/23 16:17:29 INFO TaskSetManager: Starting task 33.0 in stage 6.0 (TID 39) (870244d36fa2, executor driver, partition 33, PROCESS_LOCAL, 8733 bytes)
+[2026-01-23T16:17:29.345+0000] {subprocess.py:93} INFO - 26/01/23 16:17:29 INFO Executor: Running task 32.0 in stage 6.0 (TID 38)
+[2026-01-23T16:17:29.346+0000] {subprocess.py:93} INFO - 26/01/23 16:17:29 INFO Executor: Running task 33.0 in stage 6.0 (TID 39)
+[2026-01-23T16:17:29.347+0000] {subprocess.py:93} INFO - 26/01/23 16:17:29 INFO TaskSetManager: Finished task 20.0 in stage 6.0 (TID 26) in 446 ms on 870244d36fa2 (executor driver) (22/50)
+[2026-01-23T16:17:29.347+0000] {subprocess.py:93} INFO - 26/01/23 16:17:29 INFO Executor: Finished task 19.0 in stage 6.0 (TID 25). 5346 bytes result sent to driver
+[2026-01-23T16:17:29.347+0000] {subprocess.py:93} INFO - 26/01/23 16:17:29 INFO TaskSetManager: Finished task 22.0 in stage 6.0 (TID 28) in 407 ms on 870244d36fa2 (executor driver) (23/50)
+[2026-01-23T16:17:29.348+0000] {subprocess.py:93} INFO - 26/01/23 16:17:29 INFO ShuffleBlockFetcherIterator: Getting 0 (0.0 B) non-empty blocks including 0 (0.0 B) local and 0 (0.0 B) host-local and 0 (0.0 B) push-merged-local and 0 (0.0 B) remote blocks
+[2026-01-23T16:17:29.348+0000] {subprocess.py:93} INFO - 26/01/23 16:17:29 INFO TaskSetManager: Starting task 34.0 in stage 6.0 (TID 40) (870244d36fa2, executor driver, partition 34, PROCESS_LOCAL, 8733 bytes)
+[2026-01-23T16:17:29.350+0000] {subprocess.py:93} INFO - 26/01/23 16:17:29 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 1 ms
+[2026-01-23T16:17:29.350+0000] {subprocess.py:93} INFO - 26/01/23 16:17:29 INFO Executor: Running task 34.0 in stage 6.0 (TID 40)
+[2026-01-23T16:17:29.354+0000] {subprocess.py:93} INFO - 26/01/23 16:17:29 INFO TaskSetManager: Finished task 19.0 in stage 6.0 (TID 25) in 457 ms on 870244d36fa2 (executor driver) (24/50)
+[2026-01-23T16:17:29.360+0000] {subprocess.py:93} INFO - 26/01/23 16:17:29 INFO ShuffleBlockFetcherIterator: Getting 0 (0.0 B) non-empty blocks including 0 (0.0 B) local and 0 (0.0 B) host-local and 0 (0.0 B) push-merged-local and 0 (0.0 B) remote blocks
+[2026-01-23T16:17:29.361+0000] {subprocess.py:93} INFO - 26/01/23 16:17:29 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+[2026-01-23T16:17:29.400+0000] {subprocess.py:93} INFO - 26/01/23 16:17:29 INFO ShuffleBlockFetcherIterator: Getting 0 (0.0 B) non-empty blocks including 0 (0.0 B) local and 0 (0.0 B) host-local and 0 (0.0 B) push-merged-local and 0 (0.0 B) remote blocks
+[2026-01-23T16:17:29.401+0000] {subprocess.py:93} INFO - 26/01/23 16:17:29 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 1 ms
+[2026-01-23T16:17:29.404+0000] {subprocess.py:93} INFO - 26/01/23 16:17:29 INFO ShuffleBlockFetcherIterator: Getting 0 (0.0 B) non-empty blocks including 0 (0.0 B) local and 0 (0.0 B) host-local and 0 (0.0 B) push-merged-local and 0 (0.0 B) remote blocks
+[2026-01-23T16:17:29.405+0000] {subprocess.py:93} INFO - 26/01/23 16:17:29 INFO ShuffleBlockFetcherIterator: Getting 0 (0.0 B) non-empty blocks including 0 (0.0 B) local and 0 (0.0 B) host-local and 0 (0.0 B) push-merged-local and 0 (0.0 B) remote blocks
+[2026-01-23T16:17:29.406+0000] {subprocess.py:93} INFO - 26/01/23 16:17:29 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+[2026-01-23T16:17:29.412+0000] {subprocess.py:93} INFO - 26/01/23 16:17:29 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 1 ms
+[2026-01-23T16:17:29.412+0000] {subprocess.py:93} INFO - 26/01/23 16:17:29 INFO MemoryStore: Block rdd_27_26 stored as values in memory (estimated size 46.0 B, free 432.6 MiB)
+[2026-01-23T16:17:29.424+0000] {subprocess.py:93} INFO - 26/01/23 16:17:29 INFO BlockManagerInfo: Added rdd_27_26 in memory on 870244d36fa2:43719 (size: 46.0 B, free: 434.2 MiB)
+[2026-01-23T16:17:29.433+0000] {subprocess.py:93} INFO - 26/01/23 16:17:29 INFO ShuffleBlockFetcherIterator: Getting 0 (0.0 B) non-empty blocks including 0 (0.0 B) local and 0 (0.0 B) host-local and 0 (0.0 B) push-merged-local and 0 (0.0 B) remote blocks
+[2026-01-23T16:17:29.434+0000] {subprocess.py:93} INFO - 26/01/23 16:17:29 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 2 ms
+[2026-01-23T16:17:29.434+0000] {subprocess.py:93} INFO - 26/01/23 16:17:29 INFO MemoryStore: Block rdd_27_24 stored as values in memory (estimated size 46.0 B, free 432.6 MiB)
+[2026-01-23T16:17:29.435+0000] {subprocess.py:93} INFO - 26/01/23 16:17:29 INFO BlockManagerInfo: Added rdd_27_24 in memory on 870244d36fa2:43719 (size: 46.0 B, free: 434.2 MiB)
+[2026-01-23T16:17:29.435+0000] {subprocess.py:93} INFO - 26/01/23 16:17:29 INFO ShuffleBlockFetcherIterator: Getting 0 (0.0 B) non-empty blocks including 0 (0.0 B) local and 0 (0.0 B) host-local and 0 (0.0 B) push-merged-local and 0 (0.0 B) remote blocks
+[2026-01-23T16:17:29.436+0000] {subprocess.py:93} INFO - 26/01/23 16:17:29 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+[2026-01-23T16:17:29.436+0000] {subprocess.py:93} INFO - 26/01/23 16:17:29 INFO ShuffleBlockFetcherIterator: Getting 0 (0.0 B) non-empty blocks including 0 (0.0 B) local and 0 (0.0 B) host-local and 0 (0.0 B) push-merged-local and 0 (0.0 B) remote blocks
+[2026-01-23T16:17:29.438+0000] {subprocess.py:93} INFO - 26/01/23 16:17:29 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+[2026-01-23T16:17:29.447+0000] {subprocess.py:93} INFO - 26/01/23 16:17:29 INFO MemoryStore: Block rdd_27_25 stored as values in memory (estimated size 46.0 B, free 432.5 MiB)
+[2026-01-23T16:17:29.455+0000] {subprocess.py:93} INFO - 26/01/23 16:17:29 INFO BlockManagerInfo: Added rdd_27_25 in memory on 870244d36fa2:43719 (size: 46.0 B, free: 434.2 MiB)
+[2026-01-23T16:17:29.457+0000] {subprocess.py:93} INFO - 26/01/23 16:17:29 INFO ShuffleBlockFetcherIterator: Getting 0 (0.0 B) non-empty blocks including 0 (0.0 B) local and 0 (0.0 B) host-local and 0 (0.0 B) push-merged-local and 0 (0.0 B) remote blocks
+[2026-01-23T16:17:29.458+0000] {subprocess.py:93} INFO - 26/01/23 16:17:29 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+[2026-01-23T16:17:29.460+0000] {subprocess.py:93} INFO - 26/01/23 16:17:29 INFO MemoryStore: Block rdd_27_28 stored as values in memory (estimated size 46.0 B, free 432.5 MiB)
+[2026-01-23T16:17:29.460+0000] {subprocess.py:93} INFO - 26/01/23 16:17:29 INFO BlockManagerInfo: Added rdd_27_28 in memory on 870244d36fa2:43719 (size: 46.0 B, free: 434.2 MiB)
+[2026-01-23T16:17:29.511+0000] {subprocess.py:93} INFO - 26/01/23 16:17:29 INFO MemoryStore: Block rdd_27_23 stored as values in memory (estimated size 46.0 B, free 432.5 MiB)
+[2026-01-23T16:17:29.514+0000] {subprocess.py:93} INFO - 26/01/23 16:17:29 INFO Executor: Finished task 24.0 in stage 6.0 (TID 30). 5346 bytes result sent to driver
+[2026-01-23T16:17:29.514+0000] {subprocess.py:93} INFO - 26/01/23 16:17:29 INFO BlockManagerInfo: Added rdd_27_23 in memory on 870244d36fa2:43719 (size: 46.0 B, free: 434.2 MiB)
+[2026-01-23T16:17:29.522+0000] {subprocess.py:93} INFO - 26/01/23 16:17:29 INFO TaskSetManager: Starting task 35.0 in stage 6.0 (TID 41) (870244d36fa2, executor driver, partition 35, PROCESS_LOCAL, 8733 bytes)
+[2026-01-23T16:17:29.530+0000] {subprocess.py:93} INFO - 26/01/23 16:17:29 INFO TaskSetManager: Finished task 24.0 in stage 6.0 (TID 30) in 293 ms on 870244d36fa2 (executor driver) (25/50)
+[2026-01-23T16:17:29.531+0000] {subprocess.py:93} INFO - 26/01/23 16:17:29 INFO Executor: Running task 35.0 in stage 6.0 (TID 41)
+[2026-01-23T16:17:29.537+0000] {subprocess.py:93} INFO - 26/01/23 16:17:29 INFO MemoryStore: Block rdd_27_29 stored as values in memory (estimated size 46.0 B, free 432.6 MiB)
+[2026-01-23T16:17:29.538+0000] {subprocess.py:93} INFO - 26/01/23 16:17:29 INFO BlockManagerInfo: Added rdd_27_29 in memory on 870244d36fa2:43719 (size: 46.0 B, free: 434.2 MiB)
+[2026-01-23T16:17:29.539+0000] {subprocess.py:93} INFO - 26/01/23 16:17:29 INFO MemoryStore: Block rdd_27_31 stored as values in memory (estimated size 46.0 B, free 432.7 MiB)
+[2026-01-23T16:17:29.539+0000] {subprocess.py:93} INFO - 26/01/23 16:17:29 INFO BlockManagerInfo: Added rdd_27_31 in memory on 870244d36fa2:43719 (size: 46.0 B, free: 434.2 MiB)
+[2026-01-23T16:17:29.540+0000] {subprocess.py:93} INFO - 26/01/23 16:17:29 INFO MemoryStore: Block rdd_27_32 stored as values in memory (estimated size 46.0 B, free 432.7 MiB)
+[2026-01-23T16:17:29.540+0000] {subprocess.py:93} INFO - 26/01/23 16:17:29 INFO BlockManagerInfo: Added rdd_27_32 in memory on 870244d36fa2:43719 (size: 46.0 B, free: 434.2 MiB)
+[2026-01-23T16:17:29.541+0000] {subprocess.py:93} INFO - 26/01/23 16:17:29 INFO Executor: Finished task 25.0 in stage 6.0 (TID 31). 5346 bytes result sent to driver
+[2026-01-23T16:17:29.542+0000] {subprocess.py:93} INFO - 26/01/23 16:17:29 INFO MemoryStore: Block rdd_27_30 stored as values in memory (estimated size 46.0 B, free 432.8 MiB)
+[2026-01-23T16:17:29.543+0000] {subprocess.py:93} INFO - 26/01/23 16:17:29 INFO MemoryStore: Block rdd_27_33 stored as values in memory (estimated size 46.0 B, free 432.8 MiB)
+[2026-01-23T16:17:29.544+0000] {subprocess.py:93} INFO - 26/01/23 16:17:29 INFO BlockManagerInfo: Added rdd_27_30 in memory on 870244d36fa2:43719 (size: 46.0 B, free: 434.2 MiB)
+[2026-01-23T16:17:29.544+0000] {subprocess.py:93} INFO - 26/01/23 16:17:29 INFO Executor: Finished task 26.0 in stage 6.0 (TID 32). 5346 bytes result sent to driver
+[2026-01-23T16:17:29.545+0000] {subprocess.py:93} INFO - 26/01/23 16:17:29 INFO BlockManagerInfo: Added rdd_27_33 in memory on 870244d36fa2:43719 (size: 46.0 B, free: 434.2 MiB)
+[2026-01-23T16:17:29.546+0000] {subprocess.py:93} INFO - 26/01/23 16:17:29 INFO TaskSetManager: Starting task 36.0 in stage 6.0 (TID 42) (870244d36fa2, executor driver, partition 36, PROCESS_LOCAL, 8733 bytes)
+[2026-01-23T16:17:29.546+0000] {subprocess.py:93} INFO - 26/01/23 16:17:29 INFO TaskSetManager: Finished task 25.0 in stage 6.0 (TID 31) in 316 ms on 870244d36fa2 (executor driver) (26/50)
+[2026-01-23T16:17:29.547+0000] {subprocess.py:93} INFO - 26/01/23 16:17:29 INFO Executor: Running task 36.0 in stage 6.0 (TID 42)
+[2026-01-23T16:17:29.551+0000] {subprocess.py:93} INFO - 26/01/23 16:17:29 INFO TaskSetManager: Finished task 26.0 in stage 6.0 (TID 32) in 309 ms on 870244d36fa2 (executor driver) (27/50)
+[2026-01-23T16:17:29.552+0000] {subprocess.py:93} INFO - 26/01/23 16:17:29 INFO MemoryStore: Block rdd_27_27 stored as values in memory (estimated size 46.0 B, free 432.9 MiB)
+[2026-01-23T16:17:29.552+0000] {subprocess.py:93} INFO - 26/01/23 16:17:29 INFO BlockManagerInfo: Added rdd_27_27 in memory on 870244d36fa2:43719 (size: 46.0 B, free: 434.2 MiB)
+[2026-01-23T16:17:29.552+0000] {subprocess.py:93} INFO - 26/01/23 16:17:29 INFO TaskSetManager: Starting task 37.0 in stage 6.0 (TID 43) (870244d36fa2, executor driver, partition 37, PROCESS_LOCAL, 8733 bytes)
+[2026-01-23T16:17:29.562+0000] {subprocess.py:93} INFO - 26/01/23 16:17:29 INFO Executor: Running task 37.0 in stage 6.0 (TID 43)
+[2026-01-23T16:17:29.573+0000] {subprocess.py:93} INFO - 26/01/23 16:17:29 INFO ShuffleBlockFetcherIterator: Getting 0 (0.0 B) non-empty blocks including 0 (0.0 B) local and 0 (0.0 B) host-local and 0 (0.0 B) push-merged-local and 0 (0.0 B) remote blocks
+[2026-01-23T16:17:29.574+0000] {subprocess.py:93} INFO - 26/01/23 16:17:29 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+[2026-01-23T16:17:29.590+0000] {subprocess.py:93} INFO - 26/01/23 16:17:29 INFO Executor: Finished task 23.0 in stage 6.0 (TID 29). 5389 bytes result sent to driver
+[2026-01-23T16:17:29.591+0000] {subprocess.py:93} INFO - 26/01/23 16:17:29 INFO TaskSetManager: Starting task 38.0 in stage 6.0 (TID 44) (870244d36fa2, executor driver, partition 38, PROCESS_LOCAL, 8733 bytes)
+[2026-01-23T16:17:29.595+0000] {subprocess.py:93} INFO - 26/01/23 16:17:29 INFO Executor: Running task 38.0 in stage 6.0 (TID 44)
+[2026-01-23T16:17:29.597+0000] {subprocess.py:93} INFO - 26/01/23 16:17:29 INFO Executor: Finished task 28.0 in stage 6.0 (TID 34). 5346 bytes result sent to driver
+[2026-01-23T16:17:29.598+0000] {subprocess.py:93} INFO - 26/01/23 16:17:29 INFO TaskSetManager: Starting task 39.0 in stage 6.0 (TID 45) (870244d36fa2, executor driver, partition 39, PROCESS_LOCAL, 8733 bytes)
+[2026-01-23T16:17:29.599+0000] {subprocess.py:93} INFO - 26/01/23 16:17:29 INFO ShuffleBlockFetcherIterator: Getting 0 (0.0 B) non-empty blocks including 0 (0.0 B) local and 0 (0.0 B) host-local and 0 (0.0 B) push-merged-local and 0 (0.0 B) remote blocks
+[2026-01-23T16:17:29.599+0000] {subprocess.py:93} INFO - 26/01/23 16:17:29 INFO MemoryStore: Block rdd_27_34 stored as values in memory (estimated size 46.0 B, free 432.9 MiB)
+[2026-01-23T16:17:29.599+0000] {subprocess.py:93} INFO - 26/01/23 16:17:29 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 1 ms
+[2026-01-23T16:17:29.605+0000] {subprocess.py:93} INFO - 26/01/23 16:17:29 INFO BlockManagerInfo: Added rdd_27_34 in memory on 870244d36fa2:43719 (size: 46.0 B, free: 434.2 MiB)
+[2026-01-23T16:17:29.606+0000] {subprocess.py:93} INFO - 26/01/23 16:17:29 INFO Executor: Running task 39.0 in stage 6.0 (TID 45)
+[2026-01-23T16:17:29.606+0000] {subprocess.py:93} INFO - 26/01/23 16:17:29 INFO TaskSetManager: Finished task 23.0 in stage 6.0 (TID 29) in 380 ms on 870244d36fa2 (executor driver) (28/50)
+[2026-01-23T16:17:29.607+0000] {subprocess.py:93} INFO - 26/01/23 16:17:29 INFO TaskSetManager: Finished task 28.0 in stage 6.0 (TID 34) in 349 ms on 870244d36fa2 (executor driver) (29/50)
+[2026-01-23T16:17:29.614+0000] {subprocess.py:93} INFO - 26/01/23 16:17:29 INFO Executor: Finished task 32.0 in stage 6.0 (TID 38). 5346 bytes result sent to driver
+[2026-01-23T16:17:29.614+0000] {subprocess.py:93} INFO - 26/01/23 16:17:29 INFO ShuffleBlockFetcherIterator: Getting 0 (0.0 B) non-empty blocks including 0 (0.0 B) local and 0 (0.0 B) host-local and 0 (0.0 B) push-merged-local and 0 (0.0 B) remote blocks
+[2026-01-23T16:17:29.615+0000] {subprocess.py:93} INFO - 26/01/23 16:17:29 INFO Executor: Finished task 30.0 in stage 6.0 (TID 36). 5346 bytes result sent to driver
+[2026-01-23T16:17:29.615+0000] {subprocess.py:93} INFO - 26/01/23 16:17:29 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+[2026-01-23T16:17:29.615+0000] {subprocess.py:93} INFO - 26/01/23 16:17:29 INFO TaskSetManager: Starting task 40.0 in stage 6.0 (TID 46) (870244d36fa2, executor driver, partition 40, PROCESS_LOCAL, 8733 bytes)
+[2026-01-23T16:17:29.616+0000] {subprocess.py:93} INFO - 26/01/23 16:17:29 INFO Executor: Finished task 31.0 in stage 6.0 (TID 37). 5346 bytes result sent to driver
+[2026-01-23T16:17:29.617+0000] {subprocess.py:93} INFO - 26/01/23 16:17:29 INFO Executor: Finished task 27.0 in stage 6.0 (TID 33). 5346 bytes result sent to driver
+[2026-01-23T16:17:29.617+0000] {subprocess.py:93} INFO - 26/01/23 16:17:29 INFO TaskSetManager: Starting task 41.0 in stage 6.0 (TID 47) (870244d36fa2, executor driver, partition 41, PROCESS_LOCAL, 8733 bytes)
+[2026-01-23T16:17:29.617+0000] {subprocess.py:93} INFO - 26/01/23 16:17:29 INFO Executor: Running task 40.0 in stage 6.0 (TID 46)
+[2026-01-23T16:17:29.618+0000] {subprocess.py:93} INFO - 26/01/23 16:17:29 INFO Executor: Running task 41.0 in stage 6.0 (TID 47)
+[2026-01-23T16:17:29.622+0000] {subprocess.py:93} INFO - 26/01/23 16:17:29 INFO TaskSetManager: Starting task 43.0 in stage 6.0 (TID 48) (870244d36fa2, executor driver, partition 43, PROCESS_LOCAL, 8733 bytes)
+[2026-01-23T16:17:29.622+0000] {subprocess.py:93} INFO - 26/01/23 16:17:29 INFO Executor: Finished task 29.0 in stage 6.0 (TID 35). 5346 bytes result sent to driver
+[2026-01-23T16:17:29.622+0000] {subprocess.py:93} INFO - 26/01/23 16:17:29 INFO TaskSetManager: Finished task 31.0 in stage 6.0 (TID 37) in 302 ms on 870244d36fa2 (executor driver) (30/50)
+[2026-01-23T16:17:29.625+0000] {subprocess.py:93} INFO - 26/01/23 16:17:29 INFO TaskSetManager: Finished task 30.0 in stage 6.0 (TID 36) in 330 ms on 870244d36fa2 (executor driver) (31/50)
+[2026-01-23T16:17:29.625+0000] {subprocess.py:93} INFO - 26/01/23 16:17:29 INFO TaskSetManager: Finished task 32.0 in stage 6.0 (TID 38) in 294 ms on 870244d36fa2 (executor driver) (32/50)
+[2026-01-23T16:17:29.626+0000] {subprocess.py:93} INFO - 26/01/23 16:17:29 INFO Executor: Finished task 33.0 in stage 6.0 (TID 39). 5346 bytes result sent to driver
+[2026-01-23T16:17:29.638+0000] {subprocess.py:93} INFO - 26/01/23 16:17:29 INFO Executor: Running task 43.0 in stage 6.0 (TID 48)
+[2026-01-23T16:17:29.639+0000] {subprocess.py:93} INFO - 26/01/23 16:17:29 INFO TaskSetManager: Starting task 44.0 in stage 6.0 (TID 49) (870244d36fa2, executor driver, partition 44, PROCESS_LOCAL, 8733 bytes)
+[2026-01-23T16:17:29.641+0000] {subprocess.py:93} INFO - 26/01/23 16:17:29 INFO TaskSetManager: Starting task 45.0 in stage 6.0 (TID 50) (870244d36fa2, executor driver, partition 45, PROCESS_LOCAL, 8733 bytes)
+[2026-01-23T16:17:29.641+0000] {subprocess.py:93} INFO - 26/01/23 16:17:29 INFO TaskSetManager: Starting task 46.0 in stage 6.0 (TID 51) (870244d36fa2, executor driver, partition 46, PROCESS_LOCAL, 8733 bytes)
+[2026-01-23T16:17:29.644+0000] {subprocess.py:93} INFO - 26/01/23 16:17:29 INFO TaskSetManager: Finished task 27.0 in stage 6.0 (TID 33) in 399 ms on 870244d36fa2 (executor driver) (33/50)
+[2026-01-23T16:17:29.649+0000] {subprocess.py:93} INFO - 26/01/23 16:17:29 INFO Executor: Running task 45.0 in stage 6.0 (TID 50)
+[2026-01-23T16:17:29.649+0000] {subprocess.py:93} INFO - 26/01/23 16:17:29 INFO Executor: Running task 44.0 in stage 6.0 (TID 49)
+[2026-01-23T16:17:29.650+0000] {subprocess.py:93} INFO - 26/01/23 16:17:29 INFO Executor: Running task 46.0 in stage 6.0 (TID 51)
+[2026-01-23T16:17:29.650+0000] {subprocess.py:93} INFO - 26/01/23 16:17:29 INFO TaskSetManager: Finished task 33.0 in stage 6.0 (TID 39) in 317 ms on 870244d36fa2 (executor driver) (34/50)
+[2026-01-23T16:17:29.653+0000] {subprocess.py:93} INFO - 26/01/23 16:17:29 INFO ShuffleBlockFetcherIterator: Getting 0 (0.0 B) non-empty blocks including 0 (0.0 B) local and 0 (0.0 B) host-local and 0 (0.0 B) push-merged-local and 0 (0.0 B) remote blocks
+[2026-01-23T16:17:29.654+0000] {subprocess.py:93} INFO - 26/01/23 16:17:29 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+[2026-01-23T16:17:29.664+0000] {subprocess.py:93} INFO - 26/01/23 16:17:29 INFO TaskSetManager: Finished task 29.0 in stage 6.0 (TID 35) in 382 ms on 870244d36fa2 (executor driver) (35/50)
+[2026-01-23T16:17:29.680+0000] {subprocess.py:93} INFO - 26/01/23 16:17:29 INFO Executor: Finished task 34.0 in stage 6.0 (TID 40). 5346 bytes result sent to driver
+[2026-01-23T16:17:29.686+0000] {subprocess.py:93} INFO - 26/01/23 16:17:29 INFO TaskSetManager: Starting task 47.0 in stage 6.0 (TID 52) (870244d36fa2, executor driver, partition 47, PROCESS_LOCAL, 8733 bytes)
+[2026-01-23T16:17:29.692+0000] {subprocess.py:93} INFO - 26/01/23 16:17:29 INFO TaskSetManager: Finished task 34.0 in stage 6.0 (TID 40) in 340 ms on 870244d36fa2 (executor driver) (36/50)
+[2026-01-23T16:17:29.693+0000] {subprocess.py:93} INFO - 26/01/23 16:17:29 INFO Executor: Running task 47.0 in stage 6.0 (TID 52)
+[2026-01-23T16:17:29.707+0000] {subprocess.py:93} INFO - 26/01/23 16:17:29 INFO ShuffleBlockFetcherIterator: Getting 0 (0.0 B) non-empty blocks including 0 (0.0 B) local and 0 (0.0 B) host-local and 0 (0.0 B) push-merged-local and 0 (0.0 B) remote blocks
+[2026-01-23T16:17:29.708+0000] {subprocess.py:93} INFO - 26/01/23 16:17:29 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+[2026-01-23T16:17:29.709+0000] {subprocess.py:93} INFO - 26/01/23 16:17:29 INFO MemoryStore: Block rdd_27_36 stored as values in memory (estimated size 46.0 B, free 432.8 MiB)
+[2026-01-23T16:17:29.710+0000] {subprocess.py:93} INFO - 26/01/23 16:17:29 INFO BlockManagerInfo: Added rdd_27_36 in memory on 870244d36fa2:43719 (size: 46.0 B, free: 434.2 MiB)
+[2026-01-23T16:17:29.715+0000] {subprocess.py:93} INFO - 26/01/23 16:17:29 INFO ShuffleBlockFetcherIterator: Getting 0 (0.0 B) non-empty blocks including 0 (0.0 B) local and 0 (0.0 B) host-local and 0 (0.0 B) push-merged-local and 0 (0.0 B) remote blocks
+[2026-01-23T16:17:29.716+0000] {subprocess.py:93} INFO - 26/01/23 16:17:29 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 1 ms
+[2026-01-23T16:17:29.718+0000] {subprocess.py:93} INFO - 26/01/23 16:17:29 INFO ShuffleBlockFetcherIterator: Getting 0 (0.0 B) non-empty blocks including 0 (0.0 B) local and 0 (0.0 B) host-local and 0 (0.0 B) push-merged-local and 0 (0.0 B) remote blocks
+[2026-01-23T16:17:29.719+0000] {subprocess.py:93} INFO - 26/01/23 16:17:29 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+[2026-01-23T16:17:29.734+0000] {subprocess.py:93} INFO - 26/01/23 16:17:29 INFO MemoryStore: Block rdd_27_35 stored as values in memory (estimated size 46.0 B, free 432.7 MiB)
+[2026-01-23T16:17:29.735+0000] {subprocess.py:93} INFO - 26/01/23 16:17:29 INFO BlockManagerInfo: Added rdd_27_35 in memory on 870244d36fa2:43719 (size: 46.0 B, free: 434.2 MiB)
+[2026-01-23T16:17:29.737+0000] {subprocess.py:93} INFO - 26/01/23 16:17:29 INFO ShuffleBlockFetcherIterator: Getting 0 (0.0 B) non-empty blocks including 0 (0.0 B) local and 0 (0.0 B) host-local and 0 (0.0 B) push-merged-local and 0 (0.0 B) remote blocks
+[2026-01-23T16:17:29.741+0000] {subprocess.py:93} INFO - 26/01/23 16:17:29 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 4 ms
+[2026-01-23T16:17:29.758+0000] {subprocess.py:93} INFO - 26/01/23 16:17:29 INFO ShuffleBlockFetcherIterator: Getting 0 (0.0 B) non-empty blocks including 0 (0.0 B) local and 0 (0.0 B) host-local and 0 (0.0 B) push-merged-local and 0 (0.0 B) remote blocks
+[2026-01-23T16:17:29.759+0000] {subprocess.py:93} INFO - 26/01/23 16:17:29 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 1 ms
+[2026-01-23T16:17:29.761+0000] {subprocess.py:93} INFO - 26/01/23 16:17:29 INFO MemoryStore: Block rdd_27_37 stored as values in memory (estimated size 46.0 B, free 432.7 MiB)
+[2026-01-23T16:17:29.764+0000] {subprocess.py:93} INFO - 26/01/23 16:17:29 INFO BlockManagerInfo: Added rdd_27_37 in memory on 870244d36fa2:43719 (size: 46.0 B, free: 434.2 MiB)
+[2026-01-23T16:17:29.771+0000] {subprocess.py:93} INFO - 26/01/23 16:17:29 INFO ShuffleBlockFetcherIterator: Getting 0 (0.0 B) non-empty blocks including 0 (0.0 B) local and 0 (0.0 B) host-local and 0 (0.0 B) push-merged-local and 0 (0.0 B) remote blocks
+[2026-01-23T16:17:29.772+0000] {subprocess.py:93} INFO - 26/01/23 16:17:29 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+[2026-01-23T16:17:29.772+0000] {subprocess.py:93} INFO - 26/01/23 16:17:29 INFO ShuffleBlockFetcherIterator: Getting 0 (0.0 B) non-empty blocks including 0 (0.0 B) local and 0 (0.0 B) host-local and 0 (0.0 B) push-merged-local and 0 (0.0 B) remote blocks
+[2026-01-23T16:17:29.772+0000] {subprocess.py:93} INFO - 26/01/23 16:17:29 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+[2026-01-23T16:17:29.775+0000] {subprocess.py:93} INFO - 26/01/23 16:17:29 INFO ShuffleBlockFetcherIterator: Getting 0 (0.0 B) non-empty blocks including 0 (0.0 B) local and 0 (0.0 B) host-local and 0 (0.0 B) push-merged-local and 0 (0.0 B) remote blocks
+[2026-01-23T16:17:29.775+0000] {subprocess.py:93} INFO - 26/01/23 16:17:29 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+[2026-01-23T16:17:29.778+0000] {subprocess.py:93} INFO - 26/01/23 16:17:29 INFO MemoryStore: Block rdd_27_38 stored as values in memory (estimated size 46.0 B, free 432.5 MiB)
+[2026-01-23T16:17:29.779+0000] {subprocess.py:93} INFO - 26/01/23 16:17:29 INFO BlockManagerInfo: Added rdd_27_38 in memory on 870244d36fa2:43719 (size: 46.0 B, free: 434.2 MiB)
+[2026-01-23T16:17:29.787+0000] {subprocess.py:93} INFO - 26/01/23 16:17:29 INFO Executor: Finished task 36.0 in stage 6.0 (TID 42). 5346 bytes result sent to driver
+[2026-01-23T16:17:29.794+0000] {subprocess.py:93} INFO - 26/01/23 16:17:29 INFO TaskSetManager: Starting task 48.0 in stage 6.0 (TID 53) (870244d36fa2, executor driver, partition 48, PROCESS_LOCAL, 8733 bytes)
+[2026-01-23T16:17:29.797+0000] {subprocess.py:93} INFO - 26/01/23 16:17:29 INFO TaskSetManager: Finished task 36.0 in stage 6.0 (TID 42) in 254 ms on 870244d36fa2 (executor driver) (37/50)
+[2026-01-23T16:17:29.798+0000] {subprocess.py:93} INFO - 26/01/23 16:17:29 INFO Executor: Running task 48.0 in stage 6.0 (TID 53)
+[2026-01-23T16:17:29.819+0000] {subprocess.py:93} INFO - 26/01/23 16:17:29 INFO Executor: Finished task 35.0 in stage 6.0 (TID 41). 5346 bytes result sent to driver
+[2026-01-23T16:17:29.820+0000] {subprocess.py:93} INFO - 26/01/23 16:17:29 INFO TaskSetManager: Starting task 49.0 in stage 6.0 (TID 54) (870244d36fa2, executor driver, partition 49, PROCESS_LOCAL, 8733 bytes)
+[2026-01-23T16:17:29.822+0000] {subprocess.py:93} INFO - 26/01/23 16:17:29 INFO TaskSetManager: Finished task 35.0 in stage 6.0 (TID 41) in 303 ms on 870244d36fa2 (executor driver) (38/50)
+[2026-01-23T16:17:29.826+0000] {subprocess.py:93} INFO - 26/01/23 16:17:29 INFO MemoryStore: Block rdd_27_41 stored as values in memory (estimated size 46.0 B, free 432.5 MiB)
+[2026-01-23T16:17:29.826+0000] {subprocess.py:93} INFO - 26/01/23 16:17:29 INFO BlockManagerInfo: Added rdd_27_41 in memory on 870244d36fa2:43719 (size: 46.0 B, free: 434.2 MiB)
+[2026-01-23T16:17:29.827+0000] {subprocess.py:93} INFO - 26/01/23 16:17:29 INFO Executor: Running task 49.0 in stage 6.0 (TID 54)
+[2026-01-23T16:17:29.836+0000] {subprocess.py:93} INFO - 26/01/23 16:17:29 INFO Executor: Finished task 37.0 in stage 6.0 (TID 43). 5346 bytes result sent to driver
+[2026-01-23T16:17:29.838+0000] {subprocess.py:93} INFO - 26/01/23 16:17:29 INFO TaskSetManager: Finished task 37.0 in stage 6.0 (TID 43) in 288 ms on 870244d36fa2 (executor driver) (39/50)
+[2026-01-23T16:17:29.845+0000] {subprocess.py:93} INFO - 26/01/23 16:17:29 INFO MemoryStore: Block rdd_27_39 stored as values in memory (estimated size 46.0 B, free 432.6 MiB)
+[2026-01-23T16:17:29.846+0000] {subprocess.py:93} INFO - 26/01/23 16:17:29 INFO BlockManagerInfo: Added rdd_27_39 in memory on 870244d36fa2:43719 (size: 46.0 B, free: 434.2 MiB)
+[2026-01-23T16:17:29.850+0000] {subprocess.py:93} INFO - 26/01/23 16:17:29 INFO ShuffleBlockFetcherIterator: Getting 0 (0.0 B) non-empty blocks including 0 (0.0 B) local and 0 (0.0 B) host-local and 0 (0.0 B) push-merged-local and 0 (0.0 B) remote blocks
+[2026-01-23T16:17:29.852+0000] {subprocess.py:93} INFO - 26/01/23 16:17:29 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 1 ms
+[2026-01-23T16:17:29.858+0000] {subprocess.py:93} INFO - 26/01/23 16:17:29 INFO Executor: Finished task 38.0 in stage 6.0 (TID 44). 5346 bytes result sent to driver
+[2026-01-23T16:17:29.859+0000] {subprocess.py:93} INFO - 26/01/23 16:17:29 INFO TaskSetManager: Finished task 38.0 in stage 6.0 (TID 44) in 269 ms on 870244d36fa2 (executor driver) (40/50)
+[2026-01-23T16:17:29.866+0000] {subprocess.py:93} INFO - 26/01/23 16:17:29 INFO MemoryStore: Block rdd_27_43 stored as values in memory (estimated size 46.0 B, free 432.6 MiB)
+[2026-01-23T16:17:29.869+0000] {subprocess.py:93} INFO - 26/01/23 16:17:29 INFO BlockManagerInfo: Added rdd_27_43 in memory on 870244d36fa2:43719 (size: 46.0 B, free: 434.2 MiB)
+[2026-01-23T16:17:29.870+0000] {subprocess.py:93} INFO - 26/01/23 16:17:29 INFO ShuffleBlockFetcherIterator: Getting 0 (0.0 B) non-empty blocks including 0 (0.0 B) local and 0 (0.0 B) host-local and 0 (0.0 B) push-merged-local and 0 (0.0 B) remote blocks
+[2026-01-23T16:17:29.877+0000] {subprocess.py:93} INFO - 26/01/23 16:17:29 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+[2026-01-23T16:17:29.890+0000] {subprocess.py:93} INFO - 26/01/23 16:17:29 INFO MemoryStore: Block rdd_27_47 stored as values in memory (estimated size 46.0 B, free 432.7 MiB)
+[2026-01-23T16:17:29.891+0000] {subprocess.py:93} INFO - 26/01/23 16:17:29 INFO BlockManagerInfo: Added rdd_27_47 in memory on 870244d36fa2:43719 (size: 46.0 B, free: 434.2 MiB)
+[2026-01-23T16:17:29.892+0000] {subprocess.py:93} INFO - 26/01/23 16:17:29 INFO MemoryStore: Block rdd_27_40 stored as values in memory (estimated size 46.0 B, free 432.7 MiB)
+[2026-01-23T16:17:29.893+0000] {subprocess.py:93} INFO - 26/01/23 16:17:29 INFO BlockManagerInfo: Added rdd_27_40 in memory on 870244d36fa2:43719 (size: 46.0 B, free: 434.2 MiB)
+[2026-01-23T16:17:29.897+0000] {subprocess.py:93} INFO - 26/01/23 16:17:29 INFO Executor: Finished task 41.0 in stage 6.0 (TID 47). 5346 bytes result sent to driver
+[2026-01-23T16:17:29.898+0000] {subprocess.py:93} INFO - 26/01/23 16:17:29 INFO MemoryStore: Block rdd_27_46 stored as values in memory (estimated size 46.0 B, free 432.7 MiB)
+[2026-01-23T16:17:29.899+0000] {subprocess.py:93} INFO - 26/01/23 16:17:29 INFO TaskSetManager: Finished task 41.0 in stage 6.0 (TID 47) in 282 ms on 870244d36fa2 (executor driver) (41/50)
+[2026-01-23T16:17:29.900+0000] {subprocess.py:93} INFO - 26/01/23 16:17:29 INFO BlockManagerInfo: Added rdd_27_46 in memory on 870244d36fa2:43719 (size: 46.0 B, free: 434.2 MiB)
+[2026-01-23T16:17:29.901+0000] {subprocess.py:93} INFO - 26/01/23 16:17:29 INFO MemoryStore: Block rdd_27_44 stored as values in memory (estimated size 46.0 B, free 432.8 MiB)
+[2026-01-23T16:17:29.902+0000] {subprocess.py:93} INFO - 26/01/23 16:17:29 INFO BlockManagerInfo: Added rdd_27_44 in memory on 870244d36fa2:43719 (size: 46.0 B, free: 434.2 MiB)
+[2026-01-23T16:17:29.915+0000] {subprocess.py:93} INFO - 26/01/23 16:17:29 INFO MemoryStore: Block rdd_27_45 stored as values in memory (estimated size 46.0 B, free 432.8 MiB)
+[2026-01-23T16:17:29.920+0000] {subprocess.py:93} INFO - 26/01/23 16:17:29 INFO Executor: Finished task 39.0 in stage 6.0 (TID 45). 5346 bytes result sent to driver
+[2026-01-23T16:17:29.921+0000] {subprocess.py:93} INFO - 26/01/23 16:17:29 INFO BlockManagerInfo: Added rdd_27_45 in memory on 870244d36fa2:43719 (size: 46.0 B, free: 434.2 MiB)
+[2026-01-23T16:17:29.922+0000] {subprocess.py:93} INFO - 26/01/23 16:17:29 INFO TaskSetManager: Finished task 39.0 in stage 6.0 (TID 45) in 323 ms on 870244d36fa2 (executor driver) (42/50)
+[2026-01-23T16:17:29.939+0000] {subprocess.py:93} INFO - 26/01/23 16:17:29 INFO Executor: Finished task 43.0 in stage 6.0 (TID 48). 5389 bytes result sent to driver
+[2026-01-23T16:17:29.941+0000] {subprocess.py:93} INFO - 26/01/23 16:17:29 INFO Executor: Finished task 40.0 in stage 6.0 (TID 46). 5346 bytes result sent to driver
+[2026-01-23T16:17:29.945+0000] {subprocess.py:93} INFO - 26/01/23 16:17:29 INFO TaskSetManager: Finished task 43.0 in stage 6.0 (TID 48) in 322 ms on 870244d36fa2 (executor driver) (43/50)
+[2026-01-23T16:17:29.947+0000] {subprocess.py:93} INFO - 26/01/23 16:17:29 INFO TaskSetManager: Finished task 40.0 in stage 6.0 (TID 46) in 330 ms on 870244d36fa2 (executor driver) (44/50)
+[2026-01-23T16:17:29.955+0000] {subprocess.py:93} INFO - 26/01/23 16:17:29 INFO Executor: Finished task 47.0 in stage 6.0 (TID 52). 5346 bytes result sent to driver
+[2026-01-23T16:17:29.955+0000] {subprocess.py:93} INFO - 26/01/23 16:17:29 INFO MemoryStore: Block rdd_27_48 stored as values in memory (estimated size 46.0 B, free 432.9 MiB)
+[2026-01-23T16:17:29.956+0000] {subprocess.py:93} INFO - 26/01/23 16:17:29 INFO BlockManagerInfo: Added rdd_27_48 in memory on 870244d36fa2:43719 (size: 46.0 B, free: 434.2 MiB)
+[2026-01-23T16:17:29.957+0000] {subprocess.py:93} INFO - 26/01/23 16:17:29 INFO TaskSetManager: Finished task 47.0 in stage 6.0 (TID 52) in 276 ms on 870244d36fa2 (executor driver) (45/50)
+[2026-01-23T16:17:29.960+0000] {subprocess.py:93} INFO - 26/01/23 16:17:29 INFO Executor: Finished task 44.0 in stage 6.0 (TID 49). 5346 bytes result sent to driver
+[2026-01-23T16:17:29.962+0000] {subprocess.py:93} INFO - 26/01/23 16:17:29 INFO Executor: Finished task 46.0 in stage 6.0 (TID 51). 5346 bytes result sent to driver
+[2026-01-23T16:17:29.962+0000] {subprocess.py:93} INFO - 26/01/23 16:17:29 INFO TaskSetManager: Finished task 44.0 in stage 6.0 (TID 49) in 324 ms on 870244d36fa2 (executor driver) (46/50)
+[2026-01-23T16:17:29.963+0000] {subprocess.py:93} INFO - 26/01/23 16:17:29 INFO TaskSetManager: Finished task 46.0 in stage 6.0 (TID 51) in 322 ms on 870244d36fa2 (executor driver) (47/50)
+[2026-01-23T16:17:29.968+0000] {subprocess.py:93} INFO - 26/01/23 16:17:29 INFO Executor: Finished task 45.0 in stage 6.0 (TID 50). 5346 bytes result sent to driver
+[2026-01-23T16:17:29.969+0000] {subprocess.py:93} INFO - 26/01/23 16:17:29 INFO MemoryStore: Block rdd_27_49 stored as values in memory (estimated size 46.0 B, free 433.0 MiB)
+[2026-01-23T16:17:29.969+0000] {subprocess.py:93} INFO - 26/01/23 16:17:29 INFO TaskSetManager: Finished task 45.0 in stage 6.0 (TID 50) in 329 ms on 870244d36fa2 (executor driver) (48/50)
+[2026-01-23T16:17:29.970+0000] {subprocess.py:93} INFO - 26/01/23 16:17:29 INFO BlockManagerInfo: Added rdd_27_49 in memory on 870244d36fa2:43719 (size: 46.0 B, free: 434.2 MiB)
+[2026-01-23T16:17:29.993+0000] {subprocess.py:93} INFO - 26/01/23 16:17:29 INFO Executor: Finished task 48.0 in stage 6.0 (TID 53). 5346 bytes result sent to driver
+[2026-01-23T16:17:29.995+0000] {subprocess.py:93} INFO - 26/01/23 16:17:29 INFO TaskSetManager: Finished task 48.0 in stage 6.0 (TID 53) in 208 ms on 870244d36fa2 (executor driver) (49/50)
+[2026-01-23T16:17:30.013+0000] {subprocess.py:93} INFO - 26/01/23 16:17:30 INFO Executor: Finished task 49.0 in stage 6.0 (TID 54). 5389 bytes result sent to driver
+[2026-01-23T16:17:30.014+0000] {subprocess.py:93} INFO - 26/01/23 16:17:30 INFO TaskSetManager: Finished task 49.0 in stage 6.0 (TID 54) in 194 ms on 870244d36fa2 (executor driver) (50/50)
+[2026-01-23T16:17:30.015+0000] {subprocess.py:93} INFO - 26/01/23 16:17:30 INFO TaskSchedulerImpl: Removed TaskSet 6.0, whose tasks have all completed, from pool
+[2026-01-23T16:17:30.016+0000] {subprocess.py:93} INFO - 26/01/23 16:17:30 INFO DAGScheduler: ShuffleMapStage 6 ($anonfun$recordDeltaOperationInternal$1 at DatabricksLogging.scala:128) finished in 2.582 s
+[2026-01-23T16:17:30.016+0000] {subprocess.py:93} INFO - 26/01/23 16:17:30 INFO DAGScheduler: looking for newly runnable stages
+[2026-01-23T16:17:30.016+0000] {subprocess.py:93} INFO - 26/01/23 16:17:30 INFO DAGScheduler: running: Set()
+[2026-01-23T16:17:30.017+0000] {subprocess.py:93} INFO - 26/01/23 16:17:30 INFO DAGScheduler: waiting: Set()
+[2026-01-23T16:17:30.017+0000] {subprocess.py:93} INFO - 26/01/23 16:17:30 INFO DAGScheduler: failed: Set()
+[2026-01-23T16:17:30.092+0000] {subprocess.py:93} INFO - 26/01/23 16:17:30 INFO SparkContext: Starting job: $anonfun$recordDeltaOperationInternal$1 at DatabricksLogging.scala:128
+[2026-01-23T16:17:30.096+0000] {subprocess.py:93} INFO - 26/01/23 16:17:30 INFO DAGScheduler: Got job 7 ($anonfun$recordDeltaOperationInternal$1 at DatabricksLogging.scala:128) with 1 output partitions
+[2026-01-23T16:17:30.096+0000] {subprocess.py:93} INFO - 26/01/23 16:17:30 INFO DAGScheduler: Final stage: ResultStage 9 ($anonfun$recordDeltaOperationInternal$1 at DatabricksLogging.scala:128)
+[2026-01-23T16:17:30.096+0000] {subprocess.py:93} INFO - 26/01/23 16:17:30 INFO DAGScheduler: Parents of final stage: List(ShuffleMapStage 8)
+[2026-01-23T16:17:30.096+0000] {subprocess.py:93} INFO - 26/01/23 16:17:30 INFO DAGScheduler: Missing parents: List()
+[2026-01-23T16:17:30.097+0000] {subprocess.py:93} INFO - 26/01/23 16:17:30 INFO DAGScheduler: Submitting ResultStage 9 (MapPartitionsRDD[33] at $anonfun$recordDeltaOperationInternal$1 at DatabricksLogging.scala:128), which has no missing parents
+[2026-01-23T16:17:30.107+0000] {subprocess.py:93} INFO - 26/01/23 16:17:30 INFO MemoryStore: Block broadcast_11 stored as values in memory (estimated size 533.1 KiB, free 432.4 MiB)
+[2026-01-23T16:17:30.111+0000] {subprocess.py:93} INFO - 26/01/23 16:17:30 INFO MemoryStore: Block broadcast_11_piece0 stored as bytes in memory (estimated size 124.2 KiB, free 432.3 MiB)
+[2026-01-23T16:17:30.112+0000] {subprocess.py:93} INFO - 26/01/23 16:17:30 INFO BlockManagerInfo: Added broadcast_11_piece0 in memory on 870244d36fa2:43719 (size: 124.2 KiB, free: 434.0 MiB)
+[2026-01-23T16:17:30.113+0000] {subprocess.py:93} INFO - 26/01/23 16:17:30 INFO SparkContext: Created broadcast 11 from broadcast at DAGScheduler.scala:1585
+[2026-01-23T16:17:30.114+0000] {subprocess.py:93} INFO - 26/01/23 16:17:30 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 9 (MapPartitionsRDD[33] at $anonfun$recordDeltaOperationInternal$1 at DatabricksLogging.scala:128) (first 15 tasks are for partitions Vector(0))
+[2026-01-23T16:17:30.114+0000] {subprocess.py:93} INFO - 26/01/23 16:17:30 INFO TaskSchedulerImpl: Adding task set 9.0 with 1 tasks resource profile 0
+[2026-01-23T16:17:30.116+0000] {subprocess.py:93} INFO - 26/01/23 16:17:30 INFO TaskSetManager: Starting task 0.0 in stage 9.0 (TID 55) (870244d36fa2, executor driver, partition 0, NODE_LOCAL, 8744 bytes)
+[2026-01-23T16:17:30.118+0000] {subprocess.py:93} INFO - 26/01/23 16:17:30 INFO Executor: Running task 0.0 in stage 9.0 (TID 55)
+[2026-01-23T16:17:30.136+0000] {subprocess.py:93} INFO - 26/01/23 16:17:30 INFO ShuffleBlockFetcherIterator: Getting 50 (4.7 KiB) non-empty blocks including 50 (4.7 KiB) local and 0 (0.0 B) host-local and 0 (0.0 B) push-merged-local and 0 (0.0 B) remote blocks
+[2026-01-23T16:17:30.137+0000] {subprocess.py:93} INFO - 26/01/23 16:17:30 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 1 ms
+[2026-01-23T16:17:30.160+0000] {subprocess.py:93} INFO - 26/01/23 16:17:30 INFO CodeGenerator: Code generated in 7.980881 ms
+[2026-01-23T16:17:30.186+0000] {subprocess.py:93} INFO - 26/01/23 16:17:30 INFO CodeGenerator: Code generated in 16.085308 ms
+[2026-01-23T16:17:30.202+0000] {subprocess.py:93} INFO - 26/01/23 16:17:30 INFO Executor: Finished task 0.0 in stage 9.0 (TID 55). 6941 bytes result sent to driver
+[2026-01-23T16:17:30.205+0000] {subprocess.py:93} INFO - 26/01/23 16:17:30 INFO TaskSetManager: Finished task 0.0 in stage 9.0 (TID 55) in 89 ms on 870244d36fa2 (executor driver) (1/1)
+[2026-01-23T16:17:30.205+0000] {subprocess.py:93} INFO - 26/01/23 16:17:30 INFO TaskSchedulerImpl: Removed TaskSet 9.0, whose tasks have all completed, from pool
+[2026-01-23T16:17:30.206+0000] {subprocess.py:93} INFO - 26/01/23 16:17:30 INFO DAGScheduler: ResultStage 9 ($anonfun$recordDeltaOperationInternal$1 at DatabricksLogging.scala:128) finished in 0.107 s
+[2026-01-23T16:17:30.206+0000] {subprocess.py:93} INFO - 26/01/23 16:17:30 INFO DAGScheduler: Job 7 is finished. Cancelling potential speculative or zombie tasks for this job
+[2026-01-23T16:17:30.206+0000] {subprocess.py:93} INFO - 26/01/23 16:17:30 INFO TaskSchedulerImpl: Killing all running tasks in stage 9: Stage finished
+[2026-01-23T16:17:30.206+0000] {subprocess.py:93} INFO - 26/01/23 16:17:30 INFO DAGScheduler: Job 7 finished: $anonfun$recordDeltaOperationInternal$1 at DatabricksLogging.scala:128, took 0.114181 s
+[2026-01-23T16:17:30.243+0000] {subprocess.py:93} INFO - 26/01/23 16:17:30 INFO CodeGenerator: Code generated in 24.806736 ms
+[2026-01-23T16:17:30.247+0000] {subprocess.py:93} INFO - 26/01/23 16:17:30 INFO Snapshot: [tableId=e9691a89-de10-424e-903e-1cfb01540fd0] DELTA: Done
+[2026-01-23T16:17:30.278+0000] {subprocess.py:93} INFO - 26/01/23 16:17:30 INFO OptimisticTransaction: [tableId=a57c3935,txnId=70202251] Committed delta #0 to s3a://silver/data/orders/_delta_log
+[2026-01-23T16:17:30.285+0000] {subprocess.py:93} INFO - >>> SUCCESS! Data saved in Silver Layer.
+[2026-01-23T16:17:30.360+0000] {subprocess.py:93} INFO - 26/01/23 16:17:30 INFO SparkContext: Invoking stop() from shutdown hook
+[2026-01-23T16:17:30.361+0000] {subprocess.py:93} INFO - 26/01/23 16:17:30 INFO SparkContext: SparkContext is stopping with exitCode 0.
+[2026-01-23T16:17:30.379+0000] {subprocess.py:93} INFO - 26/01/23 16:17:30 INFO SparkUI: Stopped Spark web UI at http://870244d36fa2:4040
+[2026-01-23T16:17:30.401+0000] {subprocess.py:93} INFO - 26/01/23 16:17:30 INFO MapOutputTrackerMasterEndpoint: MapOutputTrackerMasterEndpoint stopped!
+[2026-01-23T16:17:30.432+0000] {subprocess.py:93} INFO - 26/01/23 16:17:30 INFO MemoryStore: MemoryStore cleared
+[2026-01-23T16:17:30.433+0000] {subprocess.py:93} INFO - 26/01/23 16:17:30 INFO BlockManager: BlockManager stopped
+[2026-01-23T16:17:30.437+0000] {subprocess.py:93} INFO - 26/01/23 16:17:30 INFO BlockManagerMaster: BlockManagerMaster stopped
+[2026-01-23T16:17:30.442+0000] {subprocess.py:93} INFO - 26/01/23 16:17:30 INFO OutputCommitCoordinator$OutputCommitCoordinatorEndpoint: OutputCommitCoordinator stopped!
+[2026-01-23T16:17:30.453+0000] {subprocess.py:93} INFO - 26/01/23 16:17:30 INFO SparkContext: Successfully stopped SparkContext
+[2026-01-23T16:17:30.454+0000] {subprocess.py:93} INFO - 26/01/23 16:17:30 INFO ShutdownHookManager: Shutdown hook called
+[2026-01-23T16:17:30.455+0000] {subprocess.py:93} INFO - 26/01/23 16:17:30 INFO ShutdownHookManager: Deleting directory /tmp/spark-bdd8516e-877c-48cf-9f38-9ddeb7ccffc7/pyspark-985a0b5f-7c16-4148-b099-1da79c6a712e
+[2026-01-23T16:17:30.460+0000] {subprocess.py:93} INFO - 26/01/23 16:17:30 INFO ShutdownHookManager: Deleting directory /tmp/spark-dacdab97-1d3f-4588-a0e1-45e9a0979e4e
+[2026-01-23T16:17:30.464+0000] {subprocess.py:93} INFO - 26/01/23 16:17:30 INFO ShutdownHookManager: Deleting directory /tmp/spark-bdd8516e-877c-48cf-9f38-9ddeb7ccffc7
+[2026-01-23T16:17:30.475+0000] {subprocess.py:93} INFO - 26/01/23 16:17:30 INFO MetricsSystemImpl: Stopping s3a-file-system metrics system...
+[2026-01-23T16:17:30.475+0000] {subprocess.py:93} INFO - 26/01/23 16:17:30 INFO MetricsSystemImpl: s3a-file-system metrics system stopped.
+[2026-01-23T16:17:30.476+0000] {subprocess.py:93} INFO - 26/01/23 16:17:30 INFO MetricsSystemImpl: s3a-file-system metrics system shutdown complete.
+[2026-01-23T16:17:30.682+0000] {subprocess.py:97} INFO - Command exited with return code 0
+[2026-01-23T16:17:30.721+0000] {taskinstance.py:1398} INFO - Marking task as SUCCESS. dag_id=3_mlops_full_pipeline, task_id=spark_bronze_to_silver, execution_date=20260123T161445, start_date=20260123T161616, end_date=20260123T161730
+[2026-01-23T16:17:30.753+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 0
+[2026-01-23T16:17:30.785+0000] {taskinstance.py:2776} INFO - 1 downstream tasks scheduled from follow-on schedule check

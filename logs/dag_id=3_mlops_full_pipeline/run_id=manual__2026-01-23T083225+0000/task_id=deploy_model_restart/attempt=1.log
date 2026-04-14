@@ -1,0 +1,17 @@
+[2026-01-23T08:35:02.915+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: 3_mlops_full_pipeline.deploy_model_restart manual__2026-01-23T08:32:25+00:00 [queued]>
+[2026-01-23T08:35:02.929+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: 3_mlops_full_pipeline.deploy_model_restart manual__2026-01-23T08:32:25+00:00 [queued]>
+[2026-01-23T08:35:02.930+0000] {taskinstance.py:1359} INFO - Starting attempt 1 of 1
+[2026-01-23T08:35:02.948+0000] {taskinstance.py:1380} INFO - Executing <Task(BashOperator): deploy_model_restart> on 2026-01-23 08:32:25+00:00
+[2026-01-23T08:35:02.959+0000] {standard_task_runner.py:57} INFO - Started process 529 to run task
+[2026-01-23T08:35:02.964+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', '3_mlops_full_pipeline', 'deploy_model_restart', 'manual__2026-01-23T08:32:25+00:00', '--job-id', '9', '--raw', '--subdir', 'DAGS_FOLDER/mlops_pipeline.py', '--cfg-path', '/tmp/tmpeh7v1zl0']
+[2026-01-23T08:35:02.969+0000] {standard_task_runner.py:85} INFO - Job 9: Subtask deploy_model_restart
+[2026-01-23T08:35:03.027+0000] {task_command.py:415} INFO - Running <TaskInstance: 3_mlops_full_pipeline.deploy_model_restart manual__2026-01-23T08:32:25+00:00 [running]> on host c88838c425df
+[2026-01-23T08:35:03.112+0000] {taskinstance.py:1660} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='3_mlops_full_pipeline' AIRFLOW_CTX_TASK_ID='deploy_model_restart' AIRFLOW_CTX_EXECUTION_DATE='2026-01-23T08:32:25+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-01-23T08:32:25+00:00'
+[2026-01-23T08:35:03.114+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2026-01-23T08:35:03.114+0000] {subprocess.py:75} INFO - Running command: ['/bin/bash', '-c', 'docker restart mlflow-serving']
+[2026-01-23T08:35:03.127+0000] {subprocess.py:86} INFO - Output:
+[2026-01-23T08:35:03.487+0000] {subprocess.py:93} INFO - mlflow-serving
+[2026-01-23T08:35:03.491+0000] {subprocess.py:97} INFO - Command exited with return code 0
+[2026-01-23T08:35:03.521+0000] {taskinstance.py:1398} INFO - Marking task as SUCCESS. dag_id=3_mlops_full_pipeline, task_id=deploy_model_restart, execution_date=20260123T083225, start_date=20260123T083502, end_date=20260123T083503
+[2026-01-23T08:35:03.578+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 0
+[2026-01-23T08:35:03.596+0000] {taskinstance.py:2776} INFO - 0 downstream tasks scheduled from follow-on schedule check

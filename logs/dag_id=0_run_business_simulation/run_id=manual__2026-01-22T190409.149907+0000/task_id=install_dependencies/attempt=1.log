@@ -1,0 +1,25 @@
+[2026-01-22T19:04:15.917+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: 0_run_business_simulation.install_dependencies manual__2026-01-22T19:04:09.149907+00:00 [queued]>
+[2026-01-22T19:04:15.928+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: 0_run_business_simulation.install_dependencies manual__2026-01-22T19:04:09.149907+00:00 [queued]>
+[2026-01-22T19:04:15.928+0000] {taskinstance.py:1359} INFO - Starting attempt 1 of 2
+[2026-01-22T19:04:15.945+0000] {taskinstance.py:1380} INFO - Executing <Task(BashOperator): install_dependencies> on 2026-01-22 19:04:09.149907+00:00
+[2026-01-22T19:04:15.952+0000] {standard_task_runner.py:57} INFO - Started process 1486 to run task
+[2026-01-22T19:04:15.959+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', '0_run_business_simulation', 'install_dependencies', 'manual__2026-01-22T19:04:09.149907+00:00', '--job-id', '18', '--raw', '--subdir', 'DAGS_FOLDER/simulation_dags.py', '--cfg-path', '/tmp/tmpvbx7lyt5']
+[2026-01-22T19:04:15.966+0000] {standard_task_runner.py:85} INFO - Job 18: Subtask install_dependencies
+[2026-01-22T19:04:16.146+0000] {task_command.py:415} INFO - Running <TaskInstance: 0_run_business_simulation.install_dependencies manual__2026-01-22T19:04:09.149907+00:00 [running]> on host 4fbdf2312f2b
+[2026-01-22T19:04:16.377+0000] {taskinstance.py:1660} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='0_run_business_simulation' AIRFLOW_CTX_TASK_ID='install_dependencies' AIRFLOW_CTX_EXECUTION_DATE='2026-01-22T19:04:09.149907+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-01-22T19:04:09.149907+00:00'
+[2026-01-22T19:04:16.380+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2026-01-22T19:04:16.382+0000] {subprocess.py:75} INFO - Running command: ['/bin/bash', '-c', 'pip install Faker psycopg2-binary']
+[2026-01-22T19:04:16.453+0000] {subprocess.py:86} INFO - Output:
+[2026-01-22T19:04:18.973+0000] {subprocess.py:93} INFO - Defaulting to user installation because normal site-packages is not writeable
+[2026-01-22T19:04:19.256+0000] {subprocess.py:93} INFO - Requirement already satisfied: Faker in /home/***/.local/lib/python3.8/site-packages (35.2.2)
+[2026-01-22T19:04:19.257+0000] {subprocess.py:93} INFO - Requirement already satisfied: psycopg2-binary in /home/***/.local/lib/python3.8/site-packages (2.9.7)
+[2026-01-22T19:04:19.260+0000] {subprocess.py:93} INFO - Requirement already satisfied: python-dateutil>=2.4 in /home/***/.local/lib/python3.8/site-packages (from Faker) (2.8.2)
+[2026-01-22T19:04:19.261+0000] {subprocess.py:93} INFO - Requirement already satisfied: typing-extensions in /home/***/.local/lib/python3.8/site-packages (from Faker) (4.7.1)
+[2026-01-22T19:04:19.265+0000] {subprocess.py:93} INFO - Requirement already satisfied: six>=1.5 in /home/***/.local/lib/python3.8/site-packages (from python-dateutil>=2.4->Faker) (1.16.0)
+[2026-01-22T19:04:24.011+0000] {subprocess.py:93} INFO - 
+[2026-01-22T19:04:24.012+0000] {subprocess.py:93} INFO - [notice] A new release of pip is available: 23.0.1 -> 25.0.1
+[2026-01-22T19:04:24.012+0000] {subprocess.py:93} INFO - [notice] To update, run: pip install --upgrade pip
+[2026-01-22T19:04:24.288+0000] {subprocess.py:97} INFO - Command exited with return code 0
+[2026-01-22T19:04:24.333+0000] {taskinstance.py:1398} INFO - Marking task as SUCCESS. dag_id=0_run_business_simulation, task_id=install_dependencies, execution_date=20260122T190409, start_date=20260122T190415, end_date=20260122T190424
+[2026-01-22T19:04:24.358+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 0
+[2026-01-22T19:04:24.375+0000] {taskinstance.py:2776} INFO - 1 downstream tasks scheduled from follow-on schedule check

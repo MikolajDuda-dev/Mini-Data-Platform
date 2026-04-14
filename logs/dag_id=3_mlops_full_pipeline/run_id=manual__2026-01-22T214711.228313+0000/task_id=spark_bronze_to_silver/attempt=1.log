@@ -1,0 +1,50 @@
+[2026-01-22T21:48:32.218+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: 3_mlops_full_pipeline.spark_bronze_to_silver manual__2026-01-22T21:47:11.228313+00:00 [queued]>
+[2026-01-22T21:48:32.228+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: 3_mlops_full_pipeline.spark_bronze_to_silver manual__2026-01-22T21:47:11.228313+00:00 [queued]>
+[2026-01-22T21:48:32.228+0000] {taskinstance.py:1359} INFO - Starting attempt 1 of 1
+[2026-01-22T21:48:32.241+0000] {taskinstance.py:1380} INFO - Executing <Task(BashOperator): spark_bronze_to_silver> on 2026-01-22 21:47:11.228313+00:00
+[2026-01-22T21:48:32.247+0000] {standard_task_runner.py:57} INFO - Started process 335 to run task
+[2026-01-22T21:48:32.250+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', '3_mlops_full_pipeline', 'spark_bronze_to_silver', 'manual__2026-01-22T21:47:11.228313+00:00', '--job-id', '76', '--raw', '--subdir', 'DAGS_FOLDER/mlops_pipeline.py', '--cfg-path', '/tmp/tmpa7lhuu8w']
+[2026-01-22T21:48:32.253+0000] {standard_task_runner.py:85} INFO - Job 76: Subtask spark_bronze_to_silver
+[2026-01-22T21:48:32.301+0000] {task_command.py:415} INFO - Running <TaskInstance: 3_mlops_full_pipeline.spark_bronze_to_silver manual__2026-01-22T21:47:11.228313+00:00 [running]> on host 24f0deffc5ba
+[2026-01-22T21:48:32.377+0000] {taskinstance.py:1660} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='3_mlops_full_pipeline' AIRFLOW_CTX_TASK_ID='spark_bronze_to_silver' AIRFLOW_CTX_EXECUTION_DATE='2026-01-22T21:47:11.228313+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-01-22T21:47:11.228313+00:00'
+[2026-01-22T21:48:32.379+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2026-01-22T21:48:32.379+0000] {subprocess.py:75} INFO - Running command: ['/bin/bash', '-c', '\n        docker exec -i spark-master /opt/spark/bin/spark-submit         --packages io.delta:delta-spark_2.12:3.1.0,org.apache.hadoop:hadoop-aws:3.3.4         --conf "spark.sql.extensions=io.delta.sql.DeltaSparkSessionExtension"         --conf "spark.sql.catalog.spark_catalog=org.apache.spark.sql.delta.catalog.DeltaCatalog"         /opt/spark-jobs/bronze_to_silver.py\n        ']
+[2026-01-22T21:48:32.392+0000] {subprocess.py:86} INFO - Output:
+[2026-01-22T21:48:35.354+0000] {subprocess.py:93} INFO - :: loading settings :: url = jar:file:/opt/spark/jars/ivy-2.5.1.jar!/org/apache/ivy/core/settings/ivysettings.xml
+[2026-01-22T21:48:35.456+0000] {subprocess.py:93} INFO - Ivy Default Cache set to: /home/spark/.ivy2/cache
+[2026-01-22T21:48:35.457+0000] {subprocess.py:93} INFO - The jars for the packages stored in: /home/spark/.ivy2/jars
+[2026-01-22T21:48:35.461+0000] {subprocess.py:93} INFO - io.delta#delta-spark_2.12 added as a dependency
+[2026-01-22T21:48:35.462+0000] {subprocess.py:93} INFO - org.apache.hadoop#hadoop-aws added as a dependency
+[2026-01-22T21:48:35.463+0000] {subprocess.py:93} INFO - :: resolving dependencies :: org.apache.spark#spark-submit-parent-c009ef88-ec33-4289-be2c-e789d157737c;1.0
+[2026-01-22T21:48:35.463+0000] {subprocess.py:93} INFO - 	confs: [default]
+[2026-01-22T21:48:38.006+0000] {subprocess.py:93} INFO - Exception in thread "main" java.io.FileNotFoundException: /home/spark/.ivy2/cache/resolved-org.apache.spark-spark-submit-parent-c009ef88-ec33-4289-be2c-e789d157737c-1.0.xml (No such file or directory)
+[2026-01-22T21:48:38.007+0000] {subprocess.py:93} INFO - 	at java.base/java.io.FileOutputStream.open0(Native Method)
+[2026-01-22T21:48:38.007+0000] {subprocess.py:93} INFO - 	at java.base/java.io.FileOutputStream.open(Unknown Source)
+[2026-01-22T21:48:38.007+0000] {subprocess.py:93} INFO - 	at java.base/java.io.FileOutputStream.<init>(Unknown Source)
+[2026-01-22T21:48:38.007+0000] {subprocess.py:93} INFO - 	at java.base/java.io.FileOutputStream.<init>(Unknown Source)
+[2026-01-22T21:48:38.008+0000] {subprocess.py:93} INFO - 	at org.apache.ivy.plugins.parser.xml.XmlModuleDescriptorWriter.write(XmlModuleDescriptorWriter.java:71)
+[2026-01-22T21:48:38.008+0000] {subprocess.py:93} INFO - 	at org.apache.ivy.plugins.parser.xml.XmlModuleDescriptorWriter.write(XmlModuleDescriptorWriter.java:63)
+[2026-01-22T21:48:38.008+0000] {subprocess.py:93} INFO - 	at org.apache.ivy.core.module.descriptor.DefaultModuleDescriptor.toIvyFile(DefaultModuleDescriptor.java:553)
+[2026-01-22T21:48:38.008+0000] {subprocess.py:93} INFO - 	at org.apache.ivy.core.cache.DefaultResolutionCacheManager.saveResolvedModuleDescriptor(DefaultResolutionCacheManager.java:184)
+[2026-01-22T21:48:38.008+0000] {subprocess.py:93} INFO - 	at org.apache.ivy.core.resolve.ResolveEngine.resolve(ResolveEngine.java:259)
+[2026-01-22T21:48:38.008+0000] {subprocess.py:93} INFO - 	at org.apache.ivy.Ivy.resolve(Ivy.java:522)
+[2026-01-22T21:48:38.009+0000] {subprocess.py:93} INFO - 	at org.apache.spark.deploy.SparkSubmitUtils$.resolveMavenCoordinates(SparkSubmit.scala:1580)
+[2026-01-22T21:48:38.009+0000] {subprocess.py:93} INFO - 	at org.apache.spark.util.DependencyUtils$.resolveMavenDependencies(DependencyUtils.scala:185)
+[2026-01-22T21:48:38.009+0000] {subprocess.py:93} INFO - 	at org.apache.spark.deploy.SparkSubmit.prepareSubmitEnvironment(SparkSubmit.scala:334)
+[2026-01-22T21:48:38.009+0000] {subprocess.py:93} INFO - 	at org.apache.spark.deploy.SparkSubmit.org$apache$spark$deploy$SparkSubmit$$runMain(SparkSubmit.scala:964)
+[2026-01-22T21:48:38.009+0000] {subprocess.py:93} INFO - 	at org.apache.spark.deploy.SparkSubmit.doRunMain$1(SparkSubmit.scala:194)
+[2026-01-22T21:48:38.009+0000] {subprocess.py:93} INFO - 	at org.apache.spark.deploy.SparkSubmit.submit(SparkSubmit.scala:217)
+[2026-01-22T21:48:38.009+0000] {subprocess.py:93} INFO - 	at org.apache.spark.deploy.SparkSubmit.doSubmit(SparkSubmit.scala:91)
+[2026-01-22T21:48:38.009+0000] {subprocess.py:93} INFO - 	at org.apache.spark.deploy.SparkSubmit$$anon$2.doSubmit(SparkSubmit.scala:1120)
+[2026-01-22T21:48:38.009+0000] {subprocess.py:93} INFO - 	at org.apache.spark.deploy.SparkSubmit$.main(SparkSubmit.scala:1129)
+[2026-01-22T21:48:38.010+0000] {subprocess.py:93} INFO - 	at org.apache.spark.deploy.SparkSubmit.main(SparkSubmit.scala)
+[2026-01-22T21:48:38.046+0000] {subprocess.py:97} INFO - Command exited with return code 1
+[2026-01-22T21:48:38.059+0000] {taskinstance.py:1935} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/bash.py", line 210, in execute
+    raise AirflowException(
+airflow.exceptions.AirflowException: Bash command failed. The command returned a non-zero exit code 1.
+[2026-01-22T21:48:38.063+0000] {taskinstance.py:1398} INFO - Marking task as FAILED. dag_id=3_mlops_full_pipeline, task_id=spark_bronze_to_silver, execution_date=20260122T214711, start_date=20260122T214832, end_date=20260122T214838
+[2026-01-22T21:48:38.083+0000] {standard_task_runner.py:104} ERROR - Failed to execute job 76 for task spark_bronze_to_silver (Bash command failed. The command returned a non-zero exit code 1.; 335)
+[2026-01-22T21:48:38.126+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 1
+[2026-01-22T21:48:38.147+0000] {taskinstance.py:2776} INFO - 0 downstream tasks scheduled from follow-on schedule check

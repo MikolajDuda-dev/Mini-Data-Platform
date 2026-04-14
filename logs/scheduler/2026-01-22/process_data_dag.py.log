@@ -1,0 +1,19 @@
+[2026-01-22T16:52:03.789+0000] {processor.py:157} INFO - Started process (PID=172) to work on /opt/airflow/dags/process_data_dag.py
+[2026-01-22T16:52:03.790+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/process_data_dag.py for tasks to queue
+[2026-01-22T16:52:03.792+0000] {logging_mixin.py:151} INFO - [2026-01-22T16:52:03.792+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/process_data_dag.py
+[2026-01-22T16:52:03.821+0000] {processor.py:839} INFO - DAG(s) dict_keys(['bronze_to_silver_processing']) retrieved from /opt/airflow/dags/process_data_dag.py
+[2026-01-22T16:52:04.014+0000] {logging_mixin.py:151} INFO - [2026-01-22T16:52:04.014+0000] {manager.py:499} INFO - Created Permission View: %s
+[2026-01-22T16:52:04.029+0000] {logging_mixin.py:151} INFO - [2026-01-22T16:52:04.029+0000] {manager.py:499} INFO - Created Permission View: %s
+[2026-01-22T16:52:04.037+0000] {logging_mixin.py:151} INFO - [2026-01-22T16:52:04.037+0000] {manager.py:499} INFO - Created Permission View: %s
+[2026-01-22T16:52:04.038+0000] {logging_mixin.py:151} INFO - [2026-01-22T16:52:04.038+0000] {security.py:708} INFO - Not syncing DAG-level permissions for DAG 'DAG:bronze_to_silver_processing' as access control is unset.
+[2026-01-22T16:52:04.038+0000] {logging_mixin.py:151} INFO - [2026-01-22T16:52:04.038+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2026-01-22T16:52:04.048+0000] {logging_mixin.py:151} INFO - [2026-01-22T16:52:04.048+0000] {dag.py:2937} INFO - Creating ORM DAG for bronze_to_silver_processing
+[2026-01-22T16:52:04.060+0000] {logging_mixin.py:151} INFO - [2026-01-22T16:52:04.060+0000] {dag.py:3696} INFO - Setting next_dagrun for bronze_to_silver_processing to 2026-01-22T15:00:00+00:00, run_after=2026-01-22T16:00:00+00:00
+[2026-01-22T16:52:04.080+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/process_data_dag.py took 0.294 seconds
+[2026-01-22T16:52:34.427+0000] {processor.py:157} INFO - Started process (PID=177) to work on /opt/airflow/dags/process_data_dag.py
+[2026-01-22T16:52:34.428+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/process_data_dag.py for tasks to queue
+[2026-01-22T16:52:34.431+0000] {logging_mixin.py:151} INFO - [2026-01-22T16:52:34.431+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/process_data_dag.py
+[2026-01-22T16:52:34.445+0000] {processor.py:839} INFO - DAG(s) dict_keys(['bronze_to_silver_processing']) retrieved from /opt/airflow/dags/process_data_dag.py
+[2026-01-22T16:52:34.480+0000] {logging_mixin.py:151} INFO - [2026-01-22T16:52:34.479+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2026-01-22T16:52:34.504+0000] {logging_mixin.py:151} INFO - [2026-01-22T16:52:34.504+0000] {dag.py:3696} INFO - Setting next_dagrun for bronze_to_silver_processing to 2026-01-22T15:00:00+00:00, run_after=2026-01-22T16:00:00+00:00
+[2026-01-22T16:52:34.526+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/process_data_dag.py took 0.103 seconds

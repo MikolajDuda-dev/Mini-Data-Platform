@@ -1,0 +1,39 @@
+[2026-01-22T22:02:16.636+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: 3_mlops_full_pipeline.run_simulation manual__2026-01-22T22:02:05.159748+00:00 [queued]>
+[2026-01-22T22:02:16.646+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: 3_mlops_full_pipeline.run_simulation manual__2026-01-22T22:02:05.159748+00:00 [queued]>
+[2026-01-22T22:02:16.646+0000] {taskinstance.py:1359} INFO - Starting attempt 1 of 1
+[2026-01-22T22:02:16.660+0000] {taskinstance.py:1380} INFO - Executing <Task(BashOperator): run_simulation> on 2026-01-22 22:02:05.159748+00:00
+[2026-01-22T22:02:16.665+0000] {standard_task_runner.py:57} INFO - Started process 1062 to run task
+[2026-01-22T22:02:16.668+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', '3_mlops_full_pipeline', 'run_simulation', 'manual__2026-01-22T22:02:05.159748+00:00', '--job-id', '81', '--raw', '--subdir', 'DAGS_FOLDER/mlops_pipeline.py', '--cfg-path', '/tmp/tmp8_zrhyvj']
+[2026-01-22T22:02:16.670+0000] {standard_task_runner.py:85} INFO - Job 81: Subtask run_simulation
+[2026-01-22T22:02:16.714+0000] {task_command.py:415} INFO - Running <TaskInstance: 3_mlops_full_pipeline.run_simulation manual__2026-01-22T22:02:05.159748+00:00 [running]> on host 24f0deffc5ba
+[2026-01-22T22:02:16.789+0000] {taskinstance.py:1660} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='3_mlops_full_pipeline' AIRFLOW_CTX_TASK_ID='run_simulation' AIRFLOW_CTX_EXECUTION_DATE='2026-01-22T22:02:05.159748+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-01-22T22:02:05.159748+00:00'
+[2026-01-22T22:02:16.791+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2026-01-22T22:02:16.791+0000] {subprocess.py:75} INFO - Running command: ['/bin/bash', '-c', 'python /opt/***/dags/simulate_process.py']
+[2026-01-22T22:02:16.800+0000] {subprocess.py:86} INFO - Output:
+[2026-01-22T22:02:20.518+0000] {subprocess.py:93} INFO - >>> Tabela orders gotowa.
+[2026-01-22T22:02:20.519+0000] {subprocess.py:93} INFO - >>> Rozpoczynam generowanie paczki danych (20 rekordów)...
+[2026-01-22T22:02:20.519+0000] {subprocess.py:93} INFO - Dodano: Laptop | Klient: Veronica Delacruz
+[2026-01-22T22:02:20.519+0000] {subprocess.py:93} INFO - Dodano: Laptop | Klient: Cathy Horne
+[2026-01-22T22:02:20.519+0000] {subprocess.py:93} INFO - Dodano: Mouse | Klient: Nicholas Baker
+[2026-01-22T22:02:20.519+0000] {subprocess.py:93} INFO - Dodano: Laptop | Klient: Tony Randall
+[2026-01-22T22:02:20.519+0000] {subprocess.py:93} INFO - Dodano: Headphones | Klient: Ronald Romero
+[2026-01-22T22:02:20.519+0000] {subprocess.py:93} INFO - Dodano: Keyboard | Klient: Heather Walter
+[2026-01-22T22:02:20.519+0000] {subprocess.py:93} INFO - Dodano: Headphones | Klient: Shirley Watson
+[2026-01-22T22:02:20.519+0000] {subprocess.py:93} INFO - Dodano: Mouse | Klient: Zachary Bradley
+[2026-01-22T22:02:20.519+0000] {subprocess.py:93} INFO - Dodano: Keyboard | Klient: Matthew Green
+[2026-01-22T22:02:20.520+0000] {subprocess.py:93} INFO - Dodano: Monitor | Klient: Jose Mueller
+[2026-01-22T22:02:20.520+0000] {subprocess.py:93} INFO - Dodano: Headphones | Klient: Abigail Edwards
+[2026-01-22T22:02:20.520+0000] {subprocess.py:93} INFO - Dodano: Headphones | Klient: Breanna Scott
+[2026-01-22T22:02:20.520+0000] {subprocess.py:93} INFO - Dodano: Keyboard | Klient: Becky Robles
+[2026-01-22T22:02:20.520+0000] {subprocess.py:93} INFO - Dodano: Monitor | Klient: Jaime Collins
+[2026-01-22T22:02:20.520+0000] {subprocess.py:93} INFO - Dodano: Mouse | Klient: Jeremy Brown
+[2026-01-22T22:02:20.520+0000] {subprocess.py:93} INFO - Dodano: Mouse | Klient: Matthew Carroll
+[2026-01-22T22:02:20.520+0000] {subprocess.py:93} INFO - Dodano: Laptop | Klient: Elizabeth Gonzalez
+[2026-01-22T22:02:20.520+0000] {subprocess.py:93} INFO - Dodano: Keyboard | Klient: Tara Garcia
+[2026-01-22T22:02:20.520+0000] {subprocess.py:93} INFO - Dodano: Keyboard | Klient: Sherri Hall
+[2026-01-22T22:02:20.520+0000] {subprocess.py:93} INFO - Dodano: Mouse | Klient: Jennifer Munoz
+[2026-01-22T22:02:20.520+0000] {subprocess.py:93} INFO - >>> Zakończono generowanie danych.
+[2026-01-22T22:02:20.537+0000] {subprocess.py:97} INFO - Command exited with return code 0
+[2026-01-22T22:02:20.564+0000] {taskinstance.py:1398} INFO - Marking task as SUCCESS. dag_id=3_mlops_full_pipeline, task_id=run_simulation, execution_date=20260122T220205, start_date=20260122T220216, end_date=20260122T220220
+[2026-01-22T22:02:20.616+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 0
+[2026-01-22T22:02:20.644+0000] {taskinstance.py:2776} INFO - 0 downstream tasks scheduled from follow-on schedule check

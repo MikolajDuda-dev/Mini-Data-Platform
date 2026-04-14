@@ -1,0 +1,43 @@
+[2026-01-22T21:05:10.476+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: 3_mlops_full_pipeline.mlflow_training manual__2026-01-22T21:04:50.984862+00:00 [queued]>
+[2026-01-22T21:05:10.486+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: 3_mlops_full_pipeline.mlflow_training manual__2026-01-22T21:04:50.984862+00:00 [queued]>
+[2026-01-22T21:05:10.486+0000] {taskinstance.py:1359} INFO - Starting attempt 1 of 1
+[2026-01-22T21:05:10.499+0000] {taskinstance.py:1380} INFO - Executing <Task(BashOperator): mlflow_training> on 2026-01-22 21:04:50.984862+00:00
+[2026-01-22T21:05:10.505+0000] {standard_task_runner.py:57} INFO - Started process 4126 to run task
+[2026-01-22T21:05:10.508+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', '3_mlops_full_pipeline', 'mlflow_training', 'manual__2026-01-22T21:04:50.984862+00:00', '--job-id', '61', '--raw', '--subdir', 'DAGS_FOLDER/mlops_pipeline.py', '--cfg-path', '/tmp/tmp4ak42m07']
+[2026-01-22T21:05:10.511+0000] {standard_task_runner.py:85} INFO - Job 61: Subtask mlflow_training
+[2026-01-22T21:05:10.556+0000] {task_command.py:415} INFO - Running <TaskInstance: 3_mlops_full_pipeline.mlflow_training manual__2026-01-22T21:04:50.984862+00:00 [running]> on host 4fbdf2312f2b
+[2026-01-22T21:05:10.636+0000] {taskinstance.py:1660} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='3_mlops_full_pipeline' AIRFLOW_CTX_TASK_ID='mlflow_training' AIRFLOW_CTX_EXECUTION_DATE='2026-01-22T21:04:50.984862+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-01-22T21:04:50.984862+00:00'
+[2026-01-22T21:05:10.638+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2026-01-22T21:05:10.639+0000] {subprocess.py:75} INFO - Running command: ['/bin/bash', '-c', 'python /opt/***/dags/train_model.py']
+[2026-01-22T21:05:10.652+0000] {subprocess.py:86} INFO - Output:
+[2026-01-22T21:05:13.480+0000] {subprocess.py:93} INFO - 2026/01/22 21:05:13 WARNING mlflow.utils.git_utils: Failed to import Git (the Git executable is probably not on your PATH), so Git SHA is not available. Error: Failed to initialize: Bad git executable.
+[2026-01-22T21:05:13.481+0000] {subprocess.py:93} INFO - The git executable must be specified in one of the following ways:
+[2026-01-22T21:05:13.481+0000] {subprocess.py:93} INFO -     - be included in your $PATH
+[2026-01-22T21:05:13.481+0000] {subprocess.py:93} INFO -     - be set via $GIT_PYTHON_GIT_EXECUTABLE
+[2026-01-22T21:05:13.481+0000] {subprocess.py:93} INFO -     - explicitly set via git.refresh(<full-path-to-git-executable>)
+[2026-01-22T21:05:13.481+0000] {subprocess.py:93} INFO - 
+[2026-01-22T21:05:13.481+0000] {subprocess.py:93} INFO - All git commands will error until this is rectified.
+[2026-01-22T21:05:13.481+0000] {subprocess.py:93} INFO - 
+[2026-01-22T21:05:13.481+0000] {subprocess.py:93} INFO - This initial message can be silenced or aggravated in the future by setting the
+[2026-01-22T21:05:13.481+0000] {subprocess.py:93} INFO - $GIT_PYTHON_REFRESH environment variable. Use one of the following values:
+[2026-01-22T21:05:13.481+0000] {subprocess.py:93} INFO -     - quiet|q|silence|s|silent|none|n|0: for no message or exception
+[2026-01-22T21:05:13.481+0000] {subprocess.py:93} INFO -     - warn|w|warning|log|l|1: for a warning message (logging level CRITICAL, displayed by default)
+[2026-01-22T21:05:13.482+0000] {subprocess.py:93} INFO -     - error|e|exception|raise|r|2: for a raised exception
+[2026-01-22T21:05:13.482+0000] {subprocess.py:93} INFO - 
+[2026-01-22T21:05:13.482+0000] {subprocess.py:93} INFO - Example:
+[2026-01-22T21:05:13.482+0000] {subprocess.py:93} INFO -     export GIT_PYTHON_REFRESH=quiet
+[2026-01-22T21:05:13.482+0000] {subprocess.py:93} INFO - 
+[2026-01-22T21:05:16.868+0000] {subprocess.py:93} INFO - 2026/01/22 21:05:16 WARNING mlflow.models.model: Model logged without a signature and input example. Please set `input_example` parameter when logging the model to auto infer the model signature.
+[2026-01-22T21:05:17.624+0000] {subprocess.py:93} INFO - Registered model 'ProductDemandModel' already exists. Creating a new version of this model...
+[2026-01-22T21:05:17.624+0000] {subprocess.py:93} INFO - 2026/01/22 21:05:17 INFO mlflow.store.model_registry.abstract_store: Waiting up to 300 seconds for model version to finish creation. Model name: ProductDemandModel, version 3
+[2026-01-22T21:05:17.640+0000] {subprocess.py:93} INFO - Created version '3' of model 'ProductDemandModel'.
+[2026-01-22T21:05:17.640+0000] {subprocess.py:93} INFO - 2026/01/22 21:05:17 INFO mlflow.tracking._tracking_service.client: 🏃 View run secretive-donkey-906 at: http://mlflow:5000/#/experiments/1/runs/3fda37ffa5d145b19e9d28f382e51fa3.
+[2026-01-22T21:05:17.640+0000] {subprocess.py:93} INFO - 2026/01/22 21:05:17 INFO mlflow.tracking._tracking_service.client: 🧪 View experiment at: http://mlflow:5000/#/experiments/1.
+[2026-01-22T21:05:17.665+0000] {subprocess.py:93} INFO - >>> Pobieranie danych treningowych z Gold...
+[2026-01-22T21:05:17.666+0000] {subprocess.py:93} INFO - >>> Trenowanie modelu...
+[2026-01-22T21:05:17.666+0000] {subprocess.py:93} INFO - Metrics: MSE=106.63676478765132, R2=-4.266013075933398
+[2026-01-22T21:05:17.666+0000] {subprocess.py:93} INFO - >>> Model zapisany w MLflow! Run ID: 3fda37ffa5d145b19e9d28f382e51fa3
+[2026-01-22T21:05:18.414+0000] {subprocess.py:97} INFO - Command exited with return code 0
+[2026-01-22T21:05:18.450+0000] {taskinstance.py:1398} INFO - Marking task as SUCCESS. dag_id=3_mlops_full_pipeline, task_id=mlflow_training, execution_date=20260122T210450, start_date=20260122T210510, end_date=20260122T210518
+[2026-01-22T21:05:18.497+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 0
+[2026-01-22T21:05:18.524+0000] {taskinstance.py:2776} INFO - 0 downstream tasks scheduled from follow-on schedule check

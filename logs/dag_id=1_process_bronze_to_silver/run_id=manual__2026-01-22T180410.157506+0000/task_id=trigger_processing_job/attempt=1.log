@@ -1,0 +1,17 @@
+[2026-01-22T18:09:13.871+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: 1_process_bronze_to_silver.trigger_processing_job manual__2026-01-22T18:04:10.157506+00:00 [queued]>
+[2026-01-22T18:09:13.877+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: 1_process_bronze_to_silver.trigger_processing_job manual__2026-01-22T18:04:10.157506+00:00 [queued]>
+[2026-01-22T18:09:13.877+0000] {taskinstance.py:1359} INFO - Starting attempt 1 of 2
+[2026-01-22T18:09:13.889+0000] {taskinstance.py:1380} INFO - Executing <Task(BashOperator): trigger_processing_job> on 2026-01-22 18:04:10.157506+00:00
+[2026-01-22T18:09:13.893+0000] {standard_task_runner.py:57} INFO - Started process 419 to run task
+[2026-01-22T18:09:13.897+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', '1_process_bronze_to_silver', 'trigger_processing_job', 'manual__2026-01-22T18:04:10.157506+00:00', '--job-id', '14', '--raw', '--subdir', 'DAGS_FOLDER/spark_processing_dag.py', '--cfg-path', '/tmp/tmp7sivohii']
+[2026-01-22T18:09:13.899+0000] {standard_task_runner.py:85} INFO - Job 14: Subtask trigger_processing_job
+[2026-01-22T18:09:13.943+0000] {task_command.py:415} INFO - Running <TaskInstance: 1_process_bronze_to_silver.trigger_processing_job manual__2026-01-22T18:04:10.157506+00:00 [running]> on host 4fbdf2312f2b
+[2026-01-22T18:09:14.011+0000] {taskinstance.py:1660} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='1_process_bronze_to_silver' AIRFLOW_CTX_TASK_ID='trigger_processing_job' AIRFLOW_CTX_EXECUTION_DATE='2026-01-22T18:04:10.157506+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-01-22T18:04:10.157506+00:00'
+[2026-01-22T18:09:14.013+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2026-01-22T18:09:14.013+0000] {subprocess.py:75} INFO - Running command: ['/bin/bash', '-c', 'echo "Uruchamiam przetwarzanie Bronze -> Silver. (Symulacja zlecenia)"']
+[2026-01-22T18:09:14.021+0000] {subprocess.py:86} INFO - Output:
+[2026-01-22T18:09:14.023+0000] {subprocess.py:93} INFO - Uruchamiam przetwarzanie Bronze -> Silver. (Symulacja zlecenia)
+[2026-01-22T18:09:14.023+0000] {subprocess.py:97} INFO - Command exited with return code 0
+[2026-01-22T18:09:14.046+0000] {taskinstance.py:1398} INFO - Marking task as SUCCESS. dag_id=1_process_bronze_to_silver, task_id=trigger_processing_job, execution_date=20260122T180410, start_date=20260122T180913, end_date=20260122T180914
+[2026-01-22T18:09:14.069+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 0
+[2026-01-22T18:09:14.082+0000] {taskinstance.py:2776} INFO - 0 downstream tasks scheduled from follow-on schedule check
