@@ -7,12 +7,12 @@ This project is a comprehensive, containerized data platform designed to simulat
 
 # Features
 
--**Automated Orchestration:** Full pipeline management using Apache Airflow DAGs .
--**Scalable Data Processing:** Distributed data transformations between layers using an Apache Spark cluster.
--**Data Lake Storage:** S3-compatible storage using MinIO for persistent data layers.
--**Data Quality Framework:** Automated validation suites powered by Great Expectations.
--**MLOps Integration:** Complete experiment tracking, model versioning, and REST API serving with MLflow.
--**Containerized Infrastructure:** One-click deployment using Docker Compose, optimized for Windows 11 (WSL2).
+- **Automated Orchestration:** Full pipeline management using Apache Airflow DAGs .
+- **Scalable Data Processing:** Distributed data transformations between layers using an Apache Spark cluster.
+- **Data Lake Storage:** S3-compatible storage using MinIO for persistent data layers.
+- **Data Quality Framework:** Automated validation suites powered by Great Expectations.
+- **MLOps Integration:** Complete experiment tracking, model versioning, and REST API serving with MLflow.
+- **Containerized Infrastructure:** One-click deployment using Docker Compose, optimized for Windows 11 (WSL2).
 
 # Architecture
 
@@ -24,10 +24,10 @@ This project is a comprehensive, containerized data platform designed to simulat
 
 # Tech Stack
 
--**Orchestration:** Apache Airflow 2.10.2
--**Processing:** Apache Spark 3.5.1
--**Storage:** MinIO
--**Data Quality:** Great Expectations
--**ML Lifecycle:** MLflow 2.16.0
--**Database:** PostgreSQL 13/16
--**Language:** Python 3.11
+- **Orchestration:** Apache Airflow 2.10.2
+- **Processing:** Apache Spark 3.5.1
+- **Storage:** MinIO
+- **Data Quality:** Great Expectations
+- **ML Lifecycle:** MLflow 2.16.0
+- **Database:** PostgreSQL 13/16
+- **Language:** Python 3.11
